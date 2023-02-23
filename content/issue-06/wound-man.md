@@ -1,0 +1,301 @@
+---
+title: Wording the Wound Man
+contributor:
+ - id: jhartnell
+identifier:
+  doi: "https://doi.org/10.17658/issn.2058-5462/issue-06/jhartnell"
+  issn: 2058-5462
+language: en
+layout: essay
+order: 613
+pub_date: 2017-06-29
+pub_type: publication-periodical
+references:
+- auer_nd_1
+- benati_2012
+- the_2012
+- brown_1891
+- brunschwig_1967
+- burnett_1994
+- bynum_2002
+- clarke_1996
+- conrad_1995
+- coppens_2009
+- demaitre_2013
+- dines_2014
+- edge_2015
+- follan_1963
+- green_2008
+- gross_nd_1
+- hartnell_2017
+- hill_1965
+- jones_2006
+- medieval_1998
+- wedge_1975
+- keil_1993
+- kirkham_2014
+- leedham_1992
+- lewis_1997
+- mackinney_1965
+- mccall_2017
+- mcvaugh_2006
+- moorat_1962
+- murdoch_1984
+- neuhaus_1982
+- nijdam_nd_1
+- nuovo_2013
+- nutton_2005
+- o_1970
+- pesenti_2001
+- plebani_2004
+- rawcliffe_1997
+- rhodes_1995
+- richardson_1999
+- riha_nd_1
+- medieval_2014
+- ortolf_1992
+- romero_2015
+- saxl_1942
+- scott_1998
+- sears_1986
+- seebohm_1995
+- siraisi_1990
+- sudhoff_1914
+- brunschwig_1907
+- the_1908
+- a_1908
+- the_1988
+- tradition_1907
+- tracy_2016
+- turner_2014
+- van_nd_1
+- wallace_2010
+series_issue_number: 6
+series_periodical_name: British Art Studies
+abstract: "Little is known about the image of the Wound Man, a graphic drawing of a violently wounded figure repeated across a series of European surgical treatises from 1400 onwards. Focusing on the only known English example, preserved in the back of a late fifteenth-century medical miscellany now in the Wellcome Collection, London, this article seeks to unravel the origins and scope of this picture. Considering both the image's diagrammatic and metaphorical qualities, it presents the Wound Man as a particularly potent site not just of surgical knowledge but of a broader medico-artistic entanglement."
+acknowledgements: "Research for this article was supported by the Max-Planck-Institute für Wissenschaftsgeschichte, the Victoria and Albert Museum, and Columbia University, New York. I would like to thank Sandy Heslop, Jessica Berenbeim, the BAS editorial team and their anonymous peer-reviewer, Jessica Barker, and Monica Green for kindly sharing her research on the Disease Woman."
+---
+
+{% assign DOI = "001" %}
+
+{% assign DOI = "p1" %}
+
+The Wound Man is an image at once enigmatic and troubling. A figure stares out of the page bearing a multitude of graphic wounds. His skin is covered in bleeding cuts and lesions, stabbed and sliced by knives, spears, and swords of varying sizes, many of which remain in the skin, protruding like porcupine quills from his body. His head and thighs are pierced with arrows, some intact, some snapped down to just their heads or shafts. A club metes out blunt trauma at his shoulder. Another slams into the side of his face. A dagger pierces his side, and through his chest---rendered strangely transparent so as to define his inner organs---its tip punctures his heart. As well as weapons of war, he bears traces of more everyday accidents. His shins and feet are clustered with thorn scratches and trod-upon blades. He is peppered with itchy insect bites. And to compound his appalling misfortune, this man is also deeply unwell. His armpits and groin sport rounded, dark red buboes, rashes, and swollen glands suggesting the contraction of multiple diseases, some of which, we read, have paralyzed his limbs. The violence and illness rendered unto his body is total and all-consuming. Yet, despite this horrendous cumulative onslaught the man's expression is unnervingly resolute. His eyes are wide open, he is a figure very much alive, and in this simple detail the image's purpose crystallizes. The Wound Man was not a figure designed to inspire fear or to menace. On the contrary, he represented something more hopeful: an imaginative and arresting herald of the powerful knowledge that could be channelled and dispensed through the practice of medieval medicine.
+
+{% assign DOI = "p2" %}
+
+Known from at least twelve late medieval manuscripts and over twenty early modern printed books, the broken body of the Wound Man has enticed a bizarrely diverse collection of modern constituents, sculptors, cartoonists, theorists, even playwrights.[^1] Academic publishers, too, in their keenness for dramatic dust jackets, have presented the figure as the cover-boy to publications on diverse aspects of the medieval world, even books in which he is never actually mentioned. But this popular prominence belies the fact that no comprehensive study has ever been made of the Wound Man. First highlighted in 1907 by the formidable analyst of medieval science, Karl Sudhoff, the occasional author has in passing addressed some aspects of the Wound Man's medical context.[^2] It is exclusively within the history of medicine that discussions of the figure have thus far remained, a field in which images are normally only considered---perhaps for better, perhaps for worse---for what they might tell us about the specifics of contemporary curative concerns: the scope and form of illness, treatment and cure, surgical technique, pharmaceutical practice.
+
+{% assign DOI = "p3" %}
+
+Engagement with the Wound Man can be pushed further than this, for it offers historians a particularly potent and consistent site of exchange between many of these same concepts of medieval medicine and the more aesthetic and epistemic concerns interrogated by histories of the image. In what follows, I want to take as my focus the only known English Wound Man, found in the back of a fifteenth-century medical treatise in the Wellcome Library, London, now known by the unfairly bland title of MS 290 ([fig. 1](#figure1)). His is a particularly confusing case, seemingly out of place and time. But by unravelling the origins and scope of the picture, thinking about both its diagrammatic and metaphorical qualities, this unique English figure can in fact help us recognize intriguing strands of intra-cultural thinking in the later Middle Ages. Like all Wound Men, he ultimately comes to stand with particular vividness for an enterprise present across Europe and beyond, a process of medico-artistic entanglement.
+
+{% assign DOI = "002" %}
+
+# Diagramming Disease
+
+{% assign DOI = "p4" %}
+
+The Wound Man is one of the last in a much longer lineage of medieval medical images that utilized the flexible diagrammatic potential of the human body. This body was, of course, the ultimate physiological subject of medieval medicine's travails, whether examined in the intellectualized and theoretical atmosphere of Europe's growing university faculties, or their distinct counterpart in the manual arena of empirical medical craft, from surgery and barber surgery to midwifery and apothecaryship.[^3] Most often, in the few books that survive from either of these worlds, the human form is rendered schematically to enable an easy reading of its constituent parts. Anatomical texts, for instance, sought to give shorthand visualization to the body's internal taxonomies by simplifying its systems. Individual internal organs---heart, lungs, stomach, liver, and others---could all be rendered as a series of semi-abstract shapes, instantly identifiable symbols for the complex realities that lay beneath the skin ([fig. 2](#figure2)). Elsewhere, in a different strand of medical debate, writings on obstetrics and gynaecology presented the interior space of the womb as a similarly simple conical or circular container, visualizing different foetal presentations for the reader (figs. [3](#figure3) and [4](#figure4)). And in yet another tradition, the five-fold morphologies of the body's primary networks---veins, arteries, nerves, bones, and muscles---could also be laid out in symbiotic patterns atop the skin of generic figures, giving totalizing theoretical form to otherwise hidden inner matrices ([fig. 5](#figure5)).[^4]
+
+{% assign DOI = "p5" %}
+
+Other surviving visual schemes of the medical body, though, could be more complicated and played with what we might call a medieval interest in diagrammatic ambiguity. Here, instead of exclusively reducing the body to simple shapes or symbols, the exterior of the human form itself became a space upon which to inscribe more abstracted systems of bodily control. Man's microcosmic relation to the macrocosmic universe, for example, could be reiterated across demonstrative human figures. Take one image, now in the Österreichische Nationalbibliothek in Vienna, where a man carries a mandorla of planetary terms emanating radially from his face, his body set within circles of text specifying the elements, humours, and tissues ([fig. 6](#figure6)). Clearly such a figure primarily embodies theoretical concepts: no man really wears a bonnet of the sun and the moon, nor a beard of Mars, Saturn, and Venus. Yet the specifics of his body, complete with detailed nipples and navel, simultaneously lean towards the veristic. This is an image comfortably caught between two depictive approaches that we too often frame as oppositional: the diagrammatic and the naturalistic. Yet these were commonly crossed modes of imaging in medieval visual culture, especially in the field of medicine. The same is the case for images that showcased more specific practices of treatment. In surgical manuscripts, the internal and external spaces of realistic bodies could be marked up diagrammatically to advise on the best approaches for a wide range of instrumented procedures. Images illustrating cautery---a longstanding technique that used a heated iron to strategically burn the body and realign its humoral balance---present multiple case studies of patients drawn in flattened outline and highlighted with dark red or black spots that guided practitioners to specific sites for burning (figs. [7](#figure7) and [8](#figure8) ).[^5] Similarly, the popular extant imagery of the twelve zodiacal signs was often presented as a semi-monstrous hybrid, with symbolic forms drawn atop real bodies to draw attention to limbs and corporeal areas that should be spared treatment during particular astrological cycles ([fig. 9](#figure9)). And in pictures that directed the frequent practice of medicalized bloodletting, bodies could be highlighted with red lines that linked different diagnoses to the appropriate veins from which blood should accordingly be drawn, the human form again rendered into a practical aid on the page ([fig. 10](#figure10)).
+
+{% assign DOI = "p6" %}
+
+Although such dynamic medical images could sometimes function epistemically in and of themselves, containing in their visual forms much of the actual operative information of value to a working practitioner, text-image relations were also fundamental to these forms of diagrammatic medicine. For one thing, written information could itself form the building-blocks of aesthetic constructions. Medical words could be moulded into delicate patterns and tabular systems showing the body's humoral and spiritual constituents, or mapped around readable wheels that roughed out human life cycles and predicted a patient's prognosis ([fig. 11](#figure11)).[^6] And text was also almost always presented alongside the more recognizably bodily diagrams above, working in tandem with the visual to produce medical understanding. Anatomical imagery mingled with consistently replicated physiological texts that elucidated their forms and comparative workings; zodiacal and bloodletting schemes relied on adjacent tables of text and numbers that aided in the calendrical calculation of lunar and solar cycles; foetal presentations were clarified through accompanying gynaecological writings, part of a process of intellectualizing the once vernacular field of women's medicine within a deliberately textual and exclusively masculine medical sphere.[^7] All these medieval pictures were the carriers of complex medical knowledge, and their spots, bloodlines, organ systems, zodiac symbols, and cosmological labels all effected a subtle change to the rendering of the body. Pulling it away from a marker of personhood or individuality, or even reality, they instead deliberately transformed the human figure into a diagrammatic mode, imbuing the body's bounds with layers of medical information. It is in this context, where illustrations performed a careful tension between image and text, and between the diagrammatic and naturalistic qualities of the body, that the Wound Man emerged.
+
+{% assign DOI = "003" %}
+
+# Writing Wounds
+
+{% assign DOI = "p7" %}
+
+Wounds and their treatments were much discussed in medieval medical literature. Major intrusions into the theory of the continuous body, they were potential ruptures to the body's surface that threatened the integrity of a wider scheme of biological dissolution and continuity, as addressed by classical and contemporary authorities alike.[^8] Accordingly, surgical writings informed the practitioner how they might clear wounds of detritus, clean them, stitch them closed with needles and thread, apply various healing medications, and wrap them in complex systems of bandaging to quicken healing.
+
+{% assign DOI = "p8" %}
+
+One group of surgical books in particular, written in fourteenth- and fifteenth-century Germany, emphasized the importance of this external wound medicine by twinning it with writings on more internal treatments to create a successful and much-replicated textual series. Encompassing gynaecology, humoral medicine, and wound treatment, the group is sometimes known as the *Dreibilderserie---*literally the "three-picture series"*---*after their use of three key images to elucidate their contents in what we have seen is a common yet complicated diagrammatic mode.
+
+{% assign DOI = "p9" %}
+
+The first two of these figures, known as the Disease Man and the Pregnant Disease Woman, seem to have appeared earliest and perhaps share common ancestry in an image from a late twelfth-century medical compilation now in Bamburg.[^9] Here, the opening paragraph of a short treatise entitled the "*Tractatus de scemate humano*" introduces a long list of bodily taxonomies to be discussed---veins, bones, nerves, and so on---before concluding with the phrase "*a capites inchoantes ita depinxerunt* \[*sic*\]" (beginning with the head, as depicted). Below, packed close to the text, is this very depiction. A distinctly Christ-like figure strikes a striding pose across the lower margin, his body overwritten with various humoral distinctions, medical terms, and maladies that might befall the body ([fig. 12](#figure12)). Both the Disease Man and Pregnant Disease Woman preserve similar subscriptive features. In a surviving fifteenth-century manuscript written in France, probably one of the earliest to include the series, the Disease Man looks not unlike the Bamburg figure, although rather than appearing inside his body the texts of his eponymous diseases mostly enshroud him.[^10] He is flanked and crowned with a fan of memorable catchwords naming diseases and conditions, from alopecia and tinitus to melancholia and vertigo ([fig. 13](#figure13)). The manuscript's Pregnant Disease Woman, too---shown dressed in a simple wimple, perhaps a sartorial measure to vindicate what must have been a predominantly male gaze into her most intimate regions---similarly draws on the diagrammatic ambiguity of earlier medical imagery to etch pithy catchwords across the surface of her body and within her schematic innards ([fig. 14](#figure14)). Her heart is labelled (*cor*), as well as her kidneys (*renes*) and gallbladder (*fel*), and she bears various specifically gynaecological terms, from a deficiency of milk drawn across her breasts (*deficiens lactae*) to her womb (*matrix*) filled with a twinned pair of foetuses peeking out from within (*embrio*). Just like her male counterpart, her body also heralds more general disease. We read on her arms that both her hands are broken (*fractio manuum*)*,* haemorrhoids are noted above her right thigh (*emoroides*), and a textual arthritis maligns her shoulders and upper knees (*artetica*).
+
+{% assign DOI = "p10" %}
+
+On their own, the labels of both these figures are hardly forthcoming or detailed from a medical standpoint. Nor are they necessarily placed in correspondence to the actual location of a particular complaint, a potentially confusing scenario for any practitioner tempted to take them too literally. Such a basic reading, however, does not do justice to the complex text-image relations that contemporary professionals would have been familiar with in such books. Rather than a directly functional map of the body and its ailments, both Disease Man and Pregnant Disease Woman were deliberately situated in the ambiguous space between the veristic and the diagrammatic, designed as a useful mnemonic list of potential problems, the specifics of which could be further sought out in the substantive textual cures which they accompanied. These cumulative images catalogued and performed the encyclopedic power of such a manuscript's medical contents.
+
+{% assign DOI = "p11" %}
+
+This is the case, too, with the third of the so-called *Dreibilderserie*, the Wound Man, who also appears in the Paris manuscript in between the Disease Man and Woman ([fig. 15](#figure15)). As well as the remnants of spears and arrows, his body bristles with words that buzz around him in all directions, something that seems to have been important in realizing the figure even in its very earliest iteration, a group of three male figures from a late fourteenth-century medical miscellany now in the Lobkowicz Collection, Prague (figs. [16](#figure16), [17](#figure17), [18](#figure18)).[^11] Here, text plays a blunt but important role. Amidst details of other treatments and cures, these three early figures present themselves as visualized lists of disease and injury, the first of "*fistule et cancres*" (fistulae and cancers), the second of "*volnera sagittis facta*" (arrow wounds), and the third of "*omnia volnera*" (general wounds). In each, small slit-wounds are linked with thin red lines or the actual arrows of their making to either the word "*curabiles*" or "*incurabiles*": curable or incurable. The laconic succinctness of these diagnostic judgments at first seems casual, unhelpful even. Yet they might well have had some diagnostic use for a medieval practitioner encountering such injuries. The simple designation "curable" could at least confirm to an experienced practitioner that it might be worth both his time and reputation to progress to subsequent stages of treatment. After all, the fear of legal action in "incurable" cases is recurrently annunciated in surgical sources from this period, which often urge practitioners not to undertake dangerous or hopeless cases lest the patient's death be attributed to failure on their part.[^12] In these proto-Wound Men, the physical form of the man's body worked in conjunction with its surrounding network of simple text to prompt or disbar further intervention.
+
+{% assign DOI = "p12" %}
+
+More linguistically complicated are the later, fifteenth-century Wound Men which make up the vast majority of the medieval genre. Take an example from around 1420, found in a large southern German encyclopedia of medical, spiritual, and eschatological texts ([fig. 19](#figure19)).[^13] The Wound Man is presented here in his typical format, with slightly squat legs and outstretched hands, surrounded by short sentences that hover in the vicinity of respective wounds. These phrases serve to both highlight and individuate particular injurious details, but importantly too the short terms are not only descriptive but also itemized with small red numbers. Each catchphrase links a particular debilitating representation to a specific paragraph of a short treatise that preceded the Wound Man on the book's previous two folios.
+
+{% assign DOI = "p13" %}
+
+This text, seemingly compiled in the early 1400s, is known as the *Wundartznei* or "Surgery", and accompanies all known medieval iterations of the image, either in its original Latin or a localized vernacular.[^14] German and Bohemian botanical terms within the text suggest a Bavarian or Czech influence on its contents, and the close analyses of Gundolf Keil and, more recently, Erltraud Auer and Bernhard Schnell, have shown the treatise's debt to a successful earlier thirteenth-century medical work, the widely distributed *Artzneibuch* of Bavarian author Ortolf von Baierland.[^15] Only forty-four paragraphs long, the *Wundartznei* addresses the treatment of wounds in two parts, the first a list of surgical procedures and the second an "*Antidotar*" or pharmacotherapy, including healing ingredients and recipes. This presentation of the Wound Man, then, effectively casts the figure as a table of contents or index to its accompanying text, a body of injuries that might itself be perused as a source for a corresponding cure. One legend, for instance, written along the large spear piercing the figure\'s left side and penetrating into his stomach, reads "*So der gross viscus wund wirt 14*" (If the large intestine is injured 14). The reader is thus directed to the *Wundartznei*'s fourteenth item on the preceding page:
+
+> 14. *Item wirt der groze darm oder der magen oder gederme alzo saltu daz heilen. Du salt is zu nehen mit einem subtil fadem und salt doruf schutten rot puluer. Daz selb puluer ist zu allen wunden gut und daz beste. Daz mach alzo Nym swartz win daz uf daz aller rotest si und blutstein i loth muscate und wiß wiroch itzlichs i lod Gummi arabicum iii lod sanguinem draconis und mumie itzlichs i loth Daz zerstoß aller zesammen und mach doruß puluer und behalt das ze notem.*
+>
+> ------------------------------------------------------------------------
+>
+> 14. Item If the large intestine is \[injured\] or the stomach or the entrails, you can heal it thus: sew it together with a fine thread and sprinkle red powder on it. The same powder is good for all wounds, and the best can be made thus. Take 9 \[lots of\] black wine that is the very reddest and 1 lot of hematite, 1 lot each of nutmeg and white frankincense, 3 lots of gum arabic, 1 lot each of *sanguinem draconis* \[dragon's blood\] and mummy. Pound that all together, make a powder out of it, and keep it as needed.[^16]
+
+Here, the *Wundartznei* is suggesting the application of a styptic, an antihaemorrhagic agent in the form of a red powder made to particular specifications, designed to staunch bleeding after closing the wound in question.
+
+{% assign DOI = "p14" %}
+
+Such curative advice appears on all medieval Wound Men and can vary dramatically in its tenor. Sometimes it is rather pedestrian. A catchphrase beside the southern German figure's right foot reads "*19 Wo der mensch rudig oder kretzig ist*" (19 When a man is itchy or scabby); the corresponding paragraph 19 suggests three antipruritic salves, one of grapevine ash and two others of quicksilver or burnt lead mixed with herbs and oils. Other phrases found about him are more obscure. A caption of text next to the figure's left foot reads "*Vor slangen biss und vorgifft 41*" (For snakebite and poisoning 41), directing the reader to the *Wundartznei*'s forty-first paragraph and a pair of short cures to be applied to the bite, one involving apple and a second using crushed sage. Some sentences, however, hover beside the Wound Man unnumbered, curative elaborations unique to a specific manuscript that simply float near their respective depicted maladies to be read direct from the figure. In the southern German book, a large block of text by the man's left leg reads:
+
+> *Vor den figen nym ein heissen ziegil stein und tw doruff wizen wiroch daz ein gut dampf do von gange und setz den siechen dorubir und laß den roch und dampf wol an die figen gan daz is linde werde und wen daz geschit so nym halder swam und sturtz den ubir den figen sie vorgent und vorswinnet und daz puluer von holder swum sint gut dorubir zo der gebrest gross ist*
+>
+> ------------------------------------------------------------------------
+>
+> For warts take a hot brick and put white frankincense on it until a lot of steam comes off it and set the sick man over it and let the smoke and the steam cover the warts until they soften and when that happens take fungus from an elder tree and press it over the warts, they will go away and disappear and the powder from elder fungus is good if the blemish is large
+
+The situating of this text is very much in the same vein as the supplementary, paratextual commentaries frequently found in the margins of medieval manuscripts, offering dialogical comment on the treatise's main body. But here, the body to be elaborated is not that of the *Wundartznei* treatise, it is the Wound Man himself. Echoing the common layout of contemporary medical texts "*a capite ad calcem*"*---*quite literally arranged from cures of the head down to cures of the toe---in cases like this the Wound Man takes as his skeleton the literary structure of the *Wundartznei* text, a constructional blurring of body and words. The format of some fifteenth-century Wound Men make this relationship even clearer: in one large-scale figure, now held in the Kongelige Bibliotek in Copenhagen, the *Wundzartnei* is presented not as continuous text on appending pages, but is instead broken up and presented in small circles that directly orbit the figure himself ([fig. 20](#figure20)).[^17] Rather than numbers, corresponding sections of curative text are linked to limbs and wounds by a frantic networks of thin red lines. The physical structure of the Wound Man's body is itself transformed into a giant anthropomorphic treatise.
+
+{% assign DOI = "p15" %}
+
+That the Wound Man's artists and authors were deliberately manipulating this body-text interaction is further suggested by one paragraph of the *Wundartznei* in particular. In this passage, item 11, the text focuses on the treatment of abscesses behind the ears and elsewhere about the body, and as part of its curative instruction it encourages the medieval practitioner to commit to memory a short three-line verse:
+
+> *Daz ist zo vil gesprochen: der arczt, der arczenne wil, der zal an sehen den menschen: noch kunste, noch dem alter, noch kraft, noch der stat, complexion vnde gestalt, noch sitten der gewonheit, noch zu gefelle des siechtvms, noch vormisschunge, noch der zitt, noch der lufft.*
+>
+> ------------------------------------------------------------------------
+>
+> It is often said: The doctor who wants to be a doctor should look to the people: the art, the age, the strength, the region, complexion and form, their habits, the disease, the gender, time and air.
+
+On the one hand, this verse simply reiterates a classical list of the so-called "non-naturals", climactic and lifestyle variables that had long been thought to affect the health of men and women. Yet on the other, the mnemonic exhortation that the reader should "*sehen den menschen*", effectively "look to the patients", takes on an added potency given that this very text was plotted about the unnervingly graphic body of just such a wounded figure. The Wound Man, therefore, becomes the person to whom the reader should look for good guidance in giving health, allowing for the dynamic possibility of a two-fold reception of the figure as at once a bookish diagram and a real living being, a body that inventively categorized nuanced information for the medical practitioner by presenting a vivid, animated patient who was himself meant to be read like a book.
+
+{% assign DOI = "004" %}
+
+# Printing Problems
+
+{% assign DOI = "p16" %}
+
+It is through acknowledging the Wound Man's integral relation to text that the case of the only known English example, the Wellcome Wound Man of MS 290 with which I began, starts to unravel. Certainly this figure, like his Germanic counterparts above, relates to the written word. He is surrounded by abbreviated and carefully underlined Latin catchlines which follow a familiar format. Sentences run around his body elaborating the conditions shown: *incisio cerebri* (incision to the brain), *inflatio faciei* (swelling of the face), *veruce utrique* (warts on both sides), or, more ominously, *vulnus angustum habens foramen ubicunque* (wound with a narrow opening, anywhere). What is unusual, however, in the Wellcome Wound Man is that these limited floating sentences are the only text that appears alongside him. The *Wundartznei* and its numbered paragraph structure, so integral to the genre, are nowhere to be seen, nor do they appear anywhere else in the pages of the book.
+
+{% assign DOI = "p17" %}
+
+The very presence of the figure in this manuscript feels somewhat uneasy. Produced in England around the mid-fifteenth century, MS 290's main sections preserve a pair of anatomical treatises.[^18] The first is a text forty-eight folios long and ascribed in a Latin incipit to Galen, listing the internal structure of the body in five chapters organized consecutively from the "soyft brayne" down to the "haunches". The second is the *Anatomia Porci*, a well-known and much shorter seven-folio text from the eleventh or twelfth century describing the theoretical dissection of a pig, attributed to the Salernitan master Copho.[^19] Whilst finely executed in a neat hand, these texts are devoid of any accompanying imagery save the occasional illuminated initial. Only in the manuscript's final pages, a separate quire of eight folios which appear to have been trimmed to fit with the rest of the book, do a number of individuated medical images appear: a pair of nude male figures, a pair of skeletons, and a pair of figures with exposed nerves or veins---all shown doubled across facing pages from both front and behind---followed by a single image of the Pregnant Disease Woman and, at the very back of the book, the Wound Man (figs. [21](#figure21)--[27](#figure27) and [1](#figure1)).
+
+{% assign DOI = "p18" %}
+
+If the Wound Man is concerned with the surgical treatment of external wounds, what place does it and the rest of this group have accompanying two abstract, theoretical texts drawn from an altogether unrelated area of medical expertise? The first step towards an answer comes in the form of an offhand comment by S. A. J. Moorat in his catalogue of the Wellcome Library in 1962, where he suggests that the imagery of MS 290 acted as a manuscript model for another, much grander project, one of the earliest known printed medical books in Europe, the *Fasciculus medicinae*.[^20] Printed in Venice on 26 July 1491 by the brothers Giovanni and Gregorio De Gregori, this extremely popular sixteen-folio collection gathered together six anonymous works on uroscopy, phlebotomy, zodiacal medicine, gynaecology, wound surgery, and humoral disease, all supposedly originally gathered, the text states, for use in teaching by an earlier German physician, Johan von Kircheim, sometimes anglicized to John of Ketham.[^21] In this Venetian book, each part of the sextupled series is accompanied by an explicatory image that embellishes and clarifies the contents of the chapter, delicate engravings by an unnamed artist that historians have persistently tried to link with the great figures of the Italian Renaissance, from Mantegna and Carpaccio to the Master of the Dolphins and Bellini (figs. [28](#figure28)--[33](#figure33)).
+
+{% assign DOI = "p19" %}
+
+Why this product should necessarily be the work of a named art-historical "master" is unclear. Venice at this moment was an explosive centre of print technology, rich in many different skilled engravers and print craftsmen.[^22] Regardless, as Tizania Pesenti has convincingly demonstrated, these accompanying images were not an original idea of the *Fasciculus* artists. Whatever the identity of the printmakers in the employ of the brothers Gregori, the book draws directly on fifteenth-century manuscript traditions for both its texts and its images, specifically the German medical books that first imaged the *Dreibilderserie* (Disease Man, Pregnant Disease Woman, and Wound Man).[^23] At least one such ancestor still survives in Rome today---Biblioteca Apostolica Vaticana Cod. Pal. Lat. 1325---and its long history at the library, highlighted by Pesenti, suggests the journey from southern Bavaria to northern Italy was certainly possible during the Middle Ages.
+
+{% assign DOI = "p20" %}
+
+Visually speaking, it is easy to see why at first glance Moorat---presumably not aware of the Vatican manuscript---instead saw the Wellcome's English Wound Man as the model for the printed Wound Man in the *Fasciculus* ([fig. 32](#figure32)). Both have the same contrapposto pose, their muscular arms drawn down and palms outstretched towards the viewer. They share the same square jawlines, hairless heads, and open-eyed stares; the same rounded chins, twin transparent stomachs, and identical cuspular detailing of their knees which match line for line. The loose shapes of their internal organs are likewise extremely similar---something no two other extant Wound Men have in common---and they bear matching murderous instrumentation: swords, spears, daggers, and clubs attack their bodies at precisely the same locations, they bleed from the same cuts, and share sores of the same shape, orientation, and size.
+
+{% assign DOI = "p21" %}
+
+The only difference between the two is textual. Unlike his manuscript counterpart, the printed Venetian Wound Man's words go far beyond simple hovering captions. Linked to him by thin snaking lines that sometimes traverse his entire body, he is conjoined to much more substantial square blocks of floating text, and connected to him, too, are a number of initials, running from a to z, and onwards from aa to dd. Like the numerals of earlier Wound Men, these are paragraph indicators, bringing the figure into dialogue with a treatise printed on the *Fasciculus*'s following pages, one that corresponds almost directly to the *Wundartznei* in its medieval Latinate form, borrowed like the rest of the book's texts from an earlier iteration in a German manuscript original. Words, therefore, divide these two figures, and it becomes increasingly difficult to see how the Wellcome figure---absent of the treatise which is replicated in the *Fasciculus---*could have been the Venetian's model.
+
+{% assign DOI = "p22" %}
+
+How, then, can the extremely close similarity between Venetian print and English painting be explained? Kathleen Scott, in her detailed catalogue description of the manuscript, suggests that the artists responsible for both MS 290 and the *Fasciculus* might have been working from the same model, now lost. This hypothetical referent is certainly a possibility, especially given the diversity of sources that seem to influence the group of images at the back of MS 290, although such a chronology based on style would ultimately read against Pesenti's clear and self-contained continental model for the *Fasciculus*.[^24] Alternatively, we might try to compress Scott's chronology by flipping Moorat's original conclusion, suggesting instead that the painted Wound Man in MS 290 was not the template for the *Fasciculus*, but---working against the current of technological chronology---was instead modelled on it, preserving the imagery of a circulating printed work in the older manuscript form.
+
+{% assign DOI = "p23" %}
+
+Comparing the two images again with this in mind, certain details of MS 290 come to the fore. The unlabelled object to the top of the manuscript man's head---perhaps an ill-fitting hat or metal helmet, an otherwise unique detail within the genre---might be better understood as an error in translation. In the printed original, we read that the ill-defined bulge at the top of the Wound Man's head is in fact a stone, labelled in the *Fasciculus* as "*Lesio capitis cum . . . lapide*" (Lesion of the head from . . . a stone), a detail again drawn from the tradition of the German originals. Through the flattening and saturation of print, however, the rock appears to have lost its clarity for the Wellcome artist, who with little regard to the text---or perhaps limited ability to understand its Latin detail---has instead transformed it into a piece of headgear along the general war-faring lines of the figure. Other images elsewhere in the manuscript, too, bear similar palimpsests of the *Fasciculus.* In places, the osmosis between print and parchment is subtle: the first pair of figures in the Wellcome manuscript, for instance, share with the *Fasciculus* Disease Man both his sticking-out tongue and four floating circles of text marked "*Sensus communis*", "*Cellula ymaginativa*", "*Cellula estimativa*", and "*Cellula memorativa*", typical terms to individuate the four sections of the brain.[^25] Others, however, follow the Wound Man in a far more verbatim translation: the Pregnant Disease Woman is likewise a near-identical copy, following the *Fasciculus*'s textual catchwords---especially the unusual group of disease names firing out from her forehead, unknown in any other manuscript version---as well as the unusually low and central positioning of the womb at the centre of her body, both details found exclusively in the *Fasciculus.*
+
+{% assign DOI = "p24" %}
+
+We can surmise, therefore, that at least some of these images display direct influence of the *Fasciculus*, and were added as a separate quire of diverse figures to the mid-fifteenth-century anatomical treatises some time after the printed text's publication in 1491. Evidence from contemporary medical circles corroborates that it was quite possible for an Italian printed medical book to be circulated in England soon after publication. Vivian Nutton cites the example of Garrett Godfrey, an early sixteenth-century bookseller in Cambridge, who could arrange speedy shipment of recently printed material from both Lyon and the *Fasciculus*'s native Venice.[^26] Moreover, MS 290 is far from being an outlier in its copyist ethic. At least three other hand-written manuscript facsimiles of the printed *Fasciculus* exist: one a manuscript on paper today in Vienna, which duplicates five of the original six printed texts ([fig. 34](#figure34)); another now in the library of Trinity College Cambridge, which repeats the *Fasciculus*'s blood-letting text and figure (fig. 19); and a third book in Leiden, which copies both the printed book's text and figures, including yet another replicant Wound Man ([fig. 36](#figure36)).[^27]
+
+{% assign DOI = "p25" %}
+
+But the Wellcome manuscript highlights in particular that it was not only medical professionals who took an interest in the *Fasciculus*'s theoretical, surgical, and pharmaceutical elements: artists too were clearly also drawn early on to its new aesthetic properties. Although a lack of provenance for MS 290 before the nineteenth century means the specifics of the book's creation remain clouded---as do the motivations of a potential patron who might have commissioned the copying of such images---clearly the visual capacity of the Wound Man and other diagrammatic figures was strong enough to elicit a complete extraction from their usual context as mediators of textual treatises, granting them their own independent aesthetic life.
+
+{% assign DOI = "005" %}
+
+# Wounds Between Fields
+
+{% assign DOI = "p26" %}
+
+Only six years after his appearance in the Venetian *Fasciculus medicinae*, the image of the Wound Man made yet another printed departure. In 1497, Strasbourg publisher Johann Grüninger reformatted the figure as a frontispiece to a major work on battlefield surgery by the renowned German master, Hieronymus Brunschwig ([fig. 37](#figure37)).[^28] As usual we see a man beset by weapons, although here a little more slope-shouldered and anaemic than in previous iterations, and placed afresh into a tangible stone-floored space before a looping double window. His image in fact recurs several times in the book, although significantly no text ever surrounds him besides the treatise's resplendent title, which proudly proclaims: "*Dis ist das buch der Cirurgia, hantwirchung der wund artzny von Hyeronimo brunschwig*" (This is the book of surgery, handiwork of the surgeon Hieronymus Brunschwig). Here, rather than itemized alongside the figure, the *Wundartznei*'s curative contents have been updated and absorbed into the specifics of Brunschwig's own text, leaving no need for this Wound Man to carry numerated or alphabetical catchwords, nor thin lines linking his body to partitioned paragraphs. Instead, his impact here is intended as purely visual, acting as a general herald to the surgical cures contained within the book's pages. What more dramatic a scene could an author ask for when announcing boldly their cumulative works on the surgical craft? Yet whilst such a semi-severance of image and context must have been roughly contemporaneous with that occurring in MS 290, Brunschwig's intervention appears to have had far more wide-ranging and long-standing consequences for the potent image of the Wound Man. A lurid lure to publishers for over five hundred years, his presentation runs in a more or less continuous lineage from the *Buch der Cirurgia* down to the dust jackets of today's modern medical tomes with which I began. As an evocative illustrative trope, he provided consistently vivid frontispiece imagery, featured in surgical works as widespread as Hans von Gersdorff's *Feldtbuch der Wundartzney* (1517), Berangario da Carpi's *Tractatus perutilis et completes de fractura cranei* (1535), the posthumous *Opera chirurgica* (1594) of Ambroise Paré, and John Brown's *A compleat discourse of wounds* (1678) (figs. [38](#figure38)--[41](#figure41)).
+
+{% assign DOI = "p27" %}
+
+In light of this ultimate and ongoing divorce from his textual origins, work might now begin which reflects upon the original medieval iterations of the Wound Man, searching for something much more powerful than his important yet nonetheless confined status as a organizational medico-literary tool, work that brings the figure more convincingly to life. For whilst wounds were things much discussed in medical texts, they also featured as potent signifiers across a much broader medieval literary world.[^29] Recent scholarship has argued for a complex topography of wounds in the Middle Ages, with injuries and their carefully measured compensation embedding themselves in the pages of courtroom records, haunting the faces of literary heroes---who in speaking identified themselves as much by their wounds as their names---and evoking a proud sanctity in the metaphors of confessional literature and saintly *vitae*.[^30] Images contemporary to both early and later Wound Men, too, likewise suggest that a mixture of verbal and visual wounding was not restricted to the medical, most obviously in the religious realm. On both small and large scale, the floating menace of the *Arma Christi*, or the impious aggression of wall paintings of the Sunday Christ---picturing Jesus wounded by the tools of workers ignoring the Sabbath---make clear the flamboyant artistic metaphors of the wound (figs. [42](#figure42) and [43](#figure43)). Certainly if his expression is anything to go by, like Christ, the Wound Man does not acknowledge the pain he must be going through, but instead is shown in the throes of a more anaesthetized and almost holy expiatory experience. This was something Karl Sudhoff acknowledged as early as 1907 when he first described the Wound Man, dubbing him a surgically distorted, "grotesque St. Sebastian".[^31]
+
+{% assign DOI = "p28" %}
+
+All this is not necessarily to say that the Wound Man must now himself be read directly as legal evidence, chivalric hero, saint, or *Christus medicus*. But his was an image whose emergence within this world of living wounds cannot be ignored. His potential was far greater than the specifics of bodily injury or accident. He was a complex site of contact: between sickness and cure, print and painting, and medicine and society as a much broader whole. Only in acknowledging this may we recognize him as an innovative creation indicative of the furthest limits of the medieval medical imagination, a figure cast into constant suffering to help the Wound Man's readership heal and simultaneously let their minds wander far beyond medicine through his late medieval woundscape.
+
+{% contributors context=pageContributors format='bio' align='left' %}
+
+{% backmatter %}
+
+## Footnotes
+
+[^1]: In roughly chronological order, the Wound Man features in some form within the following manuscripts and printed books: Prague, Lobkowicz Collection, Cod. VI Fc. 29; Paris, Bibliothèque national de France, MS Lat. 11229; London, Wellcome Library, MS 49; Copenhagen, Kongelige Bibliothek, Grossfoliohandschrift MS Ny Kgl. Saml. 84b; Heidelberg, Universitätsbibliothek, Cod. Pal. Germ. 644; Munich, Bayerische Staatsbibliothek, MS Cgm. 597; Solothurn, Zentralbibliothek, Cod. S 474; Rome, Biblioteca Apostolica Vaticana, Cod. Pal. Lat. 1325; the so-called *Fasciculus medicinae* (from 1491); Hieronymus Brunschwig, *Das Buch der Chirurgia* (from 1497); Hans von Gersdorff, *Feldtbüch der Wundartzney* (from 1517); London, Wellcome Library, MS 290; Leiden, Universiteitsbibliotheek, MS BPL 1905; Erlangen, Universitätsbibliothek, MS B 200 (formerly MS 1463); Berengario da Carpi, *Tractatus perutilis et completus de fractura cranei* (3rd edition, 1535); Jean Tagault, *Les institutions chirurgiques* (1543); Thomas Gale, *Certaine Workes of Chirurgerie* (1563); Los Angeles, UCLA, Biomedical Library, Benjamin Collection, MS 8, J. A.; William Clowes, *A prooved practise for all young chirurgians* (1588); Ambroise Paré, *Dix livres de chirurgie* (1564) and again in his *Opera chirurgica* (1594); Joseph Schmid, *Examen Chirurgicum* (1644); London, Wellcome Library, MS 990; James Cooke, *Mellificium chirurgiem, or The Marrow of Chirurgery* (1648); Johannes Scultetus, *Armamentarium chirurgicum* (1655); John Brown, *A Compleat Discourse of Wounds* (1678). For its modern resonances, see, for example: the Wound Man's large-scale sculpted likeness at Mont Orgueil Castle, Jersey; the architect and industrial designer George Nelson's provocative screed on the history of weaponry within the military-industrial-academic complex, aired in an episode of CBS's *Camera 3* entitled "How to Kill People: A Problem of Design"; or the copy of the Wound Man lying on the desk of Mads Mikkelsen's eponymous cannibalistic doctor in NBC's cable series *Hannibal* (2013), an inspiration for some of the show's more inventive and gruesome murders.
+
+[^2]: Karl Sudhoff, *Tradition und Naturbeobachtung in den Illustrationen medizinischer Handschriften und Frühdrucke vornehmlich des 15. Jahrhunderts* (Leipzig: Barth, 1907), 82--85; Karl Sudhoff, "Der 'Wundenmann' in Frühdruck und Handschrift und sein erklärender Text: Ein Beitrag zur Quellengeschichte des 'Ketham'", *Archiv für Geschichte der Medizin* 1 (1908): 351--61; Klaus Neuhaus, "Der Wundermann: Tradition und Struktur einer Abbildungsart in der Medizinischen Literatur" (Inaugural-dissertation, Westfälischen Wilhelms-Universität, Münster, 1982); Erltraud Auer and Bernhard Schnell, "'Der Wundenmann': Ein traumatologisches Schema in der Tradition der 'Wundarzenie' des Ortolf von Baierland", in '*ein teutsch puech machen': Untersuchungen zur landessprachlichen Vermittlung medizinischen Wissens*, ed. Gundolf Keil (Wiesbaden: Reichert, 1993), 349--401.
+
+[^3]: Useful introductory studies to these diverse and often intellectually and socially separated fields of medieval medicine include: Nancy Siraisi, *Medieval and Early Renaissance Medicine* (Chicago, IL, and London: University of Chicago Press, 1990); Lawrence I. Conrad et al., eds, *The Western Medical Tradition: 800 BC to AD 1800* (Cambridge: Cambridge University Press, 1995); Carole Rawcliffe, *Medicine and Society in Later Medieval England* (Stroud: Sutton, 1997); Michael McVaugh, *The Rational Surgery of the Middle Ages* (Florence: SISMEL, 2006); Faith Wallace, *Medieval Medicine: A Reader* (Toronto: University of Toronto Press, 2010); Luke Demaitre, *Medieval Medicine: The Art of Healing, from Head to Toe* (Santa Barbara, CA: Praeger, 2013).
+
+[^4]: For specific bibliography on the visual schemes that follow, see Loren C. MacKinney, *Medical Illustrations in Medieval Manuscripts* (London: Wellcome, 1965); John Murdoch, *Album of Science: Antiquity and the Middle Ages* (New York: Scribners, 1984); Peter Murray Jones, *Medieval Medicine in Illuminated Manuscripts* (London: British Library, 1998); and Hilde-Marie Gross, "Illustrationen in medizinischen Sammelhandschiften", in *'ein teutsch puech* *machen': Untersuchungen zur landessprachlichen Vermittlung medizinischen Wissens*, ed. Gundolf Keil (Wiesbaden: Reichert, 1993), 172--348. For a general overview of medieval medical imagery, see Jack Hartnell, "Medicine's Image", in *The Routledge Companion to Medieval Iconography*, ed. Colum Hourihane (London and New York: Routledge, 2017), 326--43.
+
+[^5]: On these cautery diagrams, see Peter Murray Jones, "Image, Word, and Medicine in the Middle Ages", in *Visualising Medieval Medicine and Natural History, 1200--1550*, ed. Jean A. Givens, Karen M. Reeds, and Alain Touwaide (Aldershot: Ashgate, 2006), 1--24.
+
+[^6]: On the medieval life cycle, see Elizabeth Sears, *The Ages of Man: Medieval Interpretations of the Life Cycle* (Princeton, NJ: Princeton University Press, 1986). On prognosticatory spheres, see Jo Edge, "Nomen Omen: The 'Sphere of Life and Death' in England, c.1200--c.1500" (PhD diss., University of London, 2015).
+
+[^7]: On this theme in medieval gynaecology and obstetrics, see Monica H. Green, *Making Women\'s Medicine Masculine: The Rise of Male Authority in Pre-Modern Gynaecology* (Oxford: Oxford University Press, 2008).
+
+[^8]: The medicine underpinning this concept is neatly explained in Karine van 't Land, "The Solution of Continuous Things: Wounds in Late Medieval Medicine and Surgery", in *Wounds in the Middle Ages*, ed. Anne Kirkham and Cordelia Warr (Aldershot: Ashgate, 2014), 89--109.
+
+[^9]: Bamberg, Staatsbibliothek, MS Msc. Med. 6, fol. 142v. The book is a diverse compilation preserving the writings of the German encyclopedist and physician Northungus alongside earlier texts drawn from the Italian translations of Constantine the African, as well as a series of distinctly Germanic healing charms. For a preliminary description of the manuscript, see Charles Burnett and Danielle Jacquart, *Constantine the African and 'Alī Ibn al-'Abbās al-Mağdūsī: The Pantegni and Related Texts* (Leiden: Brill, 1994), 197 and appendix II. For a recent evaluation of Northungus and his relation to the artistic traditions of Theophilus, see Ilya Dines, "The Theophilus Manuscript Tradition Reconsidered in the Light of New Manuscript Discoveries", in *Zwischen Kunsthandwerk und Kunst: Die 'Schedula diversarum artium'*, ed. Andreas Speer (Berlin: De Gruyter, 2014), 3--10.
+
+[^10]: Paris, Bibliothèque nationale de France, MS Lat. 11229. For more on this manuscript, see Karl Sudhoff, "Eine Pariser 'Ketham'-Handschrift aus der Zeit König Karls VI (1380--1422)", *Archiv für Geschichte der Medizin* 2, no. 2 (1908): 84--110. The earliest known Disease Woman is found in a Provençal manuscript, now Basel, Universitätsbibliothek, MS D.II.11, fol. 170v. I thank Monica Green for generously sharing her research on the Disease Woman.
+
+[^11]: Prague, Lobkowicz Collection, MS VI Fc 29, 97--99. For a brief summary of these images, see Karl Sudhoff, *Beiträge zur Geschichte der Chirurgie im Mittelalter: graphische und textliche Untersuchungen in mittelalterlichen Handschriften* (Leipzig: Barth, 1914), 72--74.
+
+[^12]: See, for example, the accounts gathered in Wendy J. Turner and Sara M. Butler, eds, *Medicine and the Law in the Middle Ages* (Leiden: Brill, 2014).
+
+[^13]: London, Wellcome Library, MS 49. On this manuscript generally, see Almuth Seebohm Désautels, *Apokalypse, ars moriendi, medizinische Traktate, Tugend- und Lasterlehren: die erbaulich-didaktische Sammelhandschrift London, Wellcome Institute for the History of Medicine, Ms. 49* (Munich: Lengenfelder, 1995); and Fritz Saxl, "A Spiritual Encyclopedia of the Later Middle Ages", *Journal of the Courtauld and Warburg Institutes* 5 (1942): 82--137.
+
+[^14]: On the *Wundarznei*'s content see Auer and Schnell, "Wundenmann", 353--56. The German text of Wellcome MS 49 is written in a Thuringian dialect. Other versions represent an unusual tradition of de-vernacularizing German texts back into Latin. On this form of textual transmission, see Gundolf Keil, "Zum Problem lateinisch-landessprachiger Verflechtung: Der 'Wunden-mann' des Kodex Wellcome 49", *Nachrichtenblatt der Deutschen Gesellschaft für Geschichte, Medizin und Technik* 25, no. 2 (1975): 79--80.
+
+[^15]: The *Wundarznei* borrows sections from the sixth part of Ortolf's *Arzneibuch.* On Ortolf, see Ortrun Riha, *Mittelalterliche Heilkunst: Das Arzneibuch Ortolfs von Baierland (um 1300)* (Baden-Baden: Deutscher Wissenschaftsverlag, 2014); Riha, *Ortolf von Baierland und seine lateinischen* *Quellen: Hochschulmedizin in der Volkssprache* (Weisbaden: Reichert, 1992); and the bibliography in Riha, "Arzneibuch des Ortolf von Baierland", *Historisches Lexikon Bayerns*, [https://www.historisches-lexikon-bayerns.de/Lexikon/Arzneibuch_des_Ortolf_von_Baierland](https://www.historisches-lexikon-bayerns.de/Lexikon/Arzneibuch_des_Ortolf_von_Baierland) (accessed 10 May 2017). For an earlier translation of the *Artzneibuch*, see *Das Artzneibuch Ortolfs von Baierland nach der ältesten Handschrift*, ed. James Follan (Stuttgart: Wissenschaftliche Verlagsgesellschaft, 1963).
+
+[^16]: The legends and wound-text of Wellcome MS 49 have been transcribed and translated, with some small errors, in Boyd H. Hill, "A Medieval German Wound Man: Wellcome MS 49", *Journal of the History of Medicine and Allied Sciences* 20 (1965): 334--57.
+
+[^17]: Copenhagen, Kongelige Bibliotek, MS Ny Kgl. Saml. 84b, fol. 4v.
+
+[^18]: On MS 290 more generally, see Jesús Romero-Barranco, *The Late Middle English Version of Constantinus Africanus\'* Venerabilis anatomia *in London, Wellcome Library, MS 290 (ff. 1r--41v)* (Newcastle-upon-Tyne: Cambridge Scholars Publishing, 2015), whose linguistic analysis suggests the treatises were written north of the Thames in Essex, near Chelmsford; and Kathleen L. Scott, *Later Gothic Manuscripts, 1390--1490*, 2 vols. (London: Harvey Miller, 1998), 2: 275--77.
+
+[^19]: These two texts are eVK numbers 4608 and 1873. The first is pseudo-Galenic and known only in one other incomplete example, Wellcome MS 378. On the *Anatomia Porci* more generally, see Ynez Violé O'Neill, "Another Look at the 'Anatomia Porci'", *Viator* 1 (1970): 115--24.
+
+[^20]: S. A. J. Moorat, *Catalogue of Western Manuscripts on Medicine and Science in the Wellcome Historical Medical Library* (London: Wellcome Library, 1962), 185--86.
+
+[^21]: On the *Fasciculus medicinae*, see Karl Sudhoff, *The Fasciculus Medicinae of Johannes de Ketham, Alemanus: Facsimile of the First (Venetian) Edition of 1491*, trans. Charles Singer and Luke Demaitre (Birmingham: Classics of Medicine Library, 1988); Tiziana Pesenti, *Fasiculo de medicina in volgare, Venezia, Giovanni e Gregorio De Gregori, 1494*, 2 vols. (Treviso: Antilia, 2001); Chris Coppens, *De vele levens van een boek: de Fasciculus medicinae* (Brussels: Koninklijke Academie voor Geneeskunde van België, 2009).
+
+[^22]: On early print in Venice see, for example, Angela Nuovo, *The Book Trade in the Italian Renaissance* (Leiden: Brill, 2013); Tiziana Plebani, *Venezia 1469: la legge e la stampa* (Venice: Marsilio, 2004); Brian Richardson, *Printing, Writers and Readers in Renaissance Italy* (Cambridge: Cambridge University Press, 1999); Dennis E. Rhodes, *Silent Printers: Anonymous Printing at Venice in the Sixteenth Century* (London: British Library, 1995); and the useful classic H. R. F. Brown, *The Venetian Printing Press* (London: J. C. Nimmo, 1891).
+
+[^23]: Pesenti, *Fasiculo de medicina*, 2: 1--42.
+
+[^24]: The first pair of figures in MS 290 appear to preserve on their skin similar numeration to extant late-medieval German phlebotomical illustrations (for example the Bloodletting Man from Munich, Bayerische Staatsbibliothek, CLM 4394, fol. 115r). Scott also notes that these figures and others at the back of MS 290 match a sketchy pair of figures in a late fifteenth-century manuscript now in the British Library, MS Royal 18.A.VI, fol. 32. The Wellcome's second pair of figures, two skeletons (one now badly damaged), also seem to draw on similar sources to the Royal manuscript, as well as other visualizations of the body's bones (for example, the so-called "Kalender of Shepherds"), although with a greater level of accuracy than these fifteenth-century sources. The figure plotted with muscles and nerves likewise recalls the much older imagery of the Nine-Figure Series (formerly erroneously known as the *Fünfbilderserie*). The Pregnant Disease Woman and the Wound Man are not, however, present in this English manuscript. For more on early anatomical figures, see Taylor McCall, "Illuminating the Interior: The Illustrations of the Nine Systems of the Body and Anatomical Knowledge in Medieval Europe" (PhD Diss., University of Cambridge, 2017). Parallels to both the skeletal imagery and the figure with nerves or veins can also be found alongside other anatomical imagery in a long scroll made in London around 1420, now Stockholm, Kungliga Biblioteket, MS X.118.
+
+[^25]: On the brain, see Edwin Clarke et al., *An Illustrated History of Brain Function: Imaging the Brain from Antiquity to the Present* (San Francisco, CA: Norman, 1996), 10--48.
+
+[^26]: Vivian Nutton, "Books, Printing, and Medicine in the Renaissance", *Medicina nei Secoli* 17, no. 2 (2005): 421--42; Elisabeth Leedham-Green, Dennis Rhodes, and Frank Stubbings, *Garrett Godfrey\'s Accounts, c.1527--1533* (Cambridge: Cambridge Bibliographical Society, 1992).
+
+[^27]: Leiden, Universiteitsbibliotheek, BPL 1905, fol. 9r; Vienna, Österreichische Nationalbibliothek, Cod. 14034, fol. 8v; Trinity College Cambridge Library, MS O.9.31, fol. 29v. It also appears, significantly reworked, in a large German hand-painted miscellany from 1543 now in Erlangen, Universitätsbibliothek, MS B 200 (formerly MS 1463), fol. 65v.
+
+[^28]: On Brunschwig, see Hieronymus Brunschwig, *Dis ist das Buch der Cirurgia: Hantwirckung der Wundartzny* \[1497\], ed. Christian Probst (Gertenbach: G. Zierau, 1967); Chiara Benati, "The 1518 Low German Edition of Hieronymus Brunschwig\'s *Buch der Cirurgia* and its Terminology", in *Medieval German Textrelations: Translations, Editions, and Studies*, ed. Jefferis Bierhals and Anna Sibylla (Lorch: Kümmerle, 2012), 189--254; Benati, *Dat Boek der Wundenartzstedye und der niederdeutsche chirurgische Fachwortschatz* (Lorch: Kümmerle, 2012); and Karl Sudhoff, "Brunschwigs Anatomie", *Archiv für Geschichte der Medizin* 1 (1907): 41--66, 141--56.
+
+[^29]: See, for example, two recent edited volumes: Kirkham and Warr, *Wounds*; and Larissa Tracy and Kelly DeVries, eds, *Wounds and Wound Repair in Medieval Culture* (Leiden: Brill, 2016).
+
+[^30]: To take just a few examples from this diverse field: on legal wound tariffs, see Han Nijdam, "Compensating Body and Honor: The Old Frisian Compensation Tariffs", in Turner and Butler, eds, *Medicine and the Law*, 25--57; on chivalric heroes' wounds, see Rawcliffe, *Medicine and Society*, 3--5; on saintly wounds, see Caroline Walker Bynum's neat summary of her related work in "Violent Imagery in Late Medieval Piety", *Bulletin of the German Historical Institute* 30 (Spring 2002): 3--36; on Christ's wounds, see Flora Lewis, "The Wound in Christ\'s Side and the Instruments of the Passion: Gendered Experience and Response", in *Women and the Book: Assessing the Visual Evidence*, ed. Lesley Smith and Jane H. M. Taylor (Toronto: University of Toronto Press, 1997), 204--29.
+
+[^31]: Sudhoff, "Wundenmann", 351.
+
+{% endbackmatter %}
