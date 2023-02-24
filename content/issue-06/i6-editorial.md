@@ -1,5 +1,5 @@
 ---
-title: Editorial
+title: "Editorial"
 contributor:
  - id: sheslop
  - id: jberenbeim
@@ -13,7 +13,6 @@ pub_date: 2017-06-29
 pub_type: publication-periodical
 series_issue_number: 6
 series_periodical_name: British Art Studies
-
 ---
 
 {% assign DOI = "001" %}

@@ -41,7 +41,7 @@ references:
 - metcalf_1994
 - perry_2012
 - pinney_1997
-- the_2008b
+- tcop_2008
 - seven_2012
 - przyblyski_2001
 - report_1862

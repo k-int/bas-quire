@@ -25,7 +25,7 @@ references:
 - fergonzi_2003
 - flying_1914
 - flying_1914b
-- foster_2004
+- foster_2004b
 - gaudier_1914
 - gore_1983
 - grahame_1913

@@ -1,5 +1,5 @@
 ---
-title: Inventio Porticus---Imagining Solomon's Porches in Late Medieval England
+title: "Inventio Porticus---Imagining Solomon's Porches in Late Medieval England"
 contributor:
  - id: hlunnon
 identifier:

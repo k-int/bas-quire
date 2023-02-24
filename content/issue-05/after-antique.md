@@ -52,7 +52,7 @@ references:
 - smiles_1859
 - smith_1829
 - tupper_1855
-- whitley_1928
+- whitley_1928b
 series_issue_number: 5
 series_periodical_name: British Art Studies
 abstract: "From 1808 the British Museum in London began regularly to open its newly established Townley Gallery so that art students could draw from the ancient sculptures housed there. This article documents and comments on this development in art education, based on an analysis of the 165 individuals recorded in the surviving register of attendance at the Museum, covering the period 1809--17. The register is presented as a photographic record, with a transcription and biographical directory. The accompanying essay situates the opening of the Museum's sculpture rooms to students within a far-reaching set of historical shifts. It argues that this new museum access contributed to the early nineteenth-century emergence of a liberal state. But if the rhetoric surrounding this development emphasized freedom and general public benefit in the spirit of liberalization, the evidence suggests that this new level of access actually served to further entrench the \"middle-classification\" of art education at this historical juncture."

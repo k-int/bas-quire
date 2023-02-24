@@ -2713,12 +2713,12 @@ contributor:
     bio: "Polly Saltmarsh is an easel paintings conservator based in Cambridge. She divides her time between running her studio and working at the National Portrait Gallery, London. With an MA(Hons) in Art History from the University of Glasgow, Polly completed a Postgraduate Diploma in Easel Painting Conservation at the Courtauld Institute, graduating in 2007. In 2008, Polly joined the Making Art in Tudor Britain team at the National Portrait Gallery, researching the materials and techniques of the Tudor and Jacobean paintings in the collection. In 2015, she was invited as a visiting scholar to the Yale Center for British Art to undertake technical research on the collection of early miniatures. She has previously co-published papers focusing on workshop production, in particular patterns and replication."
     pic: "images/contributors/psaltmarsh.jpg"
 
-  - id: lsalter
+  - id: lslater
     type: secondary
     first_name: Laura
-    last_name: Salter
+    last_name: Slater
     bio: "Laura Slater completed her AHRC-funded PhD in History of Art at King's College, University of Cambridge. She is currently an ERC-funded Postdoctoral Research Fellow at the University of Oxford. In 2015-2016, she held a Postdoctoral Fellowship from The Paul Mellon Centre for Studies in British Art, London, to complete her monograph, *Art and Political Thought in Medieval England*. She has held postdoctoral teaching or research positions at the University of Cambridge, University College London, Trinity College Dublin and the University of York. A volume of essays co-edited with Dr Joanna Bellis, *Representing War and Violence 1250-1600*, was published in 2016 by Boydell & Brewer."
-    pic: "images/contributors/lsalter.jpg"
+    pic: "images/contributors/lslater.jpg"
 
   - id: msappol
     type: secondary

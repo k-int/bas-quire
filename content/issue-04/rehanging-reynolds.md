@@ -30,7 +30,7 @@ references:
 - davis_2015
 - de_2013
 - drucker_2013
-- farington_1978b
+- farington_1978
 - fine_1823
 - fine_1828
 - fletcher_2015
@@ -53,7 +53,7 @@ references:
 - muller_1989
 - norgate_3867
 - penny_1986
-- the_2008
+- 16cap_2008
 - postle_1995
 - postle_2005
 - pullan_1998b

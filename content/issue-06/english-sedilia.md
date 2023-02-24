@@ -1,5 +1,5 @@
 ---
-title: The Englishness of English Sedilia
+title: "The Englishness of English Sedilia"
 contributor:
  - id: jacameron
 identifier:
@@ -44,7 +44,7 @@ references:
 - davidson_2010
 - de_2006
 - met_2000
-- draper_2006b
+- draper_2006
 - the_1980b
 - salisbury_1996
 - duval_1994

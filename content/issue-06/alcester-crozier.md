@@ -1,5 +1,5 @@
 ---
-title: An Ivory Staff Terminal from Alcester
+title: "An Ivory Staff Terminal from Alcester"
 contributor:
  - id: sheslop
 identifier:

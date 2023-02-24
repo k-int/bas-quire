@@ -14,6 +14,7 @@ pub_type: publication-periodical
 references:
 - jameson_1984
 - lyotard_1984
+- tcop_2008
 series_issue_number: 4
 series_periodical_name: British Art Studies
 abstract: "\"Conversation Piece\" is a *British Art Studies* series that draws together a group of contributors to respond to an idea, provocation, or question."

@@ -1,5 +1,5 @@
 ---
-title: Legal Crisis and Artistic Innovation in Thirteenth-Century Scotland
+title: "Legal Crisis and Artistic Innovation in Thirteenth-Century Scotland"
 contributor:
  - id: jbarker
 identifier:

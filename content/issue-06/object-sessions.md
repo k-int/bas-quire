@@ -1,5 +1,5 @@
 ---
-title: Handling Digital Objects
+title: "Handling Digital Objects"
 contributor:
  - id: ldebeer
  - id: nspeakman
