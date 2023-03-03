@@ -130,6 +130,23 @@ contributor:
     bio: "Jocelyn Anderson completed her PhD at the Courtauld Institute of Art in 2013. Subsequently, she held a postdoctoral fellowship at the Paul Mellon Centre for Studies in British Art (2014) and the post of Early Career Lecturer in Early Modern Art at the Courtauld (2015–16). She is the author of *Touring and Publicizing England's Country Houses in the Long Eighteenth Century* (London: Bloomsbury Academic, 2018), and is currently researching art and the British Empire and early modern magazine illustration. She lives in Toronto."
     pic: "images/contributors/janderson.jpg"
 
+  - id: kmercer
+    first_name: Kobena
+    last_name: Mercer
+    full_name: "Kobena Mercer"
+    title: "Professor of History of Art and African American Studies"
+    affiliation: "Yale University"
+    bio: "Kobena Mercer is Professor of History of Art and African American Studies at Yale University, where he teaches modern and contemporary art in the Black Atlantic, examining  African American, Caribbean, and Black British artists with critical methods from cultural studies. He is the author of monographic studies of James VanDer Zee, Romare Bearden and Adrian Piper, Isaac Julien and Rotimi Fani-Kayode, and he edited the *Annotating Art’s Histories* series whose titles are *Cosmopolitan Modernisms* [2005], *Discrepant Abstraction* [2006], *Pop Art and Vernacular Cultures* [2007], and *Exiles, Diasporas & Strangers* [2008]. Mercer previously taught at New York University and the University of California–Santa Cruz and was an inaugural recipient of the 2006 Clark Prize for Excellence in Art Writing awarded by the Sterling and Francine Clark Art Institute in Massachusetts. His most recent book is his essay collection *Travel & See: Black Diaspora Art Practices since the 1980s* [2016]."
+    pic: "images/contributors/kmercer.jpg"
+
+  - id: gadamson
+    type: secondary
+    first_name: Glenn
+    last_name: Adamson
+    full_name: "Glenn Adamson"
+    bio: "Glenn Adamson is a curator, writer, and historian based in New York. He has previously been Director of the Museum of Arts and Design; Head of Research at the Victoria and Albert Museum, London; and Curator at the Chipstone Foundation in Milwaukee. Adamson’s publications include *Thinking Through Craft* (2007); *The Craft Reader* (2010); *Postmodernism: Style and Subversion* (2011), accompanying the exhibition of that title at the V&A, co-curated with Jane Pavitt; *The Invention of Craft* (2013); *Art in the Making* (2016), co-authored with Julia Bryan-Wilson; and *Fewer Better Things: The Hidden Wisdom of Objects* (2018). His newest book is *Craft: An American History*, published by Bloomsbury."
+    pic: "images/contributors/gadamson.jpg"
+
   - id: randerson
     type: secondary
     first_name: Roseanna
@@ -138,6 +155,14 @@ contributor:
     affiliation: "Impermanence Dance Theatre"
     bio: "Roseanna Anderson started her dance training in Newcastle, Australia going on to study in Dresden, London, and Leeds. As a co-founder of [http://www.impermanence.co.uk](Impermanence) (2011), Roseanna has collaborated with over 100 artists, making performance works for theatres, pubs, festivals, and cabaret bars. In 2018, she choreographed her first opera, a revival of Stanford's *The Travelling Companion*, worked with Clod Ensemble on their show *Placebo*, and set up a monthly cabaret lunch designed to reduce loneliness amongst older people in Bristol."
     pic: "images/contributors/randerson.jpg"
+
+  - id: rcaspole
+    type: secondary
+    first_name: Richard
+    last_name: Caspole
+    full_name: "Richard Caspole"
+    bio: "Richard Caspole is the Senior Photographer for the Yale Center for British Art, New Haven, CT. A graduate of Paier College of Art, he has been photographing art, historical objects and architecture at Yale University for 37 years."
+    pic: "images/contributors/rcaspole.jpg"
 
   - id: bandrew
     type: secondary
@@ -1131,6 +1156,15 @@ contributor:
     bio: "Abram Fox is the Honors College Coordinator at Towson University in Towson, MD. He earned his PhD in art history from the University of Maryland at College Park in 2014, focusing on the transatlantic education of American artists through the workshop of Benjamin West in the late eighteenth and early nineteenth centuries. His research interests also include the formal structures of contemporary comic books, art historical pedagogy, and museum education. Recent publications include “Classical Symbolism in *Asterios Polyp*” (with HyoSil Suzy Hwang-Eschelbacherin) in *Son of Classics and Comics* (2016), and “Exploring the Art in Sequential Art: An Art Historical Approach to Teaching Comics” in *Graphic Novels and Comics in the Classroom* (2013)."
     pic: "images/contributors/afox.jpg"
 
+  - id: neaton
+    first_name: Natasha
+    last_name: Eaton
+    full_name: Natasha Eaton
+    title: "Reader in the History of Art"
+    affiliation: "University College London"
+    bio: "Natasha Eaton is Reader in the History of Art at University College London. She is the author of two monographs: *Mimesis Across Empires: Artworks and Networks in India, 1765–1860* (Durham, NC: Duke University Press, 2013) and *Colour, Art and Empire: Visual Culture and the Nomadism of Representation* (London: I.B.Tauris, 2013). Currently, she is Leverhulme Trust research fellow working on art and labour in the Indian Ocean region. She is an editor of the journal Third Text."
+    pic: "images/contributors/neaton.jpg"
+
   - id: ifraser
     type: secondary
     first_name: Inga
@@ -1213,6 +1247,15 @@ contributor:
     title: "Associate Professor of History"
     affiliation: "University of Western Australia"
     pic: "images/contributors/agaynor.jpg"
+
+  - id: hleaper
+    type: secondary
+    first_name: Hana
+    last_name: Leaper
+    full_name: "Hana Leaper"
+    affiliation: "Liverpool John Moores University"
+    bio: "Dr Hana Leaper was the Paul Mellon Centre Fellow at the Paul Mellon Centre for Studies in British Art for three years between 2014–17. In 2014 she was amongst the first scholars to work on the Angelica Garnett Gift at Charleston. She was subsequently commissioned to contribute catalogue essays for the *Vanessa Bell* exhibition at Dulwich Picture Gallery in 2017 (‘Between London and Paris’), and for the *Virginia Woolf: an exhibition inspired by her writings* touring exhibition beginning at Tate St Ives in February 2018 ('From Inheritance to Legacy: Virginia Woolf’s place within networks of women creatives'). She is currently John Moores Painting Prize Senior Lecturer and Development Manager, an embedded post based at Liverpool John Moores University."
+    pic: "images/contributors/hleaper.jpg"
 
   - id: kgazzard
     type: secondary
@@ -1500,6 +1543,16 @@ contributor:
     title: "Artist and Lecturer"
     affiliation: "Newcastle University"
     pic: "images/contributors/nhebson.jpg"
+
+  - id: tcrow
+    type: secondary
+    first_name: Thomas
+    last_name: Crow
+    full_name: Thomas Crow
+    title: "Rosalie Solow Professor"
+    affiliation: "Institute of Fine Arts, New York University"
+    bio: "Thomas Crow's teaching and research at the Institute of Fine Arts, New York University, where he is Rosalie Solow Professor, reach from the later seventeenth century in Europe to the contemporary in both Europe and America. His first book, *Painters and Public Life in Eighteenth-Century Paris*, was quickly recognized as providing a fresh model for understanding the art and larger culture of its period. At the same moment, his much-reprinted essay, 'Modernism and Mass Culture in the Visual Arts', identified interdependency rather than antagonism between modern fine art and popular visual expression. All of these concerns—the broad social history of artistic form and reassessing cultural hierarchies alongside the individual formations of artists—came together in his recent, warmly received *Long March of Pop: Art, Music, and Design 1930-1995*. His doctoral degree is from UCLA, and he holds honorary doctorates from Pomona College and the Courtauld Institute. Before coming to the Institute of Fine Arts, his appointments included Chairs at the University of Sussex and at Yale University, as well as the Directorship of the Getty Research Institute in Los Angeles. He has also been for twenty years an active contributing editor at *Artforum*. In 2015, he delivered the Andrew Mellon Lectures, on art around the fall of Napoleon, at the National Gallery in Washington DC."
+    pic: "images/contributors/tcrow.jpg"
 
   - id: rhellen
     type: secondary
