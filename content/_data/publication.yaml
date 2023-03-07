@@ -254,6 +254,13 @@ contributor:
     bio: "Assistant Professor, Radboud University Nijmegen"
     pic: "images/contributors/jdbaetens.jpg"
 
+  - id: poldfield
+    type: secondary
+    first_name: Pippa
+    last_name: Oldfield
+    bio: "Pippa Oldfield is Head of Programme at Impressions Gallery, Bradford, a charity that helps people understand the world through photography. She is also an Honorary Research Fellow at Durham University and a member of the research group CVAC (Centre for Visual Arts and Culture). She has curated numerous national touring exhibitions on the theme of war, and has a particular interest in the ways in which gender and photography intersect. She is the author of *Bringing the War Home* (Impressions Gallery, 2010) and is currently working on the monograph *Photography and War for Reaktion*."
+    pic: "images/contributors/poldfield.jpg"
+
   - id: cbaker
     type: secondary
     first_name: Christopher
@@ -778,6 +785,15 @@ contributor:
     title: "Senior Lecturer in Art History"
     affiliation: "University of Sussex"
     pic: "images/contributors/mclarke.jpg"
+
+  - id: eprettejohn
+    type: secondary
+    first_name: Elizabeth
+    last_name: Prettejohn
+    full_name: "Elizabeth Prettejohn"
+    affiliation: "University of York"
+    bio: "Liz Pretejohn is a Professor of History of Art at the University of York. She has worked as Curator of Paintings and Sculpture at Birmingham Museums & Art Gallery and held chairs at the Universities of Plymouth and Bristol. Prettejohn is an active guest curator and has co-curated exhibitions on Lawrence Alma-Tadema, Dante Gabriel Rossetti, and John William Waterhouse. In 2011 she gave the Paul Mellon Lectures at the National Gallery, London, on ‘The National Gallery and the English Renaissance of Art’."
+    pic: "images/contributors/eprettejohn.jpg"
 
   - id: mclegg
     type: secondary
@@ -1404,6 +1420,24 @@ contributor:
     affiliation: "University of Kent"
     bio: "Martin Hammer is Professor of Art History at the University of Kent and currently Head of the School of Arts. His many publications have engaged with the art of Naum Gabo, Graham Sutherland, and Francis Bacon (e.g. *Francis Bacon and Nazi Propaganda*, Tate, 2012); with the idea of the Naked Portrait, the theme of an exhibition he curated in 2007 for the Scottish National Portrait Gallery and Compton Verney; and, more recently, patterns of transatlantic artistic exchange, with particular reference to the early work of David Hockney."
     pic: "images/contributors/mhammer.jpg"
+
+  - id: sdaniels
+    type: secondary
+    first_name: Stephen
+    last_name: Daniels
+    full_name: Stephen Daniels
+    affiliation: "University of Nottingham"
+    bio: "Stephen Daniels is Professor Emeritus of Cultural Geography at the University of Nottingham. He is author and co-author of a number of books and exhibition catalogues on the landscape arts, including *The Iconography of Landscape* (1987), *Mapping the Landscape* (1990), *Fields of Vision* (1994), *Humphry Repton: Landscape Gardening and the Geography of Georgian England* (1999), *Art of the Garden* (2004), *Paul Sandby: Picturing Britain* (2009), and *Landscapes of the National Trust* (2015). He is currently completing a book on the nineteenth-century topographer, John Britton."
+    pic: "images/contributors/sdaniels.jpg"
+
+  - id: gperry
+    type: secondary
+    first_name: Gill
+    last_name: Perry
+    full_name: "Gill Perry"
+    affiliation: "Open University"
+    bio: "Gill Perry is Emeritus Professor of Art History at the Open University and Honorary Visiting Professor at Birkbeck College, University of London. She has published widely on eighteenth-century British art and modern and contemporary art. Her publications include *Themes in Contemporary Art*, co-edited and co-authored with Paul Wood (London: Yale University Press, 2004); *Spectacular Flirtations: Viewing the Actress in British Art 1768–1820* (London: Yale University Press for the Paul Mellon Centre for Studies in British Art, 2007); and *The First Actresses: Nell Gwynn to Sarah Siddons* (London: National Portrait Gallery 2011). Recent publications have explored relationships between gender, “home”, and identity, including *Playing at Home: The House in Contemporary Art* (London: Reaktion Books, 2013), and the catalogue essay “Traces of Home and Changes of Skin”, for the exhibition *Women House, Paris and Washington, 2017–2018*. Her forthcoming book explores issues of “home”, landscape, and cultural geography: *Islands in Contemporary Art* (London: Reaktion Books, 2020)."
+    pic: "images/contributors/gperry.jpg"
 
   - id: mhallett
     type: secondary
@@ -2175,6 +2209,16 @@ contributor:
     bio: "Saloni Mathur, Professor of Modern and Contemporary South Asian Art, University of California, Los Angeles"
     pic: "images/contributors/smathur.jpg"
 
+  - id: tbarringer
+    type: secondary
+    first_name: Tim
+    last_name: Barringer
+    full_name: "Tim Barringer"
+    title: "Paul Mellon Professor and Chair of the Department of the History of Art"
+    affiliation: "Yale University"
+    bio: "Tim Barringer is Paul Mellon Professor and Chair of the Department of the History of Art at Yale University. His books include *Reading the Pre-Raphaelites* (1999; new edition, 2012) and *Men at Work: Art and Labour in Victorian Britain* (2005). With colleagues, he co-edited *Frederic Leighton: Antiquity, Renaissance, Modernity* (1998), *Colonialism and the Object* (1998), *Art and the British Empire* (2007), *Writing the Pre-Raphaelites* (2009), and *Victorian Jamaica* (2018). He was co-curator of *American Sublime* (2002), *Art and Emancipation in Jamaica* (2007), *Opulence and Anxiety* (2007), *Before and After Modernism* (2010), *Pre-Raphaelites: Victorian Avant-Garde* (2012), and *Pastures Green and Dark, Satanic Mills* (2013); he is co-curator, with Elizabeth Kornhauser, of *Thomas Cole’s Journey: Atlantic Crossings* (Metropolitan Museum of Art, New York and National Gallery, London, 2018), *Picturesque and Sublime* (2018), and *Radical Victorians* (2019). His is finishing a book *Broken Pastoral: Art and Music in Britain, Gothic Revival to Punk Rock*."
+    pic: "images/contributors/tbarringer.jpg"
+
   - id: dmatless
     type: secondary
     first_name: David
@@ -2635,6 +2679,23 @@ contributor:
     full_name: "Ianna Recco"
     bio: "Ianna Recco is a curatorial assistant at the Smithsonian Institution's National Museum of Asian Art. She received her MA from the Courtauld Institute of Art with a specialisation in circum-Atlantic visual culture, circa 1770–1830 and her BA from Hamilton College in Art History and Classical Languages."
     pic: "images/contributors/irecco.jpg"
+
+  - id: gsalter
+    type: secondary
+    first_name: Gregory
+    last_name: Salter
+    full_name: "Gregory Salter"
+    affiliation: "University of Birmingham"
+    bio: "Greg Salter is a lecturer in art history at the University of Birmingham. His first book Art And Masculinity *In Post-War Britain: Reconstructing Home* was published in 2019. He is currently researching queer transnational art histories from Britain since the 1960s."    
+    pic: "images/contributors/gsalter.jpg"
+
+  - id: gsmith2
+    type: secondary
+    first_name: Greg
+    last_name: Smith
+    full_name: Greg Smith
+    bio: "Greg Smith is an independent art historian, who has published extensively on the history of British watercolours and watercolourists, as well as landscape artists working in Italy. He has also worked as a curator at the Whitworth Art Gallery, Manchester, the Design Museum, London, and the Barber Institute of Fine Art, Birmingham, and has organised exhibitions on the work of Thomas Girtin (Tate Britain), Thomas Jones (National Gallery of Wales), and Thomas Fearnley (Barber Institute of Fine Art). As Senior Research Fellow at the Paul Mellon Centre for Studies in British Art, Greg Smith published a major online project: *Thomas Girtin (1775–1802): An Online Catalogue, Archive and Introduction to the Artist*."
+    pic: "images/contributors/gsmith2.jpg"
 
   - id: creed
     type: secondary
