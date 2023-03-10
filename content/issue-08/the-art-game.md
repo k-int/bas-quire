@@ -1,5 +1,5 @@
 ---
-title: "\"The Art Game\""
+title: "The Art Game"
 subtitle: "Television, *Monitor*, and British Art at the turn of the 1960s"
 congtributor:
  - id: mclegg
@@ -65,25 +65,13 @@ Television itself had emerged as a powerful cultural presence during the 1950s, 
 
 Within the art history of the British post-war period, however, the role of television as a still new, and potentially disruptive, medium has not been a subject of analysis.[^6] The scholarly literature which does exist on the development of arts television comes instead from a film and media studies tradition. In the case of *Monitor*, for example, a single scholarly article, published in 2011 by Mary Irwin, considers the institutional context of the series' creation and the marginalisation of women within its production team.[^7] *Monitor* is discussed extensively in two book-length critical histories of arts television, one published in 1993 by John Walker, and one in 2007 by John Wyver, which each propose typologies of arts programme, with *Monitor* recognised as the prototype arts magazine.[^8] However, whilst of great value in its own terms, this literature is primarily concerned with television history, and makes limited connection to the art historiography of the period---for example few links are drawn between television coverage and the vigorous critical debates then being conducted in print and subsequently examined by art historians such as Margaret Garlake and James Hyman.[^9] John Wyver has published a detailed study of a single *Monitor* episode, Ken Russell's programme-length film "Pop Goes the Easel" from 1962; however, Wyver's primary concern is again with television history and the innovative semiotic freedom of Russell's direction ([Fig. 1](#figure1)).[^10]
 
-# Sorry
-
-Because of its privacy settings, this video cannot be played here.
-
 {% assign DOI = "p4" %}
 
 In her work on the social history of British art from 1945 to 1960, Margaret Garlake has developed the concept of the "art support system" to describe the network of institutions which underpins artistic activity in a modern state.[^11] Though Garlake does not consider the emergence of television, her concept provides a useful framework for addressing this lacuna in the art history of the period, and for thinking about both the vectors through which television could affect art and how television related to existing aspects of the social context for art. Looking primarily at art production, Garlake emphasises the expansion of art education, the creation of new commercial dealerships, and the emergence of the state as a patron in post-war Britain. Of course, elements of the "support system" also shaped the reception of art, for example by establishing its monetary value and the terms of critical debate. These included art publishing and commercial and public galleries, but of particular importance were those institutions that supported critical discourse. Garlake notes that "ideas and theoretical constructions characterise the support system of the 1950s" in particular, the period was one of intense debate around such issues as abstraction, realism and political commitment.[^12] Both Garlake and Hyman have described some of the channels through which these conversations were pursued, notably serious but non-specialist magazines such as the *New Statesman* and the BBC's *The Listener*.[^13] Radio, too, offered a channel for substantial critical interventions, from Nikolaus Pevsner's Reith Lectures, *The Englishness of English Art*, in 1955 to David Sylvester's review of *The New American Painting* on the Third Programme, the Corporation's principal cultural radio network, in 1959.[^14]
 
 {% assign DOI = "p5" %}
 
-# An error occurred. {#an-error-occurred. .message}
-
-Unable to execute JavaScript.
-
 In the rest of this article, I use *Monitor* to consider television's evolving role and its impact on the "art support system" at the turn of the 1960s. After an assessment of the place of *Monitor* in the history of visual art on television, detailed readings are made of three *Monitor* programmes: "Scottish Painters" ([Fig. 2](#figure2)), directed by Ken Russell, from 1959, which is about Robert Colquhoun and Robert MacBryde; "George Chapman: Painter in Wales"*,* directed by David Jones, from 1961; and "Private View", directed by John Schlesinger, also from 1961, which is about four young artists approaching their first solo shows ([Fig. 3](#figure3)). Through these I look to demonstrate how, as television stepped into the arena of contemporary art, it started shaping other institutions around itself. Yet at the same time it also obscured its own increasing impact on the art market and on the reception of art by representing itself as a naïve commentator, aligned with its imaginary viewer on the outside of the support system. Developing approaches by programme makers also tended to avoid engagement with the key contemporary critical debates that were being pursued in print and echoed on radio, emphasising instead biography and helping to establish the conditions for the "promotional culture" that was to further reshape the British art scene.[^15]
-
-# An error occurred. {#an-error-occurred. .message}
-
-[Try watching this video on www.youtube.com](https://www.youtube.com/watch?v=A5qKgYgRvPA), or enable JavaScript if it is disabled in your browser.
 
 {% assign DOI = "002" %}
 
@@ -97,10 +85,6 @@ Coverage of visual art was substantial within television's limited pre-war outpu
 
 Pre-war visual art coverage was dominated by the illustrated lecture from the television studio, complemented by occasional conversations (for example between Piper and Serge Chermayeff) and group discussions (such as the "Traditional versus Modern Art" debate chaired by William Rothenstein in 1939, for which a full transcript was published in *The* *Listener*).[^21] These formats continued to be utilised and developed when television broadcasting resumed at the end of the war, when visual art was again given substantial airtime. Coverage of exhibitions included John Rothenstein on the Tate's show of American painting in 1946, the modernist critic Douglas Cooper on van Gogh\'s *The Yellow House* in 1947, to coincide with a Tate show of the artist's work, and a brief attempt to revive the gallery round-up in 1950, this time presented by the painter Rodrigo Moynihan. The series *The Eye of the Artist*, which ran from 1947 to 1949, epitomises the eclectic subject matter being tackled at the time. It featured a programme on the art of India, invited an artist to paint live in the television studio, and hosted a conversation about the potential of industry and commerce to act as modern patrons. In 1958 Kenneth Clark's programmes for the new commercial channel Independent Television (ITV) started with the series *Is Art Necessary?* However, the use of expert guests (including John Berger in the third episode) was soon abandoned in favour of a more focused lecture format, which was also adopted for Clark's *Five Revolutionary Painters*  in 1959 ([Fig. 4](#figure4)).[^22]
 
-# Sorry {#sorry}
-
-Because of its privacy settings, this video cannot be played here.
-
 {% assign DOI = "p8" %}
 
 Given how little material survives, the content of these programmes is often difficult to judge. However, they seem to have engaged multiple viewpoints on intellectually-challenging and controversial (if mainstream) topics. For example, the *Radio Times*' listing for *Argument on Picasso*, which was broadcast for the artist's seventieth birthday in October 1951, noted that, "Discussion still goes on over the work of one of the most controversial figures of our time" and promised that the debate would be "taken up in the studio" with the aid of original drawings borrowed from the Institute of Contemporary Arts.[^23] John Wyver has argued that the predominant formats for presenting visual art in British-made television before 1962 gave primacy to the word, with an explanatory voice constraining the polysemic possibility of pictures.[^24] This is a useful emphasis, but it is also worth noting that the voices heard in such programmes articulated diverse critical viewpoints, as with the debate in *Argument on Picasso* or the use of a partisan, contentious art critic such as Douglas Cooper as well as established figures such as John Rothenstein. There was also an interplay between different media, with connections made between television and the established critical culture of radio: Cooper's van Gogh piece, for example, was linked to an extended discussion on the Third Programme.[^25]
@@ -109,17 +93,9 @@ Given how little material survives, the content of these programmes is often dif
 
 From 1951, the BBC began to show a number of films directed by John Read, son of the prominent art critic Herbert Read, several of which were made as co-productions with the Arts Council.[^26] As films these were more ambitious productions than the largely studio-based live television output. The focus was on British art, and often---as in the case of Moore, Sutherland, Piper, and Sickert---on a modernist inflected idiom, but also with an emphasis on the British landscape and the British artistic tradition.[^27] Most took the form of filmed profiles, often emphasising the act of creating a particular artistic work. As John Wyver has noted, they offered the viewer an unusually open-ended approach, in contrast to more overtly didactic formats, and had a limited contribution from critics (characteristics which were to be inherited by aspects of *Monitor*'s content, discussed below).[^28] A partial exception to this approach was Read's "Artists Must Live", first broadcast in 1953, an investigative essay into a perceived crisis of patronage narrated by Basil Taylor ([Fig. 5](#figure5)).
 
-# Sorry {#sorry}
-
-Because of its privacy settings, this video cannot be played here.
-
 {% assign DOI = "p10" %}
 
 In 1958, most of Read's output to date, along with two new films, one on Reg Butler and a further one on Henry Moore, were packaged into a series, *British Art and Artists*, and shown during *Monitor*'s first summer break. *Monitor's* own first episode in 1958 included a six-minute segment on Jacob Epstein (who was 78 in 1958 and was to die the next year) which was also directed by Read ([Fig. 6](#figure6)). The soundtrack used an archive recording of Epstein reflecting on his work and practice, his words juxtaposed with still photographs of his sculpture and his studio (taken by Anthony Ireland of the RCA). The camera roves amongst details within these stills, the results spliced with pre-existing film of Epstein carving. The short film put down a marker for how directorial ingenuity would be applied to presenting visual art within *Monitor* and indicated Read's influence on its approach.
-
-# An error occurred. {#an-error-occurred. .message}
-
-Unable to execute JavaScript.
 
 {% assign DOI = "p11" %}
 
