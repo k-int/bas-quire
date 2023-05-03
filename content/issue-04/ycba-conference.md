@@ -1,5 +1,6 @@
 ---
-title: "Conference Proceedings: *Photography and Britishness*"
+title: "Conference Proceedings"
+subtitle: "Photography and Britishness"
 contributor:
  - id: svturner
  - id: mdroth
@@ -36,7 +37,7 @@ How did the camera instantiate British sovereignty in imperial contexts during t
 
 {% assign DOI = "p3" %}
 
-## Jeff Rosen, *Julia Margaret Cameron, Prince Alamayou, and the "Secret of England's Greatness"*
+## Jeff Rosen, *Julia Margaret Cameron, Prince Alamayou, and the \"Secret of England's Greatness\"*
 
 In June 1868, as Great Britain was concluding its war with Abyssinia, the British army stormed the mountaintop stronghold of King Theodore, deposing the child Prince Alamayou, leaving him orphaned and alone. In July, the young boy was transported from Africa to Freshwater on the Isle of Wight in the care of a British officer. Soon thereafter, he was escorted to Julia Margaret Cameron's studio, becoming the subject of numerous photographs that Cameron copy- righted on July 23, 27, and 29. Cameron clearly hoped to take advantage of the popular news of Britain's military triumph as much as Queen Victoria's expressed interest in his welfare and future upbringing. On July 15, 1868, for example, the Illustrated London News wrote the following: "Theodore's son is at present staying in the Isle of Wight with Captain Speedy. He is to be brought up as the son of an English gentleman, with the view of his entering the Indian Civil Service."
 
