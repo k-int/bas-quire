@@ -119,7 +119,7 @@ Virginia Woolf's 1938 epistolary text, *Three Guineas*, is widely recognized as 
 
 {% assign DOI = "p13" %}
 
-## Lynda Nead, *"Life in the Elephant": The Grain of Post-War Photography and Identity*
+## Lynda Nead, *\"Life in the Elephant\": The Grain of Post-War Photography and Identity*
 
 In January 1949 the weekly illustrated magazine *Picture Post* published a six-page photo story on everyday life in the Elephant and Castle, a poor and bomb-damaged neighborhood of South London. With words by the journalist Albert Lloyd and original photographs by the *Post's* Chief Photographer, Bert Hardy, the article powerfully captures the look and feel of life in the run-down terraced streets and homes of postwar Britain.
 
@@ -139,7 +139,7 @@ In this panel discussion, chaired by Jennifer A. Watts, the speakers from  Sess
 
 {% assign DOI = "p15" %}
 
-## Mathilde Bertrand, *Photography and the "Condition of Britain": The Photographic Corpus of the Community Development Projects, 1969--1978*
+## Mathilde Bertrand, *Photography and the \"Condition of Britain\": The Photographic Corpus of the Community Development Projects, 1969--1978*
 
 In 1969, Harold Wilson's Labour government launched a vast social action program across Britain, known as the Community Development Projects. Teams of researchers and community workers conducted investigations in twelve areas a ected by poverty, to assess the effectiveness and coordination of social policies at a local level. Under this program, resource centers were set up locally to encourage community improvement initiatives. Conclusions drawn in the "inter-project reports" criticized the government's conception of poverty as the result of individual and cultural factors and pointed instead to structural factors in the production of inequalities. Thirteen photographers were commissioned by the projects to produce documentary reports on their activities and to provide photographs for use in the nal reports of the CDPs. These images function as documents of an era marked by economic, cultural, and social transition, with a focus on conditions in poverty-stricken areas. They depict the consequences of industrial, economic, and housing policies on working-class communities but also document e orts to develop campaigns locally.
 
@@ -155,9 +155,9 @@ All three of the above series draw on several elements of British landscape pain
 
 {% assign DOI = "p17" %}
 
-## Emilia Terracciano, *"Letting My Hair Loose": Revisiting Victorian Legacies in Contemporary Sri Lankan Photography*
+## Emilia Terracciano, *\"Letting My Hair Loose\": Revisiting Victorian Legacies in Contemporary Sri Lankan Photography*
 
-Within British feminist studies of colonialism, modernist issues are often treated as if the goals of modernization were easily shared by western and colonized women. This paper attempts to dispel the myth, suggesting that to examine gender in a colonial context is to embark upon a historical analysis of power, class formation, and gender. Feminists continue celebrating the aesthetic of British photographer Julia Margaret Cameron as a powerful rebuttal to Victorian patriarchal notions of feminine subjectivity and perceptual mastery. But in the narrative binding of the feminization of photography to Victorian mythologies of motherhood, propriety in the British imagination breaks down when we consider Cameron's oddly ethnographic photographs of indentured Tamil female laborers from Ceylon. In contrast and as a point of departure, this paper explores Sri Lankan photographer Anoli Perera's critique of Victorian femininity. Speci cally, it considers how Perera's performative approach to studio photography may subvert Victorian notions of female comportment, virtue, and narrative gaze by using a powerful symbol of female sexuality: the sitter's hair. Beyond the idea of a protective veil, disheveled hair is turned into a form of resistance in these images.
+Within British feminist studies of colonialism, modernist issues are often treated as if the goals of modernization were easily shared by western and colonized women. This paper attempts to dispel the myth, suggesting that to examine gender in a colonial context is to embark upon a historical analysis of power, class formation, and gender. Feminists continue celebrating the aesthetic of British photographer Julia Margaret Cameron as a powerful rebuttal to Victorian patriarchal notions of feminine subjectivity and perceptual mastery. But in the narrative binding of the feminization of photography to Victorian mythologies of motherhood, propriety in the British imagination breaks down when we consider Cameron's oddly ethnographic photographs of indentured Tamil female laborers from Ceylon. In contrast and as a point of departure, this paper explores Sri Lankan photographer Anoli Perera's critique of Victorian femininity. Specifically, it considers how Perera's performative approach to studio photography may subvert Victorian notions of female comportment, virtue, and narrative gaze by using a powerful symbol of female sexuality: the sitter's hair. Beyond the idea of a protective veil, disheveled hair is turned into a form of resistance in these images.
 
 {% assign DOI = "p18" %}
 

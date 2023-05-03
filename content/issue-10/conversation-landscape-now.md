@@ -9,7 +9,7 @@ language: en
 layout: essay
 pub_date: 2018-11-29
 pub_type: publication-periodical
-series_issue_number: 10
+series_issue_number: 1004
 series_periodical_name: British Art Studies
 abstract: "\"Conversation Piece\" is a *British Art Studies* series that draws together a group of contributors to respond to an idea, provocation, or question."
 ---
