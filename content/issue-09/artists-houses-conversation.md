@@ -2,7 +2,7 @@
 title: "Laboratories of Creativity:"
 subtitle: "The Alma-Tademas' Studio-Houses and Beyond"
 contributor:
- - id: eprettejphn
+ - id: eprettejohn
  - id: ptrippi
 identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-09/conversation"
