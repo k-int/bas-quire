@@ -32,6 +32,7 @@ const searchPlugin = require('~plugins/search')
 const shortcodesPlugin = require('~plugins/shortcodes')
 const syntaxHighlightPlugin = require('@11ty/eleventy-plugin-syntaxhighlight')
 const transformsPlugin = require('~plugins/transforms')
+const elasticSearch = require('~plugins/elasticSearch')
 
 const inputDir = 'content'
 const outputDir = '_site'
@@ -146,6 +147,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(citationsPlugin)
   eleventyConfig.addPlugin(navigationPlugin)
   eleventyConfig.addPlugin(searchPlugin, collections)
+
   eleventyConfig.addPlugin(syntaxHighlightPlugin)
 
   /**
@@ -256,6 +258,37 @@ module.exports = function(eleventyConfig) {
         middlewareMode: true,
         mode: 'development'
       }
+    }
+  })
+
+
+  // Add the elastic search plugin
+  eleventyConfig.addPlugin(elasticSearch, {
+    collection: "html", // Use items that are part of the "html" 11ty collection.
+
+    // Supply a function that receives the item from the collection and returns a single ES document.
+    document: ({ data, templateContent }) => {
+      // Manipulate the item data into the desired formats.
+      const { publication, page } = data;
+      const { title, subtitle, description, copyright, license, resource_link: resourceLink } = publication
+      const contributors = publication?.contributor?.map(con => {
+        const trimmed = { ...con };
+        delete trimmed.pages;
+        return trimmed;
+      }) || [];
+
+      // Return the object representing a single entry in the index for ES.
+      return {
+        _id: page.url,
+        contributors,
+        title,
+        subtitle,
+        description: description.full,
+        copyright,
+        license,
+        resourceLink,
+        _source: { page }
+      };
     }
   })
 

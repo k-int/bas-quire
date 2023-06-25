@@ -43,3 +43,6 @@ pids
 desktop.ini
 thumbs.db
 
+.settings
+.project
+/es
