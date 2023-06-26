@@ -369,7 +369,7 @@ contributor:
     url: https://orcid.org/0000-0002-5638-6083
     pic: "images/contributors/mbeaumont.jpg"
 
-  - id: jben-tovim
+  - id: jbentovim
     type: secondary
     first_name: Joshua
     last_name: Ben-Tovim
@@ -1688,6 +1688,15 @@ contributor:
     full_name: "Jessica Horton"
     title: "Associate Professor, Department of Art History"
     affiliation: "The University of Delaware"
+    pic: "images/contributors/jhorton.jpg"
+
+  - id: gbrockington
+    type: secondary
+    first_name: Grace
+    last_name: Brockington
+    title: "Senior Lecturer in the History of Art"
+    affiliation: "University of Bristol"
+    bio: "Grace Brockington is Senior Lecturer in the History of Art at the University of Bristol. As a specialist in modern British art, she has written about art in relation to war and pacifism, internationalism, the Bloomsbury group, puppetry, and universal language. Together with Sarah Victoria Turner, she convened the AHRC-funded research network “Internationalism and Cultural Exchange, 1870–1920” (2009–2014). She was guest curator of the exhibition *Gaudier-Brzeska: Disputing the Earth* (Royal West of England Academy, 2019)."
     pic: "images/contributors/jhorton.jpg"
 
   - id: hhoward
