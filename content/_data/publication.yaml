@@ -76,6 +76,12 @@ contributor:
     url: https://orcid.org/0000-0002-6393-5052
     pic: contributors/lgartlan.jpg
 
+  - id: jmunns
+    type: secondary
+    first_name: John
+    last_name: Munns
+    affiliation: University of Cambridge
+
   - id: slgall
     type: secondary
     first_name: Shalini
@@ -1689,6 +1695,17 @@ contributor:
     title: "Associate Professor, Department of Art History"
     affiliation: "The University of Delaware"
     pic: "images/contributors/jhorton.jpg"
+
+  - id: cgilroy-ware
+    first_name: Cora
+    last_name: Gilroy-Ware
+    title: Associate Professor, History of Art
+    affiliation: University of Oxford
+
+  - id: dpcorbett
+    first_name: David Peters
+    last_name: Corbett
+    affiliation: Courtauld Institute of Art
 
   - id: gbrockington
     type: secondary
@@ -3565,6 +3582,15 @@ contributor:
     title: "Assistant Professor in Business History"
     affiliation: "University of Tokyo"
     pic: "images/contributors/kyamamoto.jpg"
+
+  - id: rjohns
+    type: secondary
+    first_name: Richard
+    last_name: Johns
+    title: "Senior Lecturer in History of Art"
+    affiliation: "University of York"
+    bio: "Richard Johns is Senior Lecturer in History of Art at the University of York where his research and teaching encompasses various aspects of British art. Landscape-related publications include *Framing Robert Aggas: The Painter-Stainers’ Company and the English School of Painters* (2008), *Turner and the Sea* with Christine Riding (2013) and *From the Nore: Turner at the Mouth of the Thames* (2016). In 2019 he co-curated the exhibition *Ruskin, Turner & the Storm Cloud* with Suzanne Fagence Cooper."
+    pic: "images/contributors/rjohns.jpg"
 
   - id: cyang
     type: secondary

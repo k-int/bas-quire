@@ -1,17 +1,30 @@
 ---
-title: There\'s No Such Thing as British Art
+title: There's No Such Thing as British Art
 identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-01/conversation"
   issn: 2058-5462
+contributor:
+  - id: rjohns
+    context: "coordinated by"
 language: en
-layout: essay
+layout: splash
+BAStype: opinion-piece
+image: figures/banners/nstaba_banner.jpg
 order: 102
 pub_date: 2015-11-16
 pub_type: publication-periodical
 series_issue_number: 1
 series_periodical_name: British Art Studies
 abstract: "\"Conversation Piece\" is a *British Art Studies* series that draws together a group of contributors to respond to an idea, provocation, or question."
+subjects:
+- type: topics
+  name: Nationalism, Satire, Feminism, British Empire, Art theory, Art schools, Immigration and Diaspora, Postcolonial Studies
+- type: period
+  name: 1000–1100, 1100–1200, 1200–1300, 1300–1400, 1400–1500, 1500–1600, 1600–1700, 1700–1800, 1800–1900, 1900–2000, 2000–Present
+- type: place
+  name: United Kingdom of Great Britain and Northern Ireland
 ---
+{% contributors 'rjohns' context=respondent type='primary' format='name-title' %}
 
 {% assign DOI = "001" %}
 
@@ -23,11 +36,13 @@ For the six million and more annual visitors to the National Gallery in London, 
 
 {% assign DOI = "p2" %}
 
-The immaculate, beautifully conserved array of painting from [Hogarth to Turner](http://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-34) in the Sackler and adjacent rooms is a consequence of a legal separation, decreed by the [National Gallery and Tate Gallery Act 1954](http://www.legislation.gov.uk/ukpga/1954/65/pdfs/ukpga_19540065_en.pdf). It comprises a few select paintings which, for the most part, were judged worthy of inclusion alongside the prevailing canon of Western European art, while the majority of the national collection of British painting became the charge of the newly independent Tate. British art at the National Gallery is thus a wholly modern, establishment vision of a presumed Golden Age: a paragon of nineteenth-century taste, distilled by twentieth-century cultural policy and inflected by twenty-first-century curatorial practice. The handful of subsequent acquisitions---[*Mr and Mrs Andrews*](http://www.nationalgallery.org.uk/paintings/thomas-gainsborough-mr-and-mrs-andrews) by Thomas Gainsborough in 1960, *Whistlejacket* by George Stubbs in 1997 ([fig. 1](#figure1))---only reconfirm the exclusionary nature of the canon of British art.
+The immaculate, beautifully conserved array of painting from [Hogarth to Turner](http://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-34) in the Sackler and adjacent rooms is a consequence of a legal separation, decreed by the [National Gallery and Tate Gallery Act 1954](http://www.legislation.gov.uk/ukpga/1954/65/pdfs/ukpga_19540065_en.pdf). It comprises a few select paintings which, for the most part, were judged worthy of inclusion alongside the prevailing canon of Western European art, while the majority of the national collection of British painting became the charge of the newly independent Tate. British art at the National Gallery is thus a wholly modern, establishment vision of a presumed Golden Age: a paragon of nineteenth-century taste, distilled by twentieth-century cultural policy and inflected by twenty-first-century curatorial practice. The handful of subsequent acquisitions---[*Mr and Mrs Andrews*](http://www.nationalgallery.org.uk/paintings/thomas-gainsborough-mr-and-mrs-andrews) by Thomas Gainsborough in 1960, *Whistlejacket* by George Stubbs in 1997 ([fig. 1](#nstaba-fig1))---only reconfirm the exclusionary nature of the canon of British art.
 
 {% assign DOI = "p3" %}
 
-The same postwar decade that shaped the presence of British art in Trafalgar Square also witnessed the broadcast in 1955 and subsequent publication of Nikolaus Pevsner's affectionate reflections on the [*Englishness of English Art*](http://www.bbc.co.uk/programmes/p00h9llv). Around the same time, a new generation of artists emerged whose work disturbed the sentimentality of what Pevsner famously termed the "geography of art". David Hockney's painting *Man Stood in Front of his House with Rain Descending* (1962; [fig. 2](#figure2)), also known as *The Idiot*, does this by presenting a catalogue of clichés of Britishness: its architecture, dress codes, habits. In its content, its painterly figuration, in the droll textual framing of its title, and even its size---it occupies the same wall space as a full-length portrait by Joshua Reynolds or Gainsborough---it is at once quintessentially, undeniably British (or should that be English?) *and* contemptuous of the patriarchal confines of its own, rain-soaked national mythology.
+The same postwar decade that shaped the presence of British art in Trafalgar Square also witnessed the broadcast in 1955 and subsequent publication of Nikolaus Pevsner's affectionate reflections on the [*Englishness of English Art*](http://www.bbc.co.uk/programmes/p00h9llv). Around the same time, a new generation of artists emerged whose work disturbed the sentimentality of what Pevsner famously termed the "geography of art". David Hockney's painting *Man Stood in Front of his House with Rain Descending* (1962; [fig. 2](#nstaba-fig2)), also known as *The Idiot*, does this by presenting a catalogue of clichés of Britishness: its architecture, dress codes, habits. In its content, its painterly figuration, in the droll textual framing of its title, and even its size---it occupies the same wall space as a full-length portrait by Joshua Reynolds or Gainsborough---it is at once quintessentially, undeniably British (or should that be English?) *and* contemptuous of the patriarchal confines of its own, rain-soaked national mythology.
+
+{% figuregroup '2', 'nstaba-fig1, nstaba-fig2' %}
 
 {% assign DOI = "p4" %}
 
@@ -63,6 +78,8 @@ In the same spirit of experiment, and play, the interventions that appear on the
 
 {% assign DOI = "002" %}
 
+{% contributors 'eprettejohn' context=respondent type='primary' format='name-title' %}
+
 # "We need to look much more seriously at a far wider range of works whose value is genuinely uncertain."
 
 {% assign DOI = "p12" %}
@@ -91,9 +108,13 @@ I think we still need to tackle the "art" side---then we can get beyond the stoc
 
 {% assign DOI = "p18" %}
 
-The argument is best made visually, with a selection of paintings from the period I study ([figs. 3--9](#figure3))---works that so far have evaded serious scholarly attention, and which remain on the "back stairs" of art history.
+The argument is best made visually, with a selection of paintings from the period I study ([figs. 3--9](#nstaba-figure3))---works that so far have evaded serious scholarly attention, and which remain on the "back stairs" of art history.
+
+{% figuregroup '5', 'nstaba-fig3, nstaba-fig4, nstaba-fig5, nstaba-fig6, nstaba-fig7' %}
 
 {% assign DOI = "003" %}
+
+{% contributors 'rwentworth' context=respondent type='primary' format='name-title' %}
 
 # "I think the weather test, or rather the fall of light, is mightily powerful, pretty much political."
 
@@ -123,6 +144,8 @@ The multiple forms of cultural expression from film to television, clothing to m
 
 {% assign DOI = "p25" %}
 
+{% figure 'nstaba-fig8' %}
+
 It's rare for me to see artistic activity and not nominate its bloodline. I think it's part of my critical apparatus and I often ascribe passport as well as gender. I'm not always right. I think of the greater part of British art production as being in a conversation with Europe as much as its implication in the transatlantic drift, largely fudged by the pity that few British people speak more than their own language. I'm not being judgmental, but I am suggesting that there are long lines of interest and engagement in any work of art. It's true that there is something that can be mistaken for anti-intellectualism in British art which is often extruded through the aperture marked humorous, or baulked up with a sometimes visible philosophical force field.
 
 {% assign DOI = "p26" %}
@@ -134,6 +157,8 @@ There are questions of scale which come directly from perceptions of landscape a
 As a metropolitan, it's probably [Walter Sickert](http://www.tate.org.uk/art/research-publications/camden-town-group/walter-richard-sickert-minnie-cunningham-r1139296) who I think best represents the conundrum of British art. A bit German, partial to the French, knocking around in North London with a graphical awareness, a big appetite, and a strong sense for "a bit of rough". I think any examination of the music hall would take you on a line out through the history of television, pop music, and British art.
 
 {% assign DOI = "004" %}
+
+{% contributors 'jmunns' context=respondent type='primary' format='name-title' %}
 
 # "In the majority of ways in which the term might be understood more recently, 'British art' makes no sense in the high medieval context."
 
@@ -155,7 +180,9 @@ In 1984 there was an exhibition at the Hayward Gallery entitled *English Romanes
 
 {% assign DOI = "p32" %}
 
-The Warwick ciborium ([fig. 9](#figure9)) is the work of a Mosan craftsman. Its typological schema, however, probably derives from Worcester, and before that from Canterbury.[^1] So the schema could be "British", but the figure style is Mosan. It may have been produced here, or in the Meuse Valley. It might represent the work of an artist from modern-day Belgium, working in the local style, but on a distinctively British subject matter, probably for a British patron and for use in Britain. This man, I think, would be our twelfth-century Rubens.
+{% figure 'nstaba-fig9' %}
+
+The Warwick ciborium ([fig. 9](#nstaba-figure9)) is the work of a Mosan craftsman. Its typological schema, however, probably derives from Worcester, and before that from Canterbury.[^1] So the schema could be "British", but the figure style is Mosan. It may have been produced here, or in the Meuse Valley. It might represent the work of an artist from modern-day Belgium, working in the local style, but on a distinctively British subject matter, probably for a British patron and for use in Britain. This man, I think, would be our twelfth-century Rubens.
 
 {% assign DOI = "p33" %}
 
@@ -167,7 +194,9 @@ The point is this. In order for the category of "British art" to mean something 
 
 {% assign DOI = "005" %}
 
-# "James Barry's demise and Benjamin Haydon's suicide serve as only the most infamous case studies of the British historical painter's premature proximity to his own mortality."
+{% contributors 'cgilroy-ware' context=respondent type='primary' format='name-title' %}
+
+# "James Barry's demise and Benjamin Haydon's suicide serve as only the most infamous case studies of the British historical painter's premature proximity to his own mortality"
 
 {% assign DOI = "p35" %}
 
@@ -197,9 +226,13 @@ As such, these works can be seen to anticipate the Auto-destructive art develope
 
 {% assign DOI = "p41" %}
 
-The accompanying image ([fig. 10](#figure10)) is a visual aid that uses Hilton to open up British art, its style, and its character. Painted in oils, text is symbolic rather than pertaining to narrative, emphasizing the dominance of the written word in relation to high-artistic practice. The quote in white is lifted from the *A Century of British Painters* (1866) by Richard and Samuel Redgrave, who consistently denigrate Hilton's material practice. At the top are extracts from the artist's letters from Italy in 1825. Some lines from John Clare's poem "What is Life?", published at the time Hilton met Clare and was commissioned to paint his [portrait](http://www.npg.org.uk/collections/search/portrait/mw01307/John-Clare) of 1820, match the sense of *vanitas* conveyed in the materiality of the artist's works. Streams of collage evoke the fragmentation of the classical tradition and the variety of emulation associated with historical painting. Composed of pieces of paintings by Titian, Peter Paul Rubens, and Correggio, drawings by Hilton, and details from works by Barry and Haydon, they conjure the *craquelure* of paint. At the centre is Hilton's [self-portrait](http://www.bbc.co.uk/arts/yourpaintings/paintings/self-portrait-81880). Freed from obscurity and the stigmas that cloud his art, we confront him head-on.
+{% figure 'nstaba-fig10' %}
+
+The accompanying image ([fig. 10](#nstaba-figure10)) is a visual aid that uses Hilton to open up British art, its style, and its character. Painted in oils, text is symbolic rather than pertaining to narrative, emphasizing the dominance of the written word in relation to high-artistic practice. The quote in white is lifted from the *A Century of British Painters* (1866) by Richard and Samuel Redgrave, who consistently denigrate Hilton's material practice. At the top are extracts from the artist's letters from Italy in 1825. Some lines from John Clare's poem "What is Life?", published at the time Hilton met Clare and was commissioned to paint his [portrait](http://www.npg.org.uk/collections/search/portrait/mw01307/John-Clare) of 1820, match the sense of *vanitas* conveyed in the materiality of the artist's works. Streams of collage evoke the fragmentation of the classical tradition and the variety of emulation associated with historical painting. Composed of pieces of paintings by Titian, Peter Paul Rubens, and Correggio, drawings by Hilton, and details from works by Barry and Haydon, they conjure the *craquelure* of paint. At the centre is Hilton's [self-portrait](http://www.bbc.co.uk/arts/yourpaintings/paintings/self-portrait-81880). Freed from obscurity and the stigmas that cloud his art, we confront him head-on.
 
 {% assign DOI = "006" %}
+
+{% contributors 'dpcorbett' context=respondent type='primary' format='name-title' %}
 
 # "The words 'British art' were never more than a flag of convenience . . . a means of getting attention to where it was required."
 
@@ -217,6 +250,8 @@ When I moved by various stages to work as an art historian, one of the many thin
 
 {% assign DOI = "p45" %}
 
+{% figure 'nstaba-fig11' %}
+
 There were in fact many historians of British art at work in the 1980s, some doing inspirational work, and I owe deep debts to a number of them. My point is that this work was done against a general background in which the conceptual action seemed from the start to be located largely elsewhere. The organization of art history, the literature that then existed, the routine assumptions, and the sheer weight of attention and traditions of scrutiny, all combined to make "British art" something that needed to be argued for. I do not mean by this that the key thing was to argue for the category, rather the opposite. The category---"British art"---needed to emerge in order to sustain what was truly important: studies of artists and, in the widest sense, their historical contexts, that acknowledged their particularities and specifics and which were not beholden to a more or less distorted version of concepts developed to deal with other subjects.
 
 {% assign DOI = "p46" %}
@@ -232,6 +267,8 @@ One way of putting this would be to say that the term "British art" eases commun
 I also think that its very indeterminacy and lack of boundaries makes the category flexible in a productive way. This does not mean that we are unable either to define it at moments, or to adjust the category within which we make and promulgate knowledge. For some time now it's been the case that "British art" has been responding to the interest in the global, the transatlantic, or the postcolonial in ways that inflect and open up the nature of the field. What is important is that we have a conceptual category in which to focus work and through which to communicate it. We can adjust that category as we need to.
 
 {% assign DOI = "007" %}
+
+{% contributors 'clauson' context=respondent type='primary' format='name-title' %}
 
 # "Contemporary British art may be wavering in its definition, but the nation's geo-political boundaries are as strong as ever."
 
@@ -253,19 +290,25 @@ The artists embraced the challenge of creating an exhibition about British histo
 
 {% assign DOI = "p53" %}
 
-On the outdoor terrace we installed a newly restored Bristol Bloodhound surface-to-air missile and launcher, selected by Richard Wentworth and borrowed from the RAF Air Defence Radar Museum in Norfolk ([fig. 15](#figure15)). Installed by the dozen along the eastern seaboard from the late 1950s, this Cold War weapon was the last line of defence against inbound Russian nuclear bombers. At over eight metres long and gleaming white, overlooking Waterloo Bridge and the River Thames, this was the first time in recent history that such weaponry had been on display in central London. It was not a weapon masquerading as art, but a military artefact evidencing its own historical moment. It recalled, tangibly, the anxiety of a bygone era, while invoking the more recent memory of the Rapier missiles (the current equivalent of the Bristol Bloodhound), which had been controversially installed by the British army on East London rooftops during the 2012 Olympics.
+On the outdoor terrace we installed a newly restored Bristol Bloodhound surface-to-air missile and launcher, selected by Richard Wentworth and borrowed from the RAF Air Defence Radar Museum in Norfolk ([fig. 15](#nstaba-figure15)). Installed by the dozen along the eastern seaboard from the late 1950s, this Cold War weapon was the last line of defence against inbound Russian nuclear bombers. At over eight metres long and gleaming white, overlooking Waterloo Bridge and the River Thames, this was the first time in recent history that such weaponry had been on display in central London. It was not a weapon masquerading as art, but a military artefact evidencing its own historical moment. It recalled, tangibly, the anxiety of a bygone era, while invoking the more recent memory of the Rapier missiles (the current equivalent of the Bristol Bloodhound), which had been controversially installed by the British army on East London rooftops during the 2012 Olympics.
 
 {% assign DOI = "p54" %}
 
 In the week before the exhibition opened, as we were applying the finishing touches inside the galleries, the BBC reported that Russian Bear bombers carrying nuclear payloads had crossed into British airspace. RAF fighters had been scrambled to intercept the bombers and escort them back to neutral airspace. A quarter of a century after the end of the Cold War, both sides continue to test and provoke one another with reciprocal shows of military strength. Contemporary British art may be wavering in its definition, but the nation's geo-political boundaries are, it seems, as strong as ever. If we are to consider art as inextricably linked to history, then perhaps it too must accept some national resolve.
 
+{% figuregroup '7', 'nstaba-fig12, nstaba-fig13, nstaba-fig14, nstaba-fig15, nstaba-fig16, nstaba-fig17, nstaba-fig18' %}
+
 {% assign DOI = "008" %}
+
+{% contributors 'svturner' context=respondent type='primary' format='name-title' %}
 
 # "Discussions about Britain's imperial past and postcolonial present have put pressure on the historiography of British art."
 
 {% assign DOI = "p55" %}
 
-[![Front cover of '*British Art BBC talks pamphlet*\', designed by Eric Ravilious](/media/w1060h800/ravillious.jpg){#figure19 width="600" height="800"}](/media/w1060h800/ravillious.jpg "Full screen"){.indent} {% assign DOI = "figure19" %} In 1934 the BBC announced its broadcast of six talks on British art given by Reginald Gleadowe, the Slade Professor of Fine Art at Oxford University between 1928 and 1933, with a striking pamphlet designed by Eric Ravilious ([fig. 19](#figure19)) and printed by the Kynoch Press, which was noted for its progressive and lively artist-designed typographic collection. No artists are present in the image and, apart from the glimpse of a framed image of a tree in the background, neither are any works of art. Enclosed within a patterned oval are tubes of paint, set squares, a mallet, a compass, a mahlstick, a fanned array of brushes, pencils, and a palette and knife. Here, Ravilious puts the tools of the artist and designer's trade right at the very centre of British art. There is no hint of the "big names" of British art that one might expect---no Joshua Reynolds, John Constable, or J.M.W. Turner. Painting is referenced, but as part of a larger and connected world of art, design, and craft. Throughout his career, which has recently been the subject of a hugely popular exhibition at [Dulwich Picture Gallery](http://www.dulwichpicturegallery.org.uk/whats-on/exhibitions/2015/april/ravilious/) (closed August 2015), Ravilious sought to break down divisions between the artist and the designer, as well as image and text (brought together in this image through pattern and the overlapping composition). His is a vision of British art in which craft, making, and production are given central attention.
+{% figure 'nstaba-fig19' %}
+
+In 1934 the BBC announced its broadcast of six talks on British art given by Reginald Gleadowe, the Slade Professor of Fine Art at Oxford University between 1928 and 1933, with a striking pamphlet designed by Eric Ravilious ([fig. 19](#nstaba-figure19)) and printed by the Kynoch Press, which was noted for its progressive and lively artist-designed typographic collection. No artists are present in the image and, apart from the glimpse of a framed image of a tree in the background, neither are any works of art. Enclosed within a patterned oval are tubes of paint, set squares, a mallet, a compass, a mahlstick, a fanned array of brushes, pencils, and a palette and knife. Here, Ravilious puts the tools of the artist and designer's trade right at the very centre of British art. There is no hint of the "big names" of British art that one might expect---no Joshua Reynolds, John Constable, or J.M.W. Turner. Painting is referenced, but as part of a larger and connected world of art, design, and craft. Throughout his career, which has recently been the subject of a hugely popular exhibition at [Dulwich Picture Gallery](http://www.dulwichpicturegallery.org.uk/whats-on/exhibitions/2015/april/ravilious/) (closed August 2015), Ravilious sought to break down divisions between the artist and the designer, as well as image and text (brought together in this image through pattern and the overlapping composition). His is a vision of British art in which craft, making, and production are given central attention.
 
 {% assign DOI = "p56" %}
 
@@ -276,6 +319,8 @@ Ravilious's cover prompts me to think about what kind of image would adorn the f
 When some of the contributors to this Conversation first met to discuss the provocation, "There's no such thing as British art", it was the day of a European election---an event that undoubtedly cast a prescient shadow over our conversations about a nation-bounded terminology for the study of art. The boundaries and definitions of British art have undoubtedly been redrawn in recent years as historians and curators in this field have reflected seriously on the implications of national categorizations in relation to the organization of works of art, artists, and histories of art. Discussions about Britain's imperial past and postcolonial present have put pressure on the historiography of British art, opening up routes in and routes out of what was once perceived to be, by some, a fairly restricted, closed-off and rarefied field of studies. "British art" is no longer an island within the discipline of the history of art. As a result, "British art" has, in my opinion, become a considerably more expansive, connected, and interesting area in which to work. In some ways I accept that there is no such thing as British art---by which I mean that there certainly isn't one version or officially sanctioned definition of what it is or is not. And that, to my mind at least, is very much a good thing. What there is, however, is a lively and ever-growing community of researchers, artists, curators, and students all of whom are working with---and sometimes against---British art. In my job as Deputy Director for Research at a centre devoted to the study of British art, I don't feel the need to defend the concept, but rather to facilitate and indeed champion the brilliant, considered, and varied work carried out in the field of British art studies today.
 
 {% assign DOI = "009" %}
+
+{% contributors 'jhawkes' context=respondent type='primary' format='name-title' %}
 
 # "In the eighteenth and nineteenth centuries the 'Celtic' art of the Britons was invoked as an art of resistance to 'British' imperialism."
 
@@ -289,6 +334,8 @@ To demonstrate this it is worth considering, briefly, two arts that might variou
 
 {% assign DOI = "p60" %}
 
+{% figure 'nstaba-fig20' %}
+
 Leaving this to one side, the second example that might be considered is the art produced across these islands in the early historical period from the sixth to the eleventh or twelfth centuries---an art which involves painting (albeit in [manuscripts](http://www.bl.uk/turning-the-pages/?id=fdbcc772-3e21-468d-8ca1-9c192f0f939c&type=book), on sculpture, walls, and glass) and sculpture in diverse monumental forms and varying scales, in both stone and ivory. This is an art that not only utilized the various media of the so-called fine arts, but which was also one capable of great abstraction, sophisticated visual ambiguity, and paradox (involving what Mary Carruthers has termed the "polyfocal perspective"[^5]), as well as remarkable naturalism. This example of "British art" is of course that which is notionally referred to by art historians as "Insular art", as a means of avoiding the tricky (post-1924) term "British". For, in the sixth to eighth centuries CE the Britons lived in south-west Scotland, Wales, and Cornwall; the Scots lived in north-west Scotland and Ireland; and various Germanic tribes, comprising collectively the Anglo-Saxons, lived in the area now covered by England, but which at times extended to the Firth of Forth and into Dumfries and Galloway. Modern geo-political terms invoked to denote art or any other cultural phenomenon in this period, verge on the nonsensical.
 
 {% assign DOI = "p61" %}
@@ -300,6 +347,8 @@ So, when considering the arts produced in the early medieval period it would see
 This said, using the term "British" in a postcolonial context does, of course, raise significant issues which the examples cited here have demonstrated. For medievalists, with Ireland and Wales being the oldest of the English colonies, and part of Ireland still being subsumed into that colonial power which is euphemistically referred to as Great Britain, it is difficult indeed to refer to any art produced in the region as "British".
 
 {% assign DOI = "010" %}
+
+{% contributors 'atobin' context=respondent type='primary' format='name-title' %}
 
 # "The question of British or American art is not so much about the national as the translocal; not identity, but identification and misidentification."
 
@@ -321,7 +370,9 @@ Despite its problems (over-identification, lacunae) transatlantic antagonism was
 
 {% assign DOI = "p67" %}
 
-[![printed in *Mama-Women Artists*, Women\'s Art Library](/media/w1060h800/a-womans-place.jpg){#figure21 width="561" height="800"}](/media/w1060h800/a-womans-place.jpg "Full screen"){.indent} {% assign DOI = "figure21" %} Perhaps this is best illustrated in relation to two installations: [*Womanhouse*](http://womanhouse.refugia.net/) and *A Woman's Place*. The first, *Womanhouse*, opened in Los Angeles in 1972; the second, *A Woman's Place*, in South London in 1974 ([fig. 21](#figure21)). The later work was conceived as a version of the earlier; it sought to mimic the collaborative enterprise of *Womanhouse*, in which its women participants found, converted, and made art within a domestic setting. Both projects subverted women's traditional "place" through incisive feminist critique of the home and domestic labour. But unlike the clean surfaces and bright colours of *Womanhouse*, made in the context of Judy Chicago's feminist art programme, *A Woman's Place* was tatty, run-down, and knee-deep in rubbish, to paraphrase Tickner's description of the work in *Studio International*.
+{% figure 'nstaba-fig21' %}
+
+Perhaps this is best illustrated in relation to two installations: [*Womanhouse*](http://womanhouse.refugia.net/) and *A Woman's Place*. The first, *Womanhouse*, opened in Los Angeles in 1972; the second, *A Woman's Place*, in South London in 1974 ([fig. 21](#nstaba-figure21)). The later work was conceived as a version of the earlier; it sought to mimic the collaborative enterprise of *Womanhouse*, in which its women participants found, converted, and made art within a domestic setting. Both projects subverted women's traditional "place" through incisive feminist critique of the home and domestic labour. But unlike the clean surfaces and bright colours of *Womanhouse*, made in the context of Judy Chicago's feminist art programme, *A Woman's Place* was tatty, run-down, and knee-deep in rubbish, to paraphrase Tickner's description of the work in *Studio International*.
 
 {% assign DOI = "p68" %}
 
@@ -333,11 +384,15 @@ By focusing on the relationship between these works, we can begin to get a sense
 
 {% assign DOI = "011" %}
 
+{% contributors 'gbrockington' context=respondent type='primary' format='name-title' %}
+
 # "The seam of material and contexts that coalesce around the idea of British art is rich, and there remains much to mine and to re-evaluate."
 
 {% assign DOI = "p70" %}
 
-There is a fine Jacob Epstein in the British art collection at Carrick Hill near Adelaide, Australia, the home created in the 1930s by Edward and Ursula Hayward, and now open to the public as a country-house museum. It is not the sort of Epstein that one might expect to find: not a bronze bust of Lady Hayward, or even one of the artist's experiments in direct carving. Instead, the Haywards acquired a painting entitled *Lilies* (1936; [fig. 22](#figure22)), one of four hundred-odd flower studies that Epstein made in one of his occasional orgies of painting. It was a moment of defiant departure from his sculptural practice, and it suits the collection at Carrick Hill because the house is set in beautiful gardens, and because Ursula Hayward loved lilies.
+{% figure 'nstaba-fig22' %}
+
+There is a fine Jacob Epstein in the British art collection at Carrick Hill near Adelaide, Australia, the home created in the 1930s by Edward and Ursula Hayward, and now open to the public as a country-house museum. It is not the sort of Epstein that one might expect to find: not a bronze bust of Lady Hayward, or even one of the artist's experiments in direct carving. Instead, the Haywards acquired a painting entitled *Lilies* (1936; [fig. 22](#nstaba-figure22)), one of four hundred-odd flower studies that Epstein made in one of his occasional orgies of painting. It was a moment of defiant departure from his sculptural practice, and it suits the collection at Carrick Hill because the house is set in beautiful gardens, and because Ursula Hayward loved lilies.
 
 {% assign DOI = "p71" %}
 
@@ -348,6 +403,8 @@ If an aim of the present debate is to develop a paradigm, or to evaluate a canon
 The seam of material and contexts that coalesce around the idea of British art is rich, and there remains much to mine and to re-evaluate. So why do I sense a degree of anxiety behind the motion that *there's no such thing as British art*? Does it suggest a research community that has talked itself into a corner of self-doubt? That after several decades of ground-breaking research, and strategic challenges to disciplinary prejudice against the very idea of British art, we fear a loss of momentum, a shifting of attention, even an obsolescence of the questions and discoveries that have so energized the field? If this is the case, then I am not sure that arguing the point all over again is the right way forward. British art matters. The case has been made. The problem surely has to do with the larger one of academic specialization, the absence of a general conversation across isolated fields of enquiry, and the limitations of a traditional model of national schools in a curriculum that is moving towards a global history of art. The challenge becomes one of connection, and of finding a place in that global dialogue, in its radical sense as a mapping of transnational contacts and networks, rather than as a compilation of local case studies. In such a forum, values adjust. The qualities that can make British art seem so nebulous---so provisional, contingent, peripheral, even derivative---become the most interesting thing about it. Maybe it has indeed become redundant. Or maybe our motion is less a provocation to British art studies, than a blueprint for its future direction.
 
 {% assign DOI = "012" %}
+
+{% contributors 'mhammer' context=respondent type='primary' format='name-title' %}
 
 # "Interesting art tends to be invested in a more complex sense of identity than the simplistic 'them and us' polarities that prevail elsewhere."
 
@@ -361,19 +418,27 @@ Concepts of nationality can function as both stick and carrot. A negatively ting
 
 > During the course of his argument---that English painting has gained by the enforced insularity of the war---Mr. Nicolson writes of myself (and others) as *having turned their backs on Paris to seek inspiration in the English romantic movement of the early nineteenth century*. I cannot let this pass. Current art criticism is peculiarly absolutist; and here is yet another example of the habit of art historians to oversimplify---to label and to pigeonhole. I do not deny that I received great adolescent stimulus from Palmer and Blake; but that does not mean I turn my back on Paris. The question of influences is not as easy as that, and is surely a more complex and subtle matter than can be covered by such snap judgements. Painters are affected by things which come to them from all over the place; from many kinds of painting and many things. One absorbs what one needs at a given time.
 
-Palmer was actually much more than an "adolescent stimulus", rather an ongoing point of reference, which demonstrates that attitudes in this terrain are usually rooted in polemic and propaganda. Sutherland's approach to imagery, technique, and style in a work such as *Black Landscape* (1940; [fig. 23](#figure23)), for example, owed as much to Palmer's *A Cornfield by Moonlight, with the Evening Star*, then in Kenneth Clark's collection, as it did to the remote west Pembrokeshire landscape, or to what one contemporary critic called "spiritual agony \[and\] suffering of a society at war". But to generalize from Sutherland's point, we might assert that significant artists (British or otherwise) are always rooted in their own immediate environment and its traditions, in conscious and unconscious ways, but also responsive to wider, international stimuli, whether or not because of an émigré background. Sylvester's observation about compromise seems a crude caricature. Interesting art tends to be invested in a more complex sense of identity than the simplistic "them and us" polarities that prevail elsewhere (for example, politics). And in relation to the individual we often need to allow for the possibility of at least "dual nationality": an artist's perceived personal and artistic roots might be both British and English/Scottish/Cornish/Jewish/West Indian/Romanian (Home Counties Sutherland gets claimed as Welsh for his reliance on Pembrokeshire motifs).
+Palmer was actually much more than an "adolescent stimulus", rather an ongoing point of reference, which demonstrates that attitudes in this terrain are usually rooted in polemic and propaganda. Sutherland's approach to imagery, technique, and style in a work such as *Black Landscape* (1940; [fig. 23](#nstaba-figure23)), for example, owed as much to Palmer's *A Cornfield by Moonlight, with the Evening Star*, then in Kenneth Clark's collection, as it did to the remote west Pembrokeshire landscape, or to what one contemporary critic called "spiritual agony \[and\] suffering of a society at war". But to generalize from Sutherland's point, we might assert that significant artists (British or otherwise) are always rooted in their own immediate environment and its traditions, in conscious and unconscious ways, but also responsive to wider, international stimuli, whether or not because of an émigré background. Sylvester's observation about compromise seems a crude caricature. Interesting art tends to be invested in a more complex sense of identity than the simplistic "them and us" polarities that prevail elsewhere (for example, politics). And in relation to the individual we often need to allow for the possibility of at least "dual nationality": an artist's perceived personal and artistic roots might be both British and English/Scottish/Cornish/Jewish/West Indian/Romanian (Home Counties Sutherland gets claimed as Welsh for his reliance on Pembrokeshire motifs).
 
 {% assign DOI = "p75" %}
+
+{% figure 'nstaba-fig23' %}
 
 Following Gombrich's remark about art in general, we might say there is no such thing as (quintessentially) British art; there are only "British" (in whatever qualified sense) artists who, in the production of their work, draw upon a cluster of self-identifications (positive and negative), and respond to a complex array of points of reference, influences, and determinants (cultural, social, educational, genetic), both long- and short-term. We are left with one all-purpose question: how, where (if anywhere), and why did some particular sense of British identity or tradition enter into the making or reception of specific works of art? For British, one could substitute all sorts of other things, which might or might not be more interesting in specific cases. Artists are indeed affected by things which come to them from all over the place. They absorb what they need at a given time. The devil, as always, is in the detail.
 
 {% assign DOI = "013" %}
 
+{% contributors 'ageorge' context=respondent type='primary' format='name-title' %}
+
 {% assign DOI = "p76" %}
 
 Adrian George, Deputy Director and Senior Curator of the Government Art Collection, joins the debate with a filmed response that reflects on his own position as a curator and draws on varied works from the Collection.
 
+{% figure 'nstaba-fig24' %}
+
 {% assign DOI = "014" %}
+
+{% contributors 'mcappock' context=respondent type='primary' format='name-title' %}
 
 # "The history of the Hugh Lane Gallery neatly encapsulates the conundrum of Ireland's relationship with Britain."
 
@@ -387,6 +452,8 @@ When it comes to the question of British art, and of who can be classified as a 
 
 {% assign DOI = "p79" %}
 
+{% figure 'nstaba-fig25' %}
+
 The history of the [Hugh Lane Gallery](http://www.hughlane.ie/), Dublin, neatly encapsulates the conundrum of Ireland's relationship with Britain. And given the [current arrangement](http://www.theguardian.com/world/2015/may/26/national-gallery-disputed-art-collection-belongs-to-ireland-sir-hugh-lane) of the 39 Lane paintings shared with the National Gallery, London, it is one that still resonates. The founder, Hugh Lane (1875--1915) was born in Ireland, brought up in Britain and lived in London, where he became a highly successful art dealer and collector. Lane embarked on a mission to provide access for the Irish public to international art and to promote a distinctive school of Irish art. In late 1904, he offered his art collection to the city of Dublin and garnered the support of an eclectic group of individuals, including nationalists, unionists, artists, poets, journalists and scientists, to assist in the foundation of a gallery of modern art. Lane received a knighthood in the King's Birthday Honours in 1909 for his services to Irish art. When the gallery opened in temporary premises in 1908, it was grouped by school---Room I was "Irish Painters (by birth or descent)" and Room II "British School". This arrangement was significant given that it pre-dated Ireland becoming an independent state in 1922.
 
 {% assign DOI = "p80" %}
@@ -395,6 +462,8 @@ One of the most significant acquisitions of recent times is the studio of the Du
 
 {% assign DOI = "p81" %}
 
+{% figure 'nstaba-fig26' %}
+
 A recent exhibition of the work of the father of British Pop Art, Richard Hamilton, and his partner, Rita Donagh, at the Hugh Lane Gallery highlights the independence of thought of some artists, regardless of nationality. "[Civil Rights etc.](http://www.hughlane.ie/past/413-civil-rights-etc)" was to be Hamilton's final exhibition. Both artists tackled the difficult subject of Northern Ireland, but whilst Donagh has Irish roots, Hamilton was an English artist looking at Ireland from outside. His iconic work [*The Citizen*](http://www.tate.org.uk/art/artworks/hamilton-the-citizen-t03980) (1981--83, Tate Collection) is based on an image of a prisoner on a 'dirty protest' in the Maze (Long Kesh) prison in Northern Ireland. In this case, the artist's emotional response to a situation overrides neat categorisation.
 
 {% assign DOI = "p82" %}
@@ -402,6 +471,8 @@ A recent exhibition of the work of the father of British Pop Art, Richard Hamilt
 It is tempting to subscribe to Whistler's statement, "There is no such thing as English art. You might as well talk of English mathematics! Art is art and mathematics is mathematics." To my mind, it is more interesting to questionn and debate the character of British art, rather than come to narrow definitions. It can be explorative rather than definitive, inclusive rather than exclusive in scope.
 
 {% assign DOI = "015" %}
+
+{% contributors 'lhimid' context=respondent type='primary' format='name-title' %}
 
 # "To understand British art as an artist, learn to know your place."
 

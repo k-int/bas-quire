@@ -7,7 +7,9 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-01/amarr"
   issn: 2058-5462
 language: en
-layout: essay
+layout: splash
+BAStype: article
+image: figures/banners/pregnant-wit_banner.jpg
 order: 108
 pub_date: 2015-11-30
 pub_type: publication-periodical
@@ -71,6 +73,17 @@ series_issue_number: 1
 series_periodical_name: British Art Studies
 abstract: "This article examines the protean nature of *ingegno* in Renaissance England. Beginning with dictionary definitions and period translations, it traces the semantics of *ingegno* in writings by Haydocke, Hilliard, Sidney, Harington, and Dee, and in images by Gheeraerts the elder and Hilliard. The term's semantic elasticity carried over into English, changing shape to denote variously \"wit\", \"inborn talent\", \"sharpness\", \"swiftness\", \"nobility\", \"freedom\", and \"ingenuity\". The article concludes by considering the socio-economics of ingenuity, and how the slippage between \"ingenious\" and \"ingenuous\" speaks to a newly emerging understanding of the liberal status of the artist and his craft."
 acknowledgements: "In writing this essay I have benefitted from discussions with Gavin Alexander, Lucy Gent, Gordon Higgott, and Sarah Howe. I am grateful to the journal's anonymous reviewers for their helpful comments."
+subjects:
+- type: topics
+  name: Miniatures, Portraiture, Classical antiquity
+- type: period
+  name: 1500–1600
+- type: place
+  name: England, Italy
+- type: mmt
+  name: Prints, Paintings
+- type: sm
+  name: Tudor
 ---
 
 {% assign DOI = "001" %}
@@ -103,17 +116,21 @@ Italian and English dictionary definitions capture some of these senses. For exa
 
 {% assign DOI = "p5" %}
 
-This is one of the key senses we find in Cesare Ripa's popular handbook of iconography: the *Iconologia*, in which "*Ingegno* is that potency of spirit which by nature inclines a man to be quick, able in all the sciences" ([fig. 1](#figure1)).[^11] Such a definition reflects period celebrations of visual artists who work in a rapid yet masterful way, underpinning also the increasing value of the sketch---sometimes referred to in Italian as a *ghiribizzo*---as the direct and immediate manifestation of an artist's idea.[^12] In this sense, *ingegno* was related to *disegno*, which by the second half of the sixteenth century had become (at least in the hands of academicians such as Giorgio Vasari and Federico Zuccaro) the means of explaining the connection between a metaphysical idea, the artist's mental creation in his intellectual faculties, and its subsequent manifestation through the skilful workings of the hand.[^13]
+{% figure 'amarr-fig1' %}
+
+This is one of the key senses we find in Cesare Ripa's popular handbook of iconography: the *Iconologia*, in which "*Ingegno* is that potency of spirit which by nature inclines a man to be quick, able in all the sciences" ([fig. 1](#amarr-fig1)).[^11] Such a definition reflects period celebrations of visual artists who work in a rapid yet masterful way, underpinning also the increasing value of the sketch---sometimes referred to in Italian as a *ghiribizzo*---as the direct and immediate manifestation of an artist's idea.[^12] In this sense, *ingegno* was related to *disegno*, which by the second half of the sixteenth century had become (at least in the hands of academicians such as Giorgio Vasari and Federico Zuccaro) the means of explaining the connection between a metaphysical idea, the artist's mental creation in his intellectual faculties, and its subsequent manifestation through the skilful workings of the hand.[^13]
 
 {% assign DOI = "p6" %}
 
-Despite the evident confusion about *disegno* in England around 1600, something of this kind is at work in Sir John Harington's anecdote about Nicholas Hilliard (see [fig. 2](#figure2)), published in his 1591 translation of Ariosto (which Haydocke had plundered for his translation of Lomazzo):
+Despite the evident confusion about *disegno* in England around 1600, something of this kind is at work in Sir John Harington's anecdote about Nicholas Hilliard (see [fig. 2](#amarr-fig2)), published in his 1591 translation of Ariosto (which Haydocke had plundered for his translation of Lomazzo):
 
 > My selfe have seen him, in white and blacke in foure lynes only, set downe the feature of the Queenes Majesties countenaunce; that it was eve\[r\] thereby to be knowne; and he is so perfect therein . . . that he ca\[n\] set it downe by the Idea that he hath, without any patterne.[^14]
 
 Harington's observation that Hilliard could work "without any patterne" presumably alludes to the widespread practice of using a "face pattern" in the making of portraits, a topic to which we shall return.[^15] Yet he may also be trading on the conventions of Aristotelian faculty psychology in which mental pictures (i.e. patterns) are impressed on the memory. Certainly, his comments are reminiscent of Sir Philip Sidney's Platonic notion of the fore-conceit in *The* *Defence of Poesy*, while conveying some of the key qualities of *ingegno*: sharpness, quickness, and (although this is less common) economical elegance.[^16]
 
 {% assign DOI = "p7" %}
+
+{% figure 'amarr-fig2' %}
 
 We have already encountered the sense of quickness in Ripa, found also in the first English dictionary proper: Robert Cawdrey's *A table alphabeticall* (1604), in which "ingenious" is defined as "wittie, quicke witted".[^17] Sharpness---a visual property of the type of linear image Harington describes, but also a mental quality---pervades translations from or into Latin, such as Thomas Thomas's 1587 translation of *perargutus* as "Very subtile, ingenious, wittie, and captious".[^18] Similarly, in one of his annotations to Daniele Barbaro's edition of Vitruvius (*I Dieci Libri dell'Architettura di M. Vitruvio*, 1567), Inigo Jones translated "Et questo non solo per dottrina, ma per acutezza d'ingegno si puo fare" as "no rule to teach this but by sharpenes of witt."[^19] We may note that Sidney, whom Hilliard knew, described "wit" in precisely these terms in his *Defence of Poesy*, referring to the "point of man's wit". Here Sidney deploys the imagery of pen, needle, and sword, in a play on the intimate but oblique relationship of "stylus" to "style", linking mental acuity with sharp instrument and finessed (but pointed) manner.[^20] Harington's comments should be placed within this field of discourse, and he was clearly impressed by the economy of Hilliard's likeness, created using a refined implement in "foure lynes only". We might tentatively relate this to the association of ingenuity with both pithiness and with salt, specifically the "Attic salt" of an elegant and succinct turn of phrase, which by 1623 had led Cockeram to include "Atticke" as a definition of "witty", alongside "ingenious" and "pregnant".[^21]
 
@@ -123,7 +140,9 @@ The association of Hilliard with "Attic grace" is not implausible, given that Wi
 
 {% assign DOI = "p9" %}
 
-The language of "pregnancy" to denote the intellectual quickness and readiness of "wit" was widespread in the period. As early as 1530 John Palsgrave---an acquaintance of Thomas More and Erasmus---had translated the French "empraignant" as "Quycke/ pregnant of wytte", while for John Rider in 1589 the Latin "pregnans" meant "A pregnant, or sharpe witte. Acre ingenium. Acutum ingenium."[^25] Haydocke's use of the word is especially appropriate given its connotations of birthing, for Prometheus, we are told, "formed men's images of earth, adding a certaine artificiall motion unto them, so that they seemed to be indued with spirit and life". Literally and figuratively, Prometheus is equated with the sort of inspiration sometimes appended to *ingegno* in the Neoplatonic tradition of poetic fury.[^26] Indeed, we see him in the act of "inspiring" in the frontispiece to the *Tracte*, accompanied by other representatives of the "artes of curious paintinge, carvinge and buildinge": Juno, Pallas, and Daedalus ([fig. 3](#figure3)).[^27] More could be said about the implicit connection here between curiosity and ingenuity, but at the very least we may note that by this date Daedalus was synonymous with ingenuity, as the entry for "Dédalo" in the Perceval--Minsheu Spanish--English dictionary of 1599 shows: "Dedalus, a proper name signifying ingenious."[^28]
+The language of "pregnancy" to denote the intellectual quickness and readiness of "wit" was widespread in the period. As early as 1530 John Palsgrave---an acquaintance of Thomas More and Erasmus---had translated the French "empraignant" as "Quycke/ pregnant of wytte", while for John Rider in 1589 the Latin "pregnans" meant "A pregnant, or sharpe witte. Acre ingenium. Acutum ingenium."[^25] Haydocke's use of the word is especially appropriate given its connotations of birthing, for Prometheus, we are told, "formed men's images of earth, adding a certaine artificiall motion unto them, so that they seemed to be indued with spirit and life". Literally and figuratively, Prometheus is equated with the sort of inspiration sometimes appended to *ingegno* in the Neoplatonic tradition of poetic fury.[^26] Indeed, we see him in the act of "inspiring" in the frontispiece to the *Tracte*, accompanied by other representatives of the "artes of curious paintinge, carvinge and buildinge": Juno, Pallas, and Daedalus ([fig. 3](#amarr-fig3)).[^27] More could be said about the implicit connection here between curiosity and ingenuity, but at the very least we may note that by this date Daedalus was synonymous with ingenuity, as the entry for "Dédalo" in the Perceval--Minsheu Spanish--English dictionary of 1599 shows: "Dedalus, a proper name signifying ingenious."[^28]
+
+{% figure 'amarr-fig3' %}
 
 {% assign DOI = "004" %}
 
@@ -155,11 +174,15 @@ Here the introduction of a "prince's fee" into the equation injects a note of te
 
 {% assign DOI = "p13" %}
 
-Both Haydocke's and Hilliard's statements reflect the very specific situation of the visual arts in Elizabethan England in comparison to the Continent, not least, in Hilliard's case, the absence of a regular stipend for his services from the Queen.[^37] Yet they speak also to a more general and widespread concern for the relationship of financial means to creative endeavour, encapsulated in the motto *Paupertatem summis ingeniis obesse ne provehantur* ("Poverty hinders the greatest wits from advancing"). Widely distributed in emblematic form by Alciati and others, it appears in England both in Geoffrey Whitney's *Choice of Emblemes* (1586; [fig. 4](#figure4)) and, more elaborately, in Marcus Gheeraerts the elder's drawing *The Unfortunate Painter and his Family* (1577; [fig. 5](#figure5)).[^38] Both bear a quotation from Juvenal: "Haud facile emergent quorum Virtutibus obstat res angusta domi" ("With difficulty shall they emerge whose virtues are obstructed by poverty at home"). This alerts us to the proper subject of Gheeraert's drawing, in which a harassed artist turns from his work---and from Mercury, protector of the arts and financial gain---to attend to his mewling infant, needy wife, and brood of unruly children. Hilliard doubtless knew Whitney's book and it is not impossible that he had seen the Gheeraerts drawing (although the latter seems to have been intended as a gift abroad). The latter, especially, strikes a chord with his cautionary tale of the indigent and otherwise completely unknown painter, John Bossam:
+{% figure 'amarr-fig4' %}
+
+Both Haydocke's and Hilliard's statements reflect the very specific situation of the visual arts in Elizabethan England in comparison to the Continent, not least, in Hilliard's case, the absence of a regular stipend for his services from the Queen.[^37] Yet they speak also to a more general and widespread concern for the relationship of financial means to creative endeavour, encapsulated in the motto *Paupertatem summis ingeniis obesse ne provehantur* ("Poverty hinders the greatest wits from advancing"). Widely distributed in emblematic form by Alciati and others, it appears in England both in Geoffrey Whitney's *Choice of Emblemes* (1586; [fig. 4](#amarr-fig4)) and, more elaborately, in Marcus Gheeraerts the elder's drawing *The Unfortunate Painter and his Family* (1577; [fig. 5](#amarr-fig5)).[^38] Both bear a quotation from Juvenal: "Haud facile emergent quorum Virtutibus obstat res angusta domi" ("With difficulty shall they emerge whose virtues are obstructed by poverty at home"). This alerts us to the proper subject of Gheeraert's drawing, in which a harassed artist turns from his work---and from Mercury, protector of the arts and financial gain---to attend to his mewling infant, needy wife, and brood of unruly children. Hilliard doubtless knew Whitney's book and it is not impossible that he had seen the Gheeraerts drawing (although the latter seems to have been intended as a gift abroad). The latter, especially, strikes a chord with his cautionary tale of the indigent and otherwise completely unknown painter, John Bossam:
 
 > Nevertheless, if a man be so endued by nature \[to be a painter\], and live in a time of trouble, and under a savage government wherein arts be not esteemed, and himself but of small means, woe be unto him as unto an untimely birth! For of mine own knowledge it hath made poor men poorer, as among others . . . the most rare English drawer of story works in black and white, John Bossam; one for his skill very worthy to have been Serjeant Painter to any king or emperor. . . . Who, being very poor . . . and growing yet poorer by charge of children etc., gave painting clean over.[^39]
 
 {% assign DOI = "p14" %}
+
+{% figure 'amarr-fig5' %}
 
 Early modern Englishmen routinely equated the ingenuousness of the freeborn nobility with "open-heartedness". But Hilliard leaves us in no doubt that the liberal stature of the ingenious painter depends not just on an open heart but also on an open purse. Strikingly, this is a two-way street, extending equally to the "good painter" himself. In a curious diatribe against the "common slander . . . that cunning men are ever unthrifts", Hilliard offers us a compelling picture of the liberal---in every sense of the word---artist. "Such men", he says,
 
@@ -189,7 +212,9 @@ This is at the very heart of Hilliard's arguments as to why limning is "gentle":
 
 > To what Artificer, is not Picture, a great pleasure and Commoditie? Which of them all, will refuse the Direction and ayde of Picture? The Architect, the Goldsmith, and the Arras Weaver: of Picture, make great account. Our lively Herbals, our portraitures of birdes, beastes, and fishes: and our curious Anatomies, which way, are they most perfectly made, or with most pleasure, of us beholden? Is it not by Picture onely?[^47]
 
-In writing this passage Dee was doubtless thinking of (to use his term) "mechanical" artists, such as the (probable) embroiderer Thomas Trevilian, whose several manuscripts show ample evidence of the sort of copying Dee praises ([fig. 6](#figure6)).[^48] Yet it has not hitherto been recognized that the above passage informed John Case's letter to Haydocke, mentioned earlier, in which the scholar subtly shifts emphasis to indicate that painting offers not simply a pattern to be replicated, but a model of practice, learning, and (ultimately) ethics. As he explains:
+{% figure 'amarr-fig6' %}
+
+In writing this passage Dee was doubtless thinking of (to use his term) "mechanical" artists, such as the (probable) embroiderer Thomas Trevilian, whose several manuscripts show ample evidence of the sort of copying Dee praises ([fig. 6](#amarr-fig6)).[^48] Yet it has not hitherto been recognized that the above passage informed John Case's letter to Haydocke, mentioned earlier, in which the scholar subtly shifts emphasis to indicate that painting offers not simply a pattern to be replicated, but a model of practice, learning, and (ultimately) ethics. As he explains:
 
 > One shaddow of man, one image of his partes, in this \[Lomazzo's\] Booke showeth us better use. For if Hippocrates will read an Anatomie, heere-hence he may learne exact and true proportion of humane Bodies; if Dioscorides will make an Herball, here he may have skill to set forth hearbes, plantes, and fruites, in most lively colours. Geometricians heere-hence for Buylding may take their perfect Modelles. Cosmographers may finde good arte to make their Mappes and Tables. Historians cannot heere want a pencell to over-shaddow men's famous Actes, Persons, and Morall pictures.[^49]
 
