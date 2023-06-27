@@ -942,7 +942,127 @@ figure_list:
     media_type: youtube
     caption: "*Repeating the Process*, Conversation between Paul Rousseau and Peter Hamilton. Film by Jonathan Law."
 
+# British Art Show 8
 
+  - id: "rmalbert-fig1"
+    label: "Figure 1"
+    src: "figures/issue-01/rmalbert/rmalbert-fig1.jpg"
+    caption: "*British Art Show*"
+    credit: ""
+
+  - id: "rmalbert-fig2"
+    label: "Figure 2"
+    src: "figures/issue-01/rmalbert/rmalbert-fig2.jpg"
+    caption: "*British Art Show*"
+    credit: ""
+
+  - id: "rmalbert-fig3"
+    label: "Figure 3"
+    src: "figures/issue-01/rmalbert/rmalbert-fig3.jpg"
+    caption: "*British Art Show*"
+    credit: ""
+
+  - id: "rmalbert-fig4"
+    label: "Figure 4"
+    src: "figures/issue-01/rmalbert/rmalbert-fig4.jpg"
+    caption: "William Packer, *British Art Show 1*, ISBN: 9780728702196.\nArtists in British Art Show 1 featured the work of 112 artists working almost exclusively in painging and sculpture. Works by Anthony Caro, Lucian Freud, Terry Frost, Hamish Fulton, Maggi Hambling, David Hockney, Leon Kossoff, Richard Long, and Bridget Riley were included. The exhibition toured to venues in Sheffield, Newcastle and Bristol."
+    credit: ""
+
+  - id: "rmalbert-fig5"
+    label: "Figure 5"
+    src: "figures/issue-01/rmalbert/rmalbert-fig5.jpg"
+    caption: "Alexander Moffat, Jon Thompson and Marjorie Allthorpe-Guyton, *British Art Show 2*, ISBN: 9780856137945.\nBritish Art Show 2 presented a wide-ranging selection of 84 artists working across media including performance, installation, film and video as well as painting and sculpture"
+    credit: ""
+
+  - id: "rmalbert-fig6"
+    label: "Figure 6"
+    src: "figures/issue-01/rmalbert/rmalbert-fig6.jpg"
+    caption: "Caroline Collier, Andrew Nairne, and David Ward, *British Art Show 3*, ISBN: 9781853320545.\nThey also concentrated on an emerging generation of artists aged under 35. British Art Show 3 included Ian Davenport, Willie Doherty, Mona Hatoum, Gary Hume, Julian Opie, Cornelia Parker, Fiona Rae and Rachel Whiteread, as well as artist collectives such as the Black Audio Film Collective, whose members included the filmmaker John Akomfrah. The exhibition toured to venues in Glasgow, Leeds and London"
+    credit: ""
+
+  - id: "rmalbert-fig7"
+    label: "Figure 7"
+    src: "figures/issue-01/rmalbert/rmalbert-fig7.jpg"
+    caption: "Richard Cork, Rose Finn-Kelcey and Thomas Lawson, *British Art Show 4*, ISBN: 9781853321450.\nArtists in British Art Show 4 included Tacita Dean, Anya Gallaccio, Douglas Gordan, Damien Hirst, Steve McQueen, Chris Ofili, Sam Taylor-Wood, Mark Wallinger, Gillian Wearing and Jane and Louise Wilson. The exhibition toured to venues in Manchester, Edinburgh and Cardiff"
+    credit: ""
+
+  - id: "rmalbert-fig8"
+    label: "Figure 8"
+    src: "figures/issue-01/rmalbert/rmalbert-fig8.jpg"
+    caption: "Pippa Coles, Jacqui Poncelet and Matthew Higgs, *British Art Show 5*, ISBN: 9781853322044.\nThe 54 artists in British Art Show 5 included Phyllida Barlow, Martin Creed, Jeremy Deller, Tracey Emin, Liam Gillick, Susan Hiller, Sarah Lucas, Grayson Perry, David Shrigley and Wolfgang Tillmans. The exhibition toured to venues in Edinburgh, Southampton, Cardiff, Birmingham"
+    credit: ""
+
+  - id: "rmalbert-fig9"
+    label: "Figure 9"
+    src: "figures/issue-01/rmalbert/rmalbert-fig9.jpg"
+    caption: "Alex Farquharson and Andrea Schlieker, *British Art Show 6*, ISBN: 9781853322532.\nThe 50 artists who took part in British Art Show 6 included Tomma Abts, Marcus Coates, Phil Collins, Roger Hiorns, Mark Leckey, Goshka Macuga, Eva Rothschild, Zineb Sedira and Mark Titchner. The exhibition toured to venues in Gateshead, Manchester, Nottingham and Bristol"
+    credit: ""
+
+  - id: "rmalbert-fig10"
+    label: "Figure 10"
+    src: "figures/issue-01/rmalbert/rmalbert-fig10.jpg"
+    caption: "Tom Morton and Lisa Le Feuvre, *British Art Show 7: In the Days of the Comet*, ISBN: 9781853322860.\nMany of the 39 artists in British Art Show 7 created new works for the exhibition. Like British Art Show 6, the exhibition changed and developed as it toured, with new works being added each time. The artists in British Art Show 7 included Karla Black, Duncan Campbell, Spartacus Chetwynd, Matthew Darbyshire, Sarah Lucas, Christian Marclay, Haroon Mirza, Nathaniel Mellors, Elizabeth Price, and Tris Vonna-Michell. The exhibition toured to venues in Nottingham, London, Glasgow and Plymouth"
+    credit: ""
+
+  - id: "rmalbert-fig11"
+    label: "Figure 11"
+    src: "figures/issue-01/rmalbert/rmalbert-fig11.jpg"
+    caption: "Anna Colin and Lydia Yee, *British Art Show 8*, ISBN: 9781853323416.\nArtists: Åbäke, Lawrence Abu Hamdan, Caroline Achaintre, John Akomfrah and Trevor Mathison, Aaron Angell, Pablo Bronstein, Adam Broomberg and Oliver Chanarin, Andrea Büttner, Alexandre da Cunha, Nicolas Deshayes, Benedict Drew, Simon Fujiwara, Martino Gamper, Ryan Gander, Melanie Gilligan, Anthea Hamilton, Will Holder, Alan Kane, Mikhail Karikis, Linder, Rachel Maclean, Ahmet Öğüt (with Liam Gillick, Susan Hiller and Goshka Macuga), Yuri Pattison, Ciara Phillips, Charlotte Prodger, Laure Prouvost, Magali Reus, James Richards, Eileen Simpson and Ben White, Daniel Sinsel, Cally Spooner, Patrick Staff, Imogen Stidworthy, Hayley Tompkins, Jessica Warboys, Stuart Whipps, Bedwyr Williams, Jesse Wine, Lynette Yiadom-Boakye.\nOpening in Leeds in October 2015, British Art Show 8 will tour to venues in Edinburgh, Norwich and Southampton over the course of 15 months"
+    credit: ""
+
+  - id: "rmalbert-fig12"
+    label: "Figure 12"
+    src: "figures/issue-01/rmalbert/rmalbert-fig12.jpg"
+    caption: "*Installation view: British Art Show 2*, 1984-5. Royal Scottish Academy, Edinburgh. Left: Tony Cragg. Right: Barry Flanagan"
+    credit: ""
+
+  - id: "rmalbert-fig13"
+    label: "Figure 13"
+    src: "figures/issue-01/rmalbert/rmalbert-fig13.jpg"
+    caption: "*Installation view: British Art Show 3*, 1990. Hayward Gallery, London. Centre: Cornelia Parker"
+    credit: ""
+
+  - id: "rmalbert-fig14"
+    label: "Figure 14"
+    src: "figures/issue-01/rmalbert/rmalbert-fig14.jpg"
+    caption: "*Installation view: British Art Show 3*, McLennan Galleries, Glasgow"
+    credit: ""
+
+  - id: "rmalbert-fig15"
+    label: "Figure 15"
+    src: "figures/issue-01/rmalbert/rmalbert-fig15.jpg"
+    caption: "Installation view: British Art Show 7: In the Days of the Comet*, Hayward Gallery, London, 2011"
+    credit: "Photo: Roger Wooldridge"
+
+  - id: "rmalbert-fig16"
+    label: "Figure 16"
+    src: "figures/issue-01/rmalbert/rmalbert-fig16.jpg"
+    caption: "Adam Broomberg & Oliver Chanarin, *Trace fiber from Freud's couch under crossed polars with Quartz wedge compensator (#2)*, 2015"
+    credit: "Digital image courtesy of the Artists and Lisson Gallery, London"
+
+  - id: "rmalbert-fig17"
+    label: "Figure 17"
+    src: "figures/issue-01/rmalbert/rmalbert-fig17.jpg"
+    caption: "Linder, *Diagrams of Love: Marriage of Eyes* (detail), 2015"
+    credit: "Digital image courtesy of Linder Sterling / Dovecot Tapestry Studio, 2015. Photo credit, Michael Wolchover. Courtesy the artist, Stuart Shave/Modern Art and Dovecot Studios Ltd."
+
+  - id: "rmalbert-fig18"
+    label: "Figure 18"
+    src: "figures/issue-01/rmalbert/rmalbert-fig18.jpg"
+    caption: "Bedwyr Williams, *Century Egg* (video still), 2015, Commissioned by the University of Cambridge North West Cambridge Development through the Habitation Artist in Residency Programme managed by Contemporary Art Society and InSite Arts"
+    credit: "Digital image courtesy of the artist and Limoncello Gallery"
+
+  - id: "rmalbert-fig19"
+    label: "Figure 19"
+    src: "figures/issue-01/rmalbert/rmalbert-fig19.jpg"
+    caption: "Mikhail Karikis, *Children of Unquiet* (video still), 2013-2014"
+    credit: "Digital image courtesy of Mikhail Karikis, 2015"
+
+  - id: "rmalbert-fig20"
+    label: "Figure 20"
+    src: "figures/issue-01/rmalbert/rmalbert-fig20.jpg"
+    caption: "Patrick Staff, *The Foundation* (video still), 2015, Commissioned by Chisenhale Gallery, London; Spike Island, Bristol; Institute of Modern Art, Brisbane; and Contemporary Art Gallery, Vancouver. Co-produced by Chisenhale Gallery, London and Spike Island, Bristol"
+    credit: ""
 
 #   Issue 23
 

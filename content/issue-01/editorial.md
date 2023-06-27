@@ -6,7 +6,9 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-01/editorial"
   issn: 2058-5462
 language: en
-layout: essay
+layout: splash
+BAStype: opinion-piece
+image: figures/banners/issue01-editorial_banner.jpg
 order: 101
 pub_date: 2015-08-01
 pub_type: publication-periodical
