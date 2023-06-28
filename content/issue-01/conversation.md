@@ -24,9 +24,10 @@ subjects:
 - type: place
   name: United Kingdom of Great Britain and Northern Ireland
 ---
-{% contributors 'rjohns' context=respondent type='primary' format='name-title' %}
 
 {% assign DOI = "001" %}
+
+{% contributors 'rjohns' context=respondent type='primary' format='name-title' %}
 
 # "The paradox of British art becomes apparent every time a work of art, or collection of works, is made, looked upon, or labelled as such."
 
