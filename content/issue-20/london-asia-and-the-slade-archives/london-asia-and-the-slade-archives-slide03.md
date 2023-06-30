@@ -6,5 +6,5 @@ outputs:
   - pdf
   - html
 object:
-  - id: 1
+  - id: london-asia-and-the-slade-archives-slide03
 ---

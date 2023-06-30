@@ -1,5 +1,5 @@
 ---
-title: "Institutional Pathways and Documentary Trails"
+title: "I. Institutional Pathways and Documentary Trails"
 layout: essay
 order: 2032
 outputs:

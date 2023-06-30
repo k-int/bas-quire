@@ -1,10 +1,10 @@
 ---
 layout: entry
 presentation: landscape
-order: 2033
+order: 20327
 outputs:
   - pdf
   - html
 object:
-  - id: 1
+  - id: london-asia-and-the-slade-archives-slide27
 ---

@@ -1,8 +1,5 @@
 ---
 title: "Introduction"
-subtitle: "The Reception and Adoption of Joseph Maclise's *Surgical Anatomy* (1851) in the United States"
-contributor:
-    - id: nslipp
 layout: essay
 presentation: landscape
 order: 2031
@@ -12,6 +9,8 @@ outputs:
 ---
 
 {% assign DOI = "p1" %}
+
+# Introduction
 
 From its inception in 1871, the Slade School of Fine Art in London attracted artists from around the world. *Slade, London, Asia: Contrapuntal Histories between Imperialism and Decolonization* takes the Slade as a starting point for a global microhistory and a reimagined and refigured archive. This feature surfaces how the Slade functioned during the post-war period as a site of encounter, decolonization, and expression for overseas artists; it also presents archival records which illuminate how the Slade occupies a complex place in the global history of art education, art practice, empire, and decolonization.
 
@@ -26,3 +25,21 @@ The project has evolved from two long-term collaborative research projects: "[Tr
 Although our research has resulted in this initial publication with its own particular framing and moment of archival activation and authorship in a form akin to an exhibition, the collaborative ethos of the project has encouraged the sharing of archival knowledge in order to seed new research beyond the scope of this project. The journey has led us to an array of personal, family, institutional, and organizational archives (both formal and informal), as well as oral histories and research workshops. The open access, digital format of *British Art Studies* lends itself to embedding different types of records in a variety of formats, which provides opportunities to make visible the qualities and patterns of these records as they are distilled from different recordkeeping contexts and activities.
 
 This is Part 1 of a two-part feature, which addresses the period from about 1945 to 1965; Part 2 will encompass the period from the 1960s to the 1990s, and incorporate material gleaned from upcoming workshops. The contrapuntal histories of art education presented here offer a global microhistory situated within the complex entanglements between imperialism and decolonization. They have also prompted reconsideration of ways to engage with, co-constitute, and curate a research archive in pursuit of this endeavour. We take the Slade as a starting point for exploration, but render it as a single melodic line in a polyphonic counterpoint. As such, these transversally linked and co-constituted histories provide new methodologies for writing the histories of contrapuntal modernisms, while also understanding art in Britain itself as the product of empire.
+
+{% contributors context=pageContributors format='bio' align='left' %}
+
+{% backmatter %}
+
+## Footnotes
+
+[^1]: The concept of transversals was first used by Tiampo to theorize the relationships between histories that are both parallel and linked through a third term. Ming Tiampo, "Slade, London, Asia: Intersections of Decolonial Modernism", 10 November 2020, <https://www.paul-mellon-centre.ac.uk/whats-on/slade-london-asia>.
+
+[^2]: Edward Said, *Culture and Imperialism* (New York: Vintage, 1993), 51.
+
+[^3]: Shu-mei Shih, "Comparison as Relation", in *Comparison: Theories, Approaches, Uses*, ed. Rita Felski and Susan Stanford Friedman (Baltimore, MD: Johns Hopkins University Press, 2013), 79--98.
+
+[^4]: Carolyn Hamilton, Verne Harris, and Graeme Reid, Introduction to *Refiguring the Archive*, ed. Carolyn Hamilton et al. (Dordrecht: Springer, 2002), doi:[10.1007/978-94-010-0570-8_1](https://doi.org/10.1007/978-94-010-0570-8_1).
+
+[^5]: Anne J. Gilliland, Sue McKemmish, and Andrew J. Lau, eds., *Research in the Archival Multiverse* (Clayton, VIC: Monash University Publishing, 2016), <http://library.oapen.org/handle/20.500.12657/31429>.
+
+{% endbackmatter %}
