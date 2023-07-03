@@ -2932,7 +2932,8 @@ figure_list:
 
   - id: "animatingsladearchive-fig77"
     label: "Figure 77"
-    src: "figures/issue-20/animatingsladearchive/animatingsladearchive-fig77.jpg"
+    media_type: table
+    src: "tables/animatingsladearchive-fig77.html"
     caption: "Zainul Abedin’s notes for the curriculum at The Government Institute of Arts, Dacca, c. 1956. Collection of the estate of Zainul Abedin"
     credit: "Digital facsimile courtesy of the estate of Zainul Abedin (all rights reserved)"
 
@@ -3058,15 +3059,13 @@ figure_list:
 
   - id: "animatingsladearchive-fig97"
     label: "Figure 97"
-    media_type: table
-    src: "tables/animatingsladearchive-fig97.html"
+    src: "figures/issue-20/animatingsladearchive/animatingsladearchive-fig97.jpg"
     caption: "Letter from Tseng Yu to William Coldstream, 20 January 1955. Tseng Yu’s Slade student file. UCL Special Collections"
     credit: "Digital facsimile courtesy of UCL Special Collections (all rights reserved)"
 
   - id: "animatingsladearchive-fig98"
     label: "Figure 98"
-    media_type: table
-    src: "tables/animatingsladearchive-fig98.html"
+    src: "figures/issue-20/animatingsladearchive/animatingsladearchive-fig98.jpg"
     caption: "Leaflet accompanying letter from Tseng Yu to Professor William Coldstream, 20 January 1955, *Exhibition of Paintings by Ch’i Pai-Shih (Qi Baishi) and Hsü Pei Hung (Xu Beihong)*, Foyles Art Gallery, 20 January–12 February 1955, leaflet cover. Tseng Yu’s Slade student file. UCL Special Collections"
     credit: "Digital facsimile courtesy of UCL Special Collections (all rights reserved)"
 
@@ -3095,7 +3094,7 @@ figure_list:
   - id: "animatingsladearchive-fig102"
     label: "Figure 102"
     poster: "figures/issue-20/animatingsladearchive/animatingsladearchive-fig102.html"
-    media_id: Bma7VvPat-Y
+    media_id: sfOR8S4zMWI
     media_type: youtube
     caption: "Excerpts from an oral history interview with Partha Mitter conducted by Ming Tiampo on 3 February 2021, film, 18 minutes, 6 seconds"
     credit: "Film editing by Edward Spreull. Digital files courtesy of Partha Mitter (all rights reserved)"
