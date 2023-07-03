@@ -7,9 +7,15 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-20/khammerschlag"
   issn: 2058-5462
 language: en
+palette: "theme-bittersweet"
 layout: splash
 BAStype: article
 image: figures/banners/maclise-black-apollo_banner.jpg
+review_status: "Peer Reviewed (Double Blind)"
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 order: 209
 pub_date: 2021-07-18
 pub_type: publication-periodical
@@ -110,55 +116,55 @@ acknowledgements: "This material was presented at the \"Visual Culture as Histor
 This project is made possible through support from the Terra Foundation for American Art."
 ---
 
-{% assign DOI = "001" %}
+{% assign chapter_DOI = "001" %}
 
 # Introduction
 
-{% assign DOI = "p1" %}
+{% assign paragraph_DOI = "p1" %}
 
 Western anatomical atlases are rarely viewed through the lens of race. One reason for this is that most of the bodies that furnish anatomical atlases dating back to Andreas Vesalius' *De humani corporis fabrica* (1543) are white---or so they seem.[^1] The figures in anatomical atlases often appear without their skin, their bodies having been literally and representationally flayed, in order to display the underlying anatomical structures. But their status as white Europeans has remained unquestioned in the scholarship on the history of anatomical illustration.[^2] This assumption is reinforced by the frequency with which anatomised subjects from the Renaissance onwards have been positioned to resemble Greco-Roman statues. A prime example of this is an illustration of a flayed cadaver holding his skin in one hand and a dissecting knife in the other from Juan Valverde de Amusco's *Anatomia del corpo humano* (1560) ([Fig. 1](#krhammerschlag-fig1)).[^3] This is a remarkable image for numerous reasons, including the fact that the man's skin, which he has apparently removed himself, resembles a second ghostly visage.[^4] It is also significant that the anatomised figure strikes a pose which resembles that of the *Apollo Belvedere* (ca. 120--140), with one arm raised, the other lowered, a wide *contrapposto*, and head turned towards the raised arm ([Fig. 2](#krhammerschlag-fig2)). I will be returning to the *Apollo Belvedere* and Valverde's macabre anatomised version of it in due course.
 
 {% figuregroup '2', 'krhammerschlag-fig1, krhammerschlag-fig2' %}
 
-{% assign DOI = "p2" %}
+{% assign paragraph_DOI = "p2" %}
 
 Artistic anatomy teaches artists to see through skin to the underlying anatomical structures, principally the bones and muscles, which dictate the appearance of the body in action and repose.[^5] Around 1771, William Hunter, professor of anatomy at the Royal Academy of Arts (or the artist enlisted to help him, Agostino Carlini), directed that the flayed body of an executed criminal be manoeuvred into the pose of the famous *Dying Gaul* (Roman, first or second century ad) ([Fig. 3](#krhammerschlag-fig3)) before being cast in plaster (ca. 1834) ([Fig. 4](#krhammerschlag-fig4)).[^6] This *écorché* then took its place among the other teaching aids in the Royal Academy Schools.[^7] By having *Smugglerius*, as it continues to be known, repeat the pose of the *Dying Gaul*, artists and art students could see through the marble surface of the classical statue and imagine the musculature beneath. The lesson was that, if the artist wanted to create an image of the human form as perfect as that seen in the *Dying Gaul*, he must have a grasp of the anatomical structures that produced its outward appearance.[^8]
 
 {% figuregroup '2', 'krhammerschlag-fig3, krhammerschlag-fig4' %}
 
-{% assign DOI = "p3" %}
+{% assign paragraph_DOI = "p3" %}
 
 In 1878, John Marshall, professor of anatomy at the Royal Academy from 1873 to 1891, laid out the anatomy---the bones, joints, and muscles---that he believed artists should know in order to depict the human body accurately.[^9] His manual, *Anatomy for Artists*, includes several illustrations that epitomise the kind of penetrative looking that the study of anatomy was intended to encourage. For example, in "Figure 64.---Front view of the Male Skeleton", an animated skeleton is seen resting its hand on what appears to be a canvas ([Fig. 5](#krhammerschlag-fig5)). The outline of the body is included, but the artist is encouraged to see through the surface of the body to the skeleton beneath. A few pages later, in "Figure 66.---The Female Skeleton", another skeleton---this time, a female one---rests her elbow on an easel ([Fig. 6](#krhammerschlag-fig6)). The outline of the body is again included, with hair attached.[^10] The canvas in "Front view of the Male Skeleton" and the easel in "The Female Skeleton" place us in an artist's studio, with the skeleton in the first illustration playing the role of the artist, and the skeleton in the second assuming the role of the life model.
 
 {% figuregroup '2', 'krhammerschlag-fig5, krhammerschlag-fig6' %}
 
-{% assign DOI = "p4" %}
+{% assign paragraph_DOI = "p4" %}
 
 In this article, rather than attempting to see through the surface of the body as Marshall and others advocated, I want to imagine a process by which the anatomised bodies used to teach anatomy to aspiring doctors, surgeons, and artists might be re-skinned, and the racial identities of those who ended up on the dissecting table restored. In *Human Remains: Dissection and Its Histories*, Helen MacDonald quotes John Gurche, the paleo artist (a paleo artist uses scientific evidence to recreate in visual form prehistoric scenes and creatures): "The process of reconstruction is like a dissection in reverse".[^11] MacDonald describes being "caught in the historian's impossible dilemma ... No historian can really make people live again. We are not resurrectionists."[^12] Nonetheless, she believes "that historians can be sufficiently thorough to reconstruct something of how people in the past experienced their lives"---and their deaths.[^13] If we look closely enough at the anatomical illustrations and associated text produced by or under the instruction of such eminent surgeons as William Hunter, Friedrich Tiedemann, John Marshall, and Joseph Maclise, it is possible to find traces of the identities of "the dissected".[^14] From there we can begin the slow process of building up a fuller picture of the race (and gender, religion, etc.) of those who ended up, against their will, on dissecting tables in a period before consent was required to cut open a person's corpse. Hence, with an awareness of the limitations of such an endeavour---I am no resurrectionist (!)---I will be attempting "a dissection in reverse" through close analysis of a range of images, principally Plates 5 and 14 of Joseph Maclise's *Surgical Anatomy* (1851) ([Figs. 7](#krhammerschlag-fig7) and [8](#krhammerschlag-fig8)).
 
 {% figuregroup '2', 'krhammerschlag-fig7, krhammerschlag-fig8' %}
 
-{% assign DOI = "002" %}
+{% assign chapter_DOI = "002" %}
 
 # Identifying Corpses
 
-{% assign DOI = "p5" %}
+{% assign paragraph_DOI = "p5" %}
 
 In the illustrations produced by Joseph Maclise for *Surgical Anatomy*, exemplary male physical specimens abound.[^15] Maclise (1815--1880) was an Irish surgeon who studied at University College, London, and the École Pratique, L'Hôpital de la Pitié, in Paris, before settling into practice on Fitzroy Square in London.[^16] He was also brother to the successful Royal Academy artist Daniel Maclise (1806--1870), known for his decorative schemes for the House of Lords. Joseph Maclise not only penned medical and scientific texts, but also produced the illustrations, no doubt with reference to the art and expertise of his brother. After illustrating Richard Quain's *The Anatomy of the Arteries of the Human Body* (1844), Maclise wrote and illustrated *Comparative Osteology* (1847), *Surgical Anatomy* (1851), and *On Dislocations and Fractures* (1859).[^17] In the preface to *The Anatomy of the Arteries of the Human Body*, Quain, then professor of anatomy at University College, wrote of Maclise: "To carry out my views as to the delineations, I obtained the assistance of my friend and former pupil, Mr. Joseph Maclise." Also in his preface, Quain professed that he had inspected 930 bodies "with reference to the subject of my inquires".[^18]
 
-{% assign DOI = "p6" %}
+{% assign paragraph_DOI = "p6" %}
 
 In *Surgical Anatomy*, hooks, scalpels, and other surgical instruments reference the dissections undertaken by Maclise in London and Paris, and guide the aspiring surgeon as he or she dissects ([Fig. 9](#krhammerschlag-fig9)). A connection might here be made between the surgical instruments depicted by Maclise and the engraver's tools that would have been used in the production of the images. In the preface to *Surgical Anatomy*, Maclise specified the intended audience for the publication: "the student of medicine and the practitioner removed from the schools".[^19] As photographs of nineteenth-century anatomy theatres reveal, the folio-sized illustrations (54.5 x 37.7 cm) hung on the walls of dissecting rooms and anatomy theatres (see [Figs. 9--18 in this feature\'s introduction](/issues/issue-index/issue-20/one-object-introduction#krhammerschlag-fig8)). But the size of the atlas, along with its elaborate illustrations, made it suitable for libraries and the collections of educated gentlemen with an aesthetic sensibility and interest in male anatomy.[^20] The figures, as rendered by Maclise, are overwhelmingly healthy adult men with developed musculature, lustrous hair, blemish-free skin, and expressions that look remarkably peaceful considering the bodily violations taking place. Occasionally, fabric-turned-drapery crops and frames the body pictured ([Fig. 10](#krhammerschlag-fig10)).[^21] This enhances the aesthetic quality of the atlas and those depicted in it, elevates the images to the status of "high" art, and speaks to the skill of the artist-anatomist.
 
 {% figuregroup '2', 'krhammerschlag-fig9, krhammerschlag-fig10' %}
 
-{% assign DOI = "p7" %}
+{% assign paragraph_DOI = "p7" %}
 
 In Plate 12 ([Fig. 11](#krhammerschlag-fig11)), an illustration of the deeper organs of the thorax and abdomen, the body is gently cropped at the top of the arms and thighs, much like the *Belvedere Torso* (first century BCE) ([Fig. 12](#krhammerschlag-fig12))*.* The figure is in possession of distinguishing mutton-chop sideburns and a carefully placed curl, which hangs from his downcast head, the overall appearance being of a man who has peacefully nodded off to sleep. In Plate 15, an illustration of the relation of the internal parts to the external surface of the body, we see the cadaver's arms, but not his hands, which are likely tied behind his back ([Fig. 13](#krhammerschlag-fig13)).[^22] The position of his arms helps emphasise his musculature, signalling that this was clearly someone who laboured. But there are no signs of physical degradation, injury, poverty, or hardship. His head is turned towards the left and angled downward, which serves to highlight his pronounced jawline, a bulging vein in his neck, and a lick of hair that comes down between his ear and the corner of his eye. His penis and scrotum are positioned prominently between his muscular thighs---thighs that gently fade out towards the bottom of the page. While the body is truncated at the top of the legs, we do not see evidence of the violent dismemberment of the limbs, which is so striking a feature of Table VI of William Hunter's *The Anatomy of the Human Gravid Uterus* (1774) ([Fig. 14](#krhammerschlag-fig14)).[^23]
 
 {% figuregroup '4', 'krhammerschlag-fig11, krhammerschlag-fig12, krhammerschlag-fig13, krhammerschlag-fig14' %}
 
-{% assign DOI = "p8" %}
+{% assign paragraph_DOI = "p8" %}
 
 We can assume that, at University College and the École Pratique, Maclise would have had access to the best cadavers on the market. Nonetheless, the idealised cadavers depicted in *Surgical Anatomy* are a far cry from the actual sick, poverty-stricken, and elderly bodies that Maclise and his colleagues would have encountered in mid-nineteenth-century dissecting theatres. On 1 August 1832, in Britain, the Anatomy Act was passed, which made unclaimed human bodies legally available to medical schools for "Anatomical Examination". Prior to that, dissection was a form of corporal punishment, depicted in all of its gory brutality by William Hogarth in *The Reward of Cruelty*, the final stage in his *The Four Stages of Cruelty* series (1751) ([Fig. 15](#krhammerschlag-fig15)). In *The Reward of Cruelty*, Tom Nero still has a noose around his neck, having been delivered fresh from the gallows. The Anatomy Act mandated the appointment of inspectors of schools of anatomy, who were required to: 
 
@@ -168,11 +174,11 @@ As a result, body registers from the nineteenth century generally note the sex o
 
 {% figure 'krhammerschlag-fig15' %}
 
-{% assign DOI = "p9" %}
+{% assign paragraph_DOI = "p9" %}
 
 With such limited official information available, historians, art historians, and medical historians are required to examine a range of visual and textual materials related to death and dissection in order to build up a more substantial picture of the identities of those who ended up on dissecting tables during the nineteenth century. In *Dissection: Photographs of a Rite of Passage in American Medicine 1880--1930*, medical historian John Harley Warner performs this important work by examining photographs of American medical students grouped around cadavers. In the United States, with an insufficient supply of cadavers for dissection, grave robbing was widespread, and it was disproportionately African American graves and cemeteries that were pillaged. Warner explains that this was because African Americans, along with other disenfranchised groups, were less able to defend against the violation of grave robbing. In the Australian context, a rare piece of evidence relating to the race of cadavers used for dissection appears in the May 1898 edition of *Speculum*, the University of Melbourne Medical School journal. The following apparently comical incident is relayed: "In the Dissecting Room.---Very junior man gazing on a blackfellow: 'See! this body is putrifying: it is all black.'"[^26] The racist joke lies in the equation of dark skin with decaying flesh.
 
-{% assign DOI = "p10" %}
+{% assign paragraph_DOI = "p10" %}
 
 Just as there is an assumption that the bodies depicted in anatomical atlases are white, so too is there an assumption that they are male. When female anatomy is displayed, it is generally the reproductive organs that are the focus of scientific and artistic interest.[^27] Friedrich Tiedemann's *Tabulae arteriarum corporis humani* (1822), translated into English in 1829 as *Plates of the Arteries of the Human Body*, suggests otherwise.[^28] Tiedemann explains in his introduction: "I have with my own hands dissected upwards of five hundred bodies, and examined with no small degree of diligence subjects of *both sexes*, and of all ages."[^29] Later he states:
 
@@ -182,17 +188,17 @@ It would be hard to tell just from looking at the illustrations in Tiedemann's a
 
 {% figure 'krhammerschlag-fig16' %}
 
-{% assign DOI = "p11" %}
+{% assign paragraph_DOI = "p11" %}
 
 Finally, there is another clue to the identity of dissected corpses in anatomical atlases: foreskins, or the lack thereof. The majority of male cadavers in Maclise's *Surgical Anatomy* have foreskins; however, in Plate 12, the man is circumcised or has a withdrawn foreskin.[^31] It is hard to judge conclusively based on this image the intactness of the prepuce, but the genitalia are presenting in an anomalous mode and are therefore worthy of commentary.[^32] Despite debates over the potential health benefits of circumcision, the operation was not routinely performed in nineteenth-century Britain. In the words of Sander L. Gilman: "Modernity, at least in the Western diaspora, came to regard infant male circumcision as the key marker of a Jewish religious identity."[^33] In other words, a circumcised penis was a sign of Jewish "Otherness". There were circumcisions performed on non-Jewish men for medical reasons. In these cases, the objective was to remove the restriction on urine, not to remove the entire prepuce. In the case of Plate 12, not enough of the foreskin has been removed to constitute a "kosher" circumcision according to Orthodox Jewish Law, but it nonetheless appears that the procedure has taken place. It could be a botched Jewish circumcision, which did and still does occur.
 
-{% assign DOI = "p12" %}
+{% assign paragraph_DOI = "p12" %}
 
 In Plate 12, the circumcised penis is inconsequential to the anatomical lesson being taught, but it invites speculation about the religious background of the figure. Could this be a Jewish cadaver? Significantly, one of the *écorché* models in the collection of the Royal Academy is widely recognised to have been made from the body of Solomon Porter, an executed Jewish criminal ([Fig. 17](#krhammerschlag-fig17)).[^34] Porter was part of a gang of Jewish burglars, led by a Jewish surgeon and apothecary, Dr Weil, who broke into the house of Mrs Hutchinson in Chelsea on 11 June 1771. In the course of the robbery, a servant was murdered. Solomon, along with Dr Weil, Asher Weil, and Jacob Lazarus, was found guilty and executed at Tyburn on 9 December 1771.[^35] It is likely that it was Porter's body that was, under the direction of William Hunter, flayed, manoeuvred into a pose reminiscent of a classical statue, and then cast in the production of an *écorché* for the Royal Academy.[^36] But the use of Porter's corpse did not end at the Royal Academy. Hunter removed and preserved Porter's penis for his anatomical collection, now at the Hunterian Museum, University of Glasgow.[^37] The record in the *Catalogue of Anatomical Preparations in the Hunterian Museum* (1840) reads: "No. 45. *s.* The upper half of the Penis of a Jew; as the prepuce is removed, it explains circumcision: there are also two large chancres on the glans. (Solomon Porter.)"[^38] Porter's penis was clearly of interest to Hunter because it was Jewish/circumcised *and* diseased.
 
 {% figure 'krhammerschlag-fig17' %}
 
-{% assign DOI = "p13" %}
+{% assign paragraph_DOI = "p13" %}
 
 Whether Jewish men were more or less susceptible to syphilis by virtue of being circumcised was the subject of medical inquiry during the nineteenth century.[^39] Jonathan Hutchinson, surgeon to the Metropolitan Free Hospital and an expert on syphilis, concluded that "\[t\]he circumcised Jew is ... very much less liable to contract syphilis than an uncircumcised person".[^40] In the same year that Hutchinson published his findings, the second volume of Maclise's *Surgical Anatomy* was being advertised. Mr E. Harding Freeland, surgeon to the St George's and St James's Dispensary, London, writing for *The* *Lancet* (basing his findings on the data collected by Hutchinson fifty years earlier), found
 
@@ -200,39 +206,39 @@ Whether Jewish men were more or less susceptible to syphilis by virtue of being 
 
 Solomon Porter's preserved genitals bring to the fore the intersecting histories of deviant sexuality and religious Otherness, especially in the case of Jewish men, and the medical procedures (circumcision, cosmetic surgery, etc.) that were blamed as their cause and/or touted as their cure.
 
-{% assign DOI = "003" %}
+{% assign chapter_DOI = "003" %}
 
 # Black Anatomy
 
-{% assign DOI = "p14" %}
+{% assign paragraph_DOI = "p14" %}
 
 What distinguishes Maclise's *Surgical Anatomy* from other elaborately illustrated anatomical and surgical productions from around this date is the inclusion of illustrations of the aestheticised body of a dissected Black man.[^42] The dissected Black cadaver is depicted in Plate 5 (see [Fig. 7](#krhammerschlag-fig7)) and Plate 14 (see [Fig. 8](#krhammerschlag-fig8)) of the first British edition (1851), and Plate 4 ([Fig. 18](#krhammerschlag-fig18)) and Plate 24 ([Fig. 19](#krhammerschlag-fig19)) of the second British edition. It is also possible that it is the Black man's dissected abdomen that appears in Plate 25 of the first British edition ([Fig. 20](#krhammerschlag-fig20)).[^43] In Plate 14, the man has a cut on the inside of his right thigh, which appears to have been sutured in Plate 25 (this is the only illustration with stitches in that spot).
 
 {% figuregroup '3', 'krhammerschlag-fig18, krhammerschlag-fig19, krhammerschlag-fig20' %}
 
-{% assign DOI = "p15" %}
+{% assign paragraph_DOI = "p15" %}
 
 Significantly, the Black man in the British editions of *Surgical Anatomy* is transformed into a white man in all American editions of the same atlas, his skin having been lightened and his racial identity whitewashed. In the American version of Plate 5, rather than showing a white man and a Black man facing away from each other, we are presented with two versions of the same white man facing towards each other ([Fig. 21](#krhammerschlag-fig21)).[^44] In the American version of Plate 14, the tone of the figure's skin is lightened and his head is cropped out of the picture, giving the impression that we are looking at the anatomy of a white man ([Fig. 22](#krhammerschlag-fig22)).[^45] In other words, in the American editions of Maclise's atlas, the Black man's anatomy is shown as a white man's anatomy. This is a remarkable example of the whitewashing of racial difference in anatomical publications. Maclise, or, more likely his American publishers, Blanchard and Lea of Philadelphia, must have calculated that Plates 5 and 14 in their original form were too inflammatory for the American scientific community, especially in the South where slavery was still being practised.[^46]
 
 {% figuregroup '2', 'krhammerschlag-fig21, krhammerschlag-fig22' %}
 
-{% assign DOI = "p16" %}
+{% assign paragraph_DOI = "p16" %}
 
 The only precedents that I have been able to find for Maclise's illustrations of an anatomised Black man in an anatomical or surgical production appear in two publications by Charles Bell (1774--1842): *Engravings of the Arteries* (1811) and *Illustrations of the Great Operations of Surgery* (1821).[^47] Like Maclise, Bell was a surgeon-anatomist who produced both the text and images for his publications.[^48] In the third British edition (1811) of Bell's *Engravings of the Arteries*, a Black figure appears in an illustration of the carotid artery ([Fig. 23](#krhammerschlag-fig23)).[^49] The race of the figure is referenced in the accompanying text: "Finding in the head of this black the most common and regular distribution of the branches of the Carotid Artery, I took this sketch from it."[^50] This statement makes clear that the image was made from direct observation. It also justifies Bell's use of a Black man's anatomy by explaining that his carotid artery is standard---it presents the "most common and regular distribution of the branches". In *Illustrations of the Great Operations of Surgery*, a different Black man appears in an illustration of trepanation ([Fig. 24](#krhammerschlag-fig24)).[^51] The illustration shows "the wound after the operation has been performed, the trephine having been applied, and the shattered bones removed".[^52] Additionally, there is a sketch---a sketch within a sketch---of the fractured bone. With the bed sheets pulled right up to the bottom of his chin, the man turns his head to reveal a large, red, flower-like, gaping wound where the trephine bore down into his skull. His expression betrays no pain and suffering---perhaps the operation has provided some relief---but there is blood behind his ear and on the cloth under his neck.
 
 {% figuregroup '2', 'krhammerschlag-fig23, krhammerschlag-fig24' %}
 
-{% assign DOI = "p17" %}
+{% assign paragraph_DOI = "p17" %}
 
 There are similarities between Bell's depiction of the Black man in *Engravings of the Arteries* and his depiction of the Black man in *Illustrations of the Great Operations of Surgery*. Both have backward-sloping foreheads, tightly curled hair, and stubble. While the men face in different directions, the angles of their heads are the same. The main difference is that in *Illustrations of the Great Operations* *of Surgery* the man is still alive. The dissected Black corpse in *Engravings of the Arteries* has his eyes and mouth open, as if suspended in the moment of his last breath. In *Illustrations of the Great Operations of Surgery*, the man's eyes are open and his mouth is closed---he is silent but alert. Although the operation appears to have been successful, it is tempting to imagine it going a different way, and the unfortunate patient in *Illustrations of the Great Operations* *of Surgery* ending up a dissected cadaver in one of Bell's anatomical publications. In *Possessing the Dead*, MacDonald notes that, following the passing of the Anatomy Act, hospitals became a primary (legal) source of corpses for dissection.[^53] Bell produced his publications before the Anatomy Act was passed, hence the corpses that he dissected would have been either executed criminals or obtained via the black market in human remains (i.e. grave robbing and/or "burking").[^54] Maclise, who produced his texts after the Anatomy Act was passed, would have had access to the unclaimed bodies of those who died in public institutions: hospitals, poorhouses, asylums, etc. Put differently, the Black man in Bell's *Engravings of the Arteries* was likely executed, murdered, and/or exhumed; the Black man in Maclise's *Surgical Anatomy* presumably died poor and without family.
 
-{% assign DOI = "p18" %}
+{% assign paragraph_DOI = "p18" %}
 
 While non-white bodies are almost entirely absent from general anatomical treatises, depictions and descriptions of the anatomical structures of non-white bodies are a ubiquitous presence in ethnographic and anthropological texts from the nineteenth century. To cite one particularly shocking example, Josiah Nott and George Gliddon's infamous and influential American polygenisist text, *Types of Mankind* (1854), includes an illustration comparing the faces and skulls of the "Apollo Belvedere"/"Greek", "Negro"/"Creole Negro", and "Young Chimpanzee" ([Fig. 25](#krhammerschlag-fig25)).[^55] The heads and skulls are organised one above the other to make clear the racial hierarchy being presented: Europeans above Africans above primates. The sculpted head of the *Apollo Belvedere* is the whitest and has the smallest facial angle, as per Pieter Camper's eighteenth-century system of facial measurements.[^56] Significantly, despite their placement on the page, the facial angle of the skull of the Black man is presented as the largest---larger even than that of the chimpanzee. It is purposefully tipped back to overemphasise the facial angle, in contrast to the skulls above and below it, which are more upright. In fact, the backward slope of the Black man's skull is so pronounced that it does not even bear a structural resemblance to his head beside it.[^57] Finally, the head of the chimpanzee has a larger and more pronounced forehead than the Black man's, the implication being that races with darker skin are less intelligent even than apes.
 
 {% figure 'krhammerschlag-fig25' %}
 
-{% assign DOI = "p19" %}
+{% assign paragraph_DOI = "p19" %}
 
 Although Bell's illustration of trepanation in *Illustrations of the Great Operations of Surgery* shows the brain and skull of a Black man, it represents a departure from the kinds of racialised pictures of brains and skulls that appeared in ethnographic texts at the time. This is because the Black man's brain and skull are not isolated from the rest of his body and therefore cannot be measured and weighed. Furthermore, race goes unmentioned in the explanatory text. Significantly, on 9 June 1836, Tiedemann presented a paper to the Royal Society, which refuted the proposition that the brains of "Negros" were smaller than those of Europeans. In his discussion of the "Weight of the Brain of a Negro", he stated:
 
@@ -240,25 +246,25 @@ Although Bell's illustration of trepanation in *Illustrations of the Great Opera
 
 Later, he revealed that, "by measuring the cavity of the skull of Negroes and men of the Caucasian, Mongolian, American, and Malayan races", he was able to show "that the brain of the Negro is as large as that of the European and other nations".[^59]
 
-{% assign DOI = "p20" %}
+{% assign paragraph_DOI = "p20" %}
 
 In *Races of Men: A Fragment* (1851), the influential anatomist Robert Knox objected to "the contrary opinion professed by Dr Tiedemann respecting the great size of some African skulls", stating: "I feel disposed to think that there must be a physical and, consequently, a psychological inferiority in the dark races generally".[^60] Knox devoted an entire chapter of *The Races of Men* to "The Dark Races of Men", in which he argued that "\[s\]ince the earliest times, then, the dark races have been the slaves of their fairer brethren".[^61] This was because of the "obvious physical inferiority of the Negro".[^62] Knox contended that the darker races were inferior "as regards mere physical strength", "in size of brain", in "the form of the skull" and its placement on the neck, and in "the texture of the brain".[^63] He also stated that "the whole shape of the skeleton differs from ours, and so also I find do the forms of almost every muscle of the body".[^64] For Knox, racial difference went as deep as the skeleton and muscles.
 
-{% assign DOI = "p21" %}
+{% assign paragraph_DOI = "p21" %}
 
 In contradistinction to Knox's polygenist conception of racial difference, which emphasised the permanence and inferiority of Black anatomy, the Black figure in Maclise's *Surgical Anatomy* constitutes an exemplary, even idealised, anatomical specimen. (*The Races of Men* was published in the same year as the complete first edition of *Surgical Anatomy.*) In Plate 5 of *Surgical Anatomy*, "The Surgical Dissection of the Sterno-Clavicular or Tracheal Region, and the relative position of its main blood vessels, nerves \[, &c\] etc.", Maclise depicted men of different races facing away from each other (see [Fig. 7](#krhammerschlag-fig7)). But when one penetrates below the surface of the skin, through what appears to be a window or portal to the anatomy beneath, one finds the same anatomical structures rendered in the same schematised colours. This is not an image of racialised anatomy; this is a depiction of "universal anatomy". The Black figure's head is turned to reveal an indentation on his earlobe, suggestive of an ear piercing.[^65] This detail opens up the possibility that the Black man in Maclise's atlas is a sailor. A drawing by John Downman from 1815 of *Thomas Williams, a Black Sailor* shows the sitter with his hands positioned in a prayer-like gesture, and his head angled towards the left to reveal a hooped earring in his left earlobe ([Fig. 26](#krhammerschlag-fig26)). Another possibility is that the ear piercing in Plate 5 of Maclise's atlas is a sign of the Black figure's exoticism. In *The Secret of England's Greatness* (ca. 1862--1863) by Thomas Jones Barker, Queen Victoria presents a Bible---that is, the secret of England's greatness---to an African ambassador or prince ([Fig. 27](#krhammerschlag-fig27)). The African bows before the English sovereign, extending his left arm to receive the gift. Both Victoria and the African prince wear light-coloured garments, and both have feathers as part of their headpieces. They also both wear jewels, indicating their shared royal status. But the jewellery worn by the African prince, in particular his large hoop earring, marks him out as different from the other (white) men in the scene.[^66]
 
 {% figuregroup '2', 'krhammerschlag-fig26, krhammerschlag-fig27' %}
 
-{% assign DOI = "p22" %}
+{% assign paragraph_DOI = "p22" %}
 
 We see more of the Black man in Plate 14 of *Surgical Anatomy*, "The Surgical Dissection of the First, Second, Third, and Fourth Layers of the Inguinal Regions, in connection with those of the Thigh" (see [Fig. 8](#krhammerschlag-fig8)). The only reference to the dissecting table is the grain of the wood seen on the bench between his thighs beneath his scrotum. The figure's eyes are closed tightly, his nostrils slightly flared, and his lips pressed together. His torso faces forward, but his head is turned to the right. The turn of his head allows the viewer to see his pronounced jawline, the shape of his skull, and the angle of his profile. At this time, the jaw, facial angle, and skull were all subjects of examination by ethnographers and anthropologists concerned with the study of racial difference. But Maclise's illustration combines a racialised exterior with "typical" anatomy, to use Bell's term. The Black cadaver is depicted with dark skin and tightly curled dark hair, which were recognised at the time as characteristics of the "Negroid Type".[^67] He also exhibits individualising features, including the previously noted cut on the inside of his right thigh. Where the cut appears and the dark skin is torn, light flesh is revealed. Additionally, the torn and turned-back flesh that produces a jagged uneven line along the base of the figure's torso is light in tone, as are the broken bones of his ribcage and some of his internal organs. This is the case in other plates too, but in Plate 14 there is a more obvious contrast between the dark exterior and light interior of the body. While the exterior of the body is Black, the interior is depicted in the standardised colour scheme of anatomical illustration (red for arteries and blue for veins). Hence, the internal organs are presented as raceless---a marked departure from the racialised presentations of anatomy that were being advanced in ethnography and anthropology at the time.[^68]
 
-{% assign DOI = "004" %}
+{% assign chapter_DOI = "004" %}
 
 # Black Apollo
 
-{% assign DOI = "p23" %}
+{% assign paragraph_DOI = "p23" %}
 
 The appearance of a Black cadaver in the British editions of Maclise's *Surgical Anatomy*, and his disappearance from the American editions, raises a series of poignant questions about the often-overlooked issue of race in nineteenth-century dissecting rooms: how likely was it that an anatomist or artist in mid-century Britain or America would have encountered a non-white cadaver on the dissecting table? Would a Black cadaver have been desirable, or were other factors more important such as the age and physical condition of the body? At the same time, one needs to remain mindful of the limitations of relying on an image such as Plate 14 for historical evidence. In *Black Victorians*, Jan Marsh offers the following warning:
 
@@ -266,35 +272,35 @@ The appearance of a Black cadaver in the British editions of Maclise's *Surgical
 
 It is difficult to ascertain what relation Plate 14 bears to the realities of Black experience in nineteenth-century anatomy theatres. After all, it is a highly sanitised and aestheticised representation of the dissection of a Black body. Thought of differently, as an aestheticised depiction of a dissected Black male body, Plate 14 has much to reveal to us about the often-messy relationship between aesthetics, dissection, and race in mid-nineteenth-century Britain.
 
-{% assign DOI = "p24" %}
+{% assign paragraph_DOI = "p24" %}
 
 In Plate 14, the man's arms fade out at the biceps, but we are presented with enough information to be able to recognise that his left arm is outstretched and his right arm lowered. The positioning of the arms, along with the turn of the head, gives this figure the appearance of the *Belvedere Torso* or *Apollo Belvedere.*[^70] That said, despite the classicising positioning, as a picture of a dead and dissected Black body presented for examination by presumably white viewers, it feels far from being a "Black Apollo". The relationship of white male viewers to exposed Black male bodies was satirised by John Bourne in *Meeting of Connoisseurs* (ca. 1807) ([Fig. 28](#krhammerschlag-fig28)). Bourne's watercolour pokes fun at the fashion for Black models at the time by showing a group of white male artist-connoisseurs in an artist's studio surveying the unclad body of a Black male model. The comedy of the images lies in the fact that these are connoisseurs of naked Black men, rather than "Art".[^71] In contrast to the short, stubby, and scrawny bodies of the pasty white gentlemen-connoisseurs, the unclad Black model boasts an impressive physique. Seeing him from behind, we are able to admire his muscular back, legs, and arm, and to appreciate his remarkably taut buttocks. So taut are his buttocks that he even resembles *The Farnese Hercules* ([Fig. 29](#krhammerschlag-fig29)). Some white fabric around his waist could or could not be covering his genitals---only the connoisseurs and artist know (although, from the concentrated stare of the man crouched in front of the canvas, and the suggestive gesture of the artist with his cane in his mouth, it would seem not). The model's legs are in *contrapposto*, with his left foot slightly raised off the ground. His outstretched arm, bent at the elbow, rests on a broom handle for support, an alternative no doubt to the ropes that were often used to keep the limbs of life models (and cadavers) in place. A comically short and pudgy connoisseur has his hand under the Black man's chin. He could be moving the man's face into the correct position of the *Apollo Belvedere*, surveying the model's profile, enjoying a titillating caress of the Black man's flesh, or all of the above. Aris Sarafianos writes of this image that its satirical tone stems from "a growing sense of the intellectual shakiness and triteness of the comparison between black people and the *Apollo* rather than ... from the 'unusual' nature of this analogy".[^72] Furthermore, the way in which the exposed body of the Black man is closely scrutinised by the white connoisseurs invokes the scopic economy of the Atlantic slave trade and conjures up images of American slave auctions.[^73]
 
 {% figuregroup '2', 'krhammerschlag-fig28, krhammerschlag-fig29' %}
 
-{% assign DOI = "p25" %}
+{% assign paragraph_DOI = "p25" %}
 
 The gesture of a muscular Black man with one arm outstretched and the other lowered appeared in major artworks from around this date, works of which Maclise would have no doubt been aware.[^74] At the apex of Théodore Géricault's *The Raft of the Medusa* (1819), for example, a Black man waves red and white fabric to attract the attention of a boat in the distance ([Fig. 30](#krhammerschlag-fig30)). The hope of salvation for these shipwrecked wretches lies in the Black man's gesture---in his strength, energy, and determination to keep his arm outstretched. Similarly, in one of Daniel Maclise's designs for the Royal Gallery of the Palace of Westminster, *The Death of Nelson Supported by Captain Hardy on the Victory at Battle of Trafalgar* (completed 1865), a muscular Black man plays a seminal role in the unfolding drama ([Fig. 31](#krhammerschlag-fig31)). At the centre of the fresco, a Black figure extends his left arm and points towards Nelson's killer. With his right hand, he touches the man beside him to alert him to the perpetrator.[^75] Amidst the tumult of battle, the outstretched muscular arm of the dark-skinned man stands out. As is the case in Géricault's *The Raft of the Medusa*, the Black man in Daniel Maclise's scheme performs an important compositional role, with the diagonal thrust of his arm directing the viewer's eye into the drama. Interestingly, the Black sailor depicted by Daniel Maclise has an ear piercing, just like the Black figure in Plate 5 of Joseph Maclise's *Surgical Anatomy*.[^76]
 
 {% figuregroup '2', 'krhammerschlag-fig30, krhammerschlag-fig31' %}
 
-{% assign DOI = "p26" %}
+{% assign paragraph_DOI = "p26" %}
 
 There was, of course, another reason why a Black man might extend his arm: to land a punch. By the time Maclise produced his atlas, several men of colour had achieved fame as prize-fighters in the era of bare-knuckle pugilism, Bill Richmond and Tom Molineaux foremost among them.[^77] As boxing was illegal for much of the nineteenth century, write Ruti Ungar and Michael Berkowitz, "\[t\]hose who turned to boxing as a livelihood tended to come from the lower rungs of the social ladder, and frequently they were among minority groups, such as the Irish, Jews, and Blacks".[^78] Some of the most famous boxing matches---and the pictures inspired by them---pitted pugilists of different races against each other.[^79] The fighters in Géricault's 1818 lithograph *Les Boxeurs* are generally thought to be Molineaux and Tom Cribb, the champion of England, who fought on 28 September 1811 ([Fig. 32](#krhammerschlag-fig32)).[^80] In Géricault's lithograph, the muscular bodies of the boxers mirror each other---the Black boxer wears white pants and the white boxer wears black pants---their front legs forming a cross. To the left of the image, a bare-chested man assumes the pose of the *Dying Gaul*, reminding us once again of *Smugglerius*. In William Etty's painting *The Wrestlers* (1840s), racially diverse, muscular male bodies are brought into even closer contact, with differently coloured flesh pushing up against each other ([Fig. 33](#krhammerschlag-fig33)). The Black wrestler is shown kneeling, right arm hooked around the white man's torso, and front leg positioned underneath the white man's thigh. While the white man wears a loincloth, the Black man is apparently naked, his taut shiny buttocks revealed to the viewer. Even if it was believed by many at the time that white men *should* win, in the images produced by Géricault and Etty the fighters seem evenly matched.[^81]
 
 {% figuregroup '2', 'krhammerschlag-fig32, krhammerschlag-fig33' %}
 
-{% assign DOI = "p27" %}
+{% assign paragraph_DOI = "p27" %}
 
 Turning once again to Plate 14 of Maclise's *Surgical Anatomy* and its relationship to the *Apollo Belvedere*, if the anatomised Black man in Plate 14 had his legs and arms restored, would he embody the classical youth and beauty of the *Apollo Belvedere*, or the strength and hopelessness of *The Dying Negro*?[^82] The title page of Thomas Day's abolitionist poem of 1775 (first published 1773) features a picturesque landscape, with a divine light piercing the dark clouds to illuminate the body of a muscular Black slave ([Fig. 34](#krhammerschlag-fig34)). In the background, three Black figures pull a wagon under the cruel mastery of a white slaveholder. Despite the chains that bind his arms and legs, the Black man in the foreground raises his right arm towards the light and, in this hand, he holds a dagger. The message conveyed is that this man would rather die than live in chains. In George Cooke's 1793 *Slave on Deck*, the figure assumes a similar gesture, but now the action takes place at sea, amidst cargo, rigging, and ropes, presumably on the dreaded middle passage ([Fig. 35](#krhammerschlag-fig35)). As in Day's image, the bound man in Cooke's image holds a dagger, but this time it is in his lowered right hand. This makes him look less as if he is taking an oath before God, and more as if he is pledging to himself that he will escape bondage by ending his life. Additionally, in Cooke's version, the dagger has blood on it, prompting the question of what kind of violence he might already have instigated.
 
 {% figuregroup '2', 'krhammerschlag-fig34, krhammerschlag-fig35' %}
 
-{% assign DOI = "p28" %}
+{% assign paragraph_DOI = "p28" %}
 
 In contrast to more familiar abolition imagery that shows enslaved men and women in unthreatening gestures of supplication and pleading such as Josiah Wedgwood's medallion, "Am I Not a Man and a Brother?" (1787), the images by Day and Cooke present an upstanding and empowered image of the enslaved Black body. The men exhibit impressively muscular physiques, likely produced by servitude and hard labour, which associate the figures with the exemplary bodies of classical statues. Furthermore, despite the fact that the men are bound in chains, they stand in *contrapposto* and wear white loincloths. The loincloths conceal the men's potentially scandalous genitals and add a classicising element. But shifting focus from the figures to what they hold---that threatening dagger---the images by Day and Cooke recall a picture that we encountered at the very outset of this article: the flayed man in Valverde's *Anatomia del corpo humano.* The dagger returns us to the act of flaying. It also invokes the scalpels and other instruments depicted by Maclise in his atlas for the purpose of anatomising the human body. Above all, it allows us to imagine the excruciating and violent process by which the dark flesh of the enslaved Black man might be cut away in the production of anatomical models and illustrations for use in European and American art and medical academies.
 
-{% assign DOI = "p29" %}
+{% assign paragraph_DOI = "p29" %}
 
 The implied whiteness of figures in anatomical atlases works to perpetuate a series of assumptions about the normative human body, namely, that it is white, male, and classically proportioned, like the *Apollo Belvedere*. Ironically, there is plenty of evidence that not even classical statues, including the *Apollo Belvedere*, were originally white.[^83] The whitewashing of anatomised subjects in atlases, diagrams, and textbooks masks the fact that a significant proportion of people who ended up on dissecting tables in Britain, America, Australia, and beyond were not white. Close analysis of publications such as Maclise's *Surgical Anatomy* opens up questions about the processes by which the violated bodies of the old, young, sick, pregnant, unborn, enslaved, indentured, institutionalised, imprisoned, poor, destitute, Black, Irish, and Jewish individuals who ended up on the nineteenth-century dissecting table were abstracted into objects of great aesthetic, intellectual, and monetary value. It suggests that the removal of flesh in the production of *écorchés* not only exposes the underlying musculature but also strips away those signifiers of non-ideal identity (dark skin, wrinkles, blemishes, scars, tattoos, and so on) in the production of ideal physical specimens. Addressing the relationship between aesthetics, dissection, and race during the nineteenth century is not a simple or straightforward task---it requires us to keep our head, follow our gut, and, on occasion, take a dagger in hand.
 

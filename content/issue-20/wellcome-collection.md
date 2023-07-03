@@ -9,9 +9,15 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-20/jlaw"
   issn: 2058-5462
 language: en
+palette: "theme-bittersweet"
 layout: splash
 BAStype: article
 image: figures/banners/wellcome-collection_banner.jpg
+review_status: "Peer Reviewed (Double Blind)"
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 order: 207
 pub_date: 2021-07-18
 pub_type: publication-periodical
@@ -31,27 +37,27 @@ subjects:
   name: Victorian
 ---
 
-{% assign DOI = "001" %}
+{% assign chapter_DOI = "001" %}
 
 # Joseph Maclise\'s Anatomical Atlases: His Works and Influences
 
-{% assign DOI = "p1" %}
+{% assign paragraph_DOI = "p1" %}
 
 {% figure 'jlawljordanovawschupbach-fig1' %}
 
-{% assign DOI = "002" %}
+{% assign chapter_DOI = "002" %}
 
 # William Hunter\'s Atlas of Human "Gravid Uterus": The Production and Uses of Atlases
 
-{% assign DOI = "p2" %}
+{% assign paragraph_DOI = "p2" %}
 
 {% figure 'jlawljordanovawschupbach-fig2' %}
 
-{% assign DOI = "003" %}
+{% assign chapter_DOI = "003" %}
 
 # Joseph Maclise\'s Anatomical Atlases: The Scientific and Intellectual Contexts of Anatomical Production
 
-{% assign DOI = "p3" %}
+{% assign paragraph_DOI = "p3" %}
 
 {% figure 'jlawljordanovawschupbach-fig3' %}
 

@@ -6,9 +6,17 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-20/wschupbach"
   issn: 2058-5462
 language: en
+palette:
+  - dark: #ED4A85
+  - light: #B00C48
 layout: splash
 BAStype: article
 image: figures/banners/publishing-on-gower-street_banner.jpg
+review_status: "Peer Reviewed (Double Blind)"
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 order: 211
 pub_date: 2021-07-18
 pub_type: publication-periodical
@@ -69,115 +77,115 @@ subjects:
   name: Victorian
 ---
 
-{% assign DOI = "001" %}
+{% assign chapter_DOI = "001" %}
 
 # Introduction
 
-{% assign DOI = "p1" %}
+{% assign paragraph_DOI = "p1" %}
 
 Anyone looking at the large and impressive lithographs issued with the title *The Anatomy of the Arteries of the Human Body* at the time of its publication in 1840--1844, must have been astonished and impressed ([Fig. 1](#wschupbach-fig1)). The lithographs are large and numerous, drawn in a dashing but careful style; the dissections are sophisticated in technique; detailed studies of arteries are combined with portraits of dead patients; and the suffering human figures are imbued with pathos. Most people at the time would have seen nothing like it.
 
 {% figure 'wschupbach-fig1' %}
 
-{% assign DOI = "p2" %}
+{% assign paragraph_DOI = "p2" %}
 
 It would be natural to ask who was responsible for this impressive work. The most spectacular contribution is that of Joseph Maclise (1815--1880), however, he was not "the" creator, or the sole creator, of the work. Despite his eye-catching and indeed emotionally charged lithographs, he could be considered the junior contributor, in that this was his début publication. When the lithographs were first issued in 1840--1842, the advertisements contained no mention of Maclise: the artist was ignored.[^1] A title page, printed in 1844 after the work had already been issued in fascicules (parts) from 1840 onwards, proclaims in bold characters that it is "by Richard Quain F.R.S.". A lower credit line in smaller and more compressed characters adds "the drawings from nature and on stone by Joseph Maclise, surgeon", and the imprint at the bottom of the page, in middling-sized characters, identifies the publisher with the words "Printed for Taylor and Walton, booksellers and publishers to University College, Upper Gower Street" ([Fig. 2](#wschupbach-fig2)). The five names---Quain, Maclise, Taylor, Walton, and University College---are all significant. Richard Quain (1800--1887) was an experienced author, surgeon, and academic, a fellow of the Royal College of Surgeons of England (1843) and a fellow of the Royal Society (1844). Taylor and Walton had been publishing for nearly twenty years. University College was the institution, which brought all four men together in the Bloomsbury and Fitzrovia districts of London. Behind and alongside the four named contributors were many other artisans, businesspeople, and academics, who shaped the publication behind the scenes. There were also vectors, such as geographical co-location and communities of interest, that brought these players together and enabled them to generate the finished product.
 
 {% figure 'wschupbach-fig2' %}
 
-{% assign DOI = "p3" %}
+{% assign paragraph_DOI = "p3" %}
 
 If we could gather the detailed evidence for a network of actors of which Joseph Maclise was a member, its intention would not be to "decentre" Maclise, for he has not hitherto been regarded as at the centre of anything. Instead, it would be to place him in the context in which he worked. The extent to which large illustrated books are produced by a team, not by a single individual, has been described in other cases, such as the botanical *magnum opus* of Leonhart Fuchs *De historia stirpium*, published in Basel in 1542; the *De humani corporis fabrica* authored by Andreas Vesalius in 1543; and the work on the human gravid uterus written by William Hunter and published in 1774, which brought together in Westminster artists from the Netherlands, engravers from France, an obstetrician from Glasgow, and a printer in Birmingham, as well as anatomical subjects (women and babies) in London.[^2] Outside the anatomical and botanical fields, the *Nuremberg Chronicle* of Hartmann Schedel, printed in Nuremberg in 1493, has been the subject of many studies synthesising its sources and contributors.[^3] The names of Vesalius, Fuchs, Hunter, and Schedel attached to these works in catalogues can cast into shadow the teams supporting them.
 
-{% assign DOI = "p4" %}
+{% assign paragraph_DOI = "p4" %}
 
 A balance can be struck between the inspirations of individuals and the effectiveness of the teams. As a model, one can point to the exhibition and its accompanying publication *Printing and the Mind of Man*, from 1963, which marked five hundred years of printing with moveable type.[^4] The entry for an edition of Virgil's works published in Paris in 1767 places the printer's name in the headline (Joseph-Gérard Barbou), but describes the roles of no fewer than nine people in the production of the work, including illustrators, engravers, publishers, a typographer and a bookseller.[^5] Is it possible to carry out a similar exercise for *The* *Anatomy of the Arteries of the Human Body*?
 
-{% assign DOI = "002" %}
+{% assign chapter_DOI = "002" %}
 
 # Joseph Maclise and John Taylor
 
-{% assign DOI = "p5" %}
+{% assign paragraph_DOI = "p5" %}
 
 Let us start by looking at Joseph Maclise's circle. He and his brother, the painter Daniel Maclise (1806--1870) ([Fig. 3](#wschupbach-fig3)), formed one of two pairs of brothers who migrated from Cork in Ireland in the 1820s and 1830s and found a home in the same area of London. The other pair were the Quains: Jones Quain (1796--1865) and Richard Quain (1800--1887) ([Figs. 4](#wschupbach-fig4) and [5](#wschupbach-fig5)). The quartet of Quains and Maclises gravitated to Bloomsbury and Fitzrovia, and the institution to which three of the brothers were attached was University College, London (UCL): Jones Quain as professor of general anatomy, Richard Quain as senior demonstrator and lecturer on descriptive anatomy, and Joseph Maclise as a student and junior colleague of Richard Quain. UCL had opened in Bloomsbury in 1828 and was transforming the whole area ([Fig. 6](#wschupbach-fig6)).
 
 {% figuregroup '4', 'wschupbach-fig3, wschupbach-fig4, wschupbach-fig5, wschupbach-fig6' %}
 
-{% assign DOI = "p6" %}
+{% assign paragraph_DOI = "p6" %}
 
 Soon after its foundation in 1826, UCL appointed an official publisher and bookseller. Although UCL strove to differentiate itself from the ancient universities of Oxford and Cambridge, it was in this respect emulating them. The person appointed to this role was John Taylor (1781--1864) ([Figs. 7](#wschupbach-fig7) and [8](#wschupbach-fig8)). Taylor was born into a bookish family in East Retford, Nottinghamshire: his father was a bookseller and printer there, and John Taylor's working life started in his father's shop.[^6] He left for London in 1803 and worked for the publisher-bookseller James Lackington (1746--1815) in Finsbury Square ([Fig. 9](#wschupbach-fig9)). There, he learned about the balance between the public demand for books and what authors wanted to supply, the value of copyrights, and the management of a large book-based business. In 1804, he moved on to another firm of publishers, Vernor & Hood: their list included recreational verse and romances, but also---significantly for Taylor's later career---more practical literature, such as books on manures, brewing, and the management of plantations. Works of popular science that Vernor & Hood published in Taylor's time included *A Treatise on the Art of Bread-Making* (1805) and an inexpensive edition of Lavater's *Essays on Physiognomy* (1806).[^7]
 
 {% figuregroup '3', 'wschupbach-fig7, wschupbach-fig8, wschupbach-fig9' %}
 
-{% assign DOI = "p7" %}
+{% assign paragraph_DOI = "p7" %}
 
 In 1806, Taylor formed his own publishing and bookselling partnership by joining James Augustus Hessey (1785--1870) in the new firm of Taylor & Hessey. Taylor was the publisher and Hessey the bookseller. Both sides of the operation were run from 93 Fleet Street until 1823, when Taylor moved the publishing business to Waterloo Place in the West End. The partnership continued until 1825.[^8]
 
-{% assign DOI = "p8" %}
+{% assign paragraph_DOI = "p8" %}
 
 One of the lessons of Taylor's earlier career was the volatile nature of the publishing business. Some authors would need a lot of help, encouragement, editing, and money before delivering their copy; many publications would hardly sell at all; and the poisonous rivalries among influential reviewers could destroy an author's reputation. The writers whom Taylor published in the earlier half of his career, and who are best known today, were the poets John Keats (1795--1821) and John Clare (1793--1864): they were also among his most labour-intensive and least rewarding financially. Taylor found himself begging the editor of a review journal not to give an unfavourable review for Keats's early work (in vain).[^9] In verse offered up for publication, John Clare insulted the wealthy while he himself was being supported by a wealthy patron.[^10] Clare also required prolonged financial support, which he received from Taylor and others, to maintain him in his years of mental illness.[^11]
 
-{% assign DOI = "p9" %}
+{% assign paragraph_DOI = "p9" %}
 
 Publishing was a far from stable business. Taylor & Hessey nearly went under in 1817, as profits in the publishing arm were exceeded by losses in bookselling. In 1826, a crash destroyed much of the industry, with well-established firms such as Hurst, Robinson & Co. going out of business. Taylor's firm often had to be bailed out by his brother James, a banker in Nottinghamshire.[^12]
 
-{% assign DOI = "p10" %}
+{% assign paragraph_DOI = "p10" %}
 
 In an attempt to cover themselves, firms such as Vernor & Hood hedged their bets by diversification: losses from risky early works by unknown young poets such as Keats could be offset by steady sales of standard fare. This balancing act was the central story of Taylor's professional life, and of his subsequent reputation. Exciting works by brilliant writers such Keats, Clare, Charles Lamb, Thomas De Quincey, and Samuel Taylor Coleridge aroused the interest of literary critics and subsequently historians, and contributed to Taylor's renown. However, it was not those authors who saved the firm in the crises of 1817 and 1826. What saved it was the continuing level of sales in popular literature: spelling books, history cribs, simplified science, teach-yourself manuals, moralistic tracts on early rising, and catechisms.[^13] Contrasting the two types of product, Tim Chilcott in his biography of Taylor calls the latter "the publishing of uninspired mediocrity".[^14]
 
-{% assign DOI = "p11" %}
+{% assign paragraph_DOI = "p11" %}
 
 Despite his later fame as a literary publisher, in the first phases of his career, Taylor had a personal predilection for factual knowledge. Though he had received an education in Lincoln and Retford grammar schools, his academic knowledge of the world was self-acquired. It became extensive: among other subjects, he published works on the metric system, on the relation between money and value, on arithmology, and on the authorship of the *Letters of Junius.* In his later career as a publisher in Bloomsbury, his journey away from romances, epic poems, and light essays continued, but the range of "serious subjects" that he published would be vastly increased through his contacts in University College, London, including the Quains and Joseph Maclise.[^15]
 
-{% assign DOI = "003" %}
+{% assign chapter_DOI = "003" %}
 
 # John Taylor and UCL
 
-{% assign DOI = "p12" %}
+{% assign paragraph_DOI = "p12" %}
 
 Taylor and Hessey split up in 1825.[^16] For Taylor, the ending of the partnership turned out well, as it enabled him to start a new career in association with University College, London, founded in 1826 and opened on Gower Street in 1828. On his appointment as the official publisher and bookseller to the new university, Taylor set up in business, initially at 30 Upper Gower Street (circa 1828--1830). He then changed his publishing address to 28 Upper Gower Street, the house next door but one to the north, while continuing to occupy no. 30 as well. No. 28 Upper Gower Street, on the corner of Upper Gower Street and University Street, became his publishing address: it was directly across Upper Gower Street from UCL to the east, and was directly across University Street from the North London Hospital (renamed from 1837 University College Hospital) to the north. The sites of both houses (28 and 30) were later occupied by the UCL medical school library. Today, they form the site of UCL's Grant Museum, appropriately, since one of the first books that Taylor published from 30 Upper Gower Street was Robert Edmond Grant's inaugural lecture at UCL, *An Essay on the Study of the Animal Kingdom* (1828) ([Fig. 10](#wschupbach-fig10)).[^17] Here Taylor was easily accessible to UCL professors, students, and habitués, many of whom lived or worked nearby.[^18]
 
 {% figure 'wschupbach-fig10' %}
 
-{% assign DOI = "p13" %}
+{% assign paragraph_DOI = "p13" %}
 
 Around 1836, the firm John Taylor changed its name to Taylor & Walton: "Walton" has never been identified.[^19] No. 28 Upper Gower Street continued as the address of Taylor and Walton throughout its existence, and remained so after Taylor's retirement in 1853. For nearly forty years, the house on the corner of University Street and Gower Street was the powerhouse of academic publishing in Bloomsbury. Joseph Maclise and the Quains must have spent a good deal of time there preparing their major anatomical works published by Taylor & Walton in the early 1840s.
 
-{% assign DOI = "p14" %}
+{% assign paragraph_DOI = "p14" %}
 
 The tenor of the publishing list to which *The Anatomy of the Arteries* *of the Human Body* belonged can be reconstructed from library catalogues and from the advertisements bound in at the ends of many of Taylor's publications ([Fig. 11](#wschupbach-fig11)). The books published by Taylor were overwhelmingly educational, academic, and professional, not recreational. His subjects included not only natural and medical sciences but also antiquities, maps, music, "educational models for the use of schools, mechanics' institutions, and for private instruction", grammars, literature (Greek, Latin, and Italian), and "works of general interest". Singing manuals and drawing instruments (including models, pencils, chalks, and *porte-crayons*) were advertised alongside anatomical volumes and monographs on chemistry. Taylor was a prolific advertiser of technical charts by his neighbour Carlo Minasi (1817--1891), who resided and taught music at various addresses around Euston Grove: "Minasi's mechanical diagrams" remained in his stock for years.[^20] Taylor published sixteen works by or associated with the new applied chemistry of Justus von Liebig (1803--1873) between 1840 and 1851, and a lithograph of Liebig's laboratory ([Fig. 12](#wschupbach-fig12)). Among the literary classics available from Taylor and Walton in 1842 was even "Keats's poetical works, with portrait by Hilton": the poet whom Taylor & Hessey had nursed into print thirty years before was now being republished posthumously by Taylor as a classical author for educational use in schools.[^21] Taylor & Walton books which today are still in their original bindings were modestly bound in brown, black, or dark green cloth by the firm of Remnant and Edmonds, founded in 1837 and one of the largest binderies in London.[^22]
 
 {% figuregroup '2', 'wschupbach-fig11, wschupbach-fig12' %}
 
-{% assign DOI = "005" %}
+{% assign chapter_DOI = "005" %}
 
 # The Use of Lithography by Taylor & Walton
 
-{% assign DOI = "p15" %}
+{% assign paragraph_DOI = "p15" %}
 
 There is a conspicuous contrast between the anatomical lithographic publications by Taylor and the rest of his output. Most of the books published by his firm were of modest size and cheaply printed by a range of commercial letterpress printers.[^23] As the publisher of Taylor & Hessey, he had published books that were entirely or mainly unillustrated. As the publisher to UCL after 1828, he started in the same manner: most of his books consisted of small (octavo) volumes, printed in a routine manner and, if illustrated at all, for instance to show chemical apparatus, the book would have small wood engravings on the same pages as the text.[^24]
 
-{% assign DOI = "p16" %}
+{% assign paragraph_DOI = "p16" %}
 
 If wood engravings would not suffice, for example, if tone was required as well as line, the next resort would be steel engravings printed on their own sheets separately from the text and bound in as a frontispiece or as separate pages of plates. Both the wood engravings and the steel engravings were on a small scale, suitable for inclusion in an octavo volume (around 20 cm in height). The volumes could be bought and sold relatively cheaply.[^25]
 
-{% assign DOI = "p17" %}
+{% assign paragraph_DOI = "p17" %}
 
 However, these techniques, while suitable for small illustrations of such subjects as antiquities, histology, or botany, would not scale up for detailed illustrations of larger subjects such as anatomy and surgery. For that purpose, lithography was required: lithographs were easier and cheaper to make on a large scale; they could successfully simulate drawings, and their soft tone (compared with steel engravings) made them easier to colour by hand. They could not easily be printed on the same page as letterpress, but there were ways around that: the letterpress could be printed in a companion volume, or on separate sheets bound with the lithographs.[^26]
 
-{% assign DOI = "p18" %}
+{% assign paragraph_DOI = "p18" %}
 
 Taylor was confronted with the need to scale up to lithography early in his career with UCL, when he was still publishing as a lone operator at 30 Upper Gower Street (before the partnership Taylor and Walton came into existence at 28 Upper Gower Street). In 1832, he issued *The Principles and Practice of Obstetric Medicine*, by David Daniel Davis, which required large scale, and therefore lithographic, illustration. To realise the obstetric lithographs for Davis, Taylor approached the lithographic specialist Charles Joseph Hullmandel (1789--1850), whose lithographic press and office was in Great Marlborough Street, south of Oxford Street.[^27] The lithographs for Davis' publication were drawn on stone by artists who frequently worked for Hullmandel.[^28] The finished work, consisting of two volumes of letterpress and one volume of lithographs, was produced between 1832 and 1836.
 
-{% assign DOI = "p19" %}
+{% assign paragraph_DOI = "p19" %}
 
 The production of Davis' work on obstetrics required of Taylor (and of Taylor & Walton) resources far in excess of their usual letterpress output, in the form of draughtsmen, lithographers, lithographic printers, and storage of the lithographic stones, over a period of at least four years. However, it provided good experience for a series of increasingly ambitious anatomical and medical lithographic publications, which culminated in *The Anatomy of the Arteries* *of the Human Body*. The most ambitious of these lithographic publications before Quain-Maclise was a multi-volume work with text by Jones Quain. Like the later Maclise volume, it was the work of many hands. Issued in five large but not thick volumes between 1836 and 1842, it had the generic title *Anatomical Plates*, with subtitles referring to the vessels, nerves, viscera, bones, and ligaments. In artistic virtuosity, the artists (J. Walsh and William Bagg) fall far below the standard that would be set later by Maclise. The dominant figure on the publication was William James Erasmus Wilson (1809--1884), in later years Sir Erasmus Wilson.[^29] Most of the lithographs in *Anatomical Plates* have the credit line "W.J.E. Wilson direxit", a role with no equivalent in the Quain-Maclise *Anatomy of the Arteries* *of the Human Body*.
 
-{% assign DOI = "p20" %}
+{% assign paragraph_DOI = "p20" %}
 
 Between the publications of the Quain brothers (Jones Quain with Erasmus Wilson and Richard Quain with Joseph Maclise) had come a smaller work with folding lithographic plates by another set of brothers: Thomas Morton the anatomist (1813--1849) and Andrew Morton the artist (1802--1845). Like the Quain--Wilson volumes, the Mortons' slim volumes had a generic title, *The Surgical Anatomy of the Principal Regions of the Human Body*, followed by a subtitle for each volume referring to the region concerned. The volumes started to appear in 1838, with lithographs by Fairland after Andrew Morton. There is a possible link between Morton and Maclise: Andrew Morton's signature or AM monogram, as artist, appears prominently written on the stone on each plate, surrounded by a circle, just as Maclise's would appear in his plates. The Morton series, focusing on surgical anatomy like the Maclise series, was Taylor's last work in lithography before attempting the much larger Maclise production.
 
-{% assign DOI = "p21" %}
+{% assign paragraph_DOI = "p21" %}
 
 The importance, for Maclise, of Taylor's willingness to scale up from letterpress publishing to lithography, is shown by a remark by Robert Harrison (1796--1858). Harrison, professor of anatomy at Trinity College Dublin, had written a detailed book title *The Surgical Anatomy of the Arteries*, which went through at least four editions between 1824 and 1839, indicating its value as a dissecting aid. But it assumed that readers had the actual arteries laid out before them. As Harrison commented, 
 
@@ -185,53 +193,53 @@ The importance, for Maclise, of Taylor's willingness to scale up from letterpres
 
 The drawings and coloured lithographs did indeed add considerably to the complexity of Maclise's production, but it was a challenge that, by 1840, John Taylor was prepared and equipped to take on.
 
-{% assign DOI = "006" %}
+{% assign chapter_DOI = "006" %}
 
 # Taylor, Maclise, and *The Anatomy of the Arteries of the Human Body*
 
-{% assign DOI = "p22" %}
+{% assign paragraph_DOI = "p22" %}
 
 With Taylor successfully expanding his repertoire from small-scale letterpress to large-scale lithography, what was the finished product? The lithographs of *The Anatomy of the Arteries* *of the Human Body* were issued in fascicules between late 1840 and 1844. The full title was *The Anatomy of the Arteries of the Human Body*: *With Its Applications to Pathology and Operative Surgery. In Lithographic Drawings, with Practical Commentaries*. Richard Quain was the author of a small (octavo) letterpress volume, while Maclise was the author of the large lithographs, Taylor was the publisher, and Jeremiah Graf is named on some of the plates as printer of the lithographs.
 
-{% assign DOI = "p23" %}
+{% assign paragraph_DOI = "p23" %}
 
 Maclise portrayed the dissected corpses as tragic heroes and heroines, struggling or having given up the struggle for life, with the scissors and other tools of the anatomist included in the picture as instruments of their passion. Together with the fine portraits of the heroic victims, there are detailed sheets of technical diagrams showing how arteries relate to viscera, bones, and veins, for the benefit of surgery students: these also have a sense of movement produced by strong diagonals and broken lines ([Figs. 13](#wschupbach-fig13) and [14](#wschupbach-fig14)).
 
 {% figuregroup '2', 'wschupbach-fig13, wschupbach-fig14' %}
 
-{% assign DOI = "p24" %}
+{% assign paragraph_DOI = "p24" %}
 
 Advertisements for Quain and Maclise's work started to appear in 1840, stating that it will be "above 13 parts Imperial folio and an octavo volume of letterpress. A part containing five plates with its accompanying letterpress will appear on the 1st of every month" ([Fig. 15](#wschupbach-fig15)).[^31] Imperial Folio measured 27 by 21½ inches (68.5 x 54.6 cm). Normally, Quain was mentioned in Taylor's advertisements but Maclise was not, since the name Quain was known in anatomical circles (even when, as in this case, it was normally the other Quain brother, Jones, who was the well-known one).
 
 {% figure 'wschupbach-fig15' %}
 
-{% assign DOI = "p25" %}
+{% assign paragraph_DOI = "p25" %}
 
 However, Taylor & Walton did quote the reviewer in the *British and Foreign Medical Review* in 1841, as saying: "The plates do the highest credit to Mr Maclise as works of art". That anonymous reviewer went on to say: "In addition to their beauty and accuracy, they have the great advantage of representing the objects of their actual magnitude, a point of first-rate importance in surgical anatomy. Most of them are also coloured."[^32]
 
-{% assign DOI = "p26" %}
+{% assign paragraph_DOI = "p26" %}
 
 The genesis of the work was described in the preface by Richard Quain. He had compiled notes on the arteries in 930 cadavers, which he had dissected at UCL medical school. On examining them with a view to publication, 
 
 > \[I\]t became obvious that their utility would be very limited, unless as a part of a full history of the arteries with adequate delineations. ... To carry out my views as to the delineations, I obtained the assistance of my friend and former pupil Mr Joseph Maclise. In reference to that gentleman's labours, it may be allowed me to say, that while I have had the cooperation of an anatomist and surgeon, obviously a great advantage, the drawings will, I believe, be found not to have lost in spirit or effect. It affords me much gratification to render my acknowledgments to Mr Maclise, for the readiness with which he acceded to my wishes, and undertook so arduous a task, and the zeal with which he has devoted himself to it in the intervals of application to the duties of his profession.[^33]
 
-{% assign DOI = "p27" %}
+{% assign paragraph_DOI = "p27" %}
 
 Quain explains that the work differs from three earlier illustrated works on the arteries (by Albrecht von Haller, Antonio Scarpa, and Friedrich Tiedemann), in showing the variations which the main arteries can demonstrate from person to person, and by showing them in relation to veins, nerves, and viscera. He did not need to say, but it may be worth emphasising today that, during the speedy operations conducted without anaesthesia, it would be easy for a hasty surgeon to cut a major artery by mistake, with fatal consequences, if the surgeon encountered an unexpected variation in the course of an artery. Maclise helped to give this lesson mnemonic force by including drop-shadows under the arteries, which gives them a three-dimensional appearance.
 
-{% assign DOI = "p28" %}
+{% assign paragraph_DOI = "p28" %}
 
 In marketing the work, Taylor employed a range of options. Although the fascicules of plates were issued between late 1840 and 1844, already in 1842 Taylor and Walton were offering purchasers the option of having them bound in one huge volume of enormous weight with the plates folded in the gutter of the book, or in two lighter volumes with the plates not folded.[^34] Also, in 1842, Taylor and Walton were announcing that Parts I to XIV were now available, priced at 12 shillings each.[^35]In 1843, they were adding that Part XVII (the last) "will shortly be published".[^36] In the meantime, the first seven parts could be bought bound in one volume for five guineas, folded or unfolded. The more substantial single volumes were offered sturdily bound in cloth, while the lighter two-volume set was available from the publishers in a more elegant form with the spine and corners bound in leather. Purchasers of the individual fascicules could have them bound any way they liked, or not at all, and could keep them in a portfolio instead.
 
-{% assign DOI = "p29" %}
+{% assign paragraph_DOI = "p29" %}
 
 A new title page dated 1844 replaces the earlier "delineations" acknowledgment: "The drawings from nature and on stone by Joseph Maclise". Perhaps this reflects the publishers' growing realisation of quite what would be involved in producing such a massive corpus of lithographs. It tells us that Maclise had not only carried out the original drawings, presumably in pencil or chalk and watercolour, but was also recreating them, no doubt with amendments, on lithographic stones. Unusually, Taylor and Walton were not employing a professional lithographer on this publication. They had done so when publishing Jones Quain's series of volumes *Anatomical Plates* (1834--1840), but in *The Anatomy of the Arteries of the Human Body*, Maclise, having created the composition and the drawing, was now carrying out a third role, that of lithographer.
 
-{% assign DOI = "p30" %}
+{% assign paragraph_DOI = "p30" %}
 
 In 1844, Maclise celebrated the conclusion of the massive work with a return visit to Paris with his brother, the painter Daniel Maclise (they had both studied there in the 1830s). The purpose of Daniel's visit was to study French mural paintings, in preparation for his submissions to paint the murals in the new British Houses of Parliament. We do not know what Joseph did there. Meanwhile, back in London, Taylor continued to sell copies of *The Anatomy of the Arteries of the Human Body*, though the unwieldiness of the publication caused him some problems. In October 1846, Taylor and Walton's advertisement states that "The plates will be contained in a portfolio, superseding the necessity of binding". They added that, owing to the difficulty of storing the stones, they were proposing to print up to five hundred copies and then wipe the stones. The five hundred copies would, they imply, be additional to copies already sold.[^37] The offer to sell the plates in a portfolio would not only relieve purchasers of binding, but would also permit them to hang up individual plates in the dissecting room or study, to distribute individual lithographs of specialist subjects to those who wanted them, and to discard those that were of less or no interest. The storage of the eighty-seven massive stones must have been a major problem for the publisher, whether they were with the printer (Jeremiah Graf) or cluttering up one of Taylor's two Gower Street houses. The offer worked for, by November 1847, Taylor was announcing that four hundred and fifty of the five hundred copies had been subscribed for, of which four hundred had been delivered. By 1 March 1848, "460 out of the 500 copies have been subscribed for and delivered".[^38]
 
-{% assign DOI = "p31" %}
+{% assign paragraph_DOI = "p31" %}
 
 In July 1849, Taylor (by then publishing as Taylor, Walton and Maberly) announced:
 
@@ -239,29 +247,29 @@ In July 1849, Taylor (by then publishing as Taylor, Walton and Maberly) announce
 
 This price was roughly half the price asked for the original bound volumes of the entire set, but if Taylor had already recouped his expenses on the earlier edition, the income from these 460 extra copies would have been clear profit.
 
-{% assign DOI = "007" %}
+{% assign chapter_DOI = "007" %}
 
 # After *The Anatomy of the Arteries of the Human Body*
 
-{% assign DOI = "p32" %}
+{% assign paragraph_DOI = "p32" %}
 
 After the publication of *The Anatomy of the Arteries* *of the Human Body*, Taylor and Walton published Maclise's next work, *Comparative Osteology*, in 1847. This time, Taylor and Walton advertised the work extensively, naming Maclise as the author. By 1846, Joseph Maclise was a name worth mentioning.[^40] However, *Comparative Osteology* was Joseph Maclise's last work with Taylor and Walton. Although he continued to practise medicine nearby in Fitzrovia, he placed his subsequent works *Surgical Anatomy* (1851) and *On Dislocations and Fractures* (1859) with the firm of John Churchill. Churchill was a specialist medical publisher, well capitalised, and also well connected with the affluent medical world of the West End.[^41]
 
-{% assign DOI = "p33" %}
+{% assign paragraph_DOI = "p33" %}
 
 After that, Joseph Maclise disappears into medical practice and his artistic talent is no longer in evidence. *The Anatomy of the Arteries* *of the Human Body* had made sufficient impact on Taylor and Walton to encourage them to produce one further major set of anatomical lithographs: this was *Illustrations of Dissections, in a Series of Original Coloured Plates, the Size of Life* (1867), for which George Viner Ellis (an assistant and then the successor to Richard Quain as professor of anatomy at UCL) reprised his predecessor's role as the anatomist, while George Henry Ford (1812--1900) sat metaphorically in Joseph Maclise's chair, making the drawings from nature and then copying them on to stone ([Fig. 16](#wschupbach-fig16)). Compared with *The Anatomy of the Arteries* *of the Human Body* from twenty years earlier, Viner Ellis and Ford's publication is an updated work in the same genre: it was published from Taylor and Walton's house in Gower Street, by James Walton, after Taylor had retired, and used the new technique of chromolithography instead of the hand colouring employed in Maclise's day (red for arteries and blue for veins being a vital distinction). Despite the technical differences, the work of Viner Ellis and Ford could not have been published by Walton without the precedent of Quain-Maclise.
 
 {% figure 'wschupbach-fig16' %}
 
-{% assign DOI = "008" %}
+{% assign chapter_DOI = "008" %}
 
 # Conclusion
 
-{% assign DOI = "p34" %}
+{% assign paragraph_DOI = "p34" %}
 
 As behind-the-scenes enabler, John Taylor was a major contributor to *The Anatomy of the Arteries* *of the Human Body*. Behind Taylor were UCL and the Bloomsbury-Fitzrovia professoriat, especially in the UCL medical school. In anatomy, the leading figure at UCL was Richard Quain. It was UCL which brought together John Taylor, Joseph Maclise, and Richard Quain: the team that produced *The Anatomy of the Arteries* *of the Human Body.*
 
-{% assign DOI = "p35" %}
+{% assign paragraph_DOI = "p35" %}
 
 The work could only be produced because Taylor was willing to learn and adopt large-scale publication of lithography---a step outside his previous publishing experience. Before Maclise, he was introduced to it through Davis, Erasmus Wilson, and the Morton brothers. After Maclise, his firm was able to publish Viner Ellis, applying new chromolithographic printmaking methods to an existing genre. As much can be learned about a work, or corpus of works, by studying the context in which the publisher published it, as by studying the lives of the artists or writers who are more typically associated with its production."
 

@@ -9,9 +9,15 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-01/harwood"
   issn: 2058-5462
 language: en
+palette: "theme-salmon-pink"
 layout: splash
 BAStype: artist-collab
 image: figures/banners/bust-of-a-man_banner.jpg
+review_status: "Peer Reviewed (Double Blind)"
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 order: 105
 pub_date: 2015-11-16
 pub_type: publication-periodical
@@ -89,137 +95,137 @@ subjects:
   name: Georgian
 ---
 
-{% assign DOI = "001" %}
+{% assign chapter_DOI = "001" %}
 
-{% assign DOI = "p1" %}
+{% assign paragraph_DOI = "p1" %}
 
 Francis Harwood's *Bust of a Man* (1758) is a conversation starter---across time, across continents, across collections, across disciplines. Some of those conversations will be explored in this essay. There are two known copies of the bust in museum collections. A signed and dated version, likely to be the original, is held atop a sundrenched hill at the J. Paul Getty Museum in Los Angeles ([fig. 1](#clevensoncyangkgday-fig1), right). A second, unsigned and undated, is at Yale Center for British Art (YCBA) in New Haven, Connecticut, amidst its Neo-Gothic campus ([fig. 1](#clevensoncyangkgday-fig1), left). For years both busts sat quietly in their respective museum settings: the Getty's Grand Tour gallery of mostly white marble European sculpture ([fig. 2](#clevensoncyangkgday-fig2)), and the YCBA's display of eighteenth-century British painting and sculpture, featuring portraits of affluent white patrons. In each context the bust stands out, primarily due to its sensuous blackness, but also because of the paucity of information regarding its origins.
 
-{% assign DOI = "p2" %}
+{% assign paragraph_DOI = "p2" %}
 
 {% figure 'clevensoncyangkgday-fig1' %}
 
 Although relatively few people might have seen Harwood's busts in the museum context, their images have been reproduced broadly through print as well as public art. The Getty bust has been displayed on a billboard created by artist Ken Gonzales-Day in Los Angeles, and the Yale bust is prominently featured on the cover of the third volume of the series, *The Image of the Black in Western Art*, edited by David Bindman and Henry Louis Gates, Jr. Both works are accessible as digital images through the online collections of the [Getty](http://www.getty.edu/art/collection/objects/1199/francis-harwood-bust-of-a-man-english-1758/) and the [YCBA](http://collections.britishart.yale.edu/vufind/Record/1669707). Yet this is the first time that the two busts have been imaged together, and considered as objects in dialogue across time and space. While they share many characteristics, the two versions are not identical; artist Ken Gonzales-Day's images  put them in conversation and ask us to take a closer look at what appear to be doubles. Through this online format, the works will have an enhanced digital life that will no doubt spark other conversations about the media of their display.
 
-{% assign DOI = "p3" %}
+{% assign paragraph_DOI = "p3" %}
 
 {% figure 'clevensoncyangkgday-fig2' %}
 
 The three contributors to this essay had each been studying the busts separately---Cyra Levenson as co-curator, with Meredith Gamer and Esther Chadwick, of an exhibition focused on slavery and portraiture in eighteenth-century Britain, Chi-ming Yang as a scholar of eighteenth-century globalization and East--West relations, and Ken Gonzales-Day, whose photographs and interview are included here, as an artist exploring ethnographic portrait busts in museum collections. To all of us, Harwood's figures connect moments in time when the contradictions of the raced body---its invisibility and hypervisibility---might give rise to new ways of seeing and feeling. To many contemporary viewers, the haptic blackness of Harwood's bust humanizes the work, at the same time that it renders the bust an exception to the overwhelming images of whiteness that populate the world of eighteenth-century art, and museum spaces more generally. How and why does the materiality of this work resonate so profoundly with present-day audiences? How does the context of display shape the ways we view each bust?
 
-{% assign DOI = "p4" %}
+{% assign paragraph_DOI = "p4" %}
 
 By putting into dialogue and holding in tension various perspectives on the objects, we reframe their physicality. We also address the construction of racial identities and racism in these eighteenth-century busts that continue to resonate in our present moment. How might we avoid the tendencies to fragment, scrutinize, and objectify the black body? Looking at the two busts in a shared frame redoubles our vision. It highlights the ongoing social construction of black masculinity as a type of exceptionalism---in both idealized and denigrated forms. At the same time, the sensuality of these figures interweaves the legacies of slavery, racial construction, and collective resistances to institutional racism.
 
-{% assign DOI = "002" %}
+{% assign chapter_DOI = "002" %}
 
 # The enigmatic portrait
 
-{% assign DOI = "p5" %}
+{% assign paragraph_DOI = "p5" %}
 
 The faces of Harwood's busts betray little emotion, but details such as the slightly upturned head, forehead scar, and wrinkle lines under the eyes invite speculation as to the nobility of character under a range of possible circumstances. The undulating black surface of the polished limestone brings out the muscularity of the bare shoulders, chest, and torso; the overall effect of the monochrome blackness is a sensuous masculinity at once idealized and racially specific, even realistic. Many viewers have commented that they recognize the bust, and that it reminds them of someone they know. Its august form refers it back in time to classical antiquity, yet it also seems absolutely contemporary. The attention to detail and specificity of its features contribute to a sense of its individuality or personhood, despite the anonymity of the original, eighteenth-century sitter.
 
-{% assign DOI = "p6" %}
+{% assign paragraph_DOI = "p6" %}
 
 When comparing the two busts, perhaps the most obvious difference is their surfaces. The scratchy veins on the Yale bust indicate a dark though unpainted stone, although technical analysis has not yet been done to determine its material composition. Two heart-shaped pupils have been carved into the eyes, which add a sense of definition and angularity to the face, in comparison to the slightly broader visage of the Getty bust. Certain questions remain unanswered. Why were two busts made, and for whom was each intended? What journeys did each undergo after leaving Harwood's workshop? What difference would it make if the signed, Getty bust were not the original, but instead, either a lesser copy or a more developed version of Yale's?
 
-{% assign DOI = "p7" %}
+{% assign paragraph_DOI = "p7" %}
 
 {% figure 'clevensoncyangkgday-fig3' %}
 
 We do know that 1758 was a busy year for the workshop of the expatriate British sculptor, Francis Harwood (1726/27--1783). Since arriving in Florence, Italy, five years before, he had established a reputation for copying antiques for patrons eager to furnish their English homes with such illustrious figures as Cicero, Julius Caesar, Marcus Aurelius, and Sappho. In addition to these four commissioned works, in the same year Harwood also completed a naturalistic, classicized bust of an unnamed African man. Made during the height of the transatlantic slave trade, the busts were unusual during the period, and are still remarkable to behold. It is difficult to know the extent to which, if at all, Harwood intended to personalize an individual subject in response to the pervasive de-humanization of Africans across European society. Such naturalism certainly long predates the ethnographic depictions of Africans by nineteenth-century artists like Charles-Henri-Joseph Cordier ([fig. 3](#clevensoncyangkgday-fig3)).
 
-{% assign DOI = "p8" %}
+{% assign paragraph_DOI = "p8" %}
 
 From 1865 up until 1922, the Getty bust was in the possession of the descendants of Hugh Percy, the first Duke of Northumberland. For this reason, the subject of the bust was first thought to be an athlete named Psyche who was in the service of the first duke. However, no Black servants were employed by Northumberland before 1764. The sitter's identity has also been misattributed to the African-American boxer [Bill Richmond](http://billrichmond.blogspot.com/2015/08/earl-george-percy-unveils-bill-richmond.html) (1763--1829), who served the second Duke of Northumberland, formerly Earl Percy (1742--1817), a Revolutionary War general; but this took place long after the bust's making. Other theories point to a "savage" or captive warrior,[^1] the mythological Ethiopian king Memnon, or an allegorical representation of Africa dubbed "[Africus](http://collections.britishart.yale.edu/vufind/Record/1669707)", but all similarly lack conclusive evidence.
 
-{% assign DOI = "p9" %}
+{% assign paragraph_DOI = "p9" %}
 
 Harwood himself is something of an enigma---despite his prolific output, he has been described as \"such stuff as footnotes are made on\".[^2] He arrived in Rome in 1752, entered the Florentine Academy in 1755, and acquired the former studio of fellow sculptor Giovanni Battista Piamontini (d. 1742) on the Via della Sapienza in 1762. Harwood died in Florence in 1783, unusual among his British peers for having established a career in Italy and permanently resided there. He made a total of thirteen portrait busts (a Homer was recently rediscovered in Ireland in October 2014), and of these the *Bust of a Man* ([fig. 5](#clevensoncyangkgday-fig5)) is one of only two without classical precedents, the other being that of [Oliver Cromwell](http://www.artnet.com/artists/francis-harwood/oliver-cromwell-cc6UdzelGrguQwkLR4y-1w2).[^3] At the same time, the African figure's bare chest and deep torso is modelled on a type of classical nudity that Harwood was not alone in reviving, as we can see in the Bust of Lord Chesterfield ([fig. 4](#clevensoncyangkgday-fig4)) which was sculpted by his contemporary and friend, Joseph Wilton.[^4]
 
-{% assign DOI = "p10" %}
+{% assign paragraph_DOI = "p10" %}
 
 {% figuregroup '2', 'clevensoncyangkgday-fig4, clevensoncyangkgday-fig5' %}
 
 Ultimately Harwood left behind a reputation for working with polychrome marbles and fulfilling private commissions for British aristocrats and expatriates. In addition to library busts and statues, his workshop produced marbled funerary monuments and tabletops, chimney pieces, vases and urns; in other words, ornamental pieces to be incorporated into the design ensemble of particular rooms. Unfortunately, we don't know where the *Bust of a Man* would have been placed within its intended domestic interior, or how it would have been coordinated with the other decorative elements.[^5] [](#_edn1){#_ednref1}Its status as a luxury object, though, connects it to not only other portrayals of people (along with individual patrons and artists), but also to other things (furniture, marble, varnish).
 
-{% assign DOI = "003" %}
+{% assign chapter_DOI = "003" %}
 
 # Classicized slaves and the blackamoor legacy
 
-{% assign DOI = "p11" %}
+{% assign paragraph_DOI = "p11" %}
 
 Before Paul Mellon bought it in 1967, the Yale bust had been part of the Esterhazy Collection in Vienna, where it was misattributed to the Renaissance artist Alessandro Vittoria (1525--1608) and called "The Blackamoor", and in 2006 it became part of the Yale Center for British Art collection. Though the bust has been renamed, this tendency to read it as a classicized "savage" type in the Italian blackamoor tradition ([fig. 7](#clevensoncyangkgday-fig7)) has continued.[^6] [](#_edn1){#_ednref1}Such a conclusion, however, captures neither the individuating and portrait-like features of Harwood's sculpture nor the changing attitudes towards slavery and classicized representations of blackness. By the mid-1750s, these attitudes were increasingly sensitive to human suffering, even sentimental.
 
-{% assign DOI = "p12" %}
+{% assign paragraph_DOI = "p12" %}
 
 {% figuregroup '2', 'clevensoncyangkgday-fig6, clevensoncyangkgday-fig7' %}
 
 Nakedness, of course, does not necessarily signal savagery. Paradoxically, in classical antiquity, sculptural nudity could reference either a slave or a god. On the one hand, it deified emperors like Caligula, Claudius, or Trajan and conquerors like Alexander the Great. Neoclassical sculptors often imitated such idealized "heroic or metaphorical nudity".[^7] On the other hand, an unclothed figure could represent a slave, whose musculature would become an excuse to show off anatomical detail. Slaves were thus often realistically or sympathetically rendered. The sculptural tradition of figuring slaves nude attests to the particularization of the experience of slavery and suffering, as conveyed especially through bodily and facial expressiveness. See, for example, statuary such as the monumental [Atlas figures](http://www.wga.hu/html_m/l/longhena/pesaro.html) installed at the Frari Church in Venice (1665--69) by Melchior Barthel (1625--1672), or the "[Moors of Livorno](https://commons.wikimedia.org/wiki/Monumento_dei_Quattro_Mori)" (ca. 1623--26) by Pietro Tacca (1577--1640), which not only express humanity and suffering, but were also modelled after two individuals living in Italy, a Turkish galley slave named Ali Salentino and an African man called Morgiano.[^8]
 
-{% assign DOI = "p13" %}
+{% assign paragraph_DOI = "p13" %}
 
 Although Harwood's busts appear largely unprecedented in the British context, in Florence, the place where he made his career and home, Harwood was immersed in a Renaissance tradition of depicting African boys and men in painting as well as architecture. These Italian images include paintings of Ethiopian Christians and Black magi from the twelfth to the fourteenth centuries and countless portrayals of dark-skinned pages dressed in livery. The ubiquity of the so-called "Moor" in Italian culture inspired American artist Fred Wilson's 2003 Venice Biennale installation, "[Speak of Me As I Am](http://www.pacegallery.com/newyork/exhibitions/11160/venice-suite-sala-longhi-and-related-works)." In citing words spoken by Shakespeare's now iconic Othello, the Black Christian "Moor of Venice", Wilson aimed to give voice to a "Moro perspective" across history. Servants, gondoliers, and other labourers were an active part of Venetian life from the early 1500s, and the art of the period indexes a long history of Mediterranean trade in goods and slaves.[^9] Wilson compared these depictions to those of his own culture and found: "When I look at the images of blacks in Venetian Renaissance art, I see a humanity in the depictions that you would not normally see in early American art."[^10]
 
-{% assign DOI = "p14" %}
+{% assign paragraph_DOI = "p14" %}
 
 The most common form of sculpture depicting the black figure in the eighteenth century was decorative, blackamoor statuary in the form of servile figures used as supports for chair arms ([fig. 6](#clevensoncyangkgday-fig6)) or incorporated into doorknobs, candlesticks, and garden fountains. Some are made of painted wood or stone, crudely rendered and stiffly posed, holding up a platter, urn, or vase, and many are dressed in Moorish or Turkish costume. The popularity of these diminutive Moors and their "ornamental blackness"[^11][](#_edn1){#_ednref1} can be seen in the construction of entire rooms such as the Château de Meudon's Salon des Maures later in the century, or the furniture suite of carved stands and chairs in the Venetian palace, [Ca' Rezzonico](http://carezzonico.visitmuve.it/en/home/). However generic, these statues also point to the actual black servants, often simply termed "Moors", who worked as pages, footmen, and valets de chambre and who were in fact dressed in the Turkish-style feathered caps and turbans so fashionable in the period. The Italian tradition of blackamoor sculpture thus orientalized, reproduced, and updated classical forms of ancient slavery (such as caryatids, which were also based on real, Dacian captives) to resonate within an eighteenth-century context of Atlantic slavery and servitude.
 
-{% assign DOI = "p15" %}
+{% assign paragraph_DOI = "p15" %}
 
 Blackamoor sculptures themselves were made with varying degrees of realism, and some were humanized. Harwood's bust was more likely, though, a response to the crude figurations of many Black people in art, and a response shared by audiences who increasingly registered their disgust and discomfort towards the upsetting depictions of suffering in the shapes of classical atlantes or caryatids. As the architect Isaac Ware wrote in 1756, "Men of rude genius . . . represent them \[slaves\] crushed and sinking under the weight, and think it a high degree of merit, if they can figure in their sculpture starting eyes or bursting sinews."[^12] Such objections to classical, sculptural representations of slaves attest to the perceived realism of the works, on the one hand, and the viewer's acknowledgment of the real bodies and experiences of contemporary slaves referenced by these works, on the other. Amidst a developing culture of sensibility, suffering was becoming distasteful. Though the abolitionist movement was still several decades away, already philosophers like Adam Smith were positing ideas of universal moral sympathy. As Smith wrote in his *Theory of Moral Sentiments* of 1759: "How selfish soever man may be supposed, there are evidently some principles in his nature, which interest him in the fortune of others."[^13]
 
-{% assign DOI = "004" %}
+{% assign chapter_DOI = "004" %}
 
 # What's in a name?
 
-{% assign DOI = "p16" %}
+{% assign paragraph_DOI = "p16" %}
 
 {% figure 'clevensoncyangkgday-fig8' %}
 
 Today at the Getty (as at Yale) Harwood's sculpture is titled, "Bust of a Man". Its name has changed over the last two decades, reflecting a history of increasing institutional sensitivity about race, and at the same time a subtle re-inscription of blackness as a type of racial alterity. In 1987, when Christie's purchased the bust from a private dealer, it was called "Bust of a negro", and referred to also as "Bust of a Blackman". At this point art dealers assumed the sitter's identity to be an eighteenth-century servant and athlete named Psyche. In one catalogue advertisement it was dubbed "The Property of a Gentleman",[^14] and in another, "The athlete that outpaced the aesthetes" ([fig. 8](#clevensoncyangkgday-fig8)).[^15] The value of the bust was thus articulated respectively with the language of the slave trade, and the commodification and superior performance of black bodies in sports. We should also note that the client for whom it was sold by Christie's (for the high price of £99,000) had wanted it out of his own house because "it was so ugly and terrifying that his children became frightened."[^16][](#_edn3){#_ednref3} Such a reaction could have been taken straight from a page of eighteenth-century aesthetics, as in Edmund Burke's description in 1757 of the sublime terror ("Darkness Terrible in Its Own Nature") invoked by a "negro" woman's body in the eyes of an impressionable white child.[^17] This denigration of the bust seems a far cry from its current status as an exquisite, or at least exotic thing of beauty that has been included in special exhibits at Tate Britain and the Palazzo Pitti, and placed alongside works by luminaries Joseph Nollekens, Joseph Wilton, and Antonio Canova.
 
-{% assign DOI = "p17" %}
+{% assign paragraph_DOI = "p17" %}
 
 After its arrival at the Getty Museum in 1988, the work was catalogued as "Bust of a Black Man". By 1990, the distinguishing qualifier "Black" had been removed, in part due to staff and visitors' objections, and no doubt in an effort to correct the racism that had framed it in the past. The adjective "black" currently reappears twice in the caption, however: "Sculptor Francis Harwood chose a black stone to reproduce the sitter's skin tone", and "This work may be one of the earliest sculpted portraits of a Black individual by a European." To be sure, differentiating between a lower-case "black" colour and an upper-case "Black" person of African descent follows a laudable grammatical practice---and a point of [ongoing debate](http://www.nytimes.com/2014/11/19/opinion/the-case-for-black-with-a-capital-b.html)---that aims to recognize the proper humanity of a people through the standard of capitalization. In this essay, we have chosen to capitalize the term when a person (rather than a concept, figure, or object) is being referenced. In the above example of the museum label, one unintended consequence of designating the stone "black" is a curious essentializing and racializing of the material itself. It is as though the floating signifier of blackness has been transferred from the identity of the subject onto the physical object and its making.
 
-{% assign DOI = "005" %}
+{% assign chapter_DOI = "005" %}
 
 # The materials of blackness
 
-{% assign DOI = "p18" %}
+{% assign paragraph_DOI = "p18" %}
 
 {% figure 'clevensoncyangkgday-fig9' %}
 
 Today, a visitor to the Getty Museum reading the bust's label might easily assume that the colour of the marble is naturally black. In fact, the glossy colour that strikes our eyes ([fig. 9](#clevensoncyangkgday-fig9)), especially from a distance, is a result of the application of black gouache paint and varnish to a matt, tan, sandy limestone nowhere near black. Scientifically speaking, this stone is unusual; it contains a high variation of colours and embedded minerals when examined closely, though the samples of the bust tested by Getty conservation staff were too small to determine the type of stone (whether pietra da paragone, Belgian Black, or Nero di Colonnata) or where it might have been quarried.[^18] Variation is of course apparent upon close scrutiny of any marble, coloured or white (let us remember that whiteness, too, is constructed), and clearly the artist intended an overall effect of the dark stone to reference coloured skin. Yet the conservation work and analysis shows that the bust's original, eighteenth-century coating was a medium, translucent brown. In fact, conservators have in recent years removed much of the thickly applied black paint, wax, and shellac that had been applied to the bust in the 1980s, in an attempt to bring the surface colour closer to the varied texture and tone of the underlying marble.
 
-{% assign DOI = "p19" %}
+{% assign paragraph_DOI = "p19" %}
 
 Heeding the bust's constructed blackness reminds us of the social construction of race more generally; it helps us question the particularizing tendency to read and interpret identities, human or representational, at surface level, even to the extent that we project these assumptions of race onto non-human matter. The danger of equating a naturally black stone with the biological race of an individual can also be seen in the scholarly argument that African subjects were merely an excuse for an artist to work with rare and difficult materials such as black marble.[^19] The difficulty of working with black material to render flesh tones across a range of arts, including dyeing and oil painting, have too often led critics to celebrate the virtuosity of the artisan at the expense of even considering the dehumanizing practices of art making and aesthetics. Nineteenth-century sculptor Charles-Henri-Joseph Cordier used newly quarried, precious materials like coloured Algerian onyx to create his ethnographic portrait masterpieces; and yet, this was a resource extracted as part of an imperial agenda of the Napoleonic state, as trenchantly studied by James Smalls.[^20] Paying attention to the materials of representation and the ecology of colonialism also nuances the history of racial representations. After all, colour has a political as well as an aesthetic history.[^21]
 
-{% assign DOI = "p20" %}
+{% assign paragraph_DOI = "p20" %}
 
 Sculptors like Harwood welcomed the creative challenge of carving hard, coloured stones. He also catered to a demand for colour in interior design; and the lustratori, or artisans who typically cleaned and polished the final pieces are likely to have played a critical role in creating the haptic, glossy artefacts that held so much allure. The interplay of colours and textures reflects a culture taken with the imitation of luxurious surfaces such as porcelain, marble, and tortoiseshell.[^22] Glossy blackness was associated with Roman copies of classical polychrome sculptures made of black-green basanite; in the Ptolemaic era of Hellenistic Egypt, a limestone sculpture of a seated African boy might, like Harwood's limestone bust, be varnished to "produce the glossy appearance of skin".[^23] In the seventeenth and eighteenth centuries, black shine also referenced the vogue for imported Japanese and Chinese lacquer and shellac, a varnishing substance we find in the original coating of the Getty's Harwood bust.[^24] From another perspective, the glossy blackness of Harwood's portrait also echoed the slaving practice of subjecting peoples to being oiled to heighten their value and healthy appearance on the human market. The cruel irony here is that the expendability of actual labouring, sweating bodies runs counter to the ideal of perfectly preserved, aesthetic surfaces used to represent black skin and to showcase the virtuosic artistry and technical sophistication demanded by eighteenth-century European consumers.
 
-{% assign DOI = "p21" %}
+{% assign paragraph_DOI = "p21" %}
 
 In the case of Harwood's busts, equating human skin colour with the blackness of the stone essentializes both human and stone. When the material is itself rare or "exotic", the fascination with it creates comparative registers across media and between different orders of colour---both racial and ornamental. Thus a person's cultural identity can be projected onto stone, and the "naturalness" of the stone can reinforce the essential alterity of the figure.
 
-{% assign DOI = "006" %}
+{% assign chapter_DOI = "006" %}
 
 # Centering the bust: portrait, type, and display
 
-{% assign DOI = "p22" %}
+{% assign paragraph_DOI = "p22" %}
 
 {% figure 'clevensoncyangkgday-fig10' %}
 
 Undoubtedly, the racialized blackness of Harwood's marble bust adds to its exemplarity. The colour appears at once to humanize and to objectify. This tension between its particularity and generality---its duality as modern portrait and classical type---is in fact a feature of the broader genre of the eighteenth-century sculptural portrait.[^25] Harwood's case is complicated by the question of the sitter's identity. Was the hypothetical subject a slave or a free man? Do we consider this work a "slave portrait", a "particular individual", a "particular likeness", or a "particularizing portrait"?[^26] These are all efforts to address, in different ways, art-historical debates over distinguishing a portrait from a type. David Bindman argues that the very idea of a "slave portrait" is an oxymoron, that is, that slavery is premised on the denial of a person's subjecthood, whereas portraiture celebrates an individual subject. Yet, too often the focus on an individual's identity can shut down conversation around the work's social impact and obfuscate the broader context in which a likeness is constructed and makes meaning. Refusing the binary between the singular portrait and the generic type, Agnes Lugo-Ortiz and Angela Rosenthal soundly argue that portraits, too, follow conventions, and by no means guarantee singularity. With respect to slave portraiture, even the most racist, scientific, and ethnographic images can subvert their intended function "if the information contained in or excited by the image exceeds its frame of discursive intentions".[^27] We take their lead in studying the distinguishing features of Harwood's busts as at once idealized and naturalized, singular and generic; in fact, the combination of these extremes, held in tension, imbues the work with its signifying power.
 
-{% assign DOI = "p23" %}
+{% assign paragraph_DOI = "p23" %}
 
 In the Fall of 2015 the YCBA version of the Harwood bust became the centre of an exhibition ([fig. 10](#clevensoncyangkgday-fig10)) motivated by the idea that a portrait might be defined less in terms of a likeness, or even a particularizing representation, and more as itself an encounter between sitter and artist, image and viewer. Titled *[Figures of Empire](http://britishart.yale.edu/exhibitions/figures-empire-slavery-and-portraiture-eighteenth-century-atlantic-britain): Slavery and Portraiture in Eighteenth-Century Atlantic Britain*, and co-curated by Cyra Levenson, Meredith Gamer and Esther Chadwick, the exhibition examined the ways that eighteenth-century Britons negotiated their relationship with slavery through portraiture. The Harwood bust was placed in the centre of the gallery amongst approximately sixty paintings, sculptures, prints, drawings, and decorative objects drawn from Yale's collections ([figs. 11](#clevensoncyangkgday-fig11) and [12](#clevensoncyangkgday-fig12)). Most of the black figures in the exhibition were portrayed in paintings alongside white sitters. In portraiture, qualities that eighteenth-century Britons valued---freedom, whiteness, and refinement---were imagined in opposition to the bondage and blackness of those who arrived in Britain from Africa or the Caribbean as slaves. The exhibition challenged viewers to consider all of the figures depicted as subjects with histories and as "figures of empire"---as people whose lives shaped and were shaped by Britain's imperial world.
 
-{% assign DOI = "p24" %}
+{% assign paragraph_DOI = "p24" %}
 
 {% figure 'clevensoncyangkgday-fig11' %}
 
@@ -227,7 +233,7 @@ In the Fall of 2015 the YCBA version of the Harwood bust became the centre of an
 
 The physical centrality of the bust of a dignified Black man provided a different frame of reference for viewing the other objects in the exhibition space, creating new dialogues between visitors and works of art. Life-size, solid, and three-dimensional, the bust met one's gaze at eye level. It presented a free-standing Black man in the eighteenth century depicted not in the shadow of a white subject, but on his own. The bust also became the catalyst for a series of revelatory connections made by viewers linking our racial present and our slavery past. How do we challenge ourselves to see the unnamed black figures painted during the eighteenth century as individuals with histories despite their anonymity? During the course of the exhibition, artist Fred Wilson gave a talk and then led a discussion in the galleries. As someone who has worked with the vexed imagery of slavery for most of his career, he wondered at first whether he would have anything new to say about objects with which he was so familiar. It was the juxtaposition of the bust and the [portrayal of a young boy as a page by Sir Joshua Reynolds](http://collections.britishart.yale.edu/vufind/Record/1669237) hanging on the wall behind it (see [fig. 11](#clevensoncyangkgday-fig11)) that caught his attention. Wilson noted that he had never considered boys such as the one in the painting growing up into adults. The Harwood bust became a way to imagine a future for the boy in the painting, how he might become a man with stature and presence.
 
-{% assign DOI = "p25" %}
+{% assign paragraph_DOI = "p25" %}
 
 At the centre of the exhibition, the Harwood bust also asked viewers to imagine a life story for the figure while respecting the limits of what we can ever know. As such, it seemed to invite a direct and personal connection, an ability to solicit what queer theorist Carolyn Dinshaw has termed "the touch across time".[^28] Nell Painter, historian, author, and artist participated in a [podcast interview](http://www.centerforbritishart.org/slavery-and-portraiture/audio) that placed the bust in the context of the lived experiences of the eighteenth century. Her personal response to the bust was equally powerful. As she remarked, "when I first saw this sculpture . . . I blurted out, this is the artists' boyfriend!" She went on:
 
@@ -237,45 +243,45 @@ Painter's response makes explicit the bust's captivating eroticism. As discussed
 
 Echoing the scholarly discussions of portraits as particularizing representations, high school students who visited the exhibition were often able to interpret the bust as both an individual and a representative image, and did not experience this as a contradiction. Whether narrating a personal or collective history, the bust, in their eyes, exists in relation to others. One student wrote: "I see to the day this sculpture was made. By his posture and smirk I feel this man is proud to be representing something, whether it's he or a group. . . . Maybe he was a part of something special? Maybe that's why he and the artist worked to make this bust?" Another student picked up on the idea of portrait as encounter: "His eyes portray little about his life, yet seem to tell us so much about the day the sculpture was created." She is as much focused on the interaction between artist and sitter as she is on the narrative of the bust.
 
-{% assign DOI = "p26" %}
+{% assign paragraph_DOI = "p26" %}
 
 One could argue that depictions of people, including portraits, are created to invite us to imagine. This is not a new notion. It was put forward by anti-slavery art and activism premised on the very possibility of fellow feeling and universal kinship. Perhaps the most familiar black icon of the British eighteenth century is Josiah Wedgwood's abolitionist ceramic medallion of 1787 of an enchained, kneeling slave pictured in profile and applied in relief, who pleads the words of the caption, "[Am I not a Man and a Brother?](http://www.bbc.co.uk/history/british/abolition/africans_in_art_gallery_02.shtml)". He is a contained figure---miniaturized, suppliant, and generic. Nonetheless, the sentimental appeal of the image led to its instant reproduction in the form of tokens, bracelets, plates, and even snuffboxes. Even earlier, Sir Joshua Reynolds in his fourth discourse of 1769 argued: "there must be something either in the action or in the object in which men are universally concerned, and which powerfully strikes upon the public sympathy."[^29]
 
-{% assign DOI = "p27" %}
+{% assign paragraph_DOI = "p27" %}
 
 In its public display, having moved from the margins to the centre of the space, Harwood's bust has played a pivotal role in framing the changing meaning of objects across time, and in reckoning with uncomfortable notions of the past while also allowing new meanings to be created. Especially when shown together, these pictorial representations of slavery in portraiture ultimately fail to dehumanize their subjects and instead allow us to see individuals in relationships of intimacy and in negotiation with power.
 
-{% assign DOI = "007" %}
+{% assign chapter_DOI = "007" %}
 
 # The matter of a Neoclassical black icon
 
-{% assign DOI = "p28" %}
+{% assign paragraph_DOI = "p28" %}
 
 {% figure 'clevensoncyangkgday-fig13' %}
 
 Whereas each of Harwood's busts is an anomaly within its own museum setting, when studied in relation to each other they also enable a fuller consideration of the individual representation not only as a type, but also as one among countless other unnamed Black Europeans of the eighteenth century. Acknowledging the limits of the positivist, historicist impulse to identify the real person, and hence the objective truth of the work of art, also helpfully redirects us to its affective realities. That is, we can begin to ask how the object invites us to look, and how its ambiguities disrupt the "grammar of violence"---to borrow a term from Saidiya Hartman---of a slaving society premised on eighteenth-century notions of personhood.[^30]
 
-{% assign DOI = "p29" %}
+{% assign paragraph_DOI = "p29" %}
 
 Black is a colour with a history.[^31] Even while it cannot be simply reduced to one colour among other colours, activating the metonymic play of its signification across history and in linguistic and material registers---between blackamoor, black stone, and Black man---might help unfix some of the constrictions of essentialism. We have suggested that the interplay of universal and particular undergirds the bust's power and enigma as a portrait; yet we are less concerned with parsing the difference between portrait and type, as we are with understanding our ways of seeing, categorizing, and disciplining the eighteenth-century past. Philosophies of racism can help illuminate the social implications of the contradictions embodied by the Harwood busts. Whereas racism is usually seen as an extreme form of particularism, the philosopher Étienne Balibar posed the question: how might racism be aligned with universalism through its reliance on, rather than merely exclusion of, essential differences? By extension, do we, by classifying portraiture as the container of the elusive ideal of singularity, inadvertently uphold a system of ideal types, indeed valorize "a desire for knowledge which becomes fulfilled by a system of differential categories"?[^32] To return to the question of the bust's "Blackened" blackness, we might adapt Balibar's provocation of "racism as universalism" and posit racism as anthropomorphism. In other words, assigning blackness to the human and projecting the biases of the social onto the inanimate---such as the stone---makes matter speak as though it were an objective, living truth.
 
-{% assign DOI = "p30" %}
+{% assign paragraph_DOI = "p30" %}
 
 Today, it is as though we want the bust to speak; to be a Black superhero that has travelled through time and withstood the ravages of history. To a current-day audience, the materiality of the Harwood busts animates the history, indeed the matter, of Black life. It reassures us that "black is beautiful" at a moment when the mantra of "Black Lives Matter" asserts, tragically, what should be a given rather than an exception. In this way, the bust is a modelled minority, and an icon of sorts.[^33] Icons are made in order to fill a social or institutional need, and their fetishized exceptionalism can become as limiting as the invisibility of the raced subject.
 
-{% assign DOI = "p31" %}
+{% assign paragraph_DOI = "p31" %}
 
 It is the space between and around the busts that defines their blackness, particularly when they are photographed. Between 2008 and 2009, artist Ken Gonzales-Day created a body of work centred on the Getty's version of Harwood's bust . He selected the object because it resonated with themes in his own work such as the construction of race, the history of physiognomy and classical standards of beauty, and the history of scientific racism and museum display. His resulting photographs, the "Profile Series", placed the bust in dialogue with the Getty collection in new ways, raising questions about the racial and racist underpinnings of sculpting, indeed of profiling, the human figure. One of the images, which pairs the Harwood Bust with a European Bust of a Young Man (Untitled, by Antico \[Pier Jacopo Alari Bonacolsi\]) was featured on a public billboard in Los Angeles as part of the citywide exhibit, in February and March of 2010. By transporting the image outside and beyond the museum, the bust is at once flattened and made newly interactive. In orchestrating a face-off between the two black figures, who share a colour though not a race, the work makes evident the need for radical juxtapositions and critical re-framings of the object ([fig. 13](#clevensoncyangkgday-fig13)). Just as the spaces we have explored here---museum display, artist and audience encounters, scholarly debates---are subject to change, so we continue the conversation in the photo-essay and interview with Gonzales-Day, in the hopes of generating further dialogue. For onto the bust is projected not only our knowledge of the past, but also the productive gaps which remain.
 
-{% assign DOI = "008" %}
+{% assign chapter_DOI = "008" %}
 
 # Photo-essay by Ken Gonzales-Day
 
-{% assign DOI = "p32" %}
+{% assign paragraph_DOI = "p32" %}
 
 {% figuregroup '8', 'clevensoncyangkgday-fig14, clevensoncyangkgday-fig15, clevensoncyangkgday-fig16, clevensoncyangkgday-fig17, clevensoncyangkgday-fig18, clevensoncyangkgday-fig19, clevensoncyangkgday-fig20, clevensoncyangkgday-fig21' %}
 
-{% assign DOI = "010" %}
+{% assign chapter_DOI = "010" %}
 
 # Ken Gonzales-Day interview
 
@@ -315,7 +321,7 @@ For example, I might shoot one sculpture to foreground an idealized treatment of
 
 I think for me there was also a conceptual level which allowed me to look at all these representations as just that, as representations that could be studied, considered, and that such considerations could be used to create a new work of art that would do a different kind of work than those articulated in the original object. What does race look like? What does whiteness look like? What other factors might also be a play? And so on.
 
-{% assign DOI = "p5" %}
+{% assign paragraph_DOI = "p5" %}
 
 > What kind of digital enhancement or technical manipulation, for example, through lighting, went into the construction of the jet-black colour of the Harwood bust? What were you hoping to achieve by highlighting its blackness?
 
@@ -323,7 +329,7 @@ The image was produced in black and white in order to reduce the material differ
 
 So rather than simply anaesthetizing what are very different and beautiful surfaces I wanted to create a work that might sketch out a different set of questions than those I had been hearing. It was also intended to encourage the viewer to consider the very question of demarcation itself, the mark-making that is sculpture.
 
-{% assign DOI = "p6" %}
+{% assign paragraph_DOI = "p6" %}
 
 > What were some of the challenges of photographing this bust in particular, and of sculpture in general?
 

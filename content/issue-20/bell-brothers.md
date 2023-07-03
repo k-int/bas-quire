@@ -7,9 +7,15 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-20/acallen"
   issn: 2058-5462
 language: en
+palette: "theme-bittersweet"
 layout: splash
 BAStype: article
 image: figures/banners/bell-brothers_banner.jpg
+review_status: "Peer Reviewed (Double Blind)"
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 order: 208
 pub_date: 2021-07-18
 pub_type: publication-periodical
@@ -145,9 +151,9 @@ subjects:
   name: Victorian, Romanticism
 ---
 
-{% assign DOI = "001" %}
+{% assign chapter_DOI = "001" %}
 
-{% assign DOI = "p1" %}
+{% assign paragraph_DOI = "p1" %}
 
 > *It is wholly impossible for anyone to describe form in words without the aid of figures.\
 > *---Joseph Maclise, *Surgical Anatomy*.[^1] 
@@ -159,55 +165,55 @@ Art, anatomy, and printing in the nineteenth century were intimately linked, mal
 
 {% figuregroup '2', 'acallen-fig1, acallen-fig2' %}
 
-{% assign DOI = "002" %}
+{% assign chapter_DOI = "002" %}
 
 # Major Arteries
 
-{% assign DOI = "p2" %}
+{% assign paragraph_DOI = "p2" %}
 
 Dissecting the work of Joseph Maclise (1815--1880), this essay tracks the life-blood of the anatomical arts circulating around the networks of specialists with whom Maclise was associated, from Cork and the capitals of Scotland, England, and France, across the Atlantic to Philadelphia and Boston.[^8] At a time when travel was of course far slower, anatomists, surgeons, artists, and printmakers travelled long distances in search of greater learning, the flow returning to generate new knowledges in its places of origin. Like the Grand Tour, these journeys often lasted far longer than a passing tourist visit, at times entailing months or years of professional study and work---as in Joseph Maclise's anatomy *stage(s)* in Paris. The anatomical work, and its representation in images and texts, was thereby circulating in shared ideas, practices, teaching, books, manuals, atlases, art, and crucially, given that the (primarily) white male body was the "universal" body in medical anatomy, in shared ways of seeing and constituting the human (male) body. As we shall see, Maclise's lithographs, already unusual for the inclusion of Black men, are of such high quality that "ethnic" variations of skin tone are discernible even in this grey-scale medium. Although perhaps equally studied in anatomy dissection rooms, the female body was rare in anatomical prints, especially for teaching---and used almost exclusively to display female *difference*: woman's generative organs.[^9] Female bodies caused concern and breaches of propriety in the male-student only dissection room.
 
-{% assign DOI = "p3" %}
+{% assign paragraph_DOI = "p3" %}
 
 By 1800, human (pathological and comparative) anatomy was both a research science in its own right and the foundational study not just for surgeons, but increasingly also for all serious medical practitioners.[^10] Yet far from being a forked road where art and science irrevocably separated, this period in fact heralded an ever deeper mutual dependence, especially in anatomy, physiology, and nascent anthropology; this mutual dependence was further entrenched with the advent of photography in 1839, followed by radiographic and other imaging processes. Artists, too, continued to study anatomical dissection to hone their knowledge of the human body, gaining kudos from this association; anatomy professors trained artists while simultaneously relying on their representational skills to communicate their own learning---and their professional prestige in major portraits.[^11] Traditionally in Britain, physicians were university trained (Oxford and Cambridge in England, Edinburgh in Scotland, and Dublin in Ireland), as against surgeons whose more "craft" associated training had remained closely allied to the private anatomy schools, to the hospitals, and to apprenticeships or "demonstratorships".[^12] Only once the Anglican stranglehold of the Oxbridge universities had been loosened in England, and secular medical schools like London's University College had been founded (in 1826), did the expansion in anatomy teaching foster a burgeoning market in textbooks---as well as in bodies for dissection.[^13] Edinburgh surgeon-anatomists John (1763--1820) and Charles Bell\'s (1774--1842) quarto-sized publications with in-text images were pragmatically designed for individual student use, whereas the life-size lithographs in Maclise's atlas (up to about 64 x 50 cm) for trainee surgeons were first released in loose-leaf fascicules, whether for use in libraries and lecture theatres, or pinned to the walls of anatomy schools, hospital dissection rooms, or operating theatres---or indeed for the specialist tastes of *cognoscenti* collectors.[^14]
 
-{% assign DOI = "p4" %}
+{% assign paragraph_DOI = "p4" %}
 
 Academy-trained professional artists, especially men like Daniel Maclise, with ambitions to excel in the top echelons of history painting, attended compulsory anatomy classes in the art academies of Cork, London, and Paris. The Maclise brothers were keen Europhiles with a particular passion for France: Daniel made his first visit to Paris in 1830, and he and Joseph are recorded there together in September 1844. After he finished at University College in 1839, and perhaps again in 1844, Joseph Maclise continued his anatomy studies in Paris, then not only world capital of art but also of Enlightenment natural sciences and medical research; there he undertook hundreds of anatomical dissections at Pierre-Nicolas Gerdy's (1797--1856) École d'Anatomie attached to the Hôpital de la Pitié in the fifth arrondissement ([Fig. 3](#acallen-fig3)). As Maclise explained in his own preface to *Surgical Anatomy* (1851), the "illustrations made by myself from my own dissections" were "first planned at London University College", presumably while still a student there, and "afterwards realised at the École Pratique, and School of Anatomy a few years since".[^15] He would have left University College already briefed on his commission for Richard Quain's *Anatomy of the Arteries* since the first plates appeared late in 1840, and he also did the groundwork in Paris for his own subsequent publications.[^16] For the journeyman anatomist or trainee surgeon at this time, the Hôpital de la Pitié had two distinct advantages. First, ready access to corpses: it was the Paris hospital-asylum for the poor and destitute, and hence furnished an endless supply of unclaimed bodies for dissection and, being located next to Sainte-Pélagie prison, it also had access to the corpses of criminals.[^17] Second, its chief anatomist-surgeon, Gerdy, was one of the most interesting and radical anatomists of his era: his work---and networks---were undoubtedly a key formative influence on Joseph Maclise.
 
-{% assign DOI = "p5" %}
+{% assign paragraph_DOI = "p5" %}
 
 {% figure 'acallen-fig3' %}
 
 Underpinning my discussion in this essay is the idea of a disinterested "objective" scientific gaze (Foucault's "controlling" medical gaze), as distinct from its "subjective" counterpart, the artist's gaze. Yet why so superior, different or mutually exclusive?[^18] These apparently distinct views are in fact shared, not least because they were jointly formed. Positioning the gaze as essentially embodied, subjective---as classed, racialised, gendered, sexed, socio-historically, and geographically specific---these two purportedly distinct visualities---science/art, "objective/subjective"---converge here in, and on, a single principal "subject": at once the desiring male artist-anatomist and the desirable male (anatomical) body. In anatomical representation, there is often an obsessional, narcissistic scrutiny of the male body, whether in all its beauty or in all its sordid abjection; its circulation in this private scientific world authorised an entirely legitimate desiring gaze, a gaze seeking knowledge---but also pleasure and pain. The objective scientific gaze, like the artist's gaze, is simultaneously a private libidinous gaze. So multiple lines of sight, visual positions, converge and enmesh on a single corpus: subjective, objective, libidinous, *embodied*.[^19]
 
-{% assign DOI = "p6" %}
+{% assign paragraph_DOI = "p6" %}
 
 Given the multi-sensory nature of artistic and medical practice alike, my discussion highlights their shared reliance on the senses of sight and touch.[^20] In medical research of the period, especially in diagnostics, the two senses are closely aligned.[^21] Imagine the intimate marriage of these senses necessary for brilliant French *médécin-philosophe* and pathological anatomist Xavier Bichat (1771--1802) to accomplish his remarkable anatomical taxonomy of human tissues and membranes, entirely without the visual aid of a microscope.[^22] John and Charles Bell also emphasised the importance of touch as well as vision, the latter writing treatises on both the eye and the hand; as we shall see, Joseph Maclise's Parisian mentor Gerdy, too, researched the sense of touch.[^23] Seen in comparison to the work of contemporaries, or indeed almost any other anatomist, Maclise's lithographic anatomies are strikingly erotic. Examining them here in fine-grained detail enables an exploration of the roles of sight and touch in the generation of an embodied libidinous gaze in art and anatomy alike.
 
-{% assign DOI = "003" %}
+{% assign chapter_DOI = "003" %}
 
 # Corpses
 
-{% assign DOI = "p7" %}
+{% assign paragraph_DOI = "p7" %}
 
 Since the vast majority of bodies available for dissection belonged to the poor and destitute, the abject and powerless, anatomy was fundamentally an issue of class, of who held the power and who ended up on the slab. Anatomy schools sprang up conveniently alongside hospitals or asylums for the poor, or close to prisons. Xavier Bichat benefited, too, from the proliferation of available corpses during the Reign of Terror (1793--1794); even in his last year, he is reputed to have opened upwards of 600 bodies.[^24] Ironically, many such guillotined specimens would also have had the advantage of being young, healthy, and fit, albeit headless. Surgeon-anatomist Jean-Joseph Sue *fils* (1760--1830) and artist-surgeon Jean-Galbert Salvage (1772--1813) both profited too from the invaluable experience of war surgery on the battlefield---as did Charles Bell---and from access to dead soldiers or duellists for dissection.[^25] Salvage's work entered the Académie Royale de Peinture et de Sculpture collections, as did his *Anatomie du Gladiateur* (1812), which other art academies also acquired, while in 1789 Sue *fils* himself inherited the chair of anatomy there from his father.[^26] A typical medical traveller in search of knowledge, Sue *fils* completed his MD in 1783 at the Royal College of Physicians in Edinburgh, overlapping there with John Bell, who had become a fellow of the Royal College of Surgeons in 1780. Both Sue *fils*, who wrote on the nature and experience of death by guillotine, and Bichat were among many anatomists researching key scientific questions of life and death, which were central preoccupations during this period and which pertain to my discussion of Joseph Maclise. Although Bichat's research was unknown outside Paris when he died at the early age of thirty, by the 1840s, "his system of histology and pathological anatomy had taken both the French and English medical worlds by storm".[^27] And just as from this period onwards in France corporal punishment and the scaffold were forbidden as public spectacles, so too did the carnivalesque public dissections in the European theatres of anatomy cease. This "discipline", entering the professional realms of institutional science, was now hidden from the public gaze.[^28]
 
-{% assign DOI = "p8" %}
+{% assign paragraph_DOI = "p8" %}
 
 Between the 1820s and the 1860s, the overarching period covering Joseph Maclise's publications, there were dramatic changes in the provision of anatomy teaching for medical students, aided by the 1832 Anatomy Act in Britain permitting the release of unclaimed bodies to science. The old private anatomy schools closed down or combined with the newly proliferating university and hospital medical schools which took over and regulated their role.[^29] Thus Charles Bell, for example, who in 1811 had moved his anatomical practice from his home into William Hunter's (1718--1783) old Great Windmill Street School of Anatomy, became the first professor of anatomy and surgery at the London College of Surgeons in Lincoln's Inn Fields in 1824. In 1829, the Great Windmill Street School of Anatomy was incorporated into the new (Anglican) King's College medical school established to counter the new reformist London University College, to which Bell was appointed professor of surgery in that same year.[^30]
 
-{% assign DOI = "004" %}
+{% assign chapter_DOI = "004" %}
 
 # Arterioles
 
-{% assign DOI = "p9" %}
+{% assign paragraph_DOI = "p9" %}
 
 ### Edinburgh
 
 At a moment in the late eighteenth century when modern medicine began its inexorable rise, John Bell's work produced the first modern surgical anatomy. He elaborated not simply anatomists' growing knowledge of the human body, its norms, and pathologies, but also offered insight into its surgical treatment.[^31] His brother Charles added further volumes at the turn of the century and in the years immediately following.
 
-{% assign DOI = "p10" %}
+{% assign paragraph_DOI = "p10" %}
 
 Although published in the relatively small octavo, John Bell's plates were uncompromisingly blunt: rendered with an almost aggressive crudity, a Rembrandtesque chiaroscuro adds atmospheric gloom to his anti-aesthetic pictorial "naturalism". Aiming, he states in the preface to his 1794 *Engravings Explaining the Anatomy of the Bones, Muscles and Joints*, at the "useful" (for the student) rather than the "beautiful",[^32] Bell explains:
 
@@ -215,21 +221,21 @@ Although published in the relatively small octavo, John Bell's plates were uncom
 
 His "gothic horror" anatomical plates figured the violence of dissection. Unmistakably dead, his corpses and body parts lie abruptly dumped on tables or strung up with gallows-style ropes, set in awkwardly angled compositions within dingy interiors closed off from light and air ([Fig. 4](#acallen-fig4)). Here, we are told, is the natural home of dissection: in mean, ill-lit backrooms or dank basements, like the dark underground chambers of Henri Gervex's (1852--1929) oil study *Autopsy at the Hôtel-Dieu* (1875) ([Fig. 5](#acallen-fig5)).[^34]
 
-{% assign DOI = "p11" %}
+{% assign paragraph_DOI = "p11" %}
 
 {% figuregroup '2', 'acallen-fig4, acallen-fig5' %}
 
 All outward appearance of respect for the dead that might be politely parsed in a classical idiom is in Bell sacrificed to the sceptic's plain-speaking eye. Thus, Bell's etchings, deeply blackened with the oily printing ink, render the dissection slab a terrifying scene of back-street butchery, torture, and human sacrifice, anticipating by over twenty years literary works like Mary Shelley's (1797--1851) *Frankenstein* (1818) and the later anatomist-turned-author Eugène Sue's (1804--1857, son of Sue *fils*) *Les Mystères de Paris* (1830).[^35] John Bell's prints, then, are unmediated by conventional "taste" or by examples drawn from classical Greek or Roman models, deliberately eschewing the cultivated mannerisms that made ideal anatomies socially acceptable. Effectively the founder of applied surgical anatomy and Scotland's most successful surgeon in his time, John Bell flaunted his materialist expertise in the dissecting room in the face of his rivals, the Edinburgh University and Edinburgh Royal Hospital medical elite: not for Bell the niceties of the Edinburgh drawing room.[^36]
 
-{% assign DOI = "p12" %}
+{% assign paragraph_DOI = "p12" %}
 
 Arguing as powerfully for plainness of words as for directness of images, John Bell decried professional anatomists' self-defeating obscurantism which, especially in language, alienated young would-be practitioners in the field.[^37] Analysing a range of historical illustrations widely deployed or imitated, from Vesalius (1514--1564) on, Bell described the continual struggle between painter and anatomist---the "one striving for elegance of form, the other for accuracy of representation".[^38] Derived merely from the imagination of the painter, he noted, such illustrations show "sturdy and active figures, with a ludicrous contrast of furious countenances, and active limbs, combined with ragged muscles, and naked bones, and dissected bowels, which they are busily employed in supporting, forsooth, or demonstrating with their hands."[^39]
 
-{% assign DOI = "p13" %}
+{% assign paragraph_DOI = "p13" %}
 
 This was, Bell argued (referring to Albinus), like a "statue anatomised", where "all the irregularities of substance, all the gradations of bones, ligaments, tendon, and flesh, are rounded down with studied smoothness; it is a figure that can never compare with the body as it lies before him for dissection".[^40] Instead of this "vitious \[*sic*\] practice" images illustrating anatomy texts should be "useful" rather than "elegant" and "tasteful", presented, Bell argued, only as they appear on the dissecting table during the procedures, notably with "enough of the general figure ... kept there to explain the posture of the parts".[^41] This could only be achieved, we understand, by a singular talent combining both the artistic and scientific---like his own and that of his younger brother Charles, and, of course, Joseph Maclise. Following John Bell, Maclise was a strict adherent to evidential science; yet, in Maclise's atlas-size plates, representation of the "general figure" came almost to dominate over the dissection itself, and death succumbed to life.
 
-{% assign DOI = "p14" %}
+{% assign paragraph_DOI = "p14" %}
 
 ### Cork
 
@@ -238,25 +244,25 @@ This was, Bell argued (referring to Albinus), like a "statue anatomised", where 
 
 Beginning his art studies as a youth in Cork, copying classical casts in Crawford Art Gallery from the newly acquired collection cast by Antonio Canova, from 1828, Daniel Maclise continued his art studies at the Royal Academy in London.[^43] Joseph Maclise may also have drawn from these casts and would certainly have known them. Daniel began his anatomy studies too in Cork, with the influential military surgeon, anatomist, and art enthusiast John Woodroffe (1788--1859), attending his lectures over a number of years and devoting "many winters" to dissection.[^44] The Cork network was highly influential within London circles too; Richard Quain (1800--1887) may well have studied under Woodroffe, who probably taught Joseph Maclise, too. Woodroffe, in turn, commended Maclise to Quain at University College in London to continue his studies, and where in 1832 Quain was appointed professor of descriptive anatomy.[^45]
 
-{% assign DOI = "p15" %}
+{% assign paragraph_DOI = "p15" %}
 
 In the preface to his *Anatomy of the Arteries of the Human Body* (1840--circa 1844), Richard Quain described his illustrator Joseph Maclise as "my former pupil".[^46] Maclise gained his licentiate at University College in 1839 and by the date of Quain's publication was working "at the duties of his profession".[^47] Joseph himself named his teachers at University College as Robert Liston (1794--1847) and Samuel Cooper (1780--1848); it was to them (as well as his fellow students), rather than Quain, that Maclise dedicated his *Surgical Anatomy*.[^48] Samuel Cooper gave Joseph Maclise the intellectual and discursive basis for his publishing interests, while Robert Liston taught him the incisive surgical dexterity which, thanks to Joseph's equal dexterity with both scalpel and pencil, provided the perfect combination for his anatomical publications. Like his brother Daniel, Joseph Maclise was a superb draughtsman of the human body; indeed, Joseph was perhaps the greater of the two, with his more instinctive feel for composition and bold treatment, but with the same sharp eye for detail. Joseph's figures are more powerfully emotive than those of Daniel---who could not resist a trivialising anecdotalism in the gestures and expressions of his figures, even when making grand history paintings like *The Death of Nelson* or *Waterloo* (1858--1864) ([Fig. 6](#acallen-fig6), see also [Fig. 10](#acallen-fig10)).
 
 {% figure 'acallen-fig6' %}
 
-{% assign DOI = "p16" %}
+{% assign paragraph_DOI = "p16" %}
 
 ### London
 
 The urban geographies of London and Paris were highly significant to the Maclise brothers, who are known to have lived together throughout their lives, with sister Isabella as their housekeeper.[^49] Daniel Maclise arrived in London in 1827 aged twenty-one, enrolling at the Royal Academy the following year. His brother followed him to London, perhaps at the of age twenty-two in 1837, the year Daniel took up residence in 14 Russell Place ([Fig. 7](#acallen-fig7)).[^50] It was here that Daniel must have had his studio, and where doubtless the brothers worked side by side drawing together from the muscular male life models that are characteristic in the oeuvre of both. Eventually, this would also be the address of Joseph's surgical practice.[^51] Yet, since he qualified in 1839, it is more likely Joseph arrived in London considerably earlier when, from 1831 to 1837, Daniel lived just a few doors south at 63 Charlotte Street.[^52] An area of good houses, constructed only thirty years previously, Fitzrovia was renowned for its artists as well as the artists' trades: John Constable (a tutor of Daniel Maclise at the RA) lived at 78 Charlotte Street from 1822--1837, finishing *The Lock*, *Salisbury Cathedral*, and *Hampstead Heath* while there.[^53]
 
-{% assign DOI = "p17" %}
+{% assign paragraph_DOI = "p17" %}
 
 {% figure 'acallen-fig7' %}
 
 Right across the street from the Maclises, at 64 Charlotte Street, lived and worked the famous lithographic printers that Joseph chose for his *Surgical Anatomy* plates: Michael and Nicolas Hanhart, who came to London in the 1820s. They were from the same Mulhouse/Paris stable as Godefroy Engelmann (1788--1839) and Jeremiah Graf, "Printers to Her Majesty".[^54] Indeed, in this early period, lithographers were an even more interconnected fraternity than artists or anatomists. Graf was the lithographer selected by Quain to print Maclise's illustrations to his *Anatomy of the Arteries of the Human Body* in 1840--circa 1844. Jeremiah Graf and Godefroy's nephew Auguste Engelmann had established a lithography business in London in 1826, joined there from Paris by Michael Hanhart in 1828 as an assistant, then manager. In 1830, M. & N. Hanhart established their own lithographic business in Charlotte Street, when the Engelmann London branch (Engelmann, Graf & Coindet) failed. Jeremiah Graf too, apparently with his brother Charles, set up his own business nearby that same year, first at 14 Newman Street (also Fitzrovia) and, by 1838, at 16 Castle Street (now Eastcastle Street), just off Charlotte Street.[^55] The proximity of both Graf and M. & N. Hanhart to the Maclise residence meant that not only were they familiars but, in the case of Hanhart, Joseph had merely to cross the street to work on his stones at the printers' (where studios with stones were made available) or, as was also customary at this period, stones for artists' to work on were delivered to their studios.[^56] Conveniently too, for both Maclise brothers, the firm of Winsor & Newton, artists' colourmen, was established in 1832 just down from Charlotte Street at 38 Rathbone Place. George Rowney Colourmen had begun around the corner at 10 and 11 Percy Street in 1783; by the 1850s, they had their retail outlet at 51 Rathbone Place, with wholesale at 10 Percy Street.[^57]
 
-{% assign DOI = "p18" %}
+{% assign paragraph_DOI = "p18" %}
 
 ### Paris
 
@@ -268,27 +274,27 @@ The precise dates of Joseph Maclise's anatomy studies in Paris are uncertain. He
 
 In his descriptions of the sites and galleries he visited, and of the many notable London friends (mainly artistic) he met, who were also in Paris on tour, Daniel scarcely mentions his brother.[^61] Nevertheless, since Joseph was known to frequent the galleries and museums, it is likely that for much of Daniel's stay they joined forces. It is clear it was quite customary to drop into the studios of artists one admired, or who were friends/associates; presumably Joseph also engaged in this practice---and in visits to lithographers like Engelmann associated with his London printers.
 
-{% assign DOI = "p19" %}
+{% assign paragraph_DOI = "p19" %}
 
 Together in Paris, Daniel and Joseph Maclise undoubtedly visited the artworks both greatly admired, including the Louvre's Napoleonic paintings by Antoine-Jean Gros (1771--1835) and Paul Delaroche's (1797--1856) *Execution of Lady Jane Grey* (1833), plus his recently completed *L'Hémicycle du Palais des Beaux-Arts* (1837--1841) at the Palais des Beaux-Arts, which Daniel claimed to visit almost daily.[^62] The Maclises both admired Théodore Gericault's (1791--1824) monumental *Raft of the Medusa* (1819), which entered the Louvre in 1824, soon after the artist's early death ([Fig. 7](#acallen-fig7)).[^63] However, according to Nicolas-Sebastien Maillot's 1831 painting, *Raft of the Medusa Shown in Salon Carré of the Louvre*, the huge canvas was then hung too high for close study ([Fig. 8](#acallen-fig8)). In his monumental history painting, *The Meeting of Wellington and Blücher after Waterloo* (1861), Daniel follows Gros' heroic Napoleonic dramas like the *Retreat from Moscow* in his own treatment of the foreground dead ([Fig. 9](#acallen-fig9)).[^64] Particular poses in *The Meeting of Wellington and Blücher after Waterloo* owe a clear debt too, to Gericault's *Raft of the Medusa*: two sprawled soldiers (far left and right) in eye-catching white breeches, are direct quotes, in reverse, of the foreground right corpse posed by Delacroix for Gericault's painting. Likewise, the beautifully modelled thighs and the use of eroticising drapery in this Gericault/Delacroix nude find powerful echoes in Joseph's drawings, for example, Plate 16 of *Surgical Anatomy* (1851) ([Fig. 10](#acallen-fig10)), with its equally sumptuous thighs; here, the cursorily suggested white drapery nevertheless performs a key narrative function: akin to a lifted shirt, it serves a seductive, revelatory role more associated with female nudes, drawing the eye to the genitals, rather than (as in the Gericault) covering them up. This device had been yet more provocatively deployed by Maclise in his abdomen dissection for Quain (circa 1844, Plate 51) ([Fig. 11](#acallen-fig11)). Maclise's drapery is remarkably pristine compared to the filthy rags we sense in John Bell's prints---or yet the blood-soaked cloth draped across the central nude in Delacroix's *Massacre at Chios* (1824), also in the Louvre ([Fig. 12](#acallen-fig12)).[^65] Delacroix's modern Greek god, his languidly beautiful body and rich olive skin, echoed by Joseph Maclise in his Plate 51 for Quain, lies dying in a position commonly used when starting dissection: even closer is the pose of the corpse, far left, in Gericault's *Raft of the Medusa*.
 
-{% assign DOI = "p20" %}
+{% assign paragraph_DOI = "p20" %}
 
 {% figuregroup '6', 'acallen-fig8, acallen-fig9, acallen-fig10, acallen-fig11, acallen-fig12, acallen-fig13' %}
 
 In addition to the painting's material presence on view in Paris, several prints after Gericault's *Raft of the Medusa* were circulating in London from the time of Gericault and his friend Nicolas Toussaint Charlet's (1792--1845) British tour of the painting during April 1820--December 1821; Charlet produced a first, somewhat woodcut-like lithograph in 1820, which was published at least twice (in 1820 and 1823).[^66] Often attributed to Gericault, Charlet was in fact its principal author, and since Charlet himself became a renowned lithographic printmaker, their work together in London exploiting the medium is no surprise.[^67] Gericault was one of the first major artists, in 1817, to experiment with lithography as an artistic rather than a purely reproductive medium, rapidly becoming an adept---as did Delacroix. The medium's immediacy, precision, and versatility stemmed from the directness of the artist's drawn chalk mark on the prepared stone surface.[^68] Although obviously reversed, the resulting print was an exact replica of the drawing retaining its original qualities of draughtsmanship and personal "touch": a reproducible drawing. It could be fine and delicate like silverpoint, or rich with deep tone and *sfumato*. Since artists themselves could draw directly on the stone, the process could eliminate the intermediary craftsman or designer; intaglio methods, however, required the help (as in the case of John Bell) or full intervention of a skilled craftsman-artisan, who engraved the drawing onto the copper plate. Lithographic prints were also therefore cheaper as well as almost endlessly repeatable.[^69]
 
-{% assign DOI = "p21" %}
+{% assign paragraph_DOI = "p21" %}
 
 However, Charlet's choice of a linear rather than a tonal print after Gericault's *Raft of the Medusa* meant it lost all the chiaroscuresque drama and painterliness of the original. Much closer in painterly feel was the print made for the mass market by British printmaker, Samuel William Reynolds (1773--1835) ([Fig. 14](#acallen-fig14)). His mezzotint (circa 1829) was undoubtedly made in Paris, since it was printed by F. Chardon, 30 rue Hautefeuille (just off Boulevard St Germain between Boulevard St Michel and Place de l'Odéon), and not long after Gericault's painting entered the Louvre. Also a friend of Charlet, and probably encouraged by him, Reynolds often visited Paris and was certainly there in the later 1820s; he was a painter and printmaker whose work was more widely appreciated on the Continent than in Britain and he regularly exhibited at the Paris Salon.[^70] Reynolds' mezzotint of the *Raft of the Medusa* meant the painting that proved so popular in Britain was already available in print and circulating in Paris and London by 1829; Daniel could have acquired a copy in Paris in 1830.[^71]
 
-{% assign DOI = "p22" %}
+{% assign paragraph_DOI = "p22" %}
 
 {% figure 'acallen-fig4' %}
 
 Still more telling are the networks in Paris that Joseph Maclise accessed through Pierre-Nicolas Gerdy and his École d'Anatomie. Like Maclise, Gerdy was deeply committed to sensory evidence and reason in the science of anatomy, first publishing his ideas in a pamphlet in 1844.[^72] Thus, during the likely period of Maclise's *stage* there, Gerdy was researching touch and skin sensation.[^73] Throughout the 1820s, he welcomed artists as well as medics at the École d'Anatomie, running courses in which a key feature for all students was work from the "living figure", which he deemed crucial to a real understanding of human anatomy. Gerdy advertised his dedicated *Cours d'anatomie appliquée à la peinture et à la sculpture* in 1827 and, in 1829, published his atlas, *Anatomie des peintres*, with three lithographic figures posed in conventional front, back, and side views; separate linear key plates avoided complex key letters marring his figures ([Figs. 15](#acallen-fig15)--[17](#acallen-fig17)).[^74] Both publications coincided with Gerdy's bid for the chair of anatomy at the École des Beaux-Arts.[^75] Many students from the Beaux-Arts preferred his teaching to that of ageing incumbent Professor Jean-Joseph Sue (1760--1830), whose classes they deserted in droves; Gerdy was young, exciting, and interdisciplinary. Significantly, not only did he teach from the live model but also from paintings and sculpture, closing his curriculum with "considérations historiques et bibliographiques sur l'anatomie, les beaux-arts, et par des promenades anatomiques dans les jardins et les musées publics, pour y analyser les reliefs sensibles sur les statues et les tableaux".[^76] He was (in)famous for his student tours of the Louvre, critiquing artists' anatomical knowledge in great works of art. Gerdy's emphasis on the living body in the actual and pictorial underpinned all his teaching, although in his treatises he (like Bichat) placed great emphasis on weighty and at times impenetrable textual description. Even his innovative classes, founded on the study of surface anatomy, entailed obsessive description of every curve, bump, and crevice of the human body (see [Fig. 15](#acallen-fig15)). His students clearly loved him: there were riots and two years of strikes at the École des Beaux-Arts when, in 1830, Gerdy was passed over for the chair, ostensibly on the grounds of his youth.[^77]
 
-{% assign DOI = "p23" %}
+{% assign paragraph_DOI = "p23" %}
 
 {% figuregroup '3', 'acallen-fig15, acallen-fig16, acallen-fig17' %}
 
@@ -296,9 +302,9 @@ Before Gericault's untimely death, he too probably worked with Gerdy and, throug
 
 {% figuregroup '3', 'acallen-fig18, acallen-fig19, acallen-fig20' %}
 
-{% assign DOI = "005" %}
+{% assign chapter_DOI = "005" %}
 
-{% assign DOI = "p24" %}
+{% assign paragraph_DOI = "p24" %}
 
 # Delectable Bodies / corpus delecti[^84] {#delectable-bodies-corpus-delecti86}
 
@@ -307,11 +313,11 @@ Before Gericault's untimely death, he too probably worked with Gerdy and, throug
 
 A key characteristic of all exemplary dissection *écorchés* (cast from flayed corpses) on display in anatomy schools was their muscular fitness: in life, they were exclusively well-built soldiers, duellists, pugilists. So for artistic anatomists like Joseph Maclise, even in death, high manly ideals prevailed. Indeed, I contend that the figures in Maclise's anatomies actually were live models: men drawn from life and probably in the studio alongside Daniel---the latter preparatory to his grand historical battle scenes full of military men, the former his "ideal" guardsmen stripped off in the life room and transformed on the lithographic stone into living anatomical specimens.[^86] They are designed, as Joseph stated, "to indicate the interior through the superficies, and thereby illustrate *the whole living body* which concerns surgery", which was precisely Gerdy's philosophy in teaching anatomy to artists and surgeons alike.[^87] Rather than making complete and finished drawings after his dissected bodies for his lithographic figures, or indeed drawing them directly on stone in the anatomy room, Maclise must first have made detailed preparatory drawings just of the dissected parts, and later transposed these, incorporating them onto/into his figures drawn in the studio from life. Joseph may have made drawings from the life model leaving blank spaces ready to receive the dissected details to scale, or possibly he made composites: scaled dissection drawings pasted over a ready-drawn figure, which he would then redraw complete onto stone.[^88] No studies or life drawings on paper seem to survive which could elucidate his method, and nor do there seem to be extant life drawings of Daniel for comparison; the latter's full-scale cartoons that include semi-naked male figures are the closest one gets to the latter's method.[^89]
 
-{% assign DOI = "p25" %}
+{% assign paragraph_DOI = "p25" %}
 
 Comparing work by other British contemporaries, for example, William Fairland's lithographs after J. Walsh's drawings (1837), while powerfully emotive, lack the taut anatomical precision and skilled figure drawing of Maclise.[^90] This is partly the result of a less coherent light source than is customary in Maclise, but also their romantic figure of a young male, appears decontextualised, a cut-out floating in the middle of the sheet ([Fig. 21](#acallen-fig21)).[^91] Similar figures by Maclise, like John Bell's (see [Fig. 4](#acallen-fig4)), inhabit "real" space: a table, or a surface with objects, drapery, the outline of a chair all evoke an inhabited spatial setting. Nevertheless, the richly sensual chiaroscuro in Walsh's anatomical figures, almost closer in appearance to mezzotint, are a probable influence on Maclise's lithographs, most notably in his own *Surgical Anatomy* of 1851. Walsh's drawing romanticises its subject, a muscular and healthy young beauty with a glorious sweep of curly hair stylishly coiffed as if "in life", his eyelids simply lowered at rest. Light and shade in Maclise's lithographs are more closely observed: his directional light source produces greater formal, and hence representational, coherence than does Walsh's more "abstracted" light, that merely catches the corporeal prominences. There was something of this, however, in Maclise's first lithographs for Quain ([Fig. 22](#acallen-fig22)). Walsh depicts a youth's head on a man's body; the sumptuous tonalities and modelling have all the romantic mystery of a Gericault *académie*. Yet, despite being a dissection illustration, the Walsh lacks the taut violence that in Gericault is rarely far below the surface and which, as in the mature Maclise, is sublimely erotic: desire, sex, and death come together.
 
-{% assign DOI = "p26" %}
+{% assign paragraph_DOI = "p26" %}
 
 {% figuregroup '2', 'acallen-fig21, acallen-fig22' %}
 
@@ -321,25 +327,25 @@ Similar in style to Walsh/Fairland, the later anatomical lithographs Fairland pr
 
 This overly complex process, difficult to imagine in practice (how such a tracing frame could be set up and worked on above a corpse on a slab), is not known to have been widely adopted. Inventive though it is, it suggests the mind of a pure scientist complicating an otherwise direct transcription that could be produced by any good artist, including Fairland himself, but especially one like Joseph Maclise, who was also a surgeon-anatomist. Crucially, in Sibson's case, it enabled the anatomist to retain full control, rather than conceding it to Fairland's skills.
 
-{% assign DOI = "p27" %}
+{% assign paragraph_DOI = "p27" %}
 
 The complete Quain text for *The Anatomy of the Arteries of the Human Body* was, according to its title-page, published in 1844, but Maclise's plates were printed in batches or "fascicules" beginning as early as 1840, with an anticipated total of thirteen.[^93] While there is no certainty over the extent to which Joseph Maclise was directed or constrained by Quain, a mature Maclise style emerged in the later plates, circa 1842--1844, when he came closer in feel to the Walsh/Fairland plates. Thus, in "Abdomen" (see [Fig. 12](#acallen-fig12)), Maclise explored a far richer and more sensual use of the lithographic chalk than seen in his earlier Quain plates. Here, to differentiate the complex, richly detailed textures of the organs, he exploits an extensive range of tonal values and touch that are arguably best suited to this complex subject. The cornucopia of bulging organs is animated by Maclise's densely worked detail in the central ellipse, brought into "sculpted" relief under his left-to-right directional light and rendered by his superbly varied hatched modelling. Projecting into our space, this brilliant illusion of three-dimensionality is cleverly reinforced by the surrounding linear simplicity, where delicate black lines, stark in contrast to the white paper, evoke the linen swaddling the figure. Maclise drapes his white "cloth" theatrically over the figure's left hip, to create a striking cast shadow from his well-endowed genitals, which hang pristine before his smoothly carved loins to draw the spectator's eye. The genitals are beautifully rendered with contour hatch lines to echo and sculpt its plump forms. A deeply shadowed fold of fabric between his thighs is a metonymic device more commonly seen in female erotica to suggest the vulva.[^94] Clearly, by this date, Joseph Maclise's style (as his commentators were to observe) owed less to his English contemporaries or the Bells than to Continental influences, whether Gros, Gericault, Delacroix, or Nicolas-Henri Jacob ([Fig. 23](#acallen-fig23)). And yet, direct comparison between Jacob and Maclise serves powerfully to demonstrate the painterly sensuality of the latter, as against the static formal restraint of Jacob, despite his "live" muscular figure. Maclise evidently looked more to the theatrical drama, sensuality, and *mouvementé* flamboyance of French Romantic art than to Jacob's colder Davidian manner.
 
-{% assign DOI = "p28" %}
+{% assign paragraph_DOI = "p28" %}
 
 {% figure 'acallen-fig23' %}
 
 What we are witnessing here, I contend, is a stylistic development, an ever-growing confidence and skill in Joseph Maclise's use of the lithographic medium, and with it a parallel shift to "live" figures, probably inspired by his work in Paris with Gerdy and his study of French art. In the preface to his own 1851 *Surgical Anatomy*, Maclise provides a clear scientific rationale to underpin this "new" style which, addressed specifically to the trainee surgeon, is after all intended as an aide to operating on *live* subjects.[^95] Superbly emotive in their lush build-up of chalk strokes, producing a richly modelled effect, without loss of precision in the detail, Maclise's mature lithographs demonstrate an extraordinary control of his drawing mediums. His first plates for Quain, then, are less clearly personal: the scrawny unidealised body in Plate 2, "Neck and thorax" (see [Fig. 22](#acallen-fig22)) is stylistically closer to the Bells, particularly to John Bell (see [Fig. 4](#acallen-fig4)). Maclise's figure looks very dead: a worn old man emaciated by a lifetime of hunger and work, and typical of the actual corpses available for dissection (see [Fig. 2](#acallen-fig2)). Maclise soon abandoned this abrasive Bellsian style. By Quain Plate 51 (see [Fig. 12](#acallen-fig12)), especially the intestines, his complex lighting includes highlights, reflected lights, and lustre to suggest moist malleability and vitality, the very textures of the different organs. The degree of Maclise's obsession with precise observational detail---or the *appearance* of it---is seen here in the glistening entrails where even an overhead window is apparently reflected. Another glossy bar of light cast on the firmly straight (circumcised?) penis affirms its solid bulk, its tantalising hint of tumescence.[^96]
 
-{% assign DOI = "006" %}
+{% assign chapter_DOI = "006" %}
 
 # Sight, Touch, and "Appendages"
 
-{% assign DOI = "p29" %}
+{% assign paragraph_DOI = "p29" %}
 
 In Quain Plate 51, Joseph Maclise also exploits contrasts of "finish" (see [Fig. 12](#acallen-fig12)). A schematic left hand dissolves into drapery, in contrast to the beautifully resolved right hand and muscular arm, held effortlessly above the open and extravagantly baroque abdomen by a delicate twist of bandage. These are not the hands of a labourer or manual worker. In Maclise's Plate 55 for Quain, both arms are folded across the chest, and again hands play a central role ([Fig. 24](#acallen-fig24)). Unmistakably youthful, this figure is verging on puberty. Although, echoing the subject matter, an oval format is common for the trunk in artistic anatomies, here, distinctively for Maclise, this beautiful boy-man is tenderly "framed" in an encircling ellipse reminiscent of rococo portraiture---and lithographic portraits. This figure has youthful genitals and the palest "girlish" skin. Maclise is remarkable for his close observational attention to skin texture and tone from a wide range of ethnic origins and ages, which, thanks to his extraordinary skills in life drawing and lithography, he is able to represent so persuasively in black and white. Combined, these qualities ensure the "truth" and legitimacy of his images, convincing the viewer of a scientific authority based in extensive comparative (human) anatomy, while simultaneously delighting the voyeuristic eye.
 
-{% assign DOI = "p30" %}
+{% assign paragraph_DOI = "p30" %}
 
 {% figure 'acallen-fig24' %}
 
@@ -349,17 +355,17 @@ Differentiating the *physiology* of the senses from their *cultural* association
 
 Distinguishing the social construction of "good" and "bad" touching, Gilman suggests that the touching of the self is a "powerful homologue" for the touching of a same-sex Other---a touch electrifyingly visible in Maclise's surgical anatomies where, in addition to penises, hands play a central role. In the majority of his plates, neither appendage was strictly necessary. Yet Maclise stressed in his preface regarding (and justifying) his "novel treatment" of anatomical figures for the surgeon, like the dashingly vigorous model in "location of the viscera" (see [Fig. 16](#acallen-fig16)): "I have \[...\] *left appended* to the dissected regions as much of the undissected as was necessary".[^99]
 
-{% assign DOI = "p31" %}
+{% assign paragraph_DOI = "p31" %}
 
 In a series of dissections of the groin on standing figures, Maclise first presents a single exquisite model. Quite gratuitously overexposed from the ribcage to below the right knee (see [Fig. 11](#acallen-fig11)), he empowers this model with a more confident homoerotic self-display and panache than can be found even in dedicated "artistic nudes", like Émile Bayard's (1868--1937) photographic "Nus masculins" in *Le Nu esthétique* or those of Wilhelm von Gloeden (1856--1931) ([Fig. 25](#acallen-fig25)).[^100] In Maclise's plate, the figure's right leg takes the body weight, while the left is raised to the side, knee bent, the better to expose the dissected groin. This is a bronzed Athenian god of a figure, his superb athletic form and firm flesh smoothly rendered, muscles catching a light angled to accentuate their perfection. Hairless almost throughout, in the manner of a scraped Greek athlete, like Lysippos' *Apoxyomenos*, this trope makes explicit reference to Hellenic homosexual culture, or the modern Turkish bath, to a knowing Victorian male audience ([Fig. 26](#acallen-fig26)).[^101] Maclise marks a modern masculinity in discreetly drawing attention to his model's testicles, where minutely observed pubic hairs stand out against the white of the paper. The model's hand introduced here in Plate 16 (1851) (see [Fig. 11](#acallen-fig11)), if more "work-reddened" and meaty than that for his Quain Plate 51 (see [Fig. 12](#acallen-fig12)), is again eloquent, evoking the sense of touch and of self-touching between the index and second fingers and again on his thigh.[^102] This immediately recalls Gerdy and his artist Maximilien-Félix Demesse, whose Plate 3 has the same hand, the same touch ([Fig. 27](#acallen-fig27)).[^103] The fact that the figure holds a ball in his hand (cue "athlete") is barely perceptible in this plate (compare with Gerdy's diagram and Plate 1, [Figs. 15](#acallen-fig15) and [17](#acallen-fig17)). Instead, the eye lingers over whether his finger and thumb touch, or do not touch, the flank of his own buttock. Maclise undoubtedly knew Gerdy's *Anatomie des peintres*, and he probably knew Demesse himself.
 
-{% assign DOI = "p32" %}
+{% assign paragraph_DOI = "p32" %}
 
 {% figuregroup '3', 'acallen-fig25, acallen-fig26, acallen-fig27' %}
 
 In Plate 26 of Maclise's *Surgical Anatomy* (1856 London edition), this figure is transformed, reproduced landscape on the sheet, cut off at upper thigh; yet, the eloquent hand remains, as do the tiny pubic hairs on the scrotum, along with new anatomical detail: on his right thigh, Maclise provides the surface appearance of the femoral vessels dissected on the left leg. The model's full vertical splendour returns in Plate 48 (1856; see also Plate 47 in the 1851 edition): the same pose but with hand and drapery omitted ([Fig. 28](#acallen-fig28)).[^104] Instead, there are other, different *frissons*. A hanging slab of muscle echoes the angle and dangle of the penis; the bent left leg is restrained below the calf, for once the rope shown digging into flesh, tautly tied for no apparent reason and to nowhere we can see. On this leg, the indication of surface veins below the skin continues beyond the dissection on to the thigh and calf; yet only on a live body in which blood is circulating would such raised veins or arteries be expected to occur. On both sides of the ligature restricting the femoral vein in the dissection itself, there is a lumpy swelling of its "contents" (despite nearby vessels being severed); the similar "tourniquet" roping of the calf would arguably result in a swelling above it of the arteries rather than the veins in a living subject.[^105] This olive-skinned flesh characteristic of the preferred Italian artists' models of the period also sports a suture to the right leg. Seen first on the inner thigh of the Black man (1851) ([Fig. 29](#acallen-fig29)) and later recurring sutured, here the sutured incision is replicated on a "white" man. Highly evocative/provocative and exquisitely drawn, the thread of this apparently subcutaneous suture is left hanging from the sewn wound, casting its own delicate shadow.[^106] Pleasure and pain again: secret cuts and scars give authenticity and human frailty to perfect beauty.
 
-{% assign DOI = "p33" %}
+{% assign paragraph_DOI = "p33" %}
 
 {% figuregroup '2', 'acallen-fig28, acallen-fig29' %}
 
@@ -367,19 +373,19 @@ Maclise's Plate 18 in *Surgical Anatomy* (1851) extended this theme into coupled
 
 {% figure 'acallen-fig30' %}
 
-{% assign DOI = "007" %}
+{% assign chapter_DOI = "007" %}
 
 # The Lubricant
 
-{% assign DOI = "p34" %}
+{% assign paragraph_DOI = "p34" %}
 
 Lithography oiled the wheels of dissemination. And of course, unlike an incised or intaglio medium, lithographs can be almost indefinitely reprinted from the original stone without wearing out, or rather wearing *down*, as happens---with an attendant loss of definition---in etched or engraved printing; hence, this planographic method is quite distinct, more economic, and direct. Lithography depends upon the oily printing ink adhering only to the areas of the stone marked by the artist's design in waxy lithographic crayon, giving effects like chalk or pastel, or with "tusche"---the liquid waxy variant which can be applied with pen or brush---to achieve a distinctively ink or watercolour effect.[^109]
 
-{% assign DOI = "p35" %}
+{% assign paragraph_DOI = "p35" %}
 
 Maclise principally uses the lithographic crayon, mirroring the effect of black chalk drawing. Marking his professional terrains in his lithographs for Quain, Maclise advertises his skills as both artist and surgeon-anatomist, self-consciously positioning exquisite still lifes of his tools alongside the dissections. His draughtsman's tools: a roll of paper, a *porte-crayon*, knife, quill pen, and a bottle of ink (or lithographic tusche), lie at the foot of a dissected leg in Plate 72 (circa 1844) ([Fig. 31](#acallen-fig31)). In the lateral dissection of a female bladder and reproductive organs, Plate 59 (circa 1842--1843) ([Fig. 32](#acallen-fig32)), Maclise's curved surgical scissors (a feminine tool?) eloquently reinforce the curve of a smooth-fleshed buttock, so plumply rounded it appears not to be load-bearing. In a second lateral dissection (male), Plate 60, a phallic *porte-crayon* awaits the cadaver's hand ([Fig. 33](#acallen-fig33)). A disembodied hand in Quain, Plate 43 ([Fig. 34](#acallen-fig34); see also [Fig. 35](#acallen-fig35), which shows the *porte-crayon* among the essential tools of the lithographer), gestures eloquently to the interlocked tools of the artist-anatomist: a loaded *porte-crayon* rests on tweezers and a small blade or scalpel. In Plate 44, the "corpse's" hand is wittily poised beside the surgeon-anatomist's threaded curved needle, a specialist wood-handled flesh-hook and probe(?). For Maclise, all the tools of his trades included in his lithographs served as reminders both of the expert human touch of the specialist entailed in this multilayered work, and of the work's "objective" scientific basis in observation; it was, as William Hunter named it, the "mark of truth".[^110] It is for Maclise, when working under Quain's direction, simultaneously the young artist-surgeon's calling card; indeed, in Plate 43, the tools appear immediately above the artist's signature (see [Fig. 34](#acallen-fig34)). Yet, equally, in his play on tools and cadavers, Maclise is making macabre visual puns that border on the knowing dissection-room prank: in-jokes which, to the *aficionados* of anatomy were a key feature of this "rite of passage".[^111] By the time of Joseph Maclise's solo publications, especially the major *Surgical Anatomy* (1851), his skills were famous: with his own authority stamped on the title-page, there was no longer the need to publicise his dual expertise.[^112]
 
-{% assign DOI = "p36" %}
+{% assign paragraph_DOI = "p36" %}
 
 {% figuregroup '5', 'acallen-fig31, acallen-fig32, acallen-fig33, acallen-fig34, acallen-fig35' %}
 
@@ -387,11 +393,11 @@ Indeed, Quain could be a patronising patron. In the 1844 preface to his atlas, *
 
 > they design to print off as many copies as are wanted by subscribers, and then to efface the drawings from the stones, in order that the plates may not be hereafter produced in a less perfect manner, or the pecuniary value of the work to the purchaser be lessened by a subsequent flooding of the market with an indefinite number of copies, worn or not.[^118]
 
-{% assign DOI = "p37" %}
+{% assign paragraph_DOI = "p37" %}
 
 Equally, however, it is clear when comparing prints from different editions of Maclise's *Surgical Anatomy* that there are subtle variations in interpretation when a stone was redrawn, and re-sized, not necessarily by Maclise himself. The Philadelphia editions, in a much weaker hand, were copied onto stone in America.[^119] Abstracted stylisation accretes too through repetition from the flat, where knowledge and sight of the original is lost. There are slight differences, for example, in the twist of the torso and the muscular detail in the dissection figures of "Thorax and abdomen" between the 1851 and 1856 editions (Plates 12 and 22, respectively); more thigh is visible in the 1851 print while, in the 1856 print, the contrasts of light and shade in the modelling are more pronounced.[^120] Differences are particularly clear in comparing the drawings of a Black man's head in the 1851 and 1856 London editions ([Figs. 36](#acallen-fig36) and [37](#acallen-fig37)). Whereas the two "white" heads in this comparative anatomy sheet are relatively similar, differing just in subtle physiognomic details and in 1856 a reduced light--dark contrast, the treatment of the two Black men's heads---notably in the handling of the hair, but also in the appearance of the skin---suggests the later draughtsman had no personal knowledge of Black people. In the 1851 print, the intense light-absorbing properties of a matt blue-black skin, and the tightly curled hair are beautifully evoked but, in the 1856 print, not only is the head physiognomically more brutish but also the hair is rendered like burnished, light-reflective bronze studs, or a scaly helmet---an effect heightened by the raking overhead light that also gives areas of skin a glistening sheen more common on Maclise's white flesh. It is probable these lithographs in the second London edition (1856) were drawn directly on stone---not by Maclise himself but by expert "copyists".
 
-{% assign DOI = "p38" %}
+{% assign paragraph_DOI = "p38" %}
 
 {% figuregroup '2', 'acallen-fig36, acallen-fig37' %}
 
@@ -399,19 +405,19 @@ Whether as a naturalistic "mark of truth", a sentimental gesture of shared human
 
 {% figure 'acallen-fig38' %}
 
-{% assign DOI = "008" %}
+{% assign chapter_DOI = "008" %}
 
 # Appended
 
-{% assign DOI = "p39" %}
+{% assign paragraph_DOI = "p39" %}
 
 Just as in the burgeoning series of "aesthetic nude" photographs notionally intended for artists' use, or the artistic studies of beautiful well-hung Sicilian youths posed by photographers like Baron Wilhelm von Gloeden (see [Fig. 25](#acallen-fig25)) forty-odd years later, in his *Surgical Anatomy*, Joseph Maclise left particular parts more exposed than others---notably, as we have seen, hands and the male external genitalia.[^124] The viewer's eye is inexorably drawn in particular to his penises, their sheer variety and myriad beauty, their personal portrait-like individuality. Given his large-scale, almost life-size figure plates, their impact is all the greater. Verging on the obsessional, every conceivable shape and state of vigorous male genitalia---apart from erect---are lovingly delineated, providing his readership with a veritable taxonomy of healthy sexual organs.[^125] Indeed, visibly more full-blooded and generous than those found on neoclassical nudes, Maclise's penises were barely constrained by the bounds of Victorian propriety and convention. Although recognised as "high art" and as skilful as those of his brother Daniel, arguably Joseph's naked male figures could *only* be accommodated within the homosocial world of medicine.[^126] Unmistakably erotic in feel as in sheer penis count, genitals are often the central focus between assertively splayed thighs or "man-spread". Far from evoking death, Maclise's life-size male figures *embody* vital manly virility, the "absent" erect penis displaced in the muscular verticality of his models' superbly taut polished flesh: the rippling athletic thighs, arms, shoulders and, indeed, in the eloquent hands.[^127]
 
-{% assign DOI = "p40" %}
+{% assign paragraph_DOI = "p40" %}
 
 The particular advantages of the lithographic medium, its expressive qualities, and approximation to the intimacy of chalk drawing, plus the wealth of rich texture and detail it offered to such a consummate draughtsman, its subtle direct and indirect lights, reflections and shadows both attached and cast, result in an extraordinary variety of sensual, erotic delights for the libidinous eye. Paraphrasing Michael Hatt's analysis of Haymo Thornycroft's rural *Mower*, Maclise's well-endowed, urban guardsmen, sailors, and labouring bodies have a kind of masculine muscle that could be looked at and enjoyed overtly in a medico-anatomical narrative, and also as "phantasmatic figure\[s\] to be consumed covertly in an erotic one; the very process of looking, of contemplation, is one which submerges this paradox".[^128] Given the medical context and function of Maclise's lithographs, their artistic quality and scale demonstrate the artist's own pleasure in the male body, a pleasure with a more than chance resemblance to pictorial homoerotic pornography---and similarly a resistance to normative Victorian heterosexuality. Yet, covert erotic looking in the domain of the anatomy room, or the private library, is a very different affair to that in a public art gallery or Westminster Halls. According to the Obscene Publications Act of 1857, it was not possession as such of erotica that was considered dangerous but rather its uncontrolled production and dissemination among the ill-educated masses, threatening to distract and weaken workers, and corrupt the innocence of youth. Working privately from live rather than dead models, Maclise could sate his own homoerotic desires (whether lived out or phantasmic) for the male military body: a passion he shared with his brother Daniel. Creating medical anatomies at such a high level of aesthetic skill meant Joseph Maclise observed and drew the best male models as a fine artist, while at the same time being licensed as a surgeon-anatomist to explore intimate bodily terrains forbidden to Daniel as a painter of heroic military history.
 
-{% assign DOI = "p41" %}
+{% assign paragraph_DOI = "p41" %}
 
 Like their anatomical artists, such lithographic plates travelled widely. Their relative cheapness---especially in individual fascicules of a few plates---meant that, like pornography, they were readily available and doubtless circulated within educated circles well beyond their primary audience of medical students and surgeons. Under the umbrella of medical science, these superb lithographs offered their all-male viewers, whether in London or Paris, Boston or Philadelphia, a safe space to enjoy their libidinous gaze on exquisite male bodies, modern ideals of athletic masculinity, without fear of persecution or censure.
 

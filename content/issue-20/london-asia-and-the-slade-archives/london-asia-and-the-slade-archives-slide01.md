@@ -8,7 +8,7 @@ outputs:
   - html
 ---
 
-{% assign DOI = "p1" %}
+{% assign paragraph_DOI = "p1" %}
 
 # Introduction
 

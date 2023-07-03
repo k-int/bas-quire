@@ -7,7 +7,7 @@ outputs:
   - html
 ---
 
-{% assign DOI = "p2" %}
+{% assign paragraph_DOI = "p2" %}
 
 # I. Institutional Pathways and Documentary Trails
 

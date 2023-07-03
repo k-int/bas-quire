@@ -8,6 +8,7 @@ figure_list:
     src: "figures/issue-22/covers/issue-22-cover-1.jpg"
     caption: "Visualisation of the River Thames, 2022"
     credit: "Lizzie Malcolm | Rectangle"
+    alt: "Stylised aerial view of London highlighting the River Thames, with geographical points of interest annotated."
 
   - id: "issue-22-cover-2"
     label: "Issue 22 cover 2"
