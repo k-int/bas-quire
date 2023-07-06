@@ -45,7 +45,7 @@ const publicDir = 'public'
  * @param      {Object}  base eleventy configuration
  * @return     {Object}  A modified eleventy configuation
  */
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   /**
    * Override addPassthroughCopy to use _absolute_ system paths.
    * @see https://www.11ty.dev/docs/copy/#passthrough-file-copy
@@ -225,8 +225,8 @@ module.exports = function(eleventyConfig) {
           plugins: [
             copy({
               targets: [
-                { 
-                  src: 'public/*', 
+                {
+                  src: 'public/*',
                   dest: outputDir,
                 },
                 {
@@ -270,20 +270,24 @@ module.exports = function(eleventyConfig) {
     document: ({ data, templateContent }) => {
       // Manipulate the item data into the desired formats.
       const { publication, page } = data;
-      const { title, subtitle, description, copyright, license, resource_link: resourceLink } = publication
-      const contributors = publication?.contributor?.map(con => {
-        const trimmed = { ...con };
-        delete trimmed.pages;
-        return trimmed;
-      }) || [];
+      const { title, subtitle, abstract, description, copyright, license, resource_link: resourceLink } = publication
+      const filteredContributors = publication?.contributor?.filter(con => {
+        if (con?.pages?.some(contributorPage => (contributorPage.url === page.url))) {
+          delete con.pages
+          return con
+        }
+      }) || []; //This will default filtered_contributors to an empty array
 
       // Return the object representing a single entry in the index for ES.
       return {
         _id: page.url,
-        contributors,
-        title,
-        subtitle,
+        contributors: filteredContributors,
+        title: data.title,
+        subtitle: data.subtitle,
         description: description.full,
+        abstract: data.abstract,
+        contentType: data.BAStype,
+        identifiers: data.identifier,
         copyright,
         license,
         resourceLink,
