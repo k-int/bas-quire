@@ -45,7 +45,6 @@
     "#plugins/*": "./_plugins/*"
   },
   "dependencies": {
-    "all": "^0.0.0",
     "bulma": "^0.9.3",
     "core-js": "2.5.0",
     "dotenv": "^16.3.1",
