@@ -135,36 +135,6 @@ function addDocument(esDocs, indexName, client) {
     ))
 }
 
-// console.log(indexName)
-// client.index({
-//     index: indexName,
-//     type: "document",
-//     id: _id,
-//     body: {
-//         title: data.title,
-//         subtitle: data.subtitle,
-//         contributor: data.contributor,
-//         pub_date : data.pub_date,
-//         pub_type: data.pub_type,
-//         doi: data.doi,
-//         issn: data.issn,
-//         language: data.language,
-//         layout: data.layout,
-//         order: data.order,
-//         references: refArray,
-//         series_issue_number: data.series_issue_number,
-//         series_periodical_name: data.series_periodical_name,
-//         abstract: data.abstract,
-//         acknowledgements: data.acknowledgements,
-//     }
-//     }, function (err, resp){
-//         if (err) {
-//             console.log(err)
-//         } 
-//     })
-// }
-
-
 
 
 module.exports = {
