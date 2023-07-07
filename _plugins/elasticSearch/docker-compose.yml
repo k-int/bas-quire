@@ -1,0 +1,32 @@
+version: "3.9"
+
+services: 
+  eleventy_elasticsearch:
+      container_name: eleventy_elasticsearch
+      image: docker.elastic.co/elasticsearch/elasticsearch:8.5.3
+      restart: always
+      env_file:
+        - ./.env
+      environment:
+        - node.name=eleventy_elasticsearch
+        - discovery.type=single-node
+        - xpack.security.enabled=true
+        - xpack.security.audit.enabled=true
+        - ELASTIC_USER=${ES_USER}
+        - ELASTIC_PASSWORD=${ES_PASSWORD}
+        - bootstrap.memory_lock=true
+
+      volumes:
+        - es_data_eleventy:/usr/share/elasticsearch/data
+      ports:
+        - 9200:9200
+      logging:
+        driver: "json-file"
+        options:
+          max-size: "10k"
+          max-file: "10"
+
+
+volumes:
+  es_data_eleventy:
+    driver: local

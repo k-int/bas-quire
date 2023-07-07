@@ -43,6 +43,8 @@ pids
 desktop.ini
 thumbs.db
 
+# Elasticsearch plugin
 .settings
 .project
 /es
+_plugins/elasticsearch/.env
