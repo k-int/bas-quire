@@ -278,16 +278,35 @@ module.exports = function(eleventyConfig) {
         }
       }) || []; //This will default filtered_contributors to an empty array
 
+      // Two entries with id "/issue-01/" and one with "/" - convert into unique _ids
+      var issueId = page.url
+      if (issueId == "/issue-01/") {
+        issueId = page.url + data.key;
+      } else if (page.url == "/") {
+        issueId = (data.title).toLowerCase();
+      };
+      
+      // filter for figures in issues
+      const filteredFigures = data?.figures?.figure_list.filter(fig => {
+        if (data.content.includes(fig?.id)) {
+          return fig
+        }
+      })
+
+
       // Return the object representing a single entry in the index for ES.
       return {
-        _id: page.url,
-        contributors: filteredContributors,
+        _id: issueId,
         title: data.title,
         subtitle: data.subtitle,
-        description: description.full,
         abstract: data.abstract,
+        contributors: filteredContributors,
+        mainImage: data.image,
+        images: filteredFigures,
         contentType: data.BAStype,
+        pubDate: data.pub_date,
         identifiers: data.identifier,
+        description: description.full,
         copyright,
         license,
         resourceLink,

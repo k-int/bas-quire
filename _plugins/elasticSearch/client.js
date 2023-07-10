@@ -31,6 +31,7 @@ function createIndexFn(indexName, client) {
                     properties: {
                         title: { "type": "text" },
                         subtitle: { "type": "text" },
+                        abstract: { "type": "text" },
                         contributors: { "type": "object" },
                         // contributors: {
                         //     properties: {
@@ -46,15 +47,17 @@ function createIndexFn(indexName, client) {
                         //         sort_as: { "type": "text" }
                         //     }
                         // },
-                        description: { "type": "text" },
-                        abstract: { "type": "text" },
+                        mainImage: { "type": "text" },
+                        images: { "type": "object" },
                         contentType: { "type": "keyword" },
+                        pubDate: { "type": "date" },
                         identifiers: {
                             properties: {
                                 doi: { "type": "text" },
                                 issn: { "type": "keyword" }
                             }
                         },
+                        description: { "type": "text" },
                         copyright: { "type": "text" },
                         licence: {
                             properties: {
@@ -64,6 +67,7 @@ function createIndexFn(indexName, client) {
                                 scope: { "type": "text" }
                             }
                         },
+                        resourceLink: { "type": "object" },
                         issueSource: {
                             properties: {
                                 page: {
@@ -93,11 +97,11 @@ function addDocument(esDocs, indexName, client) {
     esDocs.forEach(doc => (
         client.index({
             index: indexName,
-            // type: "document",
             id: doc._id,
             body: {
                 title: doc?.title,
                 subtitle: doc?.subtitle,
+                abstract: doc?.abstract,
                 contributors: doc?.contributors,
                 // contributors: {
                 //     id: doc?.contributors.map(contribData => {return contribData.id}),
@@ -111,13 +115,15 @@ function addDocument(esDocs, indexName, client) {
                 //     pic: doc?.contributors.map(contribData => {return contribData.pic}),
                 //     sort_as: doc?.contributors.map(contribData => {return contribData.sort_as})
                 // },
-                description: doc?.description,
-                abstract: doc?.abstract,
+                mainImage: doc?.mainImage,
+                images: doc?.images,
                 contentType: doc?.contentType,
+                pubDate: doc?.pubDate,
                 identifiers: {
                     doi: doc?.identifiers?.doi,
                     issn: doc?.identifiers?.issn
                 },
+                description: doc?.description,
                 copyright: doc?.copyright,
                 license: {
                     name: doc?.license?.name,
@@ -125,6 +131,7 @@ function addDocument(esDocs, indexName, client) {
                     url: doc?.license?.url,
                     scope: doc?.license?.scope
                 },
+                resourceLink: doc?.resourceLink,
                 issueSource: doc?._source
             }
         }, function (err, resp) {
