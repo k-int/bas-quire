@@ -269,8 +269,20 @@ module.exports = function(eleventyConfig) {
     // Supply a function that receives the item from the collection and returns a single ES document.
     document: ({ data, templateContent }) => {
       // Manipulate the item data into the desired formats.
-      const { publication, page } = data;
-      const { title, subtitle, abstract, description, copyright, license, resource_link: resourceLink } = publication
+      const {
+		title,
+      	subtitle,
+      	abstract,
+      	publication,
+      	page,
+      	image: mainImage,
+      	BAStype: contentType,
+      	pub_date: pubDate,
+      	identifier: identifiers,
+      	acknowledgements,
+      	figures
+      	} = data;
+      const { description, copyright, license, resource_link: resourceLink } = publication
       const filteredContributors = publication?.contributor?.filter(con => {
         if (con?.pages?.some(contributorPage => (contributorPage.url === page.url))) {
           delete con.pages
@@ -283,11 +295,11 @@ module.exports = function(eleventyConfig) {
       if (issueId == "/issue-01/") {
         issueId = page.url + data.key;
       } else if (page.url == "/") {
-        issueId = (data.title).toLowerCase();
+        issueId = title.toLowerCase();
       };
       
       // filter for figures in issues
-      const filteredFigures = data?.figures?.figure_list.filter(fig => {
+      const filteredFigures = figures?.figure_list.filter(fig => {
         if (data.content.includes(fig?.id)) {
           return fig
         }
@@ -297,19 +309,20 @@ module.exports = function(eleventyConfig) {
       // Return the object representing a single entry in the index for ES.
       return {
         _id: issueId,
-        title: data.title,
-        subtitle: data.subtitle,
-        abstract: data.abstract,
+        title,
+        subtitle,
+        abstract,
         contributors: filteredContributors,
-        mainImage: data.image,
+        mainImage,
         images: filteredFigures,
-        contentType: data.BAStype,
-        pubDate: data.pub_date,
-        identifiers: data.identifier,
+        contentType,
+        pubDate,
+        identifiers,
         description: description.full,
         copyright,
         license,
         resourceLink,
+        acknowledgements,
         _source: { page }
       };
     }
