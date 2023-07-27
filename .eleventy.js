@@ -45,7 +45,7 @@ const publicDir = 'public'
  * @param      {Object}  base eleventy configuration
  * @return     {Object}  A modified eleventy configuation
  */
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   /**
    * Override addPassthroughCopy to use _absolute_ system paths.
    * @see https://www.11ty.dev/docs/copy/#passthrough-file-copy
@@ -265,39 +265,64 @@ module.exports = function(eleventyConfig) {
   // Add the elastic search plugin
   eleventyConfig.addPlugin(elasticSearch, {
     collection: "html", // Use items that are part of the "html" 11ty collection.
-
     // Supply a function that receives the item from the collection and returns a single ES document.
     document: ({ data, templateContent }) => {
+
       // Manipulate the item data into the desired formats.
       const {
-		title,
-      	subtitle,
-      	abstract,
-      	publication,
-      	page,
-      	image: mainImage,
-      	BAStype: contentType,
-      	pub_date: pubDate,
-      	identifier: identifiers,
-      	acknowledgements,
-      	figures
-      	} = data;
+        title,
+        subtitle,
+        short_abstract,
+        abstract,
+        publication,
+        page,
+        image: mainImage,
+        BAStype,
+        pub_date,
+        pub_type,
+        review_status,
+        season,
+        layout,
+        palette,
+        presentation,
+        wordCount,
+        order,
+        series_issue_number,
+        identifier: identifiers,
+        acknowledgements,
+        subjects,
+        figures,
+      } = data;
       const { description, copyright, license, resource_link: resourceLink } = publication
+
       const filteredContributors = publication?.contributor?.filter(con => {
         if (con?.pages?.some(contributorPage => (contributorPage.url === page.url))) {
           delete con.pages
           return con
         }
-      }) || []; //This will default filtered_contributors to an empty array
+      }) || []; //This will default filteredContributors to an empty array
+      
+      // Trim filtered contributors to only id and full name
+      var trimmedContributors = []
+      filteredContributors.forEach(con => {
+        var trimmedCons = { id: con.id, full_name: con.full_name}
+        trimmedContributors.push(trimmedCons)
+      })
+
+      const articlePath = page?.fileSlug;
 
       // Two entries with id "/issue-01/" and one with "/" - convert into unique _ids
       var issueId = page.url
-      if (issueId == "/issue-01/") {
+      var regexpExact = /(\/issue-)([\d]+)(\/)$/  // match exactly /issue-XX/ for any issue number
+      var regexpGeneral = /(\/issue-)([\d]+)(\/)/  // match the /issue-XX/ for any issue number (not strict)
+      var issueObjId = /(\/issue-)([\d]+)(\/issue-)([\d]+)$/  // match the issue-XX/issue-XX entry data
+
+      if (regexpExact.test(issueId)) {
         issueId = page.url + data.key;
       } else if (page.url == "/") {
         issueId = title.toLowerCase();
       };
-      
+
       // filter for figures in issues
       const filteredFigures = figures?.figure_list.filter(fig => {
         if (data.content.includes(fig?.id)) {
@@ -305,26 +330,54 @@ module.exports = function(eleventyConfig) {
         }
       })
 
-
+      
       // Return the object representing a single entry in the index for ES.
       return {
         _id: issueId,
-        title,
-        subtitle,
-        abstract,
-        contributors: filteredContributors,
-        mainImage,
-        images: filteredFigures,
-        contentType,
-        pubDate,
-        identifiers,
-        description: description.full,
-        copyright,
-        license,
-        resourceLink,
-        acknowledgements,
+        issue: {},
+        content: {
+          frontmatter: {
+            series_issue_number,
+            order,
+            palette,
+            path: articlePath,
+            title,
+            subtitle,
+            BAStype,
+            pub_type,
+            wordCount,
+            subjects,
+          },
+          contributors: { contributor: filteredContributors },
+          text: { short_abstract, 
+            abstract, 
+            acknowledgements, 
+          },
+          illustrations: {},
+          slides: {},
+          footnotes: {},
+          bibliography: {}, // need "references" changing to "reference" in article yaml
+          endsmatter: {
+            pub_date,
+            review_status,
+            license,
+            identifiers
+          }
+        },
+        search: {
+          pub_date,
+          BAStype,
+          title,
+          subtitle,
+          contributors: trimmedContributors,
+          // figures
+          subjects,
+          palette
+        },
+        page: { // page.md doesn't appear to be anywhere
+        },
         _source: { page }
-      };
+      }
     }
   })
 
