@@ -7,9 +7,15 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-01/cspencer"
   issn: 2058-5462
 language: en
+palette: "theme-salmon-pink"
 layout: splash
 BAStype: article
 image: figures/banners/abstractions-ecologies_banner.jpg
+review_status: "Peer Reviewed (Double Blind)"
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 order: 110
 pub_date: 2015-11-30
 pub_type: publication-periodical
@@ -108,81 +114,81 @@ subjects:
   name: Found objects, Paintings, Photography
 ---
 
-{% assign DOI = "001" %}
+{% assign chapter_DOI = "001" %}
 
-{% assign DOI = "p1" %}
+{% assign paragraph_DOI = "p1" %}
 
 During the 1980s and 1990s, in the last two decades of a career that began in the 1940s, the painter Prunella Clough embarked on a distinct phase within her work. The first part of Clough's oeuvre saw her create studies of dockworkers at Lowestoft harbour, and labourers in factories tending their machines. These were followed by industrial landscapes that became progressively more abstract throughout the 1960s and 1970s.[^1] By the mid-1980s, however, Clough had shifted her attention away from the chemical works, gravel pits, and electrical plants that occupied her for many years, and onto small, cheap consumer items that she glimpsed for sale in London corner shops and markets, and on souvenir stalls at decaying seaside resorts.[^2] The abstracted images Clough developed from her studies of these commodities constitute a unique episode in the artist's sustained meditation on the gradual movement from an industrial to a post-industrial economy in Britain.
 
-{% assign DOI = "p2" %}
+{% assign paragraph_DOI = "p2" %}
 
 Clough's first public presentation of this new subject matter occurred in 1989, with her first exhibition at the Annely Juda Fine Art Gallery in London.[^3] The titles of works included in *Prunella Clough: Recent Paintings, 1980--1989* signal Clough's concern by this point with the synthetic, packaged, and mass produced: *Wrapper* (1985), *Iridescent* (1987), *Sugar Hearts* (1987), *Toypack: Sword* (1988), *Sweetpack* (1988), *Vacuum Pack* (1988), *Plastic Bag* (1988), and *Party Pack* (1989). Clough had already undertaken one substantial solo show that decade with an exhibition in 1982 at the Warwick Arts Trust, but this was dominated by the very different agendas of her *Gate* and *Subway* series.[^4] While the catalogue for the 1982 show contained an introduction and rare interview with the artist by the curator Bryan Robertson, the depth of the painter-critic Patrick Heron's essay accompanying the exhibition of 1989 confirmed it as a significant departure.[^5] The result was a critical and financial success.[^6] It catalyzed Clough's upward trajectory in Britain over the following decade, which saw her embark on major exhibitions at the Camden Arts Centre in London (1996) and Kettle's Yard Art Gallery, Cambridge (1999).[^7] Shortly before her death in 1999, Clough received the prestigious Jerwood Painting Prize.[^8] The Annely Juda exhibition marked an important juncture in terms of Clough's professional visibility, as well as the formal and conceptual stakes of her painting.
 
-{% assign DOI = "p3" %}
+{% assign paragraph_DOI = "p3" %}
 
 Critics responded enthusiastically to Clough's engagement with the often-discarded fragments of advanced capitalism. In his catalogue essay, Heron observed that Clough was "fascinated . . . by many of those products of the present age whose magical potential she alone has perceived and in her paintings has insisted on celebrating".[^9] The wider critical reception of these works elaborated the implications of Heron's analysis, with the critic Tim Hilton stating that each of Clough's paintings presents "a singular representation of a trivial object that, by reason of its existence in a serious modern painting, acquires an ontological aura".[^10] This perspective infuses reviews of Clough's other exhibitions, which similarly stress the "redemptive impulse" of her work, leading to the characterization of Clough's later paintings as primarily concerned with the metamorphosis of the everyday.[^11] By contrast, this essay seeks to complicate the established trope that Clough's works from the 1980s and 1990s comprise acts of metaphorical, and for some commentators rather whimsical, salvage. Clough's exploration of commodity life cycles is by no means unconnected with an interrogation of painterly process, but the ecologies established by her treatment of abstraction are far more nuanced than the straightforward transformation of "low" culture into "high" art.
 
-{% assign DOI = "p4" %}
+{% assign paragraph_DOI = "p4" %}
 
 Rather, Clough's paintings of the 1980s and 1990s instigate an extended investigation of the commodity form. The art historian Margaret Garlake describes how Clough's later works "take an ironic look at a culture which has moved during her working life from austerity to satiety, in which industry is as much concerned with the production of instant rubbish as with the essentials of existence".[^12] Yet Clough's cognizance of waste constantly undercuts apparent affluence with the shadow of boom and bust. As Andy Beckett observes in his history of Britain during the 1970s, "from 1945 onwards, the issue of Britain's decline changed from a matter for intermittent public debate into a major and growing preoccupation of political life."[^13] This anxiety stemmed from the fact that "between 1950 and 1970, the country's share of the world's manufacturing exports shrank from over a quarter to barely a tenth."[^14] The movement from an export to an import economy was linked to the rise of the service sector, the outsourcing of labour overseas, and the globalized circulation of inexpensive consumer merchandise. Clough's studies of mass-produced items register these developments, while acknowledging the rapidity with which desirable commodities might become unwanted under the pressures of overproduction and designed obsolescence. Indeed, Clough's approach to the commodity evokes Karl Marx's famous description of it in volume one of *Capital* (1867) as "a very queer thing indeed, full of metaphysical subtleties and theological whimsies".[^15] An awareness of the commodity's fluctuating nature, and the ramifications of this for painting as a practice, threads throughout Clough's work.
 
-{% assign DOI = "p5" %}
+{% assign paragraph_DOI = "p5" %}
 
 The aims of this essay are twofold. In order to reconceptualize Clough's late paintings as explorations of commodity relations, it proposes in tandem alternative artistic frameworks for considering Clough's work, prising her away from an early and surprisingly enduring association with Neo-Romanticism, which Heron condemned as a "totally incorrect (and . . . damaging) misconception".[^16] Clough's treatment of consumer products can in the first instance be linked to the advent of Pop and Minimalism during the 1960s. Moreover, later debates about the so-called "death of painting", followed by Post-Conceptual painting, provide suggestive contexts for her work. In the 1950s and 1960s painting enjoyed a pre-eminent position within the British, European, and North American art worlds Clough moved in, but she felt that the discipline subsequently entered something of a wilderness: "In the 1970s, 'nobody was doing painting'."[^17] The 1970s saw a diversification of artistic practices in Britain, and an embrace of alternative modes like Conceptual art and performance; according to John A. Walker in his history of this period, "painting and sculpture were experiencing \[an\] identity crisis".[^18] This paralleled, and sometimes emerged directly from, conditions created by an economic downturn that saw strikes and fuel shortages.[^19] Although Clough exhibited fairly regularly in the 1970s, the decade's reverberations can be detected in the works she created in the 1980s and 1990s.[^20]
 
-{% assign DOI = "p6" %}
+{% assign paragraph_DOI = "p6" %}
 
 Focusing on paintings that Clough displayed in 1989 at Annely Juda, the first part of this essay situates the preoccupations of Clough's later work in relation to Pop and Minimalism, while the second shows how still life provided a fertile genre for addressing consumption and the history of industrialization. The final section argues that the understanding of the commodity form developed in response to these models shaped Clough's interest in recycling through citation and collage. Such strategies in turn correspond to the re-emergence of painting after Conceptualism in the 1980s and 1990s. Rather than painting's exhaustion, we find in Clough's late canvases what this essay identifies as ecologies of abstraction. Clough's tendency to transplant and reuse forms and compositional devices from earlier works, alongside her experimentation with collage and found objects, establishes a network of interlinked, even organic references at the level of representation. Through this network, Clough's paintings participate in a system of wastage and renewal, in which abstraction functions as a signifier for change and adaptation. By re-thinking Clough's work in this way, the essay gestures towards a wider re-assessment of the traffic between painting in Britain since the 1980s and its longer histories.
 
-{% assign DOI = "002" %}
+{% assign chapter_DOI = "002" %}
 
 # Pop and Minimalism: alternative frameworks
 
-{% assign DOI = "p7" %}
+{% assign paragraph_DOI = "p7" %}
 
 {% figuregroup '3', 'cspencer-fig1, cspencer-fig2, cspencer-fig3' %}
 
 The works that Clough showed in 1989 with titles like *Sweetpack*, *Plastic Bag*, and *Sugar Hearts* were, Hilton observed, full of "cheap and ridiculous plastic goods . . . little bits of moulded inconsequence, hairgrips, imitation jewellery, balloons, bags, sweet wrappers and stickers".[^21] The sources for these subjects can be found in Clough's photographic archive. Clough claimed in her 1982 interview with Robertson, "I occasionally take rough photos, but often do not refer to them; they are only approximate aids for the memory."[^22] Clough's papers tell a slightly different story. They contain several series of neatly packaged photographs, dating back to the 1940s but increasing in number during the 1980s and 1990s. Leafing through these snapshots, which Clough's friend Robin Banks describes as "rough and tough, visionary and sometimes cropped badly or squint", reveals how her eye snagged repeatedly on certain clusters of objects.[^23] Favourite subjects include stacks of brightly coloured plastic chairs, buckets and domestic goods slotted together into conglomerate forms ([fig. 1](#cspencer-fig1)); sunglasses and hairclips arrayed in serried ranks on display cards ([fig. 2](#cspencer-fig2)); and footballs cocooned in semi-transparent plastic, rendering them mysterious. One particularly suggestive image shows a vending machine full of plastic capsules, each of which contains a small trinket promising a surprise, but veiled and obfuscated ([fig. 3](#cspencer-fig3)).
 
-{% assign DOI = "p8" %}
+{% assign paragraph_DOI = "p8" %}
 
 {% figure 'cspencer-fig4' %}
 
 Sacha Craddock notes that "Clough uses photographs and to some extent mimics the photographic view", and the cropped, close-up perspective employed by her canvases replicates the seemingly casual aesthetic of the quick snapshot.[^24] The distance insinuated and then marked by the camera lens, through its act of mediation, underscores Clough's interest in transposition and change. Alongside her photographs, Clough made detailed written notes, such as those in a notebook dated to 1987: "'Toiletries' in spangle pale lime green & 'silver'", "Shellsuit violet / sand / turquoise" and "airless squashed balloons / pink, yellow, green on / wet pavement (4) / with damp patch".[^25] These appear alongside rapid sketches of mirrors, toy windmills, and shapes that have already passed beyond recognizability ([fig. 4](#cspencer-fig4)). The notes and photographs unfold Clough's attraction to ersatz materials, and with those that might be used for camouflage and dissimulation in urban life. It is not simply the case that Clough "metamorphoses" these objects, but that she recognizes their inherently unstable physical character, which simultaneously results from, and comes to stand as an analogue for, their mutable use and exchange value.[^26]
 
-{% assign DOI = "p9" %}
+{% assign paragraph_DOI = "p9" %}
 
 This instability inflects even the most ostensibly decipherable imagery in the paintings Clough showed during 1989, such as the central motif of *Toypack: Sword* (1988; [fig. 5](#cspencer-fig5)). In the version of this work reproduced in the Annely Juda catalogue, Clough presents a highly stylized, plastic-looking weapon, its hilt coloured sky blue and sherbet orange.[^27] The sword floats against a backdrop composed of unidentifiable, abstract fragments, like the delicate machinery of a watch scattered across a white field (nothing as substantial as "ground" is offered here). For Hilton, Clough depicts her central image "with just enough realism for one to be able to grasp that here is a toy"; this is the kind of frippery that could be picked up cheaply in a store selling mass-produced consumer items, and used to beguile a child for a few hours.[^28] The neologism of Clough's title stresses the point: "Toypack" indicates that this sword is part of a "pack", one of many identical cellophane-wrapped items.
 
-{% assign DOI = "p10" %}
+{% assign paragraph_DOI = "p10" %}
 
 {% figure 'cspencer-fig5' %}
 
 The viewer of Clough's paintings from the 1980s encounters commodity items at a slightly different stage in their life cycle to the celebration of newly minted goods in many Pop canvases of the 1960s. In *Toypack: Sword* an air of abandonment cuts against the toy's pastel shades. Yet although Clough's paintings have rarely been aligned with developments of the 1960s, she nonetheless recalled this period as especially generative, admitting "there were many difficulties in the Sixties which were also a pleasure and an exhilaration."[^29] Clough kept abreast of occurrences in the United States, visiting New York and attending a variety of shows by American artists in Britain, such as Robert Rauschenberg's exhibition at the Whitechapel Art Gallery in 1964, and Roy Lichtenstein's Tate show of 1968.[^30] *Toypack: Sword* registers the legacies of Pop, albeit at a determined move, not simply in terms of its engagement with the commodity form, but in the way that the painting explicitly, almost jarringly, overlays representation onto abstraction, and in so doing fundamentally dislocates the co-ordinates of both.
 
-{% assign DOI = "p11" %}
+{% assign paragraph_DOI = "p11" %}
 
 Reflecting on Clough's career in the 1990s, Hilton observed: "I think she feels gratitude for the Sixties: not the fashionable or pop side of the decade but the way that painters kept putting new abstract ideas in the arena."[^31] While suggestive, this statement ignores the role that abstraction played within Pop, particularly the strand of visual experimentation in Britain that coalesced around artists like Richard Smith and Robyn Denny.[^32] Furthermore, Hal Foster proposes that much Pop art is not easily resolvable as figurative or even realist in any meaningful sense: "Pop does not return art, after the difficulties of abstraction, to the verities of representation; rather, it combines the two categories in a simulacral mode that not only differs from both but disturbs them as well."[^33] The navigation of abstraction and realism is a consistent aspect of Clough's work, but it comes into sharp focus in her studies of toys and product packaging during the 1980s.
 
-{% assign DOI = "p12" %}
+{% assign paragraph_DOI = "p12" %}
 
 {% figure 'cspencer-fig6' %}
 
 Equally, while Clough did not associate directly with Pop artists, she was familiar with the eminently fashionable 1960s phenomenon of Op art through her friendship with the painter Bridget Riley.[^34] Clough's work provided a significant precedent for the younger artist. On encountering her work in 1953 at the Leicester Galleries, Riley recognized Clough as "unmistakably a modern painter".[^35] Clough's later paintings playfully return to the visual language of the 1960s. In *Emerge* (1996) Clough has overlaid several sections of black-and-white vertical lines within a scuffed surround, recalling Riley's signature Op art images such as *Fall* (1963) and *Current* (1964). *Emerge* references both Riley's pared down abstract striations and the perceptual flicker they establish, akin to the disruptive ripple of migraine aura ([fig. 6](#cspencer-fig6)). The edges of Clough's striped sections do not quite match up, triggering the impression of movement and recession intimated by the painting's title. Clough's citation of Riley, however, is fully embedded within her own mode of working. Testifying to her predilection for "beaten up" canvases, in places the intersecting planes dissolve under a corrosive stain, their edges inexpertly sutured together.[^36]
 
-{% assign DOI = "p13" %}
+{% assign paragraph_DOI = "p13" %}
 
 Minimalist abstraction, however, clearly exerted a particular pull.[^37] The productive challenges posed by the 1960s encompassed "the first sight of Donald Judd and Sol Lewitt, for instance, and minimalism. The ideas were of a kind that were incompatible with the European tradition that I grew up with."[^38] Clough also admired the work of the US painter Myron Stout, who created radically simplified black-and-white canvases dominated by single shapes. The British artist Rachel Whiteread recognized the intersections between Clough's work and Minimalism, writing that she could "draw parallels" between her Postminimalist sculpture and Clough's paintings.[^39] Clough's reference to Judd is particularly suggestive, however, given his use of seriality and modular repetition, modes which can be indexed to the forms and processes of the postmodern, service-oriented, white-collar city.[^40]
 
-{% assign DOI = "p14" %}
+{% assign paragraph_DOI = "p14" %}
 
 Clough's photographic archive demonstrates the importance of repetition and replication for her later practice, but this equally informs her use of other media. Clough was an accomplished printmaker, accustomed to making multiple iterations of the same image.[^41] Clough also constructed assemblages from mass-produced items amassed on walks through urban and industrial environments, including "old work gloves, wire mesh, pieces of rusting metal, a plastic toy sword, fragments of Formica, a shard of coloured pottery or a steam-rolled tin can".[^42] Ian Barker recounts that the discovery of reliefs made from these objects in Clough's studio after her death came as "a total surprise".[^43] Clough nonetheless considered them part of her practice, as "on their reverse were Prunella's carefully typed labels---identical to those she used to identify her paintings and drawings."[^44] Clough exhibited an assemblage only once during her lifetime, at Annely Juda in 1989, emphasizing the correlations between her found object reliefs and the paintings in the show.[^45]
 
-{% assign DOI = "p15" %}
+{% assign paragraph_DOI = "p15" %}
 
 One assemblage, entitled *Equivalence* (1965), offers a response to the provocations of the 1960s ([fig. 7](#cspencer-fig7)). Its white segments, nailed onto a synthetic mint-green background, look like the modular parts of a child's construction kit wrenched from their original purpose. Clough's use of plastic in this assemblage partakes in the artistic experimentation with new, prefabricated materials by practitioners associated with Pop and Minimalism. The abstract *Equivalence* proposed here is qualified. The white shapes either side of the central black partition seem like they could match up, but on closer inspection their number and distribution do not correspond. Similarly, *Toypack: Sword* offers a questionable equivalence. The painting presents the viewer with a depiction of a dagger that revels in its status of second-order representation, to the extent that its hovering form starts to seem like a simulacrum set adrift from a tangible referent. This inference migrates across Clough's work from the 1980s and 1990s, stemming from the commodity's paradoxical combination of materiality and abstracted labour power.
 
-{% assign DOI = "p16" %}
+{% assign paragraph_DOI = "p16" %}
 
 {% figure 'cspencer-fig7' %}
 
@@ -192,69 +198,69 @@ This slipperiness can be tracked back through Clough's thinking about commoditie
 
 In the space of a sentence, Clough maps a seismic change from earlier modes of manufacture. Where machines were once "open, explicit, logical", what she observes occurring in the new "experimental" factories is akin to alchemy, whereby the materials are put in, and the "product" emerges through unknowable processes. While humans attend to this transformation, the hand-made has been truly usurped by complex machinery, which has assumed total responsibility for the creation of goods.
 
-{% assign DOI = "p17" %}
+{% assign paragraph_DOI = "p17" %}
 
 It is as if Clough savoured this observation in order to apply it later in *Toypack: Sword*. The sword drifts over splinters of raw matter, replicating the sudden jump from inchoate material to final "product" observed by Clough at the paint factory. Its chemical colouring emphasizes that this is a plastic toy, recalling Roland Barthes's evocation of plastic's creation: "At one end, raw, telluric matter, at the other, the finished, human object. . . . More than a substance, plastic is the very idea of its infinite transformation; as its everyday name indicates, it is ubiquity made visible."[^50] The plastic items that Clough photographed, and then filtered through abstraction into works like *Toypack: Sword*, mark an intensification of the material's restless movement. By the 1980s, the production of budget plastic toys, accessories, and cleaning utensils had largely been outsourced from Britain to other countries, and the physical evidence of industrial production receded from the landscape. It is also tempting to read *Toypack: Sword* as an analogy for the act of painting and its transpositions, which in light of Clough's captivation by the factory production of paint, simultaneously acknowledges the commodity status of the resulting work. Considering Clough's work in relation to Pop and Minimalism, even if she ultimately kept both at a distance, enables the full extent of her work's imbrication in cycles of mass production, industrialization, and consumption to emerge.
 
-{% assign DOI = "003" %}
+{% assign chapter_DOI = "003" %}
 
 # Still life and "machine life" painting
 
-{% assign DOI = "p18" %}
+{% assign paragraph_DOI = "p18" %}
 
 In the list of paintings for Clough's Annely Juda exhibition of 1989, one category impresses through its multiple recurrences: that of the still life. Of thirty-eight works in the show, six were specifically titled "still life". In his essay, Heron alights on this aspect of Clough's most "recent paintings", which "are actually entitled *Still Life* or *Interior---*not that they can for a moment be thought of as continuing any tradition of spatial reconstruction of inhabitable domestic space".[^51] Nevertheless, Heron felt, the paintings "seem to be projecting at us a spatial reality that implies those almost claustrophobic, limited sequences of depth which constitute the experience of the 'still life' or the 'interior'".[^52] This engagement with still life replays Pop art's obsession with domestic products, and with the commodity fetishism invested in household goods, again indicating the importance of the artistic frameworks established in the first section of this essay for Clough's practice.[^53] It moreover ties into longer traditions of the still life from the Dutch seventeenth century onwards, and, in Clough's hands, with histories of commodity production in Britain.
 
-{% assign DOI = "p19" %}
+{% assign paragraph_DOI = "p19" %}
 
 Heron connected Clough's interest in still life to her regard for the French artist Georges Braque's Cubist experiments.[^54] He compared Clough's enthusiasm for "mass-produced objects, manufactured to meet popular tastes" to "the crude and patently 'suburban' furnishings of small cafés near Varengeville \[that\] inspired many of Braque's most exquisitely classical pictorial inventions".[^55] Clough's use of the still life genre to reflect on mass-produced commodity items can be rooted in Modernist pathways to abstraction.[^56] It relates to a particular strand of Modernism that engaged with the everyday and the quotidian, the material effects of bourgeois living, and the impact of manufacturing and industry on popular culture.[^57] Yet, as Heron intimates, Clough's still lifes diverge from these models, as they do not deliver the viewer into "inhabitable domestic space", but rather a disorientating and unstable topography.
 
-{% assign DOI = "p20" %}
+{% assign paragraph_DOI = "p20" %}
 
 These qualities can be discerned in many works Clough showed in 1989, notably *Still Life* (1987). At just over a metre high, it dominates the viewer's visual field. A synthetically coloured green oval, shimmering with hints of oil-slick iridescence, hangs amidst a constellation of white dots on a black background as if suspended in a sediment-filled solution ([fig. 8](#cspencer-fig8)). A transparent penumbra unfurls around its central nucleus like a watermark, or cloud of gas. Heron described *Still Life* as a painting of "electrifying strangeness", its queasy combination of diagrammatic flatness and shallow depth resisting coherent and identifiable representation.[^58] Certain details, however, offer associative possibilities. The central shape mimics the opaque capsules containing small toys in the vending machine photographed by Clough. The umbilical loop of cord or rubber hosing protruding into the top of the painting, partially obscured by a rectangular scrim, has affinities with a drawing Clough made in her 1987 notebook, glossed as a "sk rope" (presumably "skipping rope") ([fig. 9](#cspencer-fig9)).[^59] The colours echo those Clough deployed in contemporaneous works like *Sweetpack*, also included in the show, redolent of glistering confectionary wrappings. While visually alluring, this palette's evocation of oil on water alludes to the petrochemicals used to make plastic, so that like *Toypack: Sword* it evokes chains of commodity production.
 
-{% assign DOI = "p21" %}
+{% assign paragraph_DOI = "p21" %}
 
 {% figure 'cspencer-fig8' %}
 
 Annely Juda insisted that Clough's earlier work "was very important to understand what she was doing later on".[^60] Clough's consistent commitment to still life exemplifies this. In a review of Clough's Leicester Galleries exhibition in London of 1953, the critic and painter John Berger claimed: "The key to understanding Miss Clough's work is to realise that she is fundamentally a still-life painter. Above all, she is interested in the material, the density, the tactile 'feel' of the objects she paints."[^61] During the 1940s, Clough did produce conventional still lifes of fruit, flowers, and shell arrangements.[^62] In *Still Life with Yellow Marrows* (1948) four yellow courgette blossoms, framed by a wicker basket, glow softly against a dingy brown-black background. Garlake notes that during the 1940s, when Clough's career began, "still life was a simple subject demanding no more than a few vegetables or household objects, a favoured genre during the war when artists often spent long periods without studios or access to models."[^63] Clough herself enjoyed "the sort of paintings that . . . are intensive rather than extensive . . . early Giacometti, early Morandi, early de Chirico even. They all have to do, in varying ways, with still life."[^64] The title of Berger's review---"Machine-Life Painting"---indicates, however, that the subject matter of Clough's still lifes was not that of the bourgeois home.
 
-{% assign DOI = "p22" %}
+{% assign paragraph_DOI = "p22" %}
 
 {% figure 'cspencer-fig9' %}
 
 Instead, Berger states, the "machine lifes" of the 1953 show, with titles like *Night Train Landscape*, *The* *Cranes*, and *The Old Machine*, are the progeny of the "industrial city---its greased axels, its riveted plates, its plane boards, its cables, ladders and tarpaulins, its rust, its crude protective paints, the condensation of its atmosphere".[^65] As Clough succinctly put it: "Living rooms are not exactly enough."[^66] For Berger, the central "paradox" of Clough's paintings was her ability to treat landscape with the "intimacy" gained through close looking and scrutiny, hallmarks of the still life genre.[^67] Clough's studies of industrial machinery often contain the composite elements of a detailed still life within them, but fragmented and dislocated.[^68] *Industrial Interior V* (1960) homes in on a section of machinery, the exact function of which remains wilfully obscure ([fig. 9](#cspencer-fig9)). Clough rendered the dramatically simplified black forms with a strong degree of stillness and isolation, enlivening them momentarily at their centre with a cluster of shapes including a red diamond and a dun-coloured circle, like the atomized building blocks of a still life study.
 
-{% assign DOI = "p23" %}
+{% assign paragraph_DOI = "p23" %}
 
 Clough, meanwhile, saw her subject matter "mainly as landscape".[^69] The landscape with which she was engrossed was "the urban or industrial scene or any unconsidered piece of ground", marked with traces of human labour, littered with parts of machines and the infrastructural detritus of the built environment.[^70] Clough's preference for this terrain emerged early in her career. In the catalogue essay he wrote to accompany her retrospective at the Whitechapel Art Gallery in 1960, Michael Middleton observed that Clough "paints these things . . . because she is tough-minded, non-escapist, determined to identify herself with the realities of a world shaped by industry, science and technology".[^71] Clough and Carr deeply admired the painter Laurence Stephen Lowry, whose work provided a precedent for the serious consideration of what Clough sometimes called "urbscape".[^72] Describing several paintings by Lowry that she had seen to Carr, Clough lingered on "the lighter, more open of the two big ones---which has that good strip of shed tops at the bottom and a railway arch. How inexhaustive \[*sic*\] his invention is in such detail!"[^73] Lowry's industrial subject matter was a key aspect of his appeal, but his incorporation of observational detail was equally important, and it was this that Clough would carry into her still lifes.[^74]
 
-{% assign DOI = "p24" %}
+{% assign paragraph_DOI = "p24" %}
 
 The paintings that Clough created in the mid- to late 1980s continue to merge still life examination with landscape elements. Many reviews of the Annely Juda show in 1989 seized on the floating quality of Clough's images, particularly *Still Life*. Sue Hubbard luxuriated in Clough's "soft aqueous blues, thin watery greens . . . suggesting a world of ponds and rivers, or the magic of cells viewed under a microscope".[^75] Other critics associated Clough's play with scale, and her oscillation between macrocosmic and microscopic, with intimations of biological life.[^76] One reviewer discovered in *Still Life* a "floating emerald sac---are those eggs inside its belly?"[^77] This aqueous quality relates to the seascapes Clough made during and after the Second World War, which elicited the latent surrealism of the landmines and sea-defences that rendered the beaches uninhabitable.[^78] The legacy of these landscapes, border zones barred to everyday human use, informs the liminality of works like *Still Life*. Comparably, the sense of suspension in *Industrial Interior V*, as if the motion of the machine has just been stopped, or slowed down so that its interlocking segments can be observed, seeps into *Still Life*'s microscopic perspective.
 
-{% assign DOI = "p25" %}
+{% assign paragraph_DOI = "p25" %}
 
 {% figure 'cspencer-fig10' %}
 
 The watery suspension of *Still Life* also relates to Clough's paintings of the 1970s that resonate with industrial decline, such as *By the Canal* (1976). The letters Clough and Carr exchanged during the 1950s cumulatively portray a landscape of lively industry, but by the mid- to late 1970s Clough's work increasingly responded to the slowing of industrial production.[^79] In 1981 the British economic historian Martin J. Wiener asserted that, "by the nineteen-seventies, falling levels of capital investment raised the specter of outright 'de-industrialization'---a decline in industrial production outpacing any corresponding growth in 'production' of services".[^80] *By the Canal* is strikingly minimal in its imagery ([fig. 10](#cspencer-fig10)). A rust-coloured rectangle dominates the canvas, bristling with small hooks along one edge. This orange shape, the colour of oxidizing iron and steel, is semi-transparent, merging with the blue of the background. Streaks of thinned paint course down the canvas like rivulets of condensation, so that the overall effect is of metal waste submerged underwater.
 
-{% assign DOI = "p26" %}
+{% assign paragraph_DOI = "p26" %}
 
 Clough had a fondness for canals: "I like looking. Industrial estates, preferably by a canal (watery-flexible) will do."[^81] *By the Canal* was painted when Britain's canal network had almost completely ceased functioning for commercial purposes.[^82] Once the arteries that fed the Industrial Revolution, they sank into gradual decay. Significantly, given Lowry's importance for Clough, in a 1966 essay on the artist Berger identified his paintings with "a logic . . . of decline" that expressed "what has happened to the British economy since 1918, and their logic implies the collapse still to come".[^83] According to Berger, Lowry's paintings provided visual evidence of the "recurring so-called production crisis; the obsolete industrial plants; the inadequacy of unchanged transport systems and overstrained power supplies".[^84] Although not quite as apocalyptic as Berger's analysis, Clough's re-invention of the still life tradition as "machine-life" comparably considers the life cycle of industrial production, its ebbs and flows, starts and stoppages. Painted over a decade after *By the Canal*, *Still Life* shares its impression of indeterminacy and desertion.
 
-{% assign DOI = "p27" %}
+{% assign paragraph_DOI = "p27" %}
 
 It is therefore arguably the 1970s, characterized by economic decline, the abandonment of industrial structures, and periods of strike and scarcity, which laid the ground for Clough's experiments of the 1980s and 1990s.[^85] The stilled life of Clough's later paintings executes an oblique but powerful commentary on the impact of the 1970s, which the novelist Margaret Drabble characterized in 1977 using the metaphor of "the ice age".[^86] Frances Spalding compellingly observes, "it is as if \[Clough\] wanted to point to the brine and detritus left behind after a wave of modernity recedes, leaving the scraps, orts, fragments and sense of elegy for a vanished ideal."[^87] Clough developed the still life genre to such a pitch that it could encapsulate the long, complex history of industrialization and de-industrialization in Britain, through an extremely streamlined and elliptical vocabulary.
 
-{% assign DOI = "004" %}
+{% assign chapter_DOI = "004" %}
 
 # Samples, stacks, and painterly eco-systems in the 1990s
 
-{% assign DOI = "p28" %}
+{% assign paragraph_DOI = "p28" %}
 
 It is, however, important not to forget Clough's exhilaration at the "first sight" of Pop and Minimalism when considering the still lifes of the 1980s and 1990s. What Heron refers to as the "electrifying strangeness" of *Still Life* might indicate an intrigued appreciation of outsourced mass production and its effects, as much as (if not more than) despair at stagnation. Clough's adherence to still life suggests her consistent fascination with the products of industry, and with the possibility that their fluctuating value might endow them with a life of their own at the margins of perception. Equally, Clough's return to the historical genre of still life during the mid- to late 1980s can be read as an affirmation of painting's enduring relevance after the doubts of the 1970s, during which the medium risked association with obsolescence, as the melancholy, rusting surface of *By the Canal* tacitly conveys.[^88] By contrast, the works Clough embarked on in the 1980s share in the revivification of Post-Conceptual painting.[^89] Critics have downplayed the Postmodern qualities of Clough's work, but the role of commodity culture and ironic painterly gesture in *Toypack: Sword*, and even *Still Life*, entail that these wider debates prove illuminating.
 
-{% assign DOI = "p29" %}
+{% assign paragraph_DOI = "p29" %}
 
 Writing in relation to the Post-Conceptual painting of the German artist Gerhard Richter, the philosopher Peter Osborne argues that:
 
@@ -262,47 +268,47 @@ Writing in relation to the Post-Conceptual painting of the German artist Gerhard
 
 The "knowingness" of Clough's painterly strategy, and her overt engagement with issues of representation, is clearly apparent in paintings like *Toypack: Sword*, which exploits the "significance of paint", but acknowledges its remove from the "real". This effect is one that Hanneke Grootenboer argues still lifes have long enjoyed, possessing as they do "the rare quality of raising the issue of the nature of their own representation".[^91] Clough deepens this reflexivity through her choice of subject matter, particularly in the studies of packaging that she first showed at Annely Juda in 1989 such as *Vacuum Pack* (1988), and continued into the 1990s with works like *Package Piece* (1998).[^92]
 
-{% assign DOI = "p30" %}
+{% assign paragraph_DOI = "p30" %}
 
 {% figure 'cspencer-fig11' %}
 
 *Vacuum Pack* consists of a light grey grid overlaid onto a smeared background, as if a dirty surface has been given a hasty and ineffectual wipe ([fig. 11](#cspencer-fig11)). At the top of the painting, a small flare in pastel yellow, green, and pink emerges from the wire-like armature. Rather than the identifiable products celebrated by Pop art, or even by Postmodernism's embrace of consumer culture, design, and fashion, Clough's packaging is anonymous, subjected to extreme abstractions and distortions.[^93] Clough resists what Osborne describes as the restitution of "false immediacy" by emphasizing surface through her focus on packaging, foregrounding the dissimulating nature of her chosen subjects in a way that invokes high modernism's adherence to the flatness of the picture plane, but ultimately subverts it to reflect instead on what Fredric Jameson theorizes as the "depthlessness" of late capitalism.[^94] *Vacuum Pack* offers an acute comment on this state. Vacuum-packing works by removing the air around an object and encasing it in plastic, to stop products from decaying and facilitate transportation; Clough's title plays on the implicit paradox of attempting to package an absence or "vacuum". The subjects of paintings such as *Vacuum Pack* are not static, identifiable "objects", and their mutability aligns them with the ceaseless flow of abstracted commodity relations.[^95]
 
-{% assign DOI = "p31" %}
+{% assign paragraph_DOI = "p31" %}
 
 The self-depreciating humour that imbues *Vacuum Pack* corresponds with Post-Conceptual painting's knowingness. *Samples* (1997) is perhaps one of Clough's most "knowingly" ironic paintings. In it, Clough placed a strip of rectangular colour blocks, ranging through grey, pink, blue, green, and yellow, within a dynamic field of paint-marks that parodies the overblown swagger of American Abstract Expressionism ([fig. 12](#cspencer-fig12)).[^96] The incongruous stripes of pigment resemble the charts produced by commercial paint companies, distributed at home improvement stores.[^97] Clough apparently pits the hand of the artist against machine-mixed, chemically calibrated colours. Yet the painting ultimately infers that such a comparison is a false one, as the recherché marks sweeping down the canvas fail to overwhelm the jewel-bright swatch, and seem just as pre-programmed and "false" as the acidic palette of the latter. We are back with Clough on her visit to the paint works, where manufactured colours partake in a process of transformation comparable to the application of paint on canvas in the artist's studio.
 
-{% assign DOI = "p32" %}
+{% assign paragraph_DOI = "p32" %}
 
 {% figure 'cspencer-fig12' %}
 
 *Samples* functions through the structuring principle of collage. Clough juxtaposes two different image registers, holding them in tension. This collaged quality, together with the titular reference to mixing and matching, signals another key aspect of Clough's later practice, especially in the 1990s. During this decade, Clough ranged across her oeuvre, citing motifs and processes from previous canvases, photographs, assemblages, and prints, recycling them to establish what can be conceptualized as a painterly eco-system. In 1982 Clough reflected: "A painting is made from many . . . events, rather than one; and in fact its sources are many layered and can be quite distant in time, and are rarely if ever direct."[^98] These "events" might include forms "left over from other paintings but \[which\] still demand to be used".[^99] In this respect, Clough's work diverges from dominant trends in Post-Conceptual painting. The ecologies of her abstracted motifs remain deeply imbricated with the history of her own work, and longer histories of painting in Britain, Europe, and the United States. Clough discovers a use-value in the outmoded and discarded that goes beyond knowing irony.
 
-{% assign DOI = "p33" %}
+{% assign paragraph_DOI = "p33" %}
 
 {% figure 'cspencer-fig13' %}
 
 Although the collage aspect of Clough's work intensified in the 1990s, it originated in the 1960s. *Untitled (Pink)* (1960s) is an intriguing early collage which forms a pendant to *Equivalence*. Its collaged fragments coalesce on the page of a sketchbook as if only fleetingly arrested ([fig. 13](#cspencer-fig13)). Significantly, these pieces appear to have been cut up from one of Clough's own drawings, rendered dynamically in thick, waxy marks of pencil or crayon. Some sections suggest industrial materials---a filament of wire, iron girders---but the overall impression is of movement and play, while the hot pink colour anticipates Clough's neon tones of the 1980s and 1990s. *Untitled (Pink)* verifies the artist's longstanding interest in collage, specifically the re-appropriation of previously used forms and materials, as both a compositional and conceptual device. The fragment was an important model for Clough, as the artist reflected: "I've always found that I have learnt more from some (less accomplished) less resolved (tentative, fragile, smaller) or incomplete work---it's more accessible; on the other hand . . . there is a real need to feel that one is taking part in something bigger than oneself."[^100] An inferred relationship between part and whole in Clough's collage and assemblage works intimates that she considered each as belonging to a larger system of interlacing interests, ideas, and sources.
 
-{% assign DOI = "p34" %}
+{% assign paragraph_DOI = "p34" %}
 
 The citational qualities of Clough's works extend to their relationship with the criticism they received. As well as referencing synthetic plastic goods, the saccharine hues Clough employed in the 1980s and 1990s can also be read as a way of deliberately wrong-footing the reviewers who designated her practice as essentially "feminine". Writing with reference to US women artists grappling with the legacies of Modernism in the 1960s and 1970s, curator Helen Molesworth describes how in the formalist discourse dominated by Clement Greenberg, "the language of quality was largely the province of the critic, whose role it was to put forward the robust discourse of affirmation and persuasion. . . . What this often meant for women artists was a gendered use of language that served to undermine the authority of the works themselves."[^101] Clough was subjected to such qualifications throughout her career.[^102] Words like "genteel", "modest", "feminine", and "tasteful", wielded with a strongly gendered subtext, have dogged her critical reception, while Clough's personal reticence has been repeatedly invoked to explain the ambiguity of her paintings.[^103] Clough did not align herself with feminism, but it is tempting to speculate that the colours she chose in the 1980s and 1990s sampled and redeployed the ingrained assumptions of this critical discourse, in order to expose its superficiality.[^104]
 
-{% assign DOI = "p35" %}
+{% assign paragraph_DOI = "p35" %}
 
 Clough's recurrent return to the stack motif exemplifies her interest in recycling forms. *Stack* of 1993 is an ambitious, large-scale canvas, in which the titular stack balances on top of a concrete-block-like pedestal ([fig. 14](#cspencer-fig14)). This "stack" is configured from rainbow-coloured gradations, glimpsed through bands of horizontal black lines like a ventilator grille. The perforated backdrop, which takes up the majority of the composition, reiterates this emphasis on veiling. Large ragged holes punctuate its black surface, concealing and partially revealing other shapes and brief bursts of colour lurking behind. While the "stack" invites comparisons with the slotted-together contours of chairs and buckets in Clough's photographs, it equally infers a flat block illuminated at dusk. The scale of the background swings between sky and cells enlarged under a microscope, as in *Still Life*. Ghosts of multiple structures shadow *Stack*, from the cooling towers Clough studied in the 1950s, to the abandoned industrial sites that appear in canvases of the 1960s and 1970s. Margaret Drabble interprets *Stack*'s "bright colours" as celebrating "the glory of the world of choice", yet this dense layering of references embeds it in a far more uneven history of production.[^105]
 
-{% assign DOI = "p36" %}
+{% assign paragraph_DOI = "p36" %}
 
 This is further emphasized by *Stack*'s position within a longer chain of images. In *Small Stack* of 1996, Clough isolates the stack motif from the earlier painting, which now more than ever resembles a precarious tower of glittering merchandise ([fig. 15](#cspencer-fig15)). *Small Stack*'s title signals its seriality in terms of both content and making, parasitic as it is on the image of 1993. *Small Stack* also demonstrates how Clough employed found objects to make her work. Clough overlaid the central stack shape with a grid of regular dots, the precision of which indicates they were applied with a stencil. Clough improvised stencils from bits of old mesh, plastic draining boards, and sections of punched card ([fig. 16](#cspencer-fig16)).[^106] The surface invention of *Small Stack* stems from a process whereby Clough did not simply reference the obsolete detritus of mass-produced living in her canvases, but used it to generate replicable effects across her paintings. The result suggests that the worlds of painting and mass production are by no means polar opposites, but fundamentally interrelated.
 
-{% assign DOI = "p37" %}
+{% assign paragraph_DOI = "p37" %}
 
 {% figuregroup '2', 'cspencer-fig14, cspencer-fig15' %}
 
 Through the connections Clough establishes between it and her other works, *Small Stack* participates in a painterly eco-system that refuses to ignore the pressures of commodity culture, but proposes ways in which waste items might be endowed with generative potential over time. This achieves its most suggestive expression in *Small Stack*'s afterlife. The painting featured in Clough's Camden Arts Centre exhibition of 1996, and was evidently one of the works that the organizers selected to reproduce on promotional postcards. A stack of these samples found its way back to Clough, prompting the artist to meditate on her 1996 painting through its simulacrum. On forty-one postcards of *Small Stack*, Clough re-worked the image using collaged elements and stencils, exploring the infinite differences within repetition.[^107] In some cases, Clough tore away the glossy top layer of the card to mine the furry white seam beneath. Elsewhere, she added drawn and painted elements. Clough overlaid one postcard with a section of red cellophane wrapper, containing a transparent circle stamped with a black letter "B" ([fig. 17](#cspencer-fig17)). This aperture frames the "small stack", but rather than allowing the viewer to focus on the original image, the de-contextualized lettering partially obscures the stack and transforms it into a new entity.[^108]
 
-{% assign DOI = "p38" %}
+{% assign paragraph_DOI = "p38" %}
 
 {% figuregroup '2', 'cspencer-fig16, cspencer-fig17' %}
 

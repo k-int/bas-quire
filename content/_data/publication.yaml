@@ -884,6 +884,22 @@ contributor:
     bio: "John J. Curley is Associate Professor of Art History in the Department of Art at Wake Forest University. He has published widely on American and European postwar art and photography. He is the author of *A Conspiracy of Images: Andy Warhol, Gerhard Richter, and the Art of the Cold War* (Yale University Press, 2013) and is currently at work on two new book projects: *Art and the Global Cold War: A History* and *Hybrid Objects: Postwar British Sculpture between America and Europe*. His research has been supported by the Getty Research Institute, the Yale Center for British Art, the Deutscher Akademischer Austauschdienst (DAAD), and the Henry Moore Institute, among others."
     pic: "images/contributors/jjcurley.jpg"
 
+  - id: ecoomasaru
+    type: secondary
+    first_name: Edwin
+    last_name: Coomasaru
+    title: Contributing Editor
+    affiliation: British Art Studies
+    pic: "images/contributors/ecoomasaru.jpg"
+
+  - id: iharbison
+    type: secondary
+    first_name: Isobel
+    last_name: Harbison
+    title: Lecturer (Critical Studies), Department of Art
+    affiliation: Goldsmiths, University of London
+    pic: "images/contributors/iharbison.jpg"
+
   - id: jdavidow
     type: secondary
     first_name: Jackson
@@ -3359,6 +3375,20 @@ contributor:
     bio: "Dr James Alexander Cameron has studied at Manchester University and The Courtauld Institute of Art. He is a member of the council of the British Archaeological Association, and an editor of the Corpus of Romanesque Sculpture for Great Britain and Ireland. In 2017 he co-organized the conference *Towards an Art History of the Parish Church, 1200–1399* with Meg Bernstein at The Courtauld Institute of Art, which was partly supported by the Paul Mellon Centre."
     pic: "images/contributors/jacameron.jpg"
 
+  - id: amassouras
+    first_name: Alexander
+    last_name: Massouras
+    bio: "artist and writer"
+    pic: "images/contributors/amassouras.jpg"
+
+  - id: mtiampo
+    first_name: Ming
+    last_name: Tiampo
+    title: "Professor of Art History, and co-director of the Centre for Transnational Cultural Analysis"
+    affiliation: "Carleton University"
+    bio: "Ming Tiampo is Professor of Art History, and co-director of the Centre for Transnational Cultural Analysis at Carleton University. She is interested in transnational and transcultural models and histories that provide new structures for understanding and reconfiguring the global. She has published on Japanese modernism, global modernisms and diaspora. Tiampo’s book *Gutai: Decentering Modernism* (University of Chicago Press, 2011) received an honourable mention for the Robert Motherwell Book award. In 2013, she was co-curator with Alexandra Munroe of the AICA award-winning *Gutai: Splendid Playground* at the Guggenheim Museum in New York. Her current book projects include *Transversal Modernisms: The Slade School of Fine Art*, a monograph which reimagines transcultural intersections through global microhistory, and *Intersecting Modernisms*, a collaborative sourcebook on global modernisms. Her latest book, *Jin-me Yoon*, is forthcoming with Art Canada Institute in 2022. Tiampo is an associate member at ici Berlin, a member of the Hyundai Tate Research Centre: Transnational Advisory Board, a member of Asia Forum, a founding member of TrACE, the Transnational and Transcultural Arts and Culture Exchange network, and co-lead on its *Worlding Public Cultures* project."
+    pic: "images/contributors/mtiampo.jpg"
+
   - id: ldebeer
     first_name: Lloyd
     last_name: de Beer
@@ -3611,13 +3641,22 @@ contributor:
     bio: "Acting Deputy Director of Curatorial/Senior Curator and Head of Product Design and Decorative Arts, Cooper Hewitt, Smithsonian Design Museum"
     pic: "images/contributors/yyou.jpg"
 
-  - id: ayoung
+  - id: akyoung
     type: secondary
     first_name: Allison K.
     last_name: Young
     full_name: "Allison K. Young"
     bio: "Dr Allison K. Young is Assistant Professor of Art History at Louisiana State University (LSU) in Baton Rouge. She received her PhD in Art History at New York University's Institute of Fine Arts in 2017, and specializes in postcolonial and contemporary art of the African diaspora and Global South, centering issues surrounding migration, transnationalism, and social justice.\nYoung has published scholarship and criticism in *Art Journal*, the *International Review of African American Art*,* Artforum*,* Apollo International*, the *Photoworks Annual*, and other platforms. She has contributed to several exhibition catalogues including* The Measurement of Presence*, the Dutch Pavilion at the 58th Venice Biennale (2019); *Out of Easy Reach* (2018); *All the World's Futures*, the 56th Venice Biennale (2015); and the forthcoming *Prospect.5: Yesterday We Said Tomorrow* (2021).\nBefore joining LSU, Young was Andrew W. Mellon Foundation Fellow for Contemporary Art at the New Orleans Museum of Art, where she curated and published an exhibition catalogue for *Lina Iris Viktor: A Haven. A Hell. A Dream Deferred* (2018)."
     pic: "images/contributors/ayoung.jpg"
+
+  - id: krhammerschlag
+    type: secondary
+    first_name: Keren Rosa
+    last_name: Hammerschlag
+    title: Lecturer in Art History and Curatorship
+    affiliation: Australian National University, Canberra
+    bio: "Keren Rosa Hammerschlag is a lecturer in art history and curatorship in the Centre for Art History and Art Theory, School of Art and Design, at the Australian National University, Canberra. Her current research focuses on nineteenth-century anatomical illustration, and race in Victorian painting. She is the author of *Frederic Leighton: Death, Mortality, Resurrection* (Aldershot: Ashgate, 2015) and “Christ’s Racial Origins: Finding the Jewish Race in Victorian History Painting”, an article published in *The Art Bulletin* in 2021."
+    pic: "images/contributors/krhammerschlag.jpg"
 
   - id: dzhou
     type: secondary

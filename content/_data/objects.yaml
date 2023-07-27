@@ -7,26 +7,248 @@ object_display_order:
 
 object_list:
 
-  - id: 1
-    title: Human Erosion in California / Migrant Mother
-    artist: Dorothea Lange
-    year: 1936
-    medium: Gelatin silver print
-    dimensions: 34.1 cm × 26.8 cm (13 <sup>7</sup>⁄<sub>16</sub> in × 10 <sup>9</sup>⁄<sub>16</sub> in.)
-    location: J. Paul Getty Museum
-    link:  https://www.getty.edu/art/collection/object/108E2E
+  - id: london-asia-and-the-slade-archives-slide03
     figure:
-      - id: "cat-1"
+      - id: "animatingsladearchive-fig1"
+      - id: "animatingsladearchive-fig2"
+      - id: "animatingsladearchive-fig3"
 
-  - id: 2
-    title: Bud Fields and His Wife Ivy, and His Daughter Ellen, Hale County, Alabama
-    artist: Walker Evans
-    year: 1936
-    medium: Gelatin silver print
-    dimensions: 19.4 x 24.4 (7 <sup>5</sup>⁄<sub>8</sub> x 9 <sup>5</sup>⁄<sub>8</sub> in.)
-    location: J. Paul Getty Museum
-    link: https://www.getty.edu/art/collection/object/104A2K
+  - id: london-asia-and-the-slade-archives-slide04
     figure:
-      - id: "cat-2"
-      - id: "cat-2-b"
-      - id: "cat-2-c"
+      - id: "animatingsladearchive-fig4"
+      - id: "animatingsladearchive-fig5"
+      - id: "animatingsladearchive-fig6"
+
+  - id: london-asia-and-the-slade-archives-slide05
+    figure:
+      - id: "animatingsladearchive-fig7"
+      - id: "animatingsladearchive-fig8"
+      - id: "animatingsladearchive-fig9"
+
+  - id: london-asia-and-the-slade-archives-slide06
+    figure:
+      - id: "animatingsladearchive-fig10"
+      - id: "animatingsladearchive-fig11"
+      - id: "animatingsladearchive-fig12"
+      - id: "animatingsladearchive-fig13"
+
+  - id: london-asia-and-the-slade-archives-slide07
+    figure:
+      - id: "animatingsladearchive-fig14"
+      - id: "animatingsladearchive-fig15"
+      - id: "animatingsladearchive-fig16"
+
+  - id: london-asia-and-the-slade-archives-slide08
+    figure:
+      - id: "animatingsladearchive-fig17"
+      - id: "animatingsladearchive-fig18"
+      - id: "animatingsladearchive-fig19"
+      - id: "animatingsladearchive-fig20"
+
+  - id: london-asia-and-the-slade-archives-slide09
+    figure:
+      - id: "animatingsladearchive-fig21"
+
+  - id: london-asia-and-the-slade-archives-slide10
+    figure:
+      - id: "animatingsladearchive-fig22"
+
+  - id: london-asia-and-the-slade-archives-slide12
+    figure:
+      - id: "animatingsladearchive-fig23"
+
+  - id: london-asia-and-the-slade-archives-slide13
+    figure:
+      - id: "animatingsladearchive-fig24"
+      - id: "animatingsladearchive-fig25"
+      - id: "animatingsladearchive-fig26"
+
+  - id: london-asia-and-the-slade-archives-slide14
+    figure:
+      - id: "animatingsladearchive-fig27"
+      - id: "animatingsladearchive-fig28"
+      - id: "animatingsladearchive-fig29"
+      - id: "animatingsladearchive-fig30"
+      - id: "animatingsladearchive-fig31"
+
+  - id: london-asia-and-the-slade-archives-slide15
+    figure:
+      - id: "animatingsladearchive-fig32"
+
+  - id: london-asia-and-the-slade-archives-slide16
+    figure:
+      - id: "animatingsladearchive-fig33"
+
+  - id: london-asia-and-the-slade-archives-slide17
+    figure:
+      - id: "animatingsladearchive-fig34"
+
+  - id: london-asia-and-the-slade-archives-slide18
+    figure:
+      - id: "animatingsladearchive-fig35"
+
+  - id: london-asia-and-the-slade-archives-slide19
+    figure:
+      - id: "animatingsladearchive-fig36"
+      - id: "animatingsladearchive-fig37"
+
+  - id: london-asia-and-the-slade-archives-slide20
+    figure:
+      - id: "animatingsladearchive-fig38"
+
+  - id: london-asia-and-the-slade-archives-slide21
+    figure:
+      - id: "animatingsladearchive-fig39"
+
+  - id: london-asia-and-the-slade-archives-slide22
+    figure:
+      - id: "animatingsladearchive-fig40"
+      - id: "animatingsladearchive-fig41"
+      - id: "animatingsladearchive-fig42"
+      - id: "animatingsladearchive-fig43"
+      - id: "animatingsladearchive-fig44"
+
+  - id: london-asia-and-the-slade-archives-slide23
+    figure:
+      - id: "animatingsladearchive-fig45"
+      - id: "animatingsladearchive-fig46"
+      - id: "animatingsladearchive-fig47"
+      - id: "animatingsladearchive-fig48"
+      - id: "animatingsladearchive-fig49"
+      - id: "animatingsladearchive-fig50"
+
+  - id: london-asia-and-the-slade-archives-slide24
+    figure:
+      - id: "animatingsladearchive-fig51"
+      - id: "animatingsladearchive-fig52"
+      - id: "animatingsladearchive-fig53"
+      - id: "animatingsladearchive-fig54"
+      - id: "animatingsladearchive-fig55"
+      - id: "animatingsladearchive-fig56"
+
+  - id: london-asia-and-the-slade-archives-slide26
+    figure:
+      - id: "animatingsladearchive-fig57"
+
+  - id: london-asia-and-the-slade-archives-slide27
+    figure:
+      - id: "animatingsladearchive-fig58"
+      - id: "animatingsladearchive-fig59"
+
+  - id: london-asia-and-the-slade-archives-slide28
+    figure:
+      - id: "animatingsladearchive-fig60"
+      - id: "animatingsladearchive-fig61"
+  
+  - id: london-asia-and-the-slade-archives-slide29
+    figure:
+      - id: "animatingsladearchive-fig62"
+      - id: "animatingsladearchive-fig63"
+
+  - id: london-asia-and-the-slade-archives-slide30
+    figure:
+      - id: "animatingsladearchive-fig64"
+
+  - id: london-asia-and-the-slade-archives-slide31
+    figure:
+      - id: "animatingsladearchive-fig65"
+
+  - id: london-asia-and-the-slade-archives-slide32
+    figure:
+      - id: "animatingsladearchive-fig66"
+
+  - id: london-asia-and-the-slade-archives-slide34
+    figure:
+      - id: "animatingsladearchive-fig67"
+
+  - id: london-asia-and-the-slade-archives-slide35
+    figure:
+      - id: "animatingsladearchive-fig68"
+      - id: "animatingsladearchive-fig69"
+      - id: "animatingsladearchive-fig70"
+      - id: "animatingsladearchive-fig71"
+
+  - id: london-asia-and-the-slade-archives-slide36
+    figure:
+      - id: "animatingsladearchive-fig72"
+      - id: "animatingsladearchive-fig73"
+      - id: "animatingsladearchive-fig74"
+
+  - id: london-asia-and-the-slade-archives-slide37
+    figure:
+      - id: "animatingsladearchive-fig75"
+
+  - id: london-asia-and-the-slade-archives-slide38
+    figure:
+      - id: "animatingsladearchive-fig76"
+  
+  - id: london-asia-and-the-slade-archives-slide39
+    figure:
+      - id: "animatingsladearchive-fig77"
+  
+  - id: london-asia-and-the-slade-archives-slide40
+    figure:
+      - id: "animatingsladearchive-fig78"
+      - id: "animatingsladearchive-fig79"
+
+  - id: london-asia-and-the-slade-archives-slide41
+    figure:
+      - id: "animatingsladearchive-fig80"
+      - id: "animatingsladearchive-fig81"
+      - id: "animatingsladearchive-fig82"
+      - id: "animatingsladearchive-fig83"
+      - id: "animatingsladearchive-fig84"
+      - id: "animatingsladearchive-fig85"
+
+  - id: london-asia-and-the-slade-archives-slide42
+    figure:
+      - id: "animatingsladearchive-fig86"
+      - id: "animatingsladearchive-fig87"
+      - id: "animatingsladearchive-fig88"
+      - id: "animatingsladearchive-fig89"
+      - id: "animatingsladearchive-fig90"
+
+  - id: london-asia-and-the-slade-archives-slide44
+    figure:
+      - id: "animatingsladearchive-fig91"
+
+  - id: london-asia-and-the-slade-archives-slide45
+    figure:
+      - id: "animatingsladearchive-fig92"
+
+  - id: london-asia-and-the-slade-archives-slide46
+    figure:
+      - id: "animatingsladearchive-fig93"
+
+  - id: london-asia-and-the-slade-archives-slide47
+    figure:
+      - id: "animatingsladearchive-fig94"
+
+  - id: london-asia-and-the-slade-archives-slide48
+    figure:
+      - id: "animatingsladearchive-fig95"
+
+  - id: london-asia-and-the-slade-archives-slide49
+    figure:
+      - id: "animatingsladearchive-fig96"
+
+  - id: london-asia-and-the-slade-archives-slide50
+    figure:
+      - id: "animatingsladearchive-fig97"
+      - id: "animatingsladearchive-fig98"
+
+  - id: london-asia-and-the-slade-archives-slide51
+    figure:
+      - id: "animatingsladearchive-fig99"
+
+  - id: london-asia-and-the-slade-archives-slide52
+    figure:
+      - id: "animatingsladearchive-fig100"
+
+  - id: london-asia-and-the-slade-archives-slide53
+    figure:
+      - id: "animatingsladearchive-fig101"
+
+  - id: london-asia-and-the-slade-archives-slide54
+    figure:
+      - id: "animatingsladearchive-fig102"
