@@ -261,13 +261,11 @@ module.exports = function (eleventyConfig) {
     }
   })
 
-
   // Add the elastic search plugin
   eleventyConfig.addPlugin(elasticSearch, {
     collection: "html", // Use items that are part of the "html" 11ty collection.
     // Supply a function that receives the item from the collection and returns a single ES document.
-    document: ({ data, templateContent }) => {
-
+    document: ({ data, template, templateContent, issueData }) => {
       // Manipulate the item data into the desired formats.
       const {
         title,
@@ -293,30 +291,61 @@ module.exports = function (eleventyConfig) {
         subjects,
         figures,
       } = data;
+      const {
+        title: issueTitle,
+        subtitle: issueSubtitle,
+        series_issue_number: issueSeriesIssueNumber,
+        order: issueOrder,
+        season: issueSeason,
+        layout: issueLayout,
+        class: issueClass,
+        palette: issuePalette,
+        acknowledgements: issueAcknowledgements,
+        presentation: issuePresentation,
+        caption: issueCaption,
+        credit: issueCredit,
+      } = issueData?.data || [];
       const { description, copyright, license, resource_link: resourceLink } = publication
+      
+      const articlePath = page?.fileSlug;
 
+      // Filtering of some data requires template content in markdown format
+      const split = template.frontMatter.content.split("\n")
+      const splitContent = split.filter(String); // remove all empty strings
+
+      // Filtering of Contributors
       const filteredContributors = publication?.contributor?.filter(con => {
         if (con?.pages?.some(contributorPage => (contributorPage.url === page.url))) {
           delete con.pages
           return con
         }
-      }) || []; //This will default filteredContributors to an empty array
-      
+      }) || []; // This will default filteredContributors to an empty array
       // Trim filtered contributors to only id and full name
       var trimmedContributors = []
       filteredContributors.forEach(con => {
-        var trimmedCons = { id: con.id, full_name: con.full_name}
+        var trimmedCons = { id: con.id, full_name: con.full_name }
         trimmedContributors.push(trimmedCons)
       })
 
-      const articlePath = page?.fileSlug;
+      // Filtering of Footnotes
+      const footnoteIndex = splitContent.indexOf("## Footnotes")
+      const footnoteData = splitContent.slice(footnoteIndex)
+      var filteredFootnotes = []
+      const footnotesFiltering = data?.footnotes?.list.filter(fn => {
+        const label = (`[^${fn.label}]`)
+        const footnoteFilter = footnoteData.filter(str => str.includes(label))
+        const footnote = (footnoteFilter.toString().split(`${label}: `))[1]
+        var footnoteObject = { footnote_id: label, footnote: footnote }
+        filteredFootnotes.push(footnoteObject)
+      }) 
+
 
       // Two entries with id "/issue-01/" and one with "/" - convert into unique _ids
+      // Also issues with page - do comparison of key with page.url
       var issueId = page.url
       var regexpExact = /(\/issue-)([\d]+)(\/)$/  // match exactly /issue-XX/ for any issue number
       var regexpGeneral = /(\/issue-)([\d]+)(\/)/  // match the /issue-XX/ for any issue number (not strict)
       var issueObjId = /(\/issue-)([\d]+)(\/issue-)([\d]+)$/  // match the issue-XX/issue-XX entry data
-
       if (regexpExact.test(issueId)) {
         issueId = page.url + data.key;
       } else if (page.url == "/") {
@@ -330,11 +359,104 @@ module.exports = function (eleventyConfig) {
         }
       })
 
+      // Get paragraph tags and data
+      var paragraphData = []
+      var paragraphIndices = splitContent.map((e, i) => {
+        if (e.includes("{% assign paragraph_DOI")) {
+          return i
+        } else {
+          return ''
+        }
+      }) || []
+      var paragraphIndices = paragraphIndices.filter(String) // remove all empty strings 
+      if (paragraphIndices) {
+        var match = paragraphIndices.forEach(pIndex => {
+          var paragraphs = []
+          const id = splitContent[pIndex]
+          var paraEnded = false
+          var plusIndex = 1
+          // Get the paragraphs without the figures/contributors spaced between the paras
+          while (paraEnded == false) {
+            if (splitContent[pIndex + plusIndex]) {
+              if (splitContent[pIndex + plusIndex].startsWith("{% assign") == true ||
+                splitContent[pIndex + plusIndex].startsWith("{% backmatter")) {
+                //if following is assign then there's no data so return
+                paraEnded = true
+              } else if (splitContent[pIndex + plusIndex].startsWith("{%") == true) {
+                //if there is a tag after id
+                plusIndex += 1
+              } else {
+                paragraphs.push(splitContent[pIndex + plusIndex])
+                plusIndex += 1
+              }
+            } else {
+              paraEnded = true
+            }
+          }
+          var paraObj = { paragraph_id: id, paragraph: paragraphs }
+          paragraphData.push(paraObj)
+        })
+      }
+
+
+      // Get section tags and headings
+      var sectionData = []
+      var sectionIndices = splitContent.map((e, i) => {
+        if (e.includes("{% assign chapter_DOI")) {
+          return i
+        } else {
+          return ''
+        }
+      }) || []
+      var sectionIndices = sectionIndices.filter(String) // remove all empty strings 
+      if (sectionIndices) {
+        var sectionData = []
+        var sectionHeading = ""
+        var match = sectionIndices.forEach(pIndex => {
+          const id = splitContent[pIndex]
+          var sectionEnded = false
+          var plusIndex = 1
+          // Get the sections without the figures/contributors spaced between the paras
+          while (sectionEnded == false) {
+            if (splitContent[pIndex + plusIndex]) {
+              if (splitContent[pIndex + plusIndex].startsWith("{% assign") == true ||
+                splitContent[pIndex + plusIndex].startsWith("{% backmatter")) {
+                //if following is assign then there's no data so return
+                sectionEnded = true
+              } else if (splitContent[pIndex + plusIndex].startsWith("{%") == true) {
+                //if there is a tag after id
+                plusIndex += 1
+              } else {
+                sectionHeading = (splitContent[pIndex + plusIndex])
+                sectionEnded = true
+              }
+            } else {
+              sectionEnded = true
+            }
+          }
+          var sectionObj = { section_id: id, section_heading: sectionHeading }
+          sectionData.push(sectionObj)
+        })
+      }
       
+
       // Return the object representing a single entry in the index for ES.
       return {
         _id: issueId,
-        issue: {},
+        issue: {
+          series_issue_number: issueSeriesIssueNumber,
+          order: issueOrder,
+          title: issueTitle,
+          subtitle: issueSubtitle,
+          acknowledgements: issueAcknowledgements,
+          season: issueSeason,
+          layout: issueLayout,
+          caption: issueCaption,
+          credit: issueCredit,
+          presentation: issuePresentation,
+          class: issueClass,
+          palette: issuePalette,
+        },
         content: {
           frontmatter: {
             series_issue_number,
@@ -349,13 +471,16 @@ module.exports = function (eleventyConfig) {
             subjects,
           },
           contributors: { contributor: filteredContributors },
-          text: { short_abstract, 
-            abstract, 
-            acknowledgements, 
+          text: {
+            short_abstract,
+            abstract,
+            acknowledgements,
+            sections:sectionData,
+            paragraphs:paragraphData,
           },
           illustrations: {},
           slides: {},
-          footnotes: {},
+          footnotes: {footnotes: filteredFootnotes},
           bibliography: {}, // need "references" changing to "reference" in article yaml
           endsmatter: {
             pub_date,
