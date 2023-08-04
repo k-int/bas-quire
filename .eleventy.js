@@ -289,6 +289,7 @@ module.exports = function (eleventyConfig) {
         acknowledgements,
         subjects,
         figures,
+        references,
         key,
       } = data;
       const {
@@ -369,7 +370,15 @@ module.exports = function (eleventyConfig) {
           return fig
         }
       }) || []
-  
+      
+      // filter for references - has to be this way because "references" in article yml 
+      // is same name as _data/references.yaml thus causing conflicts 
+      const filteredReferences = references?.entries?.filter(ref => {
+        if (template?._frontMatter?.data?.references?.includes(ref?.id)) {
+          return ref
+        }   
+      }) || []
+
       // function to get paragraph and section ids and headings/content
       const paragraphsSections = (spliton, psId, psContent) => {
         var finalData = []
@@ -455,8 +464,8 @@ module.exports = function (eleventyConfig) {
           },
           illustrations: filteredFigures,
           slides: {},
-          footnotes: {footnotes: filteredFootnotes},
-          bibliography: {}, // need "references" changing to "reference" in article yaml
+          footnotes: filteredFootnotes,
+          bibliography: filteredReferences,
           endsmatter: {
             pub_date,
             review_status,
