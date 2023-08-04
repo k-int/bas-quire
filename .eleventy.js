@@ -265,7 +265,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(elasticSearch, {
     collection: "html", // Use items that are part of the "html" 11ty collection.
     // Supply a function that receives the item from the collection and returns a single ES document.
-    document: ({ data, template, templateContent, issueData }) => {
+    document: ({ data, template, templateContent, issueData, page }) => {
       // Manipulate the item data into the desired formats.
       const {
         title,
@@ -273,7 +273,6 @@ module.exports = function (eleventyConfig) {
         short_abstract,
         abstract,
         publication,
-        page,
         image: mainImage,
         BAStype,
         pub_date,
@@ -290,6 +289,7 @@ module.exports = function (eleventyConfig) {
         acknowledgements,
         subjects,
         figures,
+        key,
       } = data;
       const {
         title: issueTitle,
@@ -309,23 +309,23 @@ module.exports = function (eleventyConfig) {
       
       const articlePath = page?.fileSlug;
 
-      // Filtering of some data requires template content in markdown format
-      const split = template.frontMatter.content.split("\n")
-      const splitContent = split.filter(String); // remove all empty strings
-
       // Filtering of Contributors
+      const dataFilter = data.contributor?.map(con => { return con.id })
       const filteredContributors = publication?.contributor?.filter(con => {
-        if (con?.pages?.some(contributorPage => (contributorPage.url === page.url))) {
+        if (dataFilter?.includes(con.id)) {
           delete con.pages
           return con
         }
-      }) || []; // This will default filteredContributors to an empty array
+      }) || []; // default filteredContributors to an empty array
+
       // Trim filtered contributors to only id and full name
-      var trimmedContributors = []
-      filteredContributors.forEach(con => {
-        var trimmedCons = { id: con.id, full_name: con.full_name }
-        trimmedContributors.push(trimmedCons)
-      })
+      const trimmedContributors = filteredContributors.map(con => {
+        return { id: con.id, full_name: con.full_name }
+      }) || []; // default trimmedContributors to an empty array
+
+      // Filtering of some data requires template content in markdown format
+      const split = template.frontMatter.content.split("\n")
+      const splitContent = split.filter(String); // remove all empty strings
 
       // Filtering of Footnotes
       const footnoteIndex = splitContent.indexOf("## Footnotes")
@@ -339,106 +339,80 @@ module.exports = function (eleventyConfig) {
         filteredFootnotes.push(footnoteObject)
       }) 
 
-
-      // Two entries with id "/issue-01/" and one with "/" - convert into unique _ids
-      // Also issues with page - do comparison of key with page.url
-      var issueId = page.url
-      var regexpExact = /(\/issue-)([\d]+)(\/)$/  // match exactly /issue-XX/ for any issue number
-      var regexpGeneral = /(\/issue-)([\d]+)(\/)/  // match the /issue-XX/ for any issue number (not strict)
-      var issueObjId = /(\/issue-)([\d]+)(\/issue-)([\d]+)$/  // match the issue-XX/issue-XX entry data
-      if (regexpExact.test(issueId)) {
-        issueId = page.url + data.key;
-      } else if (page.url == "/") {
+      // use key for id, cover has / so assign to title 
+      var issueId = key
+      if (page.url == "/") {
         issueId = title.toLowerCase();
-      };
+      } else if (typeof(key) == "undefined" && key == "") {
+        issueId = page.url
+      } 
 
       // filter for figures in issues
       const filteredFigures = figures?.figure_list.filter(fig => {
-        if (data.content.includes(fig?.id)) {
+        const matchFigGroup = splitContent.findIndex(element => {
+          if (element.includes("figuregroup")) {
+            if (element.includes(fig?.id)) {
+              return element
+            }
+          }
+        })
+        if (!(matchFigGroup === -1)) {
+          fig["figuregroup"] = splitContent[matchFigGroup]
+          // Remove unneeded properties from fig object
+          delete fig.region
+          delete fig.printImage
+          delete fig.manifestId
+          delete fig.isImageService
+          delete fig.isCanvas
+          delete fig.annotations
+          delete fig.canvasId
           return fig
         }
-      })
-
-      // Get paragraph tags and data
-      var paragraphData = []
-      var paragraphIndices = splitContent.map((e, i) => {
-        if (e.includes("{% assign paragraph_DOI")) {
-          return i
-        } else {
-          return ''
-        }
       }) || []
-      var paragraphIndices = paragraphIndices.filter(String) // remove all empty strings 
-      if (paragraphIndices) {
-        var match = paragraphIndices.forEach(pIndex => {
-          var paragraphs = []
-          const id = splitContent[pIndex]
-          var paraEnded = false
-          var plusIndex = 1
-          // Get the paragraphs without the figures/contributors spaced between the paras
-          while (paraEnded == false) {
-            if (splitContent[pIndex + plusIndex]) {
-              if (splitContent[pIndex + plusIndex].startsWith("{% assign") == true ||
-                splitContent[pIndex + plusIndex].startsWith("{% backmatter")) {
-                //if following is assign then there's no data so return
-                paraEnded = true
-              } else if (splitContent[pIndex + plusIndex].startsWith("{%") == true) {
-                //if there is a tag after id
-                plusIndex += 1
-              } else {
-                paragraphs.push(splitContent[pIndex + plusIndex])
-                plusIndex += 1
-              }
-            } else {
-              paraEnded = true
-            }
+  
+      // function to get paragraph and section ids and headings/content
+      const paragraphsSections = (spliton, psId, psContent) => {
+        var finalData = []
+        var indices = splitContent.map((e, i) => {
+          if (e.includes(spliton)) {
+            return i
+          } else {
+            return ''
           }
-          var paraObj = { paragraph_id: id, paragraph: paragraphs }
-          paragraphData.push(paraObj)
-        })
-      }
-
-
-      // Get section tags and headings
-      var sectionData = []
-      var sectionIndices = splitContent.map((e, i) => {
-        if (e.includes("{% assign chapter_DOI")) {
-          return i
-        } else {
-          return ''
+        }) || []
+        var indices = indices.filter(String) // remove all empty strings 
+        if (indices) {
+          var match = indices.forEach(psIndex => {
+            var collected = []
+            const id = splitContent[psIndex]
+            var hasEnded = false
+            var plusIndex = 1
+            // Get the data without the figures/contributors spaced between the paras
+            while (hasEnded == false) {
+              if (splitContent[psIndex + plusIndex]) {
+                if (splitContent[psIndex + plusIndex].startsWith("{% assign") == true ||
+                  splitContent[psIndex + plusIndex].startsWith("{% backmatter")) {
+                  // if following is assign then there's no data so return
+                  hasEnded = true
+                } else if (splitContent[psIndex + plusIndex].startsWith("{%") == true) {
+                  // if there is a tag after id
+                  plusIndex += 1
+                } else {
+                  collected.push(splitContent[psIndex + plusIndex])
+                  plusIndex += 1
+                }
+              } else {
+                hasEnded = true
+              }
+            }
+            var collectedObj = { [psId]: id, [psContent]: collected }
+            finalData.push(collectedObj)
+          })
         }
-      }) || []
-      var sectionIndices = sectionIndices.filter(String) // remove all empty strings 
-      if (sectionIndices) {
-        var sectionData = []
-        var sectionHeading = ""
-        var match = sectionIndices.forEach(pIndex => {
-          const id = splitContent[pIndex]
-          var sectionEnded = false
-          var plusIndex = 1
-          // Get the sections without the figures/contributors spaced between the paras
-          while (sectionEnded == false) {
-            if (splitContent[pIndex + plusIndex]) {
-              if (splitContent[pIndex + plusIndex].startsWith("{% assign") == true ||
-                splitContent[pIndex + plusIndex].startsWith("{% backmatter")) {
-                //if following is assign then there's no data so return
-                sectionEnded = true
-              } else if (splitContent[pIndex + plusIndex].startsWith("{%") == true) {
-                //if there is a tag after id
-                plusIndex += 1
-              } else {
-                sectionHeading = (splitContent[pIndex + plusIndex])
-                sectionEnded = true
-              }
-            } else {
-              sectionEnded = true
-            }
-          }
-          var sectionObj = { section_id: id, section_heading: sectionHeading }
-          sectionData.push(sectionObj)
-        })
+        return finalData;
       }
-      
+      const paragraphData = paragraphsSections("{% assign paragraph_DOI", "paragraph_id", "paragraph")
+      const sectionData = paragraphsSections("{% assign chapter_DOI", "section_id", "section_heading")
 
       // Return the object representing a single entry in the index for ES.
       return {
@@ -463,6 +437,7 @@ module.exports = function (eleventyConfig) {
             order,
             palette,
             path: articlePath,
+            issuePalette: issuePalette,
             title,
             subtitle,
             BAStype,
@@ -470,7 +445,7 @@ module.exports = function (eleventyConfig) {
             wordCount,
             subjects,
           },
-          contributors: { contributor: filteredContributors },
+          contributors: filteredContributors,
           text: {
             short_abstract,
             abstract,
@@ -478,7 +453,7 @@ module.exports = function (eleventyConfig) {
             sections:sectionData,
             paragraphs:paragraphData,
           },
-          illustrations: {},
+          illustrations: filteredFigures,
           slides: {},
           footnotes: {footnotes: filteredFootnotes},
           bibliography: {}, // need "references" changing to "reference" in article yaml
