@@ -485,7 +485,7 @@ module.exports = function (eleventyConfig) {
         },
         page: { // page.md doesn't appear to be anywhere
         },
-        _source: { page }
+        _source: page 
       }
     }
   })
