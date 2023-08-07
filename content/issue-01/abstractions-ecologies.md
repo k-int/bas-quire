@@ -7,16 +7,21 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-01/cspencer"
   issn: 2058-5462
 language: en
-palette: "theme-salmon-pink"
 layout: splash
 BAStype: article
 image: figures/banners/abstractions-ecologies_banner.jpg
+banner:
+  id: issue-22-cover-2
+tile:
+  id: issue-22-tile-2
 review_status: "Peer Reviewed (Double Blind)"
 licence:
   - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
   - href: "https://creativecommons.org/licenses/by-nc/4.0/"
-  - isExternalLink: true
+  - isExternalLink: TRUE
+series_issue_number: 1																					
 order: 110
+wordcount: 9999
 pub_date: 2015-11-30
 pub_type: publication-periodical
 references:
@@ -101,7 +106,6 @@ references:
 - wiener_1981
 - wilmerding_2013
 - yorke_1988
-series_issue_number: 1
 series_periodical_name: British Art Studies
 abstract: "This article's aims are twofold: firstly, it argues that Prunella Clough's engagement with consumer items in her paintings of the 1980s and 1990s constitute a sustained engagement with the fluctuating nature of the commodity form, moving beyond the established critical narrative whereby these works are understood as simply redeeming \"everyday\" materials. Secondly, in order to do this, it proposes new artistic frameworks for Clough's work, moving away from her early association with Neo-Romanticism to foreground her relationship with Pop and Minimalism, and with Post-Conceptual painting. Clough's late works, it finds, powerfully condense histories of industrial production and painting in Britain."
 acknowledgements: "I would like to thank Sarah V. Turner and Mark Hallett for the invitation to share material that developed into this article at the Paul Mellon Centre; also Rachel Smith and Helena Bonett for organizing *Materials, Movements, Encounters: Modernist Art Networks* at Tate St Ives, and Rye Holmboe and Andrew Witt for Art in the Age of Real Abstraction at University College London, where previous versions were presented. Thanks also to Tate Archive for their assistance with Clough's papers during cataloguing."
