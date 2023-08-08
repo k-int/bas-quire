@@ -282,6 +282,7 @@ module.exports = function (eleventyConfig) {
         layout,
         palette,
         presentation,
+        licence,
         wordCount,
         order,
         series_issue_number,
@@ -304,12 +305,9 @@ module.exports = function (eleventyConfig) {
         palette: issuePalette,
         acknowledgements: issueAcknowledgements,
         presentation: issuePresentation,
-        caption: issueCaption,
-        credit: issueCredit,
+        identifier: issueIdentifiers
       } = issueData?.data || [];
-      const { order: slideOrder, presentation: slidePresentation, object: slideObject } = slideData?.data || []
-      const { description, copyright, license, resource_link: resourceLink } = publication
-      
+      const { description, copyright, basLicense, resource_link: resourceLink } = publication
       const articlePath = page?.fileSlug;
 
       // Filtering of Contributors
@@ -463,11 +461,10 @@ module.exports = function (eleventyConfig) {
           acknowledgements: issueAcknowledgements,
           season: issueSeason,
           layout: issueLayout,
-          caption: issueCaption,
-          credit: issueCredit,
           presentation: issuePresentation,
           class: issueClass,
           palette: issuePalette,
+          identier: issueIdentifiers
         },
         content: {
           frontmatter: {
