@@ -265,7 +265,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(elasticSearch, {
     collection: "html", // Use items that are part of the "html" 11ty collection.
     // Supply a function that receives the item from the collection and returns a single ES document.
-    document: ({ data, template, templateContent, issueData, page }) => {
+    document: ({ data, template, templateContent, page, issueData, slideData }) => {
       // Manipulate the item data into the desired formats.
       const {
         title,
@@ -289,6 +289,7 @@ module.exports = function (eleventyConfig) {
         acknowledgements,
         subjects,
         figures,
+        objects,
         references,
         key,
       } = data;
@@ -306,6 +307,7 @@ module.exports = function (eleventyConfig) {
         caption: issueCaption,
         credit: issueCredit,
       } = issueData?.data || [];
+      const { order: slideOrder, presentation: slidePresentation, object: slideObject } = slideData?.data || []
       const { description, copyright, license, resource_link: resourceLink } = publication
       
       const articlePath = page?.fileSlug;
@@ -380,9 +382,9 @@ module.exports = function (eleventyConfig) {
       }) || []
 
       // function to get paragraph and section ids and headings/content
-      const paragraphsSections = (spliton, psId, psContent) => {
+      const paragraphsSections = (baseContent, spliton, psId, psContent) => {
         var finalData = []
-        var indices = splitContent.map((e, i) => {
+        var indices = baseContent.map((e, i) => {
           if (e.includes(spliton)) {
             return i
           } else {
@@ -393,21 +395,21 @@ module.exports = function (eleventyConfig) {
         if (indices) {
           var match = indices.forEach(psIndex => {
             var collected = []
-            const id = splitContent[psIndex]
+            const id = baseContent[psIndex]
             var hasEnded = false
             var plusIndex = 1
             // Get the data without the figures/contributors spaced between the paras
             while (hasEnded == false) {
-              if (splitContent[psIndex + plusIndex]) {
-                if (splitContent[psIndex + plusIndex].startsWith("{% assign") == true ||
-                  splitContent[psIndex + plusIndex].startsWith("{% backmatter")) {
+              if (baseContent[psIndex + plusIndex]) {
+                if (baseContent[psIndex + plusIndex].startsWith("{% assign") == true ||
+                baseContent[psIndex + plusIndex].startsWith("{% backmatter")) {
                   // if following is assign then there's no data so return
                   hasEnded = true
-                } else if (splitContent[psIndex + plusIndex].startsWith("{%") == true) {
+                } else if (baseContent[psIndex + plusIndex].startsWith("{%") == true) {
                   // if there is a tag after id
                   plusIndex += 1
                 } else {
-                  collected.push(splitContent[psIndex + plusIndex])
+                  collected.push(baseContent[psIndex + plusIndex])
                   plusIndex += 1
                 }
               } else {
@@ -420,9 +422,36 @@ module.exports = function (eleventyConfig) {
         }
         return finalData;
       }
-      const paragraphData = paragraphsSections("{% assign paragraph_DOI", "paragraph_id", "paragraph")
-      const sectionData = paragraphsSections("{% assign chapter_DOI", "section_id", "section_heading")
 
+      const paragraphData = paragraphsSections(splitContent, "{% assign paragraph_DOI", "paragraph_id", "paragraph")
+      const sectionData = paragraphsSections(splitContent, "{% assign chapter_DOI", "section_id", "section_heading")
+
+
+      // Get correct data for slides
+      const filteredSlideData = slideData?.map(slide => {
+        const objData = objects?.object_list.filter(obj => {
+          if (obj?.id == slide?.data?.object?.[0]?.id) {
+            return obj
+          }
+        })
+
+        // Split content and use to get paragraphs and section data
+        const split = slide?.template.frontMatter.content.split("\n")
+        const splitSlideContent = split.filter(String); // remove all empty strings
+        const paragraphData = paragraphsSections(splitSlideContent, "{% assign paragraph_DOI", "paragraph_id", "paragraph")
+        const sectionData = paragraphsSections(splitSlideContent, "{% assign chapter_DOI", "section_id", "section_heading")
+
+        return {
+          id: slide?.data?.key,
+          order: slide?.data?.order,
+          presentation: slide?.data?.presentation,
+          object_list: objData,
+          sections: sectionData,
+          paragraphs: paragraphData
+        }
+      })
+
+      
       // Return the object representing a single entry in the index for ES.
       return {
         _id: issueId,
@@ -463,7 +492,7 @@ module.exports = function (eleventyConfig) {
             paragraphs:paragraphData,
           },
           illustrations: filteredFigures,
-          slides: {},
+          slides: filteredSlideData,
           footnotes: filteredFootnotes,
           bibliography: filteredReferences,
           endsmatter: {

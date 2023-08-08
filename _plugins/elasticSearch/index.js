@@ -1,6 +1,7 @@
 const chalkFactory = require('~lib/chalk')
 const fs = require('fs-extra')
-const path = require('path')
+const path = require('path');
+const { split } = require('core-js/fn/symbol');
 
 /**
  * Adds functionality for interracting with elastic search.
@@ -12,11 +13,10 @@ module.exports = function (eleventyConfig, options) {
   const outputDir = 'es'
   const outputPath = path.join(outputDir, 'es-index.json')
   const items = [];
-  const issueItems = {};
-  const newItems = []
-  var issue = ""
+  var slideData = {};
+  var issueItems = {};
 
-  const buildIndexEntries = () => (newItems.map(options.document));
+  const buildIndexEntries = () => (items.map(options.document));
 
   const toJson = (obj) => {
     var cache = [];
@@ -64,33 +64,59 @@ module.exports = function (eleventyConfig, options) {
     const fullPath = path.resolve('.', outputPath);
     console.log(`Writing index file ${fullPath}`);
 
-    var issues = items.forEach(i => {
-      const regexpExact = /(\/issue-)([\d]+)(\/)$/
+
+    // Get additional issue + slides data ready to attach to articles
+    items.forEach(i => {
+      // Get relevant slides and attach to article
+      const splitKey = i.data.key.split("/")
+      const articleKey = [splitKey[0], splitKey[1]].join("/")
+      if (splitKey[2] && splitKey[2].includes("slide")) {
+        if (!(slideData[articleKey])) {
+          slideData[articleKey] = []
+        }
+        slideData[articleKey].push(i)
+      }
       // Get data for the issue index.md
-      if (regexpExact.test(i?.page?.url)) {
-        issue = i?.page?.url
+      const regexpExact = /(issue-)([\d]+)$/
+      if (regexpExact.test(i.data.key)) {
+        var issue = i.data.key
         issueItems[issue] = i;
       }
-      // Write the correct data to the article object 
+    })
+
+
+    // Attach relevant additional data into articles
+    items.forEach(i => {
       const getIssue = Object.keys(issueItems).filter(iss => {
-        if (i?.page?.url.includes(iss)) {
-          return iss}})
+        if (i?.data?.key?.includes(iss)) {
+          return iss
+        }
+      })
       if (getIssue) {
         i["issueData"] = issueItems[getIssue]
-        newItems.push(i)
       } else {
         i["issueData"] = {}
-        newItems.push(i)
+      }
+      const getSlides = Object.keys(slideData).filter(slide => {
+        if (i?.data?.key == slide) {
+          return slide
+        }
+      })
+      if (getSlides) {
+        i["slideData"] = slideData[getSlides]
+      } else {
+        i["slideData"] = {}
       }
     });
 
-    const index = buildIndexEntries();
 
-    try {
-      fs.ensureDirSync(path.parse(fullPath).dir);
-      fs.writeFileSync(fullPath, toJson(index));
-    } catch (error) {
-      console.error(error)
-    }
-  });
+  const index = buildIndexEntries();
+
+  try {
+    fs.ensureDirSync(path.parse(fullPath).dir);
+    fs.writeFileSync(fullPath, toJson(index));
+  } catch (error) {
+    console.error(error)
+  }
+});
 };
