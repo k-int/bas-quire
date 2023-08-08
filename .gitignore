@@ -48,3 +48,12 @@ thumbs.db
 .project
 /es
 _plugins/elasticsearch/.env
+
+
+content/_assets/images/figures/issue-21/avbraga/.avbraga-fig12.m4v.icloud
+content/_assets/images/figures/issue-21/cmaxwell/..jpegmini_temp_696872819.temp.icloud
+*.icloud
+*.temp
+*.temp
+content/_assets/images/figures/issue-21/cmaxwell/.jpegmini_temp_696872819.temp
+content/_assets/images/figures/issue-21/cmaxwell/.jpegmini_temp_696872864.temp
