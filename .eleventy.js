@@ -273,20 +273,18 @@ module.exports = function (eleventyConfig) {
         short_abstract,
         abstract,
         publication,
-        image: mainImage,
+        banner,
+        tile,
         BAStype,
         pub_date,
         pub_type,
         review_status,
-        season,
-        layout,
         palette,
-        presentation,
         licence,
         wordCount,
         order,
         series_issue_number,
-        identifier: identifiers,
+        identifier: articleIdentifiers,
         acknowledgements,
         subjects,
         figures,
@@ -301,6 +299,7 @@ module.exports = function (eleventyConfig) {
         order: issueOrder,
         season: issueSeason,
         layout: issueLayout,
+        cover: issueCover,
         class: issueClass,
         palette: issuePalette,
         acknowledgements: issueAcknowledgements,
@@ -313,9 +312,18 @@ module.exports = function (eleventyConfig) {
       // Filtering of Contributors
       const dataFilter = data.contributor?.map(con => { return con.id })
       const filteredContributors = publication?.contributor?.filter(con => {
-        if (dataFilter?.includes(con.id)) {
-          delete con.pages
-          return con
+        if (dataFilter?.includes(con.id)) { return con }
+      }).map(filtCon => {
+        return {
+          id: filtCon.id,
+          first_name: filtCon.first_name,
+          last_name: filtCon.last_name,
+          full_name: filtCon.full_name,
+          title: filtCon.title,
+          affiliation: filtCon.affiliation,
+          bio: filtCon.bio,
+          pic: filtCon.pic,
+          url: filtCon.url,
         }
       }) || []; // default filteredContributors to an empty array
 
@@ -347,30 +355,65 @@ module.exports = function (eleventyConfig) {
       } else if (typeof(key) == "undefined" && key == "") {
         issueId = page.url
       } 
+      // ES _id doesn't work with slashes in URL, replace for ease of use
+      var issueId = issueId.replace("/","_")
 
       // filter for figures in issues
-      const filteredFigures = figures?.figure_list.filter(fig => {
-        const matchFigGroup = splitContent.findIndex(element => {
-          if (element.includes("figuregroup")) {
-            if (element.includes(fig?.id)) {
-              return element
+      const filteredFigures = figures?.figure_list
+        .filter((fig) => data.content.includes(fig?.id))
+        .map((x) => {
+          const matchFigGroup = splitContent.findIndex(element => {
+            if (element.includes("figuregroup")) {
+              if (element.includes(x?.id)) {
+                return element
+              }
             }
+          })
+          if (!(matchFigGroup === -1)) {
+            x["figuregroup"] = splitContent[matchFigGroup]
           }
-        })
-        if (!(matchFigGroup === -1)) {
-          fig["figuregroup"] = splitContent[matchFigGroup]
-          // Remove unneeded properties from fig object
-          delete fig.region
-          delete fig.printImage
-          delete fig.manifestId
-          delete fig.isImageService
-          delete fig.isCanvas
-          delete fig.annotations
-          delete fig.canvasId
+          return {
+            layout: x.figuregroup,
+            id: x.id,
+            src: x.src,
+            label: x.label,
+            media_type: x.media_type,
+            media_id: x.media_id,
+            caption: x.caption,
+            credit: x.credit,
+            alt: x.alt,
+          };
+        });
+
+      // Filtering of Tiles
+      const filteredTiles = figures?.figure_list.filter(fig => {
+        if (fig?.id == tile?.id) { return fig }
+      }).map(t => {
+        return {
+          id: t.id,
+          tileCaption: t.caption,
+          tileCredit: t.credit
+        }
+      }) || []
+
+      // Filtering of Banners
+      const filteredBanners = figures?.figure_list.filter(fig => {
+        if (fig?.id == banner?.id) { return fig }
+      }).map(ban => {
+        return {
+          id: ban.id,
+          bannerCaption: ban.caption,
+          bannerCredit: ban.credit
+        }
+      }) || []
+
+      // Filtering of covers for Issue 
+      const filteredIssueCovers = figures?.figure_list.filter(fig => {
+        if (fig?.id == issueCover?.id) {
           return fig
         }
       }) || []
-      
+
       // filter for references - has to be this way because "references" in article yml 
       // is same name as _data/references.yaml thus causing conflicts 
       const filteredReferences = references?.entries?.filter(ref => {
@@ -429,6 +472,23 @@ module.exports = function (eleventyConfig) {
       const filteredSlideData = slideData?.map(slide => {
         const objData = objects?.object_list.filter(obj => {
           if (obj?.id == slide?.data?.object?.[0]?.id) {
+            // some have mediaId and mediaType rather than 
+            // media_id and media_type
+            const modifiedFigures = obj.figures.map(innerfig => {
+              const newMod = {
+                id: innerfig.id,
+                src: innerfig.src,
+                label: innerfig.label,
+                media_type: innerfig.media_type,
+                media_id: innerfig.media_id,
+                caption: innerfig.caption,
+                credit: innerfig.credit,
+                alt: innerfig.alt,
+              }
+              return newMod
+            })
+            delete obj.figures
+            obj["figures"] = modifiedFigures
             return obj
           }
         })
@@ -461,10 +521,11 @@ module.exports = function (eleventyConfig) {
           acknowledgements: issueAcknowledgements,
           season: issueSeason,
           layout: issueLayout,
+          cover: filteredIssueCovers,
           presentation: issuePresentation,
           class: issueClass,
           palette: issuePalette,
-          identier: issueIdentifiers
+          identifier: issueIdentifiers
         },
         content: {
           frontmatter: {
@@ -478,6 +539,8 @@ module.exports = function (eleventyConfig) {
             BAStype,
             pub_type,
             wordCount,
+            banner: filteredBanners,
+            tile: filteredTiles,
             subjects,
           },
           contributors: filteredContributors,
@@ -495,8 +558,8 @@ module.exports = function (eleventyConfig) {
           endsmatter: {
             pub_date,
             review_status,
-            license,
-            identifiers
+            licence,
+            identifier: articleIdentifiers
           }
         },
         search: {
@@ -505,9 +568,9 @@ module.exports = function (eleventyConfig) {
           title,
           subtitle,
           contributors: trimmedContributors,
-          // figures
+          tile: filteredTiles,
           subjects,
-          palette
+          palette,
         },
         page: { // page.md doesn't appear to be anywhere
         },

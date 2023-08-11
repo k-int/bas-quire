@@ -40,11 +40,18 @@ function createIndexFn(indexName, client) {
                                 acknowledgements: { "type": "text" },
                                 season: { "type": "text" },
                                 layout: { "type": "keyword" },
-                                caption: { "type": "text" },
-                                credit: { "type": "text" },
+                                // cover: {
+                                //     properties: {
+                                //     }
+                                // },
                                 presentation: { "type": "keyword" },
                                 class: { "type": "keyword" },
                                 palette: { "type": "text" },
+                                identifier: {
+                                    properties: {
+                                        id: { "type": "keyword" }
+                                    }
+                                }
                             }
                         },
                         content: {
@@ -61,29 +68,151 @@ function createIndexFn(indexName, client) {
                                         BAStype: { "type": "keyword" },
                                         pub_type: { "type": "keyword" },
                                         wordCount: { "type": "text" },
-                                        subjects: { "type": "object" },
+                                        banner: {
+                                            properties: {
+                                                id: { "type": "keyword" },
+                                                bannerCaption: { "type": "text" },
+                                                bannerCredit: { "type": "text" }
+                                            }
+                                        },
+                                        tile: {
+                                            properties: {
+                                                id: { "type": "keyword" },
+                                                tileCaption: { "type": "text" },
+                                                tileCredit: { "type": "text" }
+                                            }
+                                        },
+                                        subjects: {
+                                            properties: {
+                                                type: { "type": "keyword" },
+                                                name: { "type": "text" },
+                                            }
+                                        },
                                     }
                                 },
-                                contributors: { "type": "object" },
+                                contributors: {
+                                    "type": "nested",
+                                    properties: {
+                                        id: { "type": "keyword" },
+                                        first_name: { "type": "text" },
+                                        last_name: { "type": "text" },
+                                        full_name: { "type": "text" },
+                                        title: { "type": "text" },
+                                        affiliation: { "type": "text" },
+                                        bio: { "type": "text"},
+                                        pic: { "type": "keyword" },
+                                        url: { "type": "keyword" },
+                                    }
+                                },
                                 text: {
+                                    "type": "nested",
                                     properties: {
                                         short_abstract: { "type": "text" },
                                         abstract: { "type": "text" },
                                         acknowledgements: { "type": "text" },
-                                        sections: { "type": "object" },
-                                        paragraphs: { "type": "object" },
+                                        sections: {
+                                            "type": "nested",
+                                            properties: {
+                                                section_id: { "type": "text" },
+                                                section: { "type": "text" },
+                                            }
+                                        },
+                                        paragraphs: {
+                                            "type": "nested",
+                                            properties: {
+                                                paragraph_id: { "type": "text" },
+                                                paragraph: { "type": "text" },
+                                            }
+                                        },
                                     }
                                 },
-                                illustrations: { "type": "object" },
-                                slides: { "type": "object" },
-                                footnotes: { "type": "object" },
-                                bibliography: { "type": "object" },
+                                illustrations: {
+                                    "type": "nested",
+                                    properties: {
+                                        layout: { "type": "text" },
+                                        id: { "type": "keyword" },
+                                        src: { "type": "keyword" },
+                                        label: { "type": "text" },
+                                        media_type: { "type": "keyword" },
+                                        media_id: { "type": "text" },
+                                        caption: { "type": "text" },
+                                        credit: { "type": "text" },
+                                        alt: { "type": "text" },
+                                    }
+                                },
+                                slides: {
+                                    properties: {
+                                        id: { "type": "keyword" },
+                                        order: { "type": "short" },
+                                        object_list: {
+                                            "type": "nested",
+                                            properties: {
+                                                id: { "type": "keyword" },
+                                                figure: {
+                                                    properties: {
+                                                        id: { "type": "keyword" }
+                                                    },
+                                                },
+                                                figures: {
+                                                    "type": "nested",
+                                                    properties: {
+                                                        id: { "type": "keyword" },
+                                                        label: { "type": "text" },
+                                                        src: { "type": "keyword" },
+                                                        caption: { "type": "text" },
+                                                        credit: { "type": "text" },
+                                                        media_type: { "type": "text" },
+                                                        media_id: { "type": "keyword" },
+                                                    }
+                                                },
+                                            }
+                                        },
+                                        paragraphs: {
+                                            properties: {
+                                                paragraph_id: { "type": "text" },
+                                                paragraph: { "type": "text" },
+                                            }
+                                        },
+                                        sections: {
+                                            properties: {
+                                                section_id: { "type": "text" },
+                                                section: { "type": "text" },
+                                            }
+                                        }
+                                    }
+                                },
+                                footnotes: {
+                                    "type": "nested",
+                                    properties: {
+                                        footnote_id: { "type": "text" },
+                                        footnote: { "type": "text" },
+                                    }
+                                },
+                                bibliography: {
+                                    "type": "nested",
+                                    properties: {
+                                        full: { "type": "text" },
+                                        id: { "type": "keyword" }
+                                    }
+                                },
                                 endsmatter: {
                                     properties: {
                                         pub_date: { "type": "date" },
                                         review_status: { "type": "text" },
-                                        licence: { "type": "object" },
-                                        identifiers: { "type": "object" },
+                                        licence: {
+                                            "type": "nested",
+                                            properties: {
+                                                text: { "type": "text" },
+                                                href: { "type": "keyword" },
+                                                isExternalLink: { "type": "boolean" },
+                                            }
+                                        },
+                                        identifiers: {
+                                            properties: {
+                                                doi: { "type": "keyword" },
+                                                issn: { "type": "keyword" },
+                                            }
+                                        },
                                     }
                                 },
                             }
@@ -94,8 +223,19 @@ function createIndexFn(indexName, client) {
                                 BAStype: { "type": "keyword" },
                                 title: { "type": "text" },
                                 subtitle: { "type": "text" },
-                                contributors: { "type": "object" },
-                                subjects: { "type": "object" },
+                                contributors: {
+                                    "type": "nested",
+                                    properties: {
+                                        id: { "type": "keyword" },
+                                        full_name: { "type": "keyword" },
+                                    }
+                                },
+                                subjects: {
+                                    properties: {
+                                        type: { "type": "keyword" },
+                                        name: { "type": "text" }
+                                    }
+                                },
                                 palette: { "type": "text" },
                             }
                         },
@@ -133,23 +273,25 @@ function addDocument(esDocs, indexName, client) {
                     acknowledgements: doc?.issue?.acknowledgements,
                     season: doc?.issue?.season,
                     layout: doc?.issue?.layout,
-                    caption: doc?.issue?.caption,
-                    credit: doc?.issue?.credit,
+                    cover: doc?.issue?.cover,
                     presentation: doc?.issue?.presentation,
                     class: doc?.issue?.class,
                     //palette: doc?.issue?.palette,
+                    identifier: doc?.issue?.identifier
                 },
                 content: {
                     frontmatter: {
                         series_issue_number: doc?.content?.frontmatter?.series_issue_number,
                         order: doc?.content?.frontmatter?.order,
-                       // palette: doc?.content?.frontmatter?.palette,
+                        // palette: doc?.content?.frontmatter?.palette,
                         path: doc?.content?.frontmatter?.path,
-                       // issuePalette: doc?.content?.frontmatter?.issuePalette,
+                        // issuePalette: doc?.content?.frontmatter?.issuePalette,
                         title: doc?.content?.frontmatter?.title,
                         subtitle: doc?.content?.frontmatter?.subtitle,
                         BAStype: doc?.content?.frontmatter?.BAStype,
                         pub_type: doc?.content?.frontmatter?.pub_type,
+                        banner: doc?.content?.frontmatter?.banner,
+                        tile: doc?.content?.frontmatter?.tile,
                         wordCount: doc?.content?.frontmatter?.wordCount,
                         subjects: doc?.content?.frontmatter?.subjects
                     },
@@ -169,7 +311,7 @@ function addDocument(esDocs, indexName, client) {
                         pub_date: doc?.content?.endsmatter?.pub_date,
                         review_status: doc?.content?.endsmatter?.review_status,
                         licence: doc?.content?.endsmatter?.licence,
-                        identifiers: doc?.content?.endsmatter?.identifiers,
+                        identifier: doc?.content?.endsmatter?.identifier,
                     }
                 },
                 search: {
@@ -178,8 +320,9 @@ function addDocument(esDocs, indexName, client) {
                     title: doc?.search?.title,
                     subtitle: doc?.search?.subtitle,
                     contributors: doc?.search?.contributors,
+                    tile: doc?.search?.tile,
                     subjects: doc?.search?.subjects,
-                   // palette: doc?.search?.palette
+                    // palette: doc?.search?.palette
                 },
                 source: {
                     date: doc?._source?.date,
