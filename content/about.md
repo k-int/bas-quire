@@ -6,7 +6,7 @@ outputs:
   - html
 ---
 
-# About
+# About 
 
 _British Art Studies_ provides an innovative space for new peer-reviewed scholarship on all aspects of British art, architecture, and visual culture in their most diverse and international contexts. It is co-published by the Paul Mellon Centre for Studies in British Art, London, and the Yale Center for British Art, New Haven, and reflects their dynamic research cultures. One of the few completely open access journals in the field of art history, _British Art Studies_ is also a forum for the growing debates about digital humanities, publication, and copyright.
 
