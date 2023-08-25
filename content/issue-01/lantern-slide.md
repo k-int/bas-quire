@@ -10,12 +10,16 @@ language: en
 palette: "theme-salmon-pink"
 layout: splash
 BAStype: article
+<<<<<<< Updated upstream
 image: figures/banners/lantern-slide_banner.jpg
 review_status: "Peer Reviewed (Double Blind)"
 licence:
   - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
   - href: "https://creativecommons.org/licenses/by-nc/4.0/"
   - isExternalLink: true
+=======
+banner: figures/banners/lantern-slide_banner.jpg
+>>>>>>> Stashed changes
 order: 109
 pub_date: 2015-11-30
 pub_type: publication-periodical

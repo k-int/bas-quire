@@ -12,12 +12,16 @@ language: en
 palette: "theme-bittersweet"
 layout: splash
 BAStype: article
+<<<<<<< Updated upstream
 image: figures/banners/wellcome-collection_banner.jpg
 review_status: "Peer Reviewed (Double Blind)"
 licence:
   - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
   - href: "https://creativecommons.org/licenses/by-nc/4.0/"
   - isExternalLink: true
+=======
+banner: figures/banners/wellcome-collection_banner.jpg
+>>>>>>> Stashed changes
 order: 207
 pub_date: 2021-07-18
 pub_type: publication-periodical
