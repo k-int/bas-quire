@@ -13,7 +13,7 @@ BAStype: article
 banner: figures/banners/abstractions-ecologies_banner.jpg
 banner-caption: "Magda Cordell McHale, *No. 12*, 1960, unconfirmed medium (mixed materials on canvas), 152.4 × 101.6 cm. Tate, London"
 banner-credit:	"Digital image courtesy of Tate, London 2015"
-tile: figures/banners/abstractions-ecologies_tile.jpg
+tile: figures/tiles/abstractions-ecologies_tile.jpg
 tile-caption: "Magda Cordell McHale, *No. 12*, 1960, unconfirmed medium (mixed materials on canvas), 152.4 × 101.6 cm. Tate, London"
 tile-credit:	"Digital image courtesy of Tate, London 2015"
 order: 110
