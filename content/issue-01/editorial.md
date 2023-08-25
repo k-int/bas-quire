@@ -9,14 +9,7 @@ language: en
 palette: "theme-salmon-pink"
 layout: splash
 BAStype: opinion-piece
-<<<<<<< Updated upstream
-image: figures/banners/issue01-editorial_banner.jpg
-review_status: "Peer Reviewed (Double Blind)"
-licence_text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
-licence_url: "https://creativecommons.org/licenses/by-nc/4.0/"
-=======
 banner: figures/banners/issue01-editorial_banner.jpg
->>>>>>> Stashed changes
 order: 101
 pub_date: 2015-08-01
 pub_type: publication-periodical
