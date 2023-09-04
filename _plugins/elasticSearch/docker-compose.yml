@@ -15,6 +15,7 @@ services:
         - ELASTIC_USER=${ES_USER}
         - ELASTIC_PASSWORD=${ES_PASSWORD}
         - bootstrap.memory_lock=true
+        - indices.id_field_data.enabled=true
 
       volumes:
         - es_data_eleventy:/usr/share/elasticsearch/data
