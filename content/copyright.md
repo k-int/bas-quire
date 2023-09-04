@@ -8,7 +8,7 @@ outputs:
 
 The publishers of _British Art Studies_ fully support the protection of intellectual property and are committed to complying with, and strictly adhering to, all applicable copyright law.
 
-# Author Rights
+# Author Rights 
 
 Authors retain copyright of the content they publish with British Art Studies with no restrictions, while granting the Paul Mellon Centre for Studies in British Art and Yale Center for British Art the right to distribute and continue showing the article in perpetuity under the journal’s preferred licence ([Creative Commons CC BY-NC International 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode)). Authors may deposit any version, whether pre- or post-publication, to any repository or website.
 
