@@ -68,20 +68,12 @@ function createIndexFn(indexName, client) {
                                         BAStype: { "type": "keyword" },
                                         pub_type: { "type": "keyword" },
                                         wordCount: { "type": "text" },
-                                        banner: {
-                                            properties: {
-                                                id: { "type": "keyword" },
-                                                bannerCaption: { "type": "text" },
-                                                bannerCredit: { "type": "text" }
-                                            }
-                                        },
-                                        tile: {
-                                            properties: {
-                                                id: { "type": "keyword" },
-                                                tileCaption: { "type": "text" },
-                                                tileCredit: { "type": "text" }
-                                            }
-                                        },
+                                        banner: { "type": "keyword" },
+                                        bannerCaption: { "type": "text" },
+                                        bannerCredit: { "type": "text" },
+                                        tile: { "type": "keyword" },
+                                        tileCaption: { "type": "text" },
+                                        tileCredit: { "type": "text" },
                                         subjects: {
                                             properties: {
                                                 type: { "type": "keyword" },
@@ -230,6 +222,9 @@ function createIndexFn(indexName, client) {
                                         full_name: { "type": "keyword" },
                                     }
                                 },
+                                tile: { "type": "keyword" },
+                                tileCaption: { "type": "text" },
+                                tileCredit: { "type": "text" },
                                 subjects: {
                                     properties: {
                                         type: { "type": "keyword" },
@@ -291,7 +286,11 @@ function addDocument(esDocs, indexName, client) {
                         BAStype: doc?.content?.frontmatter?.BAStype,
                         pub_type: doc?.content?.frontmatter?.pub_type,
                         banner: doc?.content?.frontmatter?.banner,
+                        bannerCaption: doc?.content?.frontmatter?.bannerCaption,
+                        bannerCredit: doc?.content?.frontmatter?.bannerCredit,
                         tile: doc?.content?.frontmatter?.tile,
+                        tileCaption: doc?.content?.frontmatter?.tileCaption,
+                        tileCredit: doc?.content?.frontmatter?.tileCredit,
                         wordCount: doc?.content?.frontmatter?.wordCount,
                         subjects: doc?.content?.frontmatter?.subjects
                     },
@@ -320,7 +319,9 @@ function addDocument(esDocs, indexName, client) {
                     title: doc?.search?.title,
                     subtitle: doc?.search?.subtitle,
                     contributors: doc?.search?.contributors,
-                    tile: doc?.search?.tile,
+                    tile: doc?.content?.frontmatter?.tile,
+                    tileCaption: doc?.content?.frontmatter?.tileCaption,
+                    tileCredit: doc?.content?.frontmatter?.tileCredit,
                     subjects: doc?.search?.subjects,
                     // palette: doc?.search?.palette
                 },

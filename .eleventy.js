@@ -274,7 +274,11 @@ module.exports = function (eleventyConfig) {
         abstract,
         publication,
         banner,
+        ["banner-caption"]: bannerCaption,
+        ["banner-credit"]: bannerCredit,
         tile,
+        ["tile-caption"]: tileCaption,
+        ["tile-credit"]: tileCredit,
         BAStype,
         pub_date,
         pub_type,
@@ -385,27 +389,27 @@ module.exports = function (eleventyConfig) {
           };
         });
 
-      // Filtering of Tiles
-      const filteredTiles = figures?.figure_list.filter(fig => {
-        if (fig?.id == tile?.id) { return fig }
-      }).map(t => {
-        return {
-          id: t.id,
-          tileCaption: t.caption,
-          tileCredit: t.credit
-        }
-      }) || []
+      // Filtering of Tiles - FORMAT CHANGED
+      // const filteredTiles = figures?.figure_list.filter(fig => {
+      //   if (fig?.id == tile?.id) { return fig }
+      // }).map(t => {
+      //   return {
+      //     id: t.id,
+      //     tileCaption: t.caption,
+      //     tileCredit: t.credit
+      //   }
+      // }) || []
 
-      // Filtering of Banners
-      const filteredBanners = figures?.figure_list.filter(fig => {
-        if (fig?.id == banner?.id) { return fig }
-      }).map(ban => {
-        return {
-          id: ban.id,
-          bannerCaption: ban.caption,
-          bannerCredit: ban.credit
-        }
-      }) || []
+      // Filtering of Banners - FORMAT CHANGED
+      // const filteredBanners = figures?.figure_list.filter(fig => {
+      //   if (fig?.id == banner?.id) { return fig }
+      // }).map(ban => {
+      //   return {
+      //     id: ban.id,
+      //     bannerCaption: ban.caption,
+      //     bannerCredit: ban.credit
+      //   }
+      // }) || []
 
       // Filtering of covers for Issue 
       const filteredIssueCovers = figures?.figure_list.filter(fig => {
@@ -509,7 +513,6 @@ module.exports = function (eleventyConfig) {
         }
       })
 
-      
       // Return the object representing a single entry in the index for ES.
       return {
         _id: issueId,
@@ -539,8 +542,12 @@ module.exports = function (eleventyConfig) {
             BAStype,
             pub_type,
             wordCount,
-            banner: filteredBanners,
-            tile: filteredTiles,
+            banner,
+            bannerCaption,
+            bannerCredit,
+            tile,
+            tileCaption,
+            tileCredit,
             subjects,
           },
           contributors: filteredContributors,
@@ -568,7 +575,9 @@ module.exports = function (eleventyConfig) {
           title,
           subtitle,
           contributors: trimmedContributors,
-          tile: filteredTiles,
+          tile,
+          tileCaption,
+          tileCredit,
           subjects,
           palette,
         },
