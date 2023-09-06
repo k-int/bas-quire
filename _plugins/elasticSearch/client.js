@@ -31,6 +31,30 @@ function createIndexFn(indexName, client) {
             body: {
                 mappings: {
                     properties: {
+                        type: { "type": "keyword" },
+                        series_issue_number: { "type": "short" },
+                        order: { "type": "short" },
+                        title: { "type": "text" },
+                        subtitle: { "type": "text" },
+                        acknowledgements: { "type": "text" },
+                        layout: { "type": "keyword" },
+                        cover: {
+                            "type": "nested",
+                            properties: {
+                                id: { "type": "keyword" },
+                                caption: { "type": "text" },
+                                credit: { "type": "text" },
+                            }
+                        },
+                        presentation: { "type": "keyword" },
+                        class: { "type": "keyword" },
+                        palette: { "type": "text" },
+                        identifier: {
+                            properties: {
+                                id: { "type": "keyword" }
+                            }
+                        },
+                        pageContent: { "type": "text" },
                         issue: {
                             properties: {
                                 series_issue_number: { "type": "short" },
@@ -40,10 +64,14 @@ function createIndexFn(indexName, client) {
                                 acknowledgements: { "type": "text" },
                                 season: { "type": "text" },
                                 layout: { "type": "keyword" },
-                                // cover: {
-                                //     properties: {
-                                //     }
-                                // },
+                                cover: {
+                                    "type": "nested",
+                                    properties: {
+                                        id: { "type": "keyword" },
+                                        caption: { "type": "text" },
+                                        credit: { "type": "text" },
+                                    }
+                                },
                                 presentation: { "type": "keyword" },
                                 class: { "type": "keyword" },
                                 palette: { "type": "text" },
@@ -91,7 +119,7 @@ function createIndexFn(indexName, client) {
                                         full_name: { "type": "text" },
                                         title: { "type": "text" },
                                         affiliation: { "type": "text" },
-                                        bio: { "type": "text"},
+                                        bio: { "type": "text" },
                                         pic: { "type": "keyword" },
                                         url: { "type": "keyword" },
                                     }
@@ -199,7 +227,7 @@ function createIndexFn(indexName, client) {
                                                 isExternalLink: { "type": "boolean" },
                                             }
                                         },
-                                        identifiers: {
+                                        identifier: {
                                             properties: {
                                                 doi: { "type": "keyword" },
                                                 issn: { "type": "keyword" },
@@ -254,95 +282,131 @@ function createIndexFn(indexName, client) {
     })
 }
 
+
 function addDocument(esDocs, indexName, client) {
-    esDocs.forEach(doc => (
-        client.index({
-            index: indexName,
-            id: doc._id,
-            body: {
-                issue: {
-                    series_issue_number: doc?.issue?.series_issue_number,
-                    order: doc?.issue?.order,
-                    title: doc?.issue?.title,
-                    subtitle: doc?.issue?.subtitle,
-                    acknowledgements: doc?.issue?.acknowledgements,
-                    season: doc?.issue?.season,
-                    layout: doc?.issue?.layout,
-                    cover: doc?.issue?.cover,
-                    presentation: doc?.issue?.presentation,
-                    class: doc?.issue?.class,
-                    //palette: doc?.issue?.palette,
-                    identifier: doc?.issue?.identifier
-                },
-                content: {
-                    frontmatter: {
-                        series_issue_number: doc?.content?.frontmatter?.series_issue_number,
-                        order: doc?.content?.frontmatter?.order,
-                        // palette: doc?.content?.frontmatter?.palette,
-                        path: doc?.content?.frontmatter?.path,
-                        // issuePalette: doc?.content?.frontmatter?.issuePalette,
-                        title: doc?.content?.frontmatter?.title,
-                        subtitle: doc?.content?.frontmatter?.subtitle,
-                        BAStype: doc?.content?.frontmatter?.BAStype,
-                        pub_type: doc?.content?.frontmatter?.pub_type,
-                        banner: doc?.content?.frontmatter?.banner,
-                        bannerCaption: doc?.content?.frontmatter?.bannerCaption,
-                        bannerCredit: doc?.content?.frontmatter?.bannerCredit,
+    esDocs.forEach(doc => {
+        if (doc?.type == "page") {
+            client.index({
+                index: indexName,
+                id: doc._id,
+                body: {
+                    type: doc?.type,
+                    order: doc?.order,
+                    title: doc?.title,
+                    layout: doc?.layout,
+                    pageContent: doc?.content,
+                }
+            })
+        } else if (doc?.type == "issue") {
+            client.index({
+                index: indexName,
+                id: doc._id,
+                body: {
+                    type: doc?.type,
+                    series_issue_number: doc?.series_issue_number,
+                    order: doc?.order,
+                    title: doc?.title,
+                    subtitle: doc?.subtitle,
+                    acknowledgements: doc?.acknowledgements,
+                    layout: doc?.layout,
+                    cover: doc?.cover,
+                    presentation: doc?.presentation,
+                    pageContent: doc?.content,
+                    class: doc?.class,
+                    palette: doc?.palette,
+                    identifier: doc?.identifier
+                }
+            })
+        } else {
+            client.index({
+                index: indexName,
+                id: doc._id,
+                body: {
+                    type: doc?.type,
+                    issue: {
+                        series_issue_number: doc?.issue?.series_issue_number,
+                        order: doc?.issue?.order,
+                        title: doc?.issue?.title,
+                        subtitle: doc?.issue?.subtitle,
+                        acknowledgements: doc?.issue?.acknowledgements,
+                        season: doc?.issue?.season,
+                        layout: doc?.issue?.layout,
+                        cover: doc?.issue?.cover,
+                        presentation: doc?.issue?.presentation,
+                        class: doc?.issue?.class,
+                        //palette: doc?.issue?.palette,
+                        identifier: doc?.issue?.identifier
+                    },
+                    content: {
+                        frontmatter: {
+                            series_issue_number: doc?.content?.frontmatter?.series_issue_number,
+                            order: doc?.content?.frontmatter?.order,
+                            // palette: doc?.content?.frontmatter?.palette,
+                            path: doc?.content?.frontmatter?.path,
+                            // issuePalette: doc?.content?.frontmatter?.issuePalette,
+                            title: doc?.content?.frontmatter?.title,
+                            subtitle: doc?.content?.frontmatter?.subtitle,
+                            BAStype: doc?.content?.frontmatter?.BAStype,
+                            pub_type: doc?.content?.frontmatter?.pub_type,
+                            banner: doc?.content?.frontmatter?.banner,
+                            bannerCaption: doc?.content?.frontmatter?.bannerCaption,
+                            bannerCredit: doc?.content?.frontmatter?.bannerCredit,
+                            tile: doc?.content?.frontmatter?.tile,
+                            tileCaption: doc?.content?.frontmatter?.tileCaption,
+                            tileCredit: doc?.content?.frontmatter?.tileCredit,
+                            wordCount: doc?.content?.frontmatter?.wordCount,
+                            subjects: doc?.content?.frontmatter?.subjects
+                        },
+                        contributors: doc?.content?.contributors,
+                        text: {
+                            short_abstract: doc?.content?.text?.short_abstract,
+                            abstract: doc?.content?.text?.abstract,
+                            acknowledgements: doc?.content?.text?.acknowledgements,
+                            sections: doc?.content?.text?.sections,
+                            paragraphs: doc?.content?.text?.paragraphs,
+                        },
+                        illustrations: doc?.content?.illustrations,
+                        slides: doc?.content?.slides,
+                        footnotes: doc?.content?.footnotes,
+                        bibliography: doc?.content?.bibliography,
+                        endsmatter: {
+                            pub_date: doc?.content?.endsmatter?.pub_date,
+                            review_status: doc?.content?.endsmatter?.review_status,
+                            licence: doc?.content?.endsmatter?.licence,
+                            identifier: doc?.content?.endsmatter?.identifier,
+                        }
+                    },
+                    search: {
+                        pub_date: doc?.search?.pub_date,
+                        BAStype: doc?.search?.BAStype,
+                        title: doc?.search?.title,
+                        subtitle: doc?.search?.subtitle,
+                        contributors: doc?.search?.contributors,
                         tile: doc?.content?.frontmatter?.tile,
                         tileCaption: doc?.content?.frontmatter?.tileCaption,
                         tileCredit: doc?.content?.frontmatter?.tileCredit,
-                        wordCount: doc?.content?.frontmatter?.wordCount,
-                        subjects: doc?.content?.frontmatter?.subjects
+                        subjects: doc?.search?.subjects,
+                        // palette: doc?.search?.palette
                     },
-                    contributors: doc?.content?.contributors,
-                    text: {
-                        short_abstract: doc?.content?.text?.short_abstract,
-                        abstract: doc?.content?.text?.abstract,
-                        acknowledgements: doc?.content?.text?.acknowledgements,
-                        sections: doc?.content?.text?.sections,
-                        paragraphs: doc?.content?.text?.paragraphs,
-                    },
-                    illustrations: doc?.content?.illustrations,
-                    slides: doc?.content?.slides,
-                    footnotes: doc?.content?.footnotes,
-                    bibliography: doc?.content?.bibliography,
-                    endsmatter: {
-                        pub_date: doc?.content?.endsmatter?.pub_date,
-                        review_status: doc?.content?.endsmatter?.review_status,
-                        licence: doc?.content?.endsmatter?.licence,
-                        identifier: doc?.content?.endsmatter?.identifier,
+                    source: {
+                        date: doc?._source?.date,
+                        inputPath: doc?._source?.inputPath,
+                        fileSlug: doc?._source?.fileSlug,
+                        filePathStem: doc?._source?.filePathStem,
+                        outputFileExtension: doc?._source?.outputFileExtension,
+                        templateSyntax: doc?._source?.templateSyntax,
+                        url: doc?._source?.url,
+                        outputPath: doc?._source?.outputPath,
+                        lang: doc?._source?.lang
                     }
-                },
-                search: {
-                    pub_date: doc?.search?.pub_date,
-                    BAStype: doc?.search?.BAStype,
-                    title: doc?.search?.title,
-                    subtitle: doc?.search?.subtitle,
-                    contributors: doc?.search?.contributors,
-                    tile: doc?.content?.frontmatter?.tile,
-                    tileCaption: doc?.content?.frontmatter?.tileCaption,
-                    tileCredit: doc?.content?.frontmatter?.tileCredit,
-                    subjects: doc?.search?.subjects,
-                    // palette: doc?.search?.palette
-                },
-                source: {
-                    date: doc?._source?.date,
-                    inputPath: doc?._source?.inputPath,
-                    fileSlug: doc?._source?.fileSlug,
-                    filePathStem: doc?._source?.filePathStem,
-                    outputFileExtension: doc?._source?.outputFileExtension,
-                    templateSyntax: doc?._source?.templateSyntax,
-                    url: doc?._source?.url,
-                    outputPath: doc?._source?.outputPath,
-                    lang: doc?._source?.lang
                 }
-            }
-        }, function (err, resp) {
-            if (err) {
-                console.log(err)
-            }
-        })
-    ))
+            }, function (err, resp) {
+                if (err) {
+                    console.log(err)
+                }
+            })
+        }
+    })
 }
 
 

@@ -295,6 +295,7 @@ module.exports = function (eleventyConfig) {
         objects,
         references,
         key,
+        layout
       } = data;
       const {
         title: issueTitle,
@@ -350,17 +351,17 @@ module.exports = function (eleventyConfig) {
         const footnote = (footnoteFilter.toString().split(`${label}: `))[1]
         var footnoteObject = { footnote_id: label, footnote: footnote }
         filteredFootnotes.push(footnoteObject)
-      }) 
+      })
 
       // use key for id, cover has / so assign to title 
       var issueId = key
       if (page.url == "/") {
         issueId = title.toLowerCase();
-      } else if (typeof(key) == "undefined" && key == "") {
+      } else if (typeof (key) == "undefined" && key == "") {
         issueId = page.url
-      } 
+      }
       // ES _id doesn't work with slashes in URL, replace for ease of use
-      var issueId = issueId.replace("/","_")
+      var issueId = issueId.replace("/", "_")
 
       // filter for figures in issues
       const filteredFigures = figures?.figure_list
@@ -389,32 +390,14 @@ module.exports = function (eleventyConfig) {
           };
         });
 
-      // Filtering of Tiles - FORMAT CHANGED
-      // const filteredTiles = figures?.figure_list.filter(fig => {
-      //   if (fig?.id == tile?.id) { return fig }
-      // }).map(t => {
-      //   return {
-      //     id: t.id,
-      //     tileCaption: t.caption,
-      //     tileCredit: t.credit
-      //   }
-      // }) || []
-
-      // Filtering of Banners - FORMAT CHANGED
-      // const filteredBanners = figures?.figure_list.filter(fig => {
-      //   if (fig?.id == banner?.id) { return fig }
-      // }).map(ban => {
-      //   return {
-      //     id: ban.id,
-      //     bannerCaption: ban.caption,
-      //     bannerCredit: ban.credit
-      //   }
-      // }) || []
-
       // Filtering of covers for Issue 
       const filteredIssueCovers = figures?.figure_list.filter(fig => {
-        if (fig?.id == issueCover?.id) {
-          return fig
+        if (fig?.id == issueCover) { return fig }
+      }).map(cov => {
+        return {
+          id: cov?.id,
+          coverCaption: cov?.caption,
+          coverCredit: cov?.credit,
         }
       }) || []
 
@@ -423,7 +406,7 @@ module.exports = function (eleventyConfig) {
       const filteredReferences = references?.entries?.filter(ref => {
         if (template?._frontMatter?.data?.references?.includes(ref?.id)) {
           return ref
-        }   
+        }
       }) || []
 
       // function to get paragraph and section ids and headings/content
@@ -447,7 +430,7 @@ module.exports = function (eleventyConfig) {
             while (hasEnded == false) {
               if (baseContent[psIndex + plusIndex]) {
                 if (baseContent[psIndex + plusIndex].startsWith("{% assign") == true ||
-                baseContent[psIndex + plusIndex].startsWith("{% backmatter")) {
+                  baseContent[psIndex + plusIndex].startsWith("{% backmatter")) {
                   // if following is assign then there's no data so return
                   hasEnded = true
                 } else if (baseContent[psIndex + plusIndex].startsWith("{%") == true) {
@@ -513,10 +496,14 @@ module.exports = function (eleventyConfig) {
         }
       })
 
-      // Return the object representing a single entry in the index for ES.
-      return {
-        _id: issueId,
-        issue: {
+      const exactIssueRegex = /^(issue-)([\d]+)$/gm
+      const articleRegex = /(issue-)([\d]+)/gm
+
+      // Return the ISSUE object representing a single entry in the index for ES.
+      if (issueId.match(exactIssueRegex)) {
+        return {
+          _id: issueId,
+          type: "issue",
           series_issue_number: issueSeriesIssueNumber,
           order: issueOrder,
           title: issueTitle,
@@ -529,61 +516,91 @@ module.exports = function (eleventyConfig) {
           class: issueClass,
           palette: issuePalette,
           identifier: issueIdentifiers
-        },
-        content: {
-          frontmatter: {
-            series_issue_number,
-            order,
-            palette,
-            path: articlePath,
-            issuePalette: issuePalette,
+        }
+      }
+      // Return the ARTICLE object representing a single entry in the index for ES.
+      else if (issueId.match(articleRegex)) {
+        return {
+          _id: issueId,
+          type: "article",
+          issue: {
+            series_issue_number: issueSeriesIssueNumber,
+            order: issueOrder,
+            title: issueTitle,
+            subtitle: issueSubtitle,
+            acknowledgements: issueAcknowledgements,
+            season: issueSeason,
+            layout: issueLayout,
+            cover: filteredIssueCovers,
+            presentation: issuePresentation,
+            class: issueClass,
+            palette: issuePalette,
+            identifier: issueIdentifiers
+          },
+          content: {
+            frontmatter: {
+              series_issue_number,
+              order,
+              palette,
+              path: articlePath,
+              issuePalette: issuePalette,
+              title,
+              subtitle,
+              BAStype,
+              pub_type,
+              wordCount,
+              banner,
+              bannerCaption,
+              bannerCredit,
+              tile,
+              tileCaption,
+              tileCredit,
+              subjects,
+            },
+            contributors: filteredContributors,
+            text: {
+              short_abstract,
+              abstract,
+              acknowledgements,
+              sections: sectionData,
+              paragraphs: paragraphData,
+            },
+            illustrations: filteredFigures,
+            slides: filteredSlideData,
+            footnotes: filteredFootnotes,
+            bibliography: filteredReferences,
+            endsmatter: {
+              pub_date,
+              review_status,
+              licence,
+              identifier: articleIdentifiers
+            }
+          },
+          search: {
+            pub_date,
+            BAStype,
             title,
             subtitle,
-            BAStype,
-            pub_type,
-            wordCount,
-            banner,
-            bannerCaption,
-            bannerCredit,
+            contributors: trimmedContributors,
             tile,
             tileCaption,
             tileCredit,
             subjects,
+            palette,
           },
-          contributors: filteredContributors,
-          text: {
-            short_abstract,
-            abstract,
-            acknowledgements,
-            sections:sectionData,
-            paragraphs:paragraphData,
-          },
-          illustrations: filteredFigures,
-          slides: filteredSlideData,
-          footnotes: filteredFootnotes,
-          bibliography: filteredReferences,
-          endsmatter: {
-            pub_date,
-            review_status,
-            licence,
-            identifier: articleIdentifiers
-          }
-        },
-        search: {
-          pub_date,
-          BAStype,
+          _source: page
+        }
+      }
+      // Return the PAGES object representing a single entry in the index for ES.    
+      else {
+        return {
+          _id: issueId,
+          type: "page",
+          order,
           title,
-          subtitle,
-          contributors: trimmedContributors,
-          tile,
-          tileCaption,
-          tileCredit,
-          subjects,
-          palette,
-        },
-        page: { // page.md doesn't appear to be anywhere
-        },
-        _source: page 
+          layout,
+          content: splitContent
+        }
       }
     }
   })

@@ -23,7 +23,8 @@ module.exports = function (eleventyConfig, options) {
     return JSON.stringify(obj, (key, value) => {
       if (typeof value === 'object' && value !== null) {
         // Duplicate reference found, discard key
-        // if (cache.includes(value)) return;
+        // if (cache.includes(value)) return; 
+        // COMMENTED OUT to allow for duplicates for crosswalk structure
 
         // Store value in our collection
         cache.push(value);
