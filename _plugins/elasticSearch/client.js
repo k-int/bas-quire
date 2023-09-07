@@ -48,7 +48,12 @@ function createIndexFn(indexName, client) {
                         },
                         presentation: { "type": "keyword" },
                         class: { "type": "keyword" },
-                        palette: { "type": "text" },
+                        palette: {
+                            properties: {
+                                mainTheme: { "type": "keyword" },
+                                light: { "type": "keyword" },
+                                dark: { "type": "keyword" }
+                            }} ,
                         identifier: {
                             properties: {
                                 id: { "type": "keyword" }
@@ -74,7 +79,12 @@ function createIndexFn(indexName, client) {
                                 },
                                 presentation: { "type": "keyword" },
                                 class: { "type": "keyword" },
-                                palette: { "type": "text" },
+                                palette: {
+                                    properties: {
+                                        mainTheme: { "type": "keyword" },
+                                        light: { "type": "keyword" },
+                                        dark: { "type": "keyword" }
+                                    }},
                                 identifier: {
                                     properties: {
                                         id: { "type": "keyword" }
@@ -88,9 +98,19 @@ function createIndexFn(indexName, client) {
                                     properties: {
                                         series_issue_number: { "type": "short" },
                                         order: { "type": "short" },
-                                        palette: { "type": "text" },
+                                        palette: {
+                                            properties: {
+                                                mainTheme: { "type": "keyword" },
+                                                light: { "type": "keyword" },
+                                                dark: { "type": "keyword" }
+                                            }},
                                         path: { "type": "keyword" },
-                                        issuePalette: { "type": "text" },
+                                        issuePalette: {
+                                            properties: {
+                                                mainTheme: { "type": "keyword" },
+                                                light: { "type": "keyword" },
+                                                dark: { "type": "keyword" }
+                                            }},
                                         title: { "type": "text" },
                                         subtitle: { "type": "text" },
                                         BAStype: { "type": "keyword" },
@@ -259,7 +279,12 @@ function createIndexFn(indexName, client) {
                                         name: { "type": "text" }
                                     }
                                 },
-                                palette: { "type": "text" },
+                                palette: {
+                                    properties: {
+                                        mainTheme: { "type": "keyword" },
+                                        light: { "type": "keyword" },
+                                        dark: { "type": "keyword" }
+                                    }},
                             }
                         },
                         source: {
@@ -334,16 +359,16 @@ function addDocument(esDocs, indexName, client) {
                         cover: doc?.issue?.cover,
                         presentation: doc?.issue?.presentation,
                         class: doc?.issue?.class,
-                        //palette: doc?.issue?.palette,
+                        palette: doc?.issue?.palette,
                         identifier: doc?.issue?.identifier
                     },
                     content: {
                         frontmatter: {
                             series_issue_number: doc?.content?.frontmatter?.series_issue_number,
                             order: doc?.content?.frontmatter?.order,
-                            // palette: doc?.content?.frontmatter?.palette,
+                            palette: doc?.content?.frontmatter?.palette,
                             path: doc?.content?.frontmatter?.path,
-                            // issuePalette: doc?.content?.frontmatter?.issuePalette,
+                            issuePalette: doc?.content?.frontmatter?.issuePalette,
                             title: doc?.content?.frontmatter?.title,
                             subtitle: doc?.content?.frontmatter?.subtitle,
                             BAStype: doc?.content?.frontmatter?.BAStype,
@@ -386,7 +411,7 @@ function addDocument(esDocs, indexName, client) {
                         tileCaption: doc?.content?.frontmatter?.tileCaption,
                         tileCredit: doc?.content?.frontmatter?.tileCredit,
                         subjects: doc?.search?.subjects,
-                        // palette: doc?.search?.palette
+                        palette: doc?.search?.palette
                     },
                     source: {
                         date: doc?._source?.date,

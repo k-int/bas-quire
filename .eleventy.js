@@ -454,7 +454,6 @@ module.exports = function (eleventyConfig) {
       const paragraphData = paragraphsSections(splitContent, "{% assign paragraph_DOI", "paragraph_id", "paragraph")
       const sectionData = paragraphsSections(splitContent, "{% assign chapter_DOI", "section_id", "section_heading")
 
-
       // Get correct data for slides
       const filteredSlideData = slideData?.map(slide => {
         const objData = objects?.object_list.filter(obj => {
@@ -496,6 +495,18 @@ module.exports = function (eleventyConfig) {
         }
       })
 
+      // Formatting for palette
+      const paletteStructure = (colourPalette) => {
+        if (typeof(colourPalette) === 'string') {
+          return [ { "mainTheme": colourPalette } ] 
+        } else {
+          return colourPalette
+        }
+      }
+      const paletteStructured = paletteStructure(palette)
+      const issuePaletteStructured = paletteStructure(issuePalette)
+      
+
       const exactIssueRegex = /^(issue-)([\d]+)$/gm
       const articleRegex = /(issue-)([\d]+)/gm
 
@@ -514,7 +525,7 @@ module.exports = function (eleventyConfig) {
           cover: filteredIssueCovers,
           presentation: issuePresentation,
           class: issueClass,
-          palette: issuePalette,
+          palette: issuePaletteStructured,
           identifier: issueIdentifiers
         }
       }
@@ -534,16 +545,16 @@ module.exports = function (eleventyConfig) {
             cover: filteredIssueCovers,
             presentation: issuePresentation,
             class: issueClass,
-            palette: issuePalette,
+            palette: issuePaletteStructured,
             identifier: issueIdentifiers
           },
           content: {
             frontmatter: {
               series_issue_number,
               order,
-              palette,
+              palette: paletteStructured,
               path: articlePath,
-              issuePalette: issuePalette,
+              issuePalette: issuePaletteStructured,
               title,
               subtitle,
               BAStype,
@@ -586,7 +597,7 @@ module.exports = function (eleventyConfig) {
             tileCaption,
             tileCredit,
             subjects,
-            palette,
+            palette: paletteStructured,
           },
           _source: page
         }
