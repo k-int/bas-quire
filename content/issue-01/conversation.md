@@ -13,12 +13,7 @@ palette:
   - light: "#B00C48"
 layout: splash
 BAStype: opinion-piece
-image: figures/banners/nstaba_banner.jpg
-review_status: "Peer Reviewed (Double Blind)"
-licence:
-  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
-  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
-  - isExternalLink: true
+banner: figures/banners/nstaba_banner.jpg
 order: 102
 pub_date: 2015-11-16
 pub_type: publication-periodical

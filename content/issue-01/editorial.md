@@ -12,10 +12,7 @@ palette:
   - light: "#B00C48"
 layout: splash
 BAStype: opinion-piece
-image: figures/banners/issue01-editorial_banner.jpg
-review_status: "Peer Reviewed (Double Blind)"
-licence_text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
-licence_url: "https://creativecommons.org/licenses/by-nc/4.0/"
+banner: figures/banners/issue01-editorial_banner.jpg
 order: 101
 pub_date: 2015-08-01
 pub_type: publication-periodical
