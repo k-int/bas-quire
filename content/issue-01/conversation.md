@@ -7,7 +7,10 @@ contributor:
   - id: rjohns
     context: "coordinated by"
 language: en
-palette: "theme-salmon-pink"
+palette: 
+  - main: "theme-salmon-pink"
+  - dark: "#ED4A85"
+  - light: "#B00C48"
 layout: splash
 BAStype: opinion-piece
 image: figures/banners/nstaba_banner.jpg
