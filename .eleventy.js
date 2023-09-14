@@ -311,7 +311,7 @@ module.exports = function (eleventyConfig) {
         presentation: issuePresentation,
         identifier: issueIdentifiers
       } = issueData?.data || [];
-      const { description, copyright, basLicense, resource_link: resourceLink } = publication
+      const { description, copyright, licence: pubLicence, resource_link: resourceLink } = publication
       const articlePath = page?.fileSlug;
 
       // Filtering of Contributors
@@ -498,15 +498,18 @@ module.exports = function (eleventyConfig) {
       // Formatting for palette
       const paletteStructure = (colourPalette) => {
         if (typeof(colourPalette) === 'string') {
-          return [ { "mainTheme": colourPalette } ] 
+          return [ { "main": colourPalette } ] 
         } else {
           return colourPalette
         }
       }
       const paletteStructured = paletteStructure(palette)
       const issuePaletteStructured = paletteStructure(issuePalette)
-      
 
+      var type = "article"
+      if (issueId.includes("slide")) {
+        var type = "slide"
+      } 
       const exactIssueRegex = /^(issue-)([\d]+)$/gm
       const articleRegex = /(issue-)([\d]+)/gm
 
@@ -533,7 +536,7 @@ module.exports = function (eleventyConfig) {
       else if (issueId.match(articleRegex)) {
         return {
           _id: issueId,
-          type: "article",
+          type: type,
           issue: {
             series_issue_number: issueSeriesIssueNumber,
             order: issueOrder,
