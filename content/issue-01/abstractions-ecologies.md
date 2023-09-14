@@ -20,6 +20,10 @@ tile: figures/tiles/abstractions-ecologies_tile.jpg
 tile-caption: "Magda Cordell McHale, *No. 12*, 1960, unconfirmed medium (mixed materials on canvas), 152.4 × 101.6 cm. Tate, London"
 tile-credit:	"Digital image courtesy of Tate, London 2015"
 order: 110
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 pub_date: 2015-11-30
 pub_type: publication-periodical
 references:

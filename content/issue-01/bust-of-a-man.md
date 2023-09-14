@@ -17,6 +17,10 @@ layout: splash
 BAStype: artist-collab
 banner: figures/banners/bust-of-a-man_banner.jpg
 order: 105
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 pub_date: 2015-11-16
 pub_type: publication-periodical
 references:

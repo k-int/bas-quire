@@ -15,6 +15,10 @@ layout: splash
 BAStype: article
 banner: figures/banners/bell-brothers_banner.jpg
 order: 208
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 pub_date: 2021-07-18
 pub_type: publication-periodical
 references:

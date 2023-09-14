@@ -15,6 +15,10 @@ layout: splash
 BAStype: opinion-piece
 banner: figures/banners/nstaba_banner.jpg
 order: 102
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 pub_date: 2015-11-16
 pub_type: publication-periodical
 series_issue_number: 1
