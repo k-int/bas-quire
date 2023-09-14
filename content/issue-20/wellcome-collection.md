@@ -9,7 +9,10 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-20/jlaw"
   issn: 2058-5462
 language: en
-palette: "theme-bittersweet"
+palette: 
+  - main: "theme-bittersweet"
+  - light: "#FD746A"
+  - dark: "#9E3129"
 layout: splash
 BAStype: article
 banner: figures/banners/wellcome-collection_banner.jpg

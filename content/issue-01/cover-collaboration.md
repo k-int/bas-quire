@@ -6,7 +6,10 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-01/rmalbert"
   issn: 2058-5462
 language: en
-palette: "theme-salmon-pink"
+palette: 
+  - main: "theme-salmon-pink"
+  - dark: "#ED4A85"
+  - light: "#B00C48"
 layout: splash
 BAStype: opinion-piece
 banner: figures/banners/bas8_banner.jpg

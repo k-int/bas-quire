@@ -9,7 +9,10 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-01/look-first"
   issn: 2058-5462
 language: en
-palette: "theme-salmon-pink"
+palette: 
+  - main: "theme-salmon-pink"
+  - dark: "#ED4A85"
+  - light: "#B00C48"
 layout: splash
 BAStype: artist-collab
 banner: figures/banners/deakin-double-exposures_banner.jpg

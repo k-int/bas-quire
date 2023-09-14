@@ -6,9 +6,10 @@ identifier:
   doi: "https://doi.org/10.17658/issn.2058-5462/issue-20/wschupbach"
   issn: 2058-5462
 language: en
-palette:
-  - dark: #ED4A85
-  - light: #B00C48
+palette: 
+  - main: "theme-bittersweet"
+  - light: "#FD746A"
+  - dark: "#9E3129"
 layout: splash
 BAStype: article
 banner: figures/banners/publishing-on-gower-street_banner.jpg

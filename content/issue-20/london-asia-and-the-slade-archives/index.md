@@ -15,7 +15,10 @@ identifier:
   issn: 2058-5462
 presentation: grid
 order: 203
-palette: "theme-bittersweet"
+palette: 
+  - main: "theme-bittersweet"
+  - light: "#FD746A"
+  - dark: "#9E3129"
 outputs:
   - pdf
   - html
