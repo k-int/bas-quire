@@ -15,6 +15,10 @@ layout: splash
 BAStype: article
 banner: figures/banners/arts-crafts_banner.jpg
 order: 106
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 pub_date: 2015-11-30
 pub_type: publication-periodical
 references:

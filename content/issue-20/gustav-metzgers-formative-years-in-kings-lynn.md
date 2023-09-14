@@ -15,6 +15,10 @@ layout: splash
 BAStype: article
 banner: figures/banners/gustav-metzgers-formative-years-in-kings-lynn_banner.jpg
 order: 204
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 pub_date: 2021-07-18
 pub_type: publication-periodical
 references:

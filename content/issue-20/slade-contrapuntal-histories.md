@@ -16,6 +16,10 @@ layout: splash
 BAStype: article
 banner: figures/banners/slade-contrapuntal-histories_banner.jpg
 order: 202
+licence:
+  - text: "Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+  - href: "https://creativecommons.org/licenses/by-nc/4.0/"
+  - isExternalLink: true
 pub_date: 2021-07-18
 pub_type: publication-periodical
 references:
