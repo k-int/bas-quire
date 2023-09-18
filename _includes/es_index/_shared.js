@@ -14,25 +14,6 @@ module.exports = {
 		// Assume array and expand each entry
 		return Object.assign( ...colourPalette )
 	},
-	
-	getContibutorObjects: ( publication, contributorList ) => 
-		publication?.contributor
-				?.filter(({ id }) =>
-					contributorList?.find(({ id: globalId }) => globalId === id))
-
-				.map(filtCon => {
-					return {
-						id: filtCon.id,
-						first_name: filtCon.first_name,
-						last_name: filtCon.last_name,
-						full_name: filtCon.full_name,
-						title: filtCon.title,
-						affiliation: filtCon.affiliation,
-						bio: filtCon.bio,
-						pic: filtCon.pic,
-						url: filtCon.url,
-					}
-				}) || [], // default filteredContributors to an empty array
 				
 	parseSections: (baseContent, spliton, psId, psContent) => {
 			const indices = []

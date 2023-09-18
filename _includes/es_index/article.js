@@ -1,4 +1,4 @@
-const { getItemIdentifier, normalizePalette, getContibutorObjects, parseSections } = require('./_shared')
+const { getItemIdentifier, normalizePalette, parseSections } = require('./_shared')
 const type = 'article'
 const articleRegex = /^(issue-)([\d]+)/i
 
@@ -84,6 +84,7 @@ const getReferences = (references, referenceList) =>
 module.exports = (eleventyConfig) => {
 	
 	const issueConfig = require('./issue')(eleventyConfig)
+	const getContributor = eleventyConfig.getFilter('getContributor')
 	
 	return {
 		type,
@@ -105,7 +106,7 @@ module.exports = (eleventyConfig) => {
 					subtitle,
 					short_abstract,
 					abstract,
-					publication,
+					// publication,
 					banner,
 					["banner-caption"]: bannerCaption,
 					["banner-credit"]: bannerCredit,
@@ -134,7 +135,8 @@ module.exports = (eleventyConfig) => {
 			
 			const fmContentArray = frontMatterContent.split("\n").filter(String); // remove all empty strings
 			
-			const contributors = getContibutorObjects(publication, contributor)
+			const contributors = contributor?.map(getContributor) || []
+			
 			const normalizedPalette = normalizePalette( palette )
 			
 			const itemId = getItemIdentifier(item)

@@ -1,7 +1,6 @@
 const chalkFactory = require('~lib/chalk')
 const fs = require('fs-extra')
 const path = require('path');
-const { split } = require('core-js/fn/symbol');
 
 /**
  * Adds functionality for interracting with elastic search.
@@ -64,7 +63,6 @@ module.exports = function (eleventyConfig, options) {
     //  Write the JSON array to the file once everything else is complete.
     const fullPath = path.resolve('.', outputPath);
     console.log(`Writing index file ${fullPath}`);
-
 
     // Get additional issue + slides data ready to attach to articles
     items.forEach(i => {
