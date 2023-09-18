@@ -265,7 +265,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(elasticSearch, {
     collection: "html", // Use items that are part of the "html" 11ty collection.
     // Supply a function that receives the item from the collection and returns a single ES document.
-    document: ({ data, template, templateContent, page, issueData, slideData }) => {
+    document: ({ data, template, templateContent, page, issueData, slideData}) => {
+		
       // Manipulate the item data into the desired formats.
       const {
         title,
@@ -297,6 +298,7 @@ module.exports = function (eleventyConfig) {
         key,
         layout
       } = data;
+      
       const {
         title: issueTitle,
         subtitle: issueSubtitle,
@@ -311,15 +313,17 @@ module.exports = function (eleventyConfig) {
         presentation: issuePresentation,
         identifier: issueIdentifiers
       } = issueData?.data || [];
-      const { description, copyright, licence: pubLicence, resource_link: resourceLink } = publication
+      
+//      const { description, copyright, licence: pubLicence, resource_link: resourceLink } = publication
       const articlePath = page?.fileSlug;
 
       // Filtering of Contributors
-      const dataFilter = data.contributor?.map(con => { return con.id })
-      const filteredContributors = publication?.contributor?.filter(con => {
-        if (dataFilter?.includes(con.id)) { return con }
-      }).map(filtCon => {
-        return {
+      const filteredContributors = publication?.contributor
+        ?.filter(({ id }) =>
+					data.contributor?.find( ({ id: globalId }) => globalId === id ))
+				
+				.map(filtCon => {
+          return {
           id: filtCon.id,
           first_name: filtCon.first_name,
           last_name: filtCon.last_name,
@@ -333,9 +337,7 @@ module.exports = function (eleventyConfig) {
       }) || []; // default filteredContributors to an empty array
 
       // Trim filtered contributors to only id and full name
-      const trimmedContributors = filteredContributors.map(con => {
-        return { id: con.id, full_name: con.full_name }
-      }) || []; // default trimmedContributors to an empty array
+      const trimmedContributors = filteredContributors.map(({ id, full_name }) => ({ id, full_name })) || []; // default trimmedContributors to an empty array
 
       // Filtering of some data requires template content in markdown format
       const split = template.frontMatter.content.split("\n")
@@ -344,111 +346,101 @@ module.exports = function (eleventyConfig) {
       // Filtering of Footnotes
       const footnoteIndex = splitContent.indexOf("## Footnotes")
       const footnoteData = splitContent.slice(footnoteIndex)
-      var filteredFootnotes = []
-      const footnotesFiltering = data?.footnotes?.list.filter(fn => {
-        const label = (`[^${fn.label}]`)
-        const footnoteFilter = footnoteData.filter(str => str.includes(label))
-        const footnote = (footnoteFilter.toString().split(`${label}: `))[1]
-        var footnoteObject = { footnote_id: label, footnote: footnote }
-        filteredFootnotes.push(footnoteObject)
-      })
+      const filteredFootnotes = data?.footnotes?.list?.map(({ label }) => {
+	    
+				const wrappedLabel = `[^${label}]`
+				const footnoteFilter = footnoteData.filter(str => str.includes(wrappedLabel))
+				const footnote = (footnoteFilter.toString().split(`${wrappedLabel}: `))[1]
 
-      // use key for id, cover has / so assign to title 
-      var issueId = key
-      if (page.url == "/") {
-        issueId = title.toLowerCase();
-      } else if (typeof (key) == "undefined" && key == "") {
-        issueId = page.url
-      }
-      // ES _id doesn't work with slashes in URL, replace for ease of use
-      var issueId = issueId.replace("/", "_")
+				return {
+					footnote_id: wrappedLabel,
+					footnote
+				}
+			})
 
-      // filter for figures in issues
-      const filteredFigures = figures?.figure_list
-        .filter((fig) => data.content.includes(fig?.id))
-        .map((x) => {
-          const matchFigGroup = splitContent.findIndex(element => {
-            if (element.includes("figuregroup")) {
-              if (element.includes(x?.id)) {
-                return element
-              }
-            }
-          })
-          if (!(matchFigGroup === -1)) {
-            x["figuregroup"] = splitContent[matchFigGroup]
-          }
-          return {
-            layout: x.figuregroup,
-            id: x.id,
-            src: x.src,
-            label: x.label,
-            media_type: x.media_type,
-            media_id: x.media_id,
-            caption: x.caption,
-            credit: x.credit,
-            alt: x.alt,
-          };
-        });
+			// use key for id, cover has / so assign to title 
+			var issueId = page.url == "/" ? title.toLowerCase() : (key ?? page.url)
 
-      // Filtering of covers for Issue 
-      const filteredIssueCovers = figures?.figure_list.filter(fig => {
-        if (fig?.id == issueCover) { return fig }
-      }).map(cov => {
-        return {
-          id: cov?.id,
-          coverCaption: cov?.caption,
-          coverCredit: cov?.credit,
-        }
-      }) || []
+			// ES _id doesn't work with slashes in URL, replace for ease of use
+			issueId = issueId.replace("/", "_")
+
+			// filter for figures in issues
+			const filteredFigures = figures?.figure_list
+				.filter(({ id }) => id && data.content.includes(id))
+				.map((x) => {
+
+					const matchFigGroup = x.id &&
+						splitContent.some(element =>
+							element.includes("figuregroup") && (element.includes(x.id)))
+
+					return {
+						layout: (matchFigGroup ? matchFigGroup : x.figuregroup),
+						id: x.id,
+						src: x.src,
+						label: x.label,
+						media_type: x.media_type,
+						media_id: x.media_id,
+						caption: x.caption,
+						credit: x.credit,
+						alt: x.alt,
+					};
+				}) || [];
+
+			// Filtering of covers for Issue 
+			const filteredIssueCovers = figures?.figure_list
+				.filter(fig => fig?.id == issueCover)
+				.map(cov => {
+					return {
+						id: cov?.id,
+						coverCaption: cov?.caption,
+						coverCredit: cov?.credit,
+					}
+				}) || []
 
       // filter for references - has to be this way because "references" in article yml 
       // is same name as _data/references.yaml thus causing conflicts 
-      const filteredReferences = references?.entries?.filter(ref => {
-        if (template?._frontMatter?.data?.references?.includes(ref?.id)) {
-          return ref
-        }
-      }) || []
+      const filteredReferences = references?.entries
+      	?.filter(({ id }) => template?._frontMatter?.data?.references?.includes(id)) || []
 
       // function to get paragraph and section ids and headings/content
       const paragraphsSections = (baseContent, spliton, psId, psContent) => {
-        var finalData = []
-        var indices = baseContent.map((e, i) => {
-          if (e.includes(spliton)) {
-            return i
-          } else {
-            return ''
-          }
-        }) || []
-        var indices = indices.filter(String) // remove all empty strings 
-        if (indices) {
-          var match = indices.forEach(psIndex => {
-            var collected = []
-            const id = baseContent[psIndex]
-            var hasEnded = false
-            var plusIndex = 1
-            // Get the data without the figures/contributors spaced between the paras
-            while (hasEnded == false) {
-              if (baseContent[psIndex + plusIndex]) {
-                if (baseContent[psIndex + plusIndex].startsWith("{% assign") == true ||
-                  baseContent[psIndex + plusIndex].startsWith("{% backmatter")) {
-                  // if following is assign then there's no data so return
-                  hasEnded = true
-                } else if (baseContent[psIndex + plusIndex].startsWith("{%") == true) {
-                  // if there is a tag after id
-                  plusIndex += 1
-                } else {
-                  collected.push(baseContent[psIndex + plusIndex])
-                  plusIndex += 1
-                }
-              } else {
-                hasEnded = true
-              }
-            }
-            var collectedObj = { [psId]: id, [psContent]: collected }
-            finalData.push(collectedObj)
-          })
-        }
-        return finalData;
+        const indices = []
+ 
+				baseContent.forEach((e, i) => {
+					if (e.includes(spliton)) {
+						indices.push(i)
+					}
+				})
+        
+        // Empty array.
+        if (indices.length < 1) return []
+
+				return indices.map(psIndex => {
+					var collected = []
+					const id = baseContent[psIndex]
+					var hasEnded = false
+					var plusIndex = 1
+					// Get the data without the figures/contributors spaced between the paras
+					while (hasEnded == false) {
+						if (baseContent[psIndex + plusIndex]) {
+							if (baseContent[psIndex + plusIndex].startsWith("{% assign") == true ||
+								baseContent[psIndex + plusIndex].startsWith("{% backmatter")) {
+								// if following is assign then there's no data so return
+								hasEnded = true
+							} else if (baseContent[psIndex + plusIndex].startsWith("{%") == true) {
+								// if there is a tag after id
+								plusIndex += 1
+							} else {
+								collected.push(baseContent[psIndex + plusIndex])
+								plusIndex += 1
+							}
+						} else {
+							hasEnded = true
+						}
+					}
+					var collectedObj = { [psId]: id, [psContent]: collected }
+					return collectedObj
+				})
       }
 
       const paragraphData = paragraphsSections(splitContent, "{% assign paragraph_DOI", "paragraph_id", "paragraph")
@@ -480,8 +472,7 @@ module.exports = function (eleventyConfig) {
         })
 
         // Split content and use to get paragraphs and section data
-        const split = slide?.template.frontMatter.content.split("\n")
-        const splitSlideContent = split.filter(String); // remove all empty strings
+        const splitSlideContent = slide?.template.frontMatter.content.split("\n").filter(String); // remove all empty strings
         const paragraphData = paragraphsSections(splitSlideContent, "{% assign paragraph_DOI", "paragraph_id", "paragraph")
         const sectionData = paragraphsSections(splitSlideContent, "{% assign chapter_DOI", "section_id", "section_heading")
 
@@ -510,104 +501,13 @@ module.exports = function (eleventyConfig) {
       if (issueId.includes("slide")) {
         var type = "slide"
       } 
-      const exactIssueRegex = /^(issue-)([\d]+)$/gm
-      const articleRegex = /(issue-)([\d]+)/gm
-
-      // Return the ISSUE object representing a single entry in the index for ES.
-      if (issueId.match(exactIssueRegex)) {
-        return {
-          _id: issueId,
-          type: "issue",
-          series_issue_number: issueSeriesIssueNumber,
-          order: issueOrder,
-          title: issueTitle,
-          subtitle: issueSubtitle,
-          acknowledgements: issueAcknowledgements,
-          season: issueSeason,
-          layout: issueLayout,
-          cover: filteredIssueCovers,
-          presentation: issuePresentation,
-          class: issueClass,
-          palette: issuePaletteStructured,
-          identifier: issueIdentifiers
-        }
-      }
-      // Return the ARTICLE object representing a single entry in the index for ES.
-      else if (issueId.match(articleRegex)) {
-        return {
-          _id: issueId,
-          type: type,
-          issue: {
-            series_issue_number: issueSeriesIssueNumber,
-            order: issueOrder,
-            title: issueTitle,
-            subtitle: issueSubtitle,
-            acknowledgements: issueAcknowledgements,
-            season: issueSeason,
-            layout: issueLayout,
-            cover: filteredIssueCovers,
-            presentation: issuePresentation,
-            class: issueClass,
-            palette: issuePaletteStructured,
-            identifier: issueIdentifiers
-          },
-          content: {
-            frontmatter: {
-              series_issue_number,
-              order,
-              palette: paletteStructured,
-              path: articlePath,
-              issuePalette: issuePaletteStructured,
-              title,
-              subtitle,
-              BAStype,
-              pub_type,
-              wordCount,
-              banner,
-              bannerCaption,
-              bannerCredit,
-              tile,
-              tileCaption,
-              tileCredit,
-              subjects,
-            },
-            contributors: filteredContributors,
-            text: {
-              short_abstract,
-              abstract,
-              acknowledgements,
-              sections: sectionData,
-              paragraphs: paragraphData,
-            },
-            illustrations: filteredFigures,
-            slides: filteredSlideData,
-            footnotes: filteredFootnotes,
-            bibliography: filteredReferences,
-            endsmatter: {
-              pub_date,
-              review_status,
-              licence,
-              identifier: articleIdentifiers
-            }
-          },
-          search: {
-            pub_date,
-            BAStype,
-            title,
-            subtitle,
-            contributors: trimmedContributors,
-            tile,
-            tileCaption,
-            tileCredit,
-            subjects,
-            palette: paletteStructured,
-          },
-          _source: page
-        }
-      }
-      // Return the PAGES object representing a single entry in the index for ES.    
-      else {
-        return {
+//      const exactIssueRegex = /^(issue-)([\d]+)$/gm
+      const articleRegex = /(issue-)([\d]+)/i
+			const match = issueId.match(articleRegex)
+			
+			// Must be page. Return early to avoid elseifs.
+			if (!match) {
+				return {
           _id: issueId,
           type: "page",
           order,
@@ -615,8 +515,92 @@ module.exports = function (eleventyConfig) {
           layout,
           content: splitContent
         }
-      }
-    }
+			}
+			
+			// We know it's an issue or a member of an issue
+			// Create the shared issue data.
+			const issueObject = {
+				series_issue_number: issueSeriesIssueNumber,
+				order: issueOrder,
+				title: issueTitle,
+				subtitle: issueSubtitle,
+				acknowledgements: issueAcknowledgements,
+				season: issueSeason,
+				layout: issueLayout,
+				cover: filteredIssueCovers,
+				presentation: issuePresentation,
+				class: issueClass,
+				palette: issuePaletteStructured,
+				identifier: issueIdentifiers
+			}
+			
+			if (match[0].length == match['input'].length) {
+				// Exact.
+				return {
+          _id: issueId,
+          type: "issue",
+          ...issueObject
+        }
+			}
+			
+			return {
+				_id: issueId,
+				type: type,
+				issue: issueObject,
+				content: {
+					frontmatter: {
+						series_issue_number,
+						order,
+						palette: paletteStructured,
+						path: articlePath,
+						issuePalette: issuePaletteStructured,
+						title,
+						subtitle,
+						BAStype,
+						pub_type,
+						wordCount,
+						banner,
+						bannerCaption,
+						bannerCredit,
+						tile,
+						tileCaption,
+						tileCredit,
+						subjects,
+					},
+					contributors: filteredContributors,
+					text: {
+						short_abstract,
+						abstract,
+						acknowledgements,
+						sections: sectionData,
+						paragraphs: paragraphData,
+					},
+					illustrations: filteredFigures,
+					slides: filteredSlideData,
+					footnotes: filteredFootnotes,
+					bibliography: filteredReferences,
+					endsmatter: {
+						pub_date,
+						review_status,
+						licence,
+						identifier: articleIdentifiers
+					}
+				},
+				search: {
+					pub_date,
+					BAStype,
+					title,
+					subtitle,
+					contributors: trimmedContributors,
+					tile,
+					tileCaption,
+					tileCredit,
+					subjects,
+					palette: paletteStructured,
+				},
+				_source: page
+			}
+		}
   })
 
   /**
