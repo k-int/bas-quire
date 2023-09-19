@@ -1,3 +1,3 @@
 module.exports = {
-	cleanId: ( id ) => id.replace("/", "_")
+	cleanId: ( id ) => id.replaceAll("/", "_")
 }

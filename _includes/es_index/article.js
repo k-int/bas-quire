@@ -51,9 +51,10 @@ const getSlideData = ( slideData, objectList ) => slideData?.map(slide => {
 	const splitSlideContent = slide?.template.frontMatter.content.split("\n").filter(String); // remove all empty strings
 	const paragraphData = parseSections(splitSlideContent, "{% assign paragraph_DOI", "paragraph_id", "paragraph")
 	const sectionData = parseSections(splitSlideContent, "{% assign chapter_DOI", "section_id", "section_heading")
+	const splitId = slide?.data?.key.replaceAll("/", "_")
 
 	return {
-		id: slide?.data?.key,
+		id: splitId,
 		order: slide?.data?.order,
 		presentation: slide?.data?.presentation,
 		object_list: objData,
@@ -143,7 +144,7 @@ module.exports = (eleventyConfig) => {
 			
 			return {
 				_id: itemId,
-				type: type.includes("slide") ? "slide" : type,
+				type: itemId.includes("slide") ? "slide" : type,
 				issue: issueObject,
 				content: {
 					frontmatter: {
