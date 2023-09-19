@@ -1,4 +1,4 @@
-const { getItemIdentifier, normalizePalette, parseSections } = require('./_shared')
+const { getItemIdentifier, normalizePalette, parseSections, mapToKeys } = require('./_shared')
 const type = 'article'
 const articleRegex = /^(issue-)([\d]+)/i
 
@@ -166,7 +166,8 @@ module.exports = (eleventyConfig) => {
 						tileCredit,
 						subjects
 					},
-					contributors,
+					contributors: contributors.map(
+						mapToKeys(['id', 'first_name', 'last_name', 'full_name', 'title', 'affiliation', 'bio', 'pic', 'url'])),
 					text: {
 						short_abstract,
 						abstract,
@@ -190,7 +191,7 @@ module.exports = (eleventyConfig) => {
 					BAStype,
 					title,
 					subtitle,
-					contributors: contributors.map(({ id, full_name }) => ({ id, full_name })),
+					contributors: contributors.map(mapToKeys(['id', 'full_name'])),
 					tile,
 					tileCaption,
 					tileCredit,
