@@ -14,9 +14,5 @@ var client = new elasticsearch.Client({
     hosts: [`http://${ES_USER}:${ES_PASS}@localhost:9200`]
 });
 
-
-
-esMappings.setupES(indexName, client)
-setTimeout(function() {
-    esMappings.indexing(esOutput, indexName, client);
-}, 4000)
+// Set up ES index + documents
+esMappings.setupES(esOutput, indexName, client)

@@ -1,6 +1,6 @@
 # edit this file and save as .env
 
-ES_USER= 
+ES_USER= # default is elastic but can be anything
 ES_PASSWORD= # Password for the (above) user (at least 6 characters)
 ES_PORT= # ES port is typically 9200
-ES_HOST= 
+ES_HOST= # e.g. localhost

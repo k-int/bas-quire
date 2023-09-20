@@ -2,25 +2,28 @@ const fs = require('fs');
 const path = require('path');
 const { title } = require('process');
 
-function deleteIndexFn(indexName, client) {
-    client.indices.exists({ index: indexName }, function (err, resp) {
+async function deleteIndexFn(esDocs, indexName, client) {
+    client.indices.exists({ index: indexName }, async function (err, resp) {
         if (err) {
             console.log(err);
             return;
         }
         if (resp) { // if index exists - delete
             console.log(indexName + ' exists and will be deleted');
-            client.indices.delete({
+            await client.indices.delete({
                 index: indexName
             })
         }
-        createIndexFn(indexName, client);
+
+        await createIndexFn(indexName,client) // Create the ES index
+        await addDocument(esDocs,indexName,client) // Add es-index.json documents to index 
+
     });
 }
 
 
-function createIndexFn(indexName, client) {
-    client.indices.exists({ index: indexName }, function (err, resp) {
+async function createIndexFn(indexName, client) {
+    client.indices.exists({ index: indexName }, async function (err, resp) {
         if (err) {
             console.log(err);
             return;
@@ -308,7 +311,8 @@ function createIndexFn(indexName, client) {
 }
 
 
-function addDocument(esDocs, indexName, client) {
+async function addDocument(esDocs, indexName, client) {
+    console.log("Indexing documents from es-index.json...")
     esDocs.forEach(doc => {
         if (doc?.type == "page") {
             client.index({
