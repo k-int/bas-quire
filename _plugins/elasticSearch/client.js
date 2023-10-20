@@ -1,315 +1,339 @@
-const fs = require('fs');
-const path = require('path');
-const { title } = require('process');
+// Script to create the bas-quire ES index and manage the alias 
 
-async function deleteIndexFn(esDocs, indexName, client) {
-    client.indices.exists({ index: indexName }, async function (err, resp) {
+
+function initialiseIndex(esDocs, baseIndexName, client) {
+    // first check index exists by checking if alias exists
+    client.indices.existsAlias({ name: baseIndexName }, async function (err, resp) {
         if (err) {
             console.log(err);
             return;
         }
-        if (resp) { // if index exists - delete
-            console.log(indexName + ' exists and will be deleted');
-            await client.indices.delete({
-                index: indexName
-            })
+        if (resp) { 
+            console.log("Alias exists...")
+            // if index exists then create a new one with updated timestamp
+            const newIndexName = await createIndexFn(baseIndexName, client)
+            // remove aliases from all indices (after so only once the new index has been created successfully)
+            await removeAliases(baseIndexName, client)
+            // attach alias to new index
+            await attachAlias(newIndexName, baseIndexName, client)
+            // index documents from es-index.json 
+            await addDocument(esDocs,newIndexName,client)
+        } else {
+            console.log("Alias doesn't exist...")
+            // if index doesn't exist create new index with timestamp
+            const newIndexName = await createIndexFn(baseIndexName, client)
+            // attach the base index name as an alias to the new index 
+            await attachAlias(newIndexName, baseIndexName, client)
+            // index documents from es-index.json 
+            await addDocument(esDocs,newIndexName,client)
         }
-
-        await createIndexFn(indexName,client) // Create the ES index
-        await addDocument(esDocs,indexName,client) // Add es-index.json documents to index 
-
-    });
+     });
 }
 
+async function removeAliases(aliasName, client) {
+    client.indices.deleteAlias({ index: "*", name: aliasName})
+    console.log(`Alias ${aliasName} removed from all indices.`)
+}
 
-async function createIndexFn(indexName, client) {
-    client.indices.exists({ index: indexName }, async function (err, resp) {
-        if (err) {
-            console.log(err);
-            return;
-        }
-        console.log(indexName + ' creation...');
-        client.indices.create({
-            index: indexName,
-            body: {
-                mappings: {
-                    properties: {
-                        type: { "type": "keyword" },
-                        series_issue_number: { "type": "short" },
-                        order: { "type": "short" },
-                        title: { "type": "text" },
-                        subtitle: { "type": "text" },
-                        acknowledgements: { "type": "text" },
-                        layout: { "type": "keyword" },
-                        cover: {
-                            "type": "nested",
-                            properties: {
-                                id: { "type": "keyword" },
-                                caption: { "type": "text" },
-                                credit: { "type": "text" },
-                            }
-                        },
-                        presentation: { "type": "keyword" },
-                        class: { "type": "keyword" },
-                        palette: {
-                            properties: {
-                                mainTheme: { "type": "keyword" },
-                                light: { "type": "keyword" },
-                                dark: { "type": "keyword" }
-                            }} ,
-                        identifier: {
-                            properties: {
-                                id: { "type": "keyword" }
-                            }
-                        },
-                        pageContent: { "type": "text" },
-                        issue: {
-                            properties: {
-                                series_issue_number: { "type": "short" },
-                                order: { "type": "short" },
-                                title: { "type": "text" },
-                                subtitle: { "type": "text" },
-                                acknowledgements: { "type": "text" },
-                                season: { "type": "text" },
-                                layout: { "type": "keyword" },
-                                cover: {
-                                    "type": "nested",
-                                    properties: {
-                                        id: { "type": "keyword" },
-                                        caption: { "type": "text" },
-                                        credit: { "type": "text" },
-                                    }
-                                },
-                                presentation: { "type": "keyword" },
-                                class: { "type": "keyword" },
-                                palette: {
-                                    properties: {
-                                        mainTheme: { "type": "keyword" },
-                                        light: { "type": "keyword" },
-                                        dark: { "type": "keyword" }
-                                    }},
-                                identifier: {
-                                    properties: {
-                                        id: { "type": "keyword" }
-                                    }
+async function attachAlias(indexName, aliasName, client) {
+    client.indices.putAlias({ index: indexName, name: aliasName })
+    console.log(`Alias ${aliasName} attached to new index: ${indexName}`)
+}
+
+async function createIndexFn(baseIndexName, client) {
+    const currentDate = new Date()
+    const dateString = currentDate.toISOString()
+    var newIndexName = `${baseIndexName}-${dateString}`
+    newIndexName = newIndexName.replaceAll(":", ".")
+    newIndexName = newIndexName.toLowerCase()
+
+    console.log(newIndexName + ' creation...');
+    client.indices.create({
+        index: newIndexName,
+        body: {
+            mappings: {
+                properties: {
+                    type: { "type": "keyword" },
+                    series_issue_number: { "type": "short" },
+                    order: { "type": "short" },
+                    title: { "type": "text" },
+                    subtitle: { "type": "text" },
+                    acknowledgements: { "type": "text" },
+                    layout: { "type": "keyword" },
+                    cover: {
+                        "type": "nested",
+                        properties: {
+                            id: { "type": "keyword" },
+                            caption: { "type": "text" },
+                            credit: { "type": "text" },
+                        }
+                    },
+                    presentation: { "type": "keyword" },
+                    class: { "type": "keyword" },
+                    palette: {
+                        properties: {
+                            mainTheme: { "type": "keyword" },
+                            light: { "type": "keyword" },
+                            dark: { "type": "keyword" }
+                        }
+                    },
+                    identifier: {
+                        properties: {
+                            id: { "type": "keyword" }
+                        }
+                    },
+                    pageContent: { "type": "text" },
+                    issue: {
+                        properties: {
+                            series_issue_number: { "type": "short" },
+                            order: { "type": "short" },
+                            title: { "type": "text" },
+                            subtitle: { "type": "text" },
+                            acknowledgements: { "type": "text" },
+                            season: { "type": "text" },
+                            layout: { "type": "keyword" },
+                            cover: {
+                                "type": "nested",
+                                properties: {
+                                    id: { "type": "keyword" },
+                                    caption: { "type": "text" },
+                                    credit: { "type": "text" },
+                                }
+                            },
+                            presentation: { "type": "keyword" },
+                            class: { "type": "keyword" },
+                            palette: {
+                                properties: {
+                                    mainTheme: { "type": "keyword" },
+                                    light: { "type": "keyword" },
+                                    dark: { "type": "keyword" }
+                                }
+                            },
+                            identifier: {
+                                properties: {
+                                    id: { "type": "keyword" }
                                 }
                             }
-                        },
-                        content: {
-                            properties: {
-                                frontmatter: {
-                                    properties: {
-                                        series_issue_number: { "type": "short" },
-                                        order: { "type": "short" },
-                                        palette: {
-                                            properties: {
-                                                mainTheme: { "type": "keyword" },
-                                                light: { "type": "keyword" },
-                                                dark: { "type": "keyword" }
-                                            }},
-                                        path: { "type": "keyword" },
-                                        issuePalette: {
-                                            properties: {
-                                                mainTheme: { "type": "keyword" },
-                                                light: { "type": "keyword" },
-                                                dark: { "type": "keyword" }
-                                            }},
-                                        title: { "type": "text" },
-                                        subtitle: { "type": "text" },
-                                        BAStype: { "type": "keyword" },
-                                        pub_type: { "type": "keyword" },
-                                        wordCount: { "type": "text" },
-                                        banner: { "type": "keyword" },
-                                        bannerCaption: { "type": "text" },
-                                        bannerCredit: { "type": "text" },
-                                        tile: { "type": "keyword" },
-                                        tileCaption: { "type": "text" },
-                                        tileCredit: { "type": "text" },
-                                        subjects: {
-                                            properties: {
-                                                type: { "type": "keyword" },
-                                                name: { "type": "text" },
-                                            }
-                                        },
-                                    }
-                                },
-                                contributors: {
-                                    "type": "nested",
-                                    properties: {
-                                        id: { "type": "keyword" },
-                                        first_name: { "type": "text" },
-                                        last_name: { "type": "text" },
-                                        full_name: { "type": "text" },
-                                        title: { "type": "text" },
-                                        affiliation: { "type": "text" },
-                                        bio: { "type": "text" },
-                                        pic: { "type": "keyword" },
-                                        url: { "type": "keyword" },
-                                    }
-                                },
-                                text: {
-                                    "type": "nested",
-                                    properties: {
-                                        short_abstract: { "type": "text" },
-                                        abstract: { "type": "text" },
-                                        acknowledgements: { "type": "text" },
-                                        sections: {
-                                            "type": "nested",
-                                            properties: {
-                                                section_id: { "type": "text" },
-                                                section: { "type": "text" },
-                                            }
-                                        },
-                                        paragraphs: {
-                                            "type": "nested",
-                                            properties: {
-                                                paragraph_id: { "type": "text" },
-                                                paragraph: { "type": "text" },
-                                            }
-                                        },
-                                    }
-                                },
-                                illustrations: {
-                                    "type": "nested",
-                                    properties: {
-                                        layout: { "type": "text" },
-                                        id: { "type": "keyword" },
-                                        src: { "type": "keyword" },
-                                        label: { "type": "text" },
-                                        media_type: { "type": "keyword" },
-                                        media_id: { "type": "text" },
-                                        caption: { "type": "text" },
-                                        credit: { "type": "text" },
-                                        alt: { "type": "text" },
-                                    }
-                                },
-                                slides: {
-                                    properties: {
-                                        id: { "type": "keyword" },
-                                        order: { "type": "short" },
-                                        object_list: {
-                                            "type": "nested",
-                                            properties: {
-                                                id: { "type": "keyword" },
-                                                figure: {
-                                                    properties: {
-                                                        id: { "type": "keyword" }
-                                                    },
+                        }
+                    },
+                    content: {
+                        properties: {
+                            frontmatter: {
+                                properties: {
+                                    series_issue_number: { "type": "short" },
+                                    order: { "type": "short" },
+                                    palette: {
+                                        properties: {
+                                            mainTheme: { "type": "keyword" },
+                                            light: { "type": "keyword" },
+                                            dark: { "type": "keyword" }
+                                        }
+                                    },
+                                    path: { "type": "keyword" },
+                                    issuePalette: {
+                                        properties: {
+                                            mainTheme: { "type": "keyword" },
+                                            light: { "type": "keyword" },
+                                            dark: { "type": "keyword" }
+                                        }
+                                    },
+                                    title: { "type": "text" },
+                                    subtitle: { "type": "text" },
+                                    BAStype: { "type": "keyword" },
+                                    pub_type: { "type": "keyword" },
+                                    wordCount: { "type": "text" },
+                                    banner: { "type": "keyword" },
+                                    bannerCaption: { "type": "text" },
+                                    bannerCredit: { "type": "text" },
+                                    tile: { "type": "keyword" },
+                                    tileCaption: { "type": "text" },
+                                    tileCredit: { "type": "text" },
+                                    subjects: {
+                                        properties: {
+                                            type: { "type": "keyword" },
+                                            name: { "type": "text" },
+                                        }
+                                    },
+                                }
+                            },
+                            contributors: {
+                                "type": "nested",
+                                properties: {
+                                    id: { "type": "keyword" },
+                                    first_name: { "type": "text" },
+                                    last_name: { "type": "text" },
+                                    full_name: { "type": "text" },
+                                    title: { "type": "text" },
+                                    affiliation: { "type": "text" },
+                                    bio: { "type": "text" },
+                                    pic: { "type": "keyword" },
+                                    url: { "type": "keyword" },
+                                }
+                            },
+                            text: {
+                                "type": "nested",
+                                properties: {
+                                    short_abstract: { "type": "text" },
+                                    abstract: { "type": "text" },
+                                    acknowledgements: { "type": "text" },
+                                    sections: {
+                                        "type": "nested",
+                                        properties: {
+                                            section_id: { "type": "text" },
+                                            section: { "type": "text" },
+                                        }
+                                    },
+                                    paragraphs: {
+                                        "type": "nested",
+                                        properties: {
+                                            paragraph_id: { "type": "text" },
+                                            paragraph: { "type": "text" },
+                                        }
+                                    },
+                                }
+                            },
+                            illustrations: {
+                                "type": "nested",
+                                properties: {
+                                    layout: { "type": "text" },
+                                    id: { "type": "keyword" },
+                                    src: { "type": "keyword" },
+                                    label: { "type": "text" },
+                                    media_type: { "type": "keyword" },
+                                    media_id: { "type": "text" },
+                                    caption: { "type": "text" },
+                                    credit: { "type": "text" },
+                                    alt: { "type": "text" },
+                                }
+                            },
+                            slides: {
+                                properties: {
+                                    id: { "type": "keyword" },
+                                    order: { "type": "short" },
+                                    object_list: {
+                                        "type": "nested",
+                                        properties: {
+                                            id: { "type": "keyword" },
+                                            figure: {
+                                                properties: {
+                                                    id: { "type": "keyword" }
                                                 },
-                                                figures: {
-                                                    "type": "nested",
-                                                    properties: {
-                                                        id: { "type": "keyword" },
-                                                        label: { "type": "text" },
-                                                        src: { "type": "keyword" },
-                                                        caption: { "type": "text" },
-                                                        credit: { "type": "text" },
-                                                        media_type: { "type": "text" },
-                                                        media_id: { "type": "keyword" },
-                                                    }
-                                                },
-                                            }
-                                        },
-                                        paragraphs: {
-                                            properties: {
-                                                paragraph_id: { "type": "text" },
-                                                paragraph: { "type": "text" },
-                                            }
-                                        },
-                                        sections: {
-                                            properties: {
-                                                section_id: { "type": "text" },
-                                                section: { "type": "text" },
-                                            }
+                                            },
+                                            figures: {
+                                                "type": "nested",
+                                                properties: {
+                                                    id: { "type": "keyword" },
+                                                    label: { "type": "text" },
+                                                    src: { "type": "keyword" },
+                                                    caption: { "type": "text" },
+                                                    credit: { "type": "text" },
+                                                    media_type: { "type": "text" },
+                                                    media_id: { "type": "keyword" },
+                                                }
+                                            },
+                                        }
+                                    },
+                                    paragraphs: {
+                                        properties: {
+                                            paragraph_id: { "type": "text" },
+                                            paragraph: { "type": "text" },
+                                        }
+                                    },
+                                    sections: {
+                                        properties: {
+                                            section_id: { "type": "text" },
+                                            section: { "type": "text" },
                                         }
                                     }
-                                },
-                                footnotes: {
-                                    "type": "nested",
-                                    properties: {
-                                        footnote_id: { "type": "text" },
-                                        footnote: { "type": "text" },
-                                    }
-                                },
-                                bibliography: {
-                                    "type": "nested",
-                                    properties: {
-                                        full: { "type": "text" },
-                                        id: { "type": "keyword" }
-                                    }
-                                },
-                                endsmatter: {
-                                    properties: {
-                                        pub_date: { "type": "date" },
-                                        review_status: { "type": "text" },
-                                        licence: {
-                                            "type": "nested",
-                                            properties: {
-                                                text: { "type": "text" },
-                                                href: { "type": "keyword" },
-                                                isExternalLink: { "type": "boolean" },
-                                            }
-                                        },
-                                        identifier: {
-                                            properties: {
-                                                doi: { "type": "keyword" },
-                                                issn: { "type": "keyword" },
-                                            }
-                                        },
-                                    }
-                                },
-                            }
-                        },
-                        search: {
-                            properties: {
-                                pub_date: { "type": "date" },
-                                BAStype: { "type": "keyword" },
-                                title: { "type": "text" },
-                                subtitle: { "type": "text" },
-                                contributors: {
-                                    "type": "nested",
-                                    properties: {
-                                        id: { "type": "keyword" },
-                                        full_name: { "type": "keyword" },
-                                    }
-                                },
-                                tile: { "type": "keyword" },
-                                tileCaption: { "type": "text" },
-                                tileCredit: { "type": "text" },
-                                subjects: {
-                                    properties: {
-                                        type: { "type": "keyword" },
-                                        name: { "type": "text" }
-                                    }
-                                },
-                                palette: {
-                                    properties: {
-                                        mainTheme: { "type": "keyword" },
-                                        light: { "type": "keyword" },
-                                        dark: { "type": "keyword" }
-                                    }},
-                            }
-                        },
-                        source: {
-                            properties: {
-                                date: { "type": "date" },
-                                inputPath: { "type": "text" },
-                                fileSlug: { "type": "text" },
-                                filePathStem: { "type": "text" },
-                                outputFileExtension: { "type": "text" },
-                                templateSyntax: { "type": "text" },
-                                url: { "type": "text" },
-                                outputPath: { "type": "text" },
-                                lang: { "type": "text" },
-                            }
+                                }
+                            },
+                            footnotes: {
+                                "type": "nested",
+                                properties: {
+                                    footnote_id: { "type": "text" },
+                                    footnote: { "type": "text" },
+                                }
+                            },
+                            bibliography: {
+                                "type": "nested",
+                                properties: {
+                                    full: { "type": "text" },
+                                    id: { "type": "keyword" }
+                                }
+                            },
+                            endsmatter: {
+                                properties: {
+                                    pub_date: { "type": "date" },
+                                    review_status: { "type": "text" },
+                                    licence: {
+                                        "type": "nested",
+                                        properties: {
+                                            text: { "type": "text" },
+                                            href: { "type": "keyword" },
+                                            isExternalLink: { "type": "boolean" },
+                                        }
+                                    },
+                                    identifier: {
+                                        properties: {
+                                            doi: { "type": "keyword" },
+                                            issn: { "type": "keyword" },
+                                        }
+                                    },
+                                }
+                            },
+                        }
+                    },
+                    search: {
+                        properties: {
+                            pub_date: { "type": "date" },
+                            BAStype: { "type": "keyword" },
+                            title: { "type": "text" },
+                            subtitle: { "type": "text" },
+                            contributors: {
+                                "type": "nested",
+                                properties: {
+                                    id: { "type": "keyword" },
+                                    full_name: { "type": "keyword" },
+                                }
+                            },
+                            tile: { "type": "keyword" },
+                            tileCaption: { "type": "text" },
+                            tileCredit: { "type": "text" },
+                            subjects: {
+                                properties: {
+                                    type: { "type": "keyword" },
+                                    name: { "type": "text" }
+                                }
+                            },
+                            palette: {
+                                properties: {
+                                    mainTheme: { "type": "keyword" },
+                                    light: { "type": "keyword" },
+                                    dark: { "type": "keyword" }
+                                }
+                            },
+                        }
+                    },
+                    source: {
+                        properties: {
+                            date: { "type": "date" },
+                            inputPath: { "type": "text" },
+                            fileSlug: { "type": "text" },
+                            filePathStem: { "type": "text" },
+                            outputFileExtension: { "type": "text" },
+                            templateSyntax: { "type": "text" },
+                            url: { "type": "text" },
+                            outputPath: { "type": "text" },
+                            lang: { "type": "text" },
                         }
                     }
                 }
             }
-        })
-    })
-}
+        }
+    });
 
+    return newIndexName;
+}
 
 async function addDocument(esDocs, indexName, client) {
     console.log("Indexing documents from es-index.json...")
@@ -439,8 +463,6 @@ async function addDocument(esDocs, indexName, client) {
 }
 
 
-
 module.exports = {
-    setupES: deleteIndexFn,
-    indexing: addDocument,
+    setupES: initialiseIndex,
 }
