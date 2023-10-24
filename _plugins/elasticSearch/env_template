@@ -2,5 +2,11 @@
 
 ES_USER= # default is elastic but can be anything
 ES_PASSWORD= # Password for the (above) user (at least 6 characters)
+ES_INDEX_NAME= # Name of the index you want to create
+
+# Elastic Cloud setup
+ES_CLOUD_ID= # Elastic Cloud ID
+
+# localhost setup
 ES_PORT= # ES port is typically 9200
 ES_HOST= # e.g. localhost

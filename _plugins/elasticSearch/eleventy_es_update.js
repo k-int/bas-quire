@@ -12,9 +12,9 @@ const baseIndexName = process.env.ES_INDEX_NAME
 
 
 // For use with localhost
-var client = new Client({
-    node: `http://${ES_USER}:${ES_PASS}@localhost:9200`
-});
+// var client = new Client({
+//     node: `http://${ES_USER}:${ES_PASS}@localhost:9200`
+// });
 
 
 // For use with ElasticCloud
