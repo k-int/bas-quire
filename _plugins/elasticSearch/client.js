@@ -3,41 +3,41 @@
 
 function initialiseIndex(esDocs, baseIndexName, client) {
     // first check index exists by checking if alias exists
-    client.indices.existsAlias({ name: baseIndexName }, async function (err, resp) {
-        if (err) {
+    client.indices.existsAlias({ name: baseIndexName })
+        .then(async function (exists) {
+            if (exists) {
+                console.log(`Alias (${baseIndexName}) exists.`)
+                // if index exists then create a new one with updated timestamp
+                const newIndexName = await createIndexFn(baseIndexName, client);
+                // remove aliases from all indices (after so only once the new index has been created successfully)
+                await removeAliases(baseIndexName, client);
+                // attach alias to new index
+                await attachAlias(newIndexName, baseIndexName, client);
+                // index documents from es-index.json 
+                await addDocument(esDocs, newIndexName, client);
+            } else {
+                console.log(`Alias (${baseIndexName}) doesn't exist.`)
+                // if index doesn't exist create new index with timestamp
+                const newIndexName = await createIndexFn(baseIndexName, client);
+                // attach the base index name as an alias to the new index 
+                await attachAlias(newIndexName, baseIndexName, client);
+                // index documents from es-index.json 
+                await addDocument(esDocs, newIndexName, client);
+            }
+        }).catch(async function (err) {
             console.log(err);
             return;
-        }
-        if (resp) { 
-            console.log("Alias exists...")
-            // if index exists then create a new one with updated timestamp
-            const newIndexName = await createIndexFn(baseIndexName, client)
-            // remove aliases from all indices (after so only once the new index has been created successfully)
-            await removeAliases(baseIndexName, client)
-            // attach alias to new index
-            await attachAlias(newIndexName, baseIndexName, client)
-            // index documents from es-index.json 
-            await addDocument(esDocs,newIndexName,client)
-        } else {
-            console.log("Alias doesn't exist...")
-            // if index doesn't exist create new index with timestamp
-            const newIndexName = await createIndexFn(baseIndexName, client)
-            // attach the base index name as an alias to the new index 
-            await attachAlias(newIndexName, baseIndexName, client)
-            // index documents from es-index.json 
-            await addDocument(esDocs,newIndexName,client)
-        }
-     });
+        });
 }
 
-async function removeAliases(aliasName, client) {
-    client.indices.deleteAlias({ index: "*", name: aliasName})
-    console.log(`Alias ${aliasName} removed from all indices.`)
+function removeAliases(aliasName, client) {
+    console.log(`Removing alias ${aliasName} from all indices.`)
+    return client.indices.deleteAlias({ index: "*", name: aliasName })
 }
 
-async function attachAlias(indexName, aliasName, client) {
-    client.indices.putAlias({ index: indexName, name: aliasName })
-    console.log(`Alias ${aliasName} attached to new index: ${indexName}`)
+function attachAlias(indexName, aliasName, client) {
+    console.log(`Attaching alias "${aliasName}" to new index "${indexName}".\n`)
+    return client.indices.putAlias({ index: indexName, name: aliasName })
 }
 
 async function createIndexFn(baseIndexName, client) {
@@ -47,8 +47,8 @@ async function createIndexFn(baseIndexName, client) {
     newIndexName = newIndexName.replaceAll(":", ".")
     newIndexName = newIndexName.toLowerCase()
 
-    console.log(newIndexName + ' creation...');
-    client.indices.create({
+    console.log(`Creating new index: ${newIndexName}...`);
+    await client.indices.create({
         index: newIndexName,
         body: {
             mappings: {
@@ -337,129 +337,145 @@ async function createIndexFn(baseIndexName, client) {
 
 async function addDocument(esDocs, indexName, client) {
     console.log("Indexing documents from es-index.json...")
-    esDocs.forEach(doc => {
-        if (doc?.type == "page") {
-            client.index({
-                index: indexName,
-                id: doc._id,
-                body: {
-                    type: doc?.type,
-                    order: doc?.order,
-                    title: doc?.title,
-                    layout: doc?.layout,
-                    pageContent: doc?.content,
-                }
-            })
-        } else if (doc?.type == "issue") {
-            client.index({
-                index: indexName,
-                id: doc._id,
-                body: {
-                    type: doc?.type,
-                    series_issue_number: doc?.series_issue_number,
-                    order: doc?.order,
-                    title: doc?.title,
-                    subtitle: doc?.subtitle,
-                    acknowledgements: doc?.acknowledgements,
-                    layout: doc?.layout,
-                    cover: doc?.cover,
-                    presentation: doc?.presentation,
-                    pageContent: doc?.content,
-                    class: doc?.class,
-                    palette: doc?.palette,
-                    identifier: doc?.identifier
-                }
-            })
-        } else {
-            client.index({
-                index: indexName,
-                id: doc._id,
-                body: {
-                    type: doc?.type,
-                    issue: {
-                        series_issue_number: doc?.issue?.series_issue_number,
-                        order: doc?.issue?.order,
-                        title: doc?.issue?.title,
-                        subtitle: doc?.issue?.subtitle,
-                        acknowledgements: doc?.issue?.acknowledgements,
-                        season: doc?.issue?.season,
-                        layout: doc?.issue?.layout,
-                        cover: doc?.issue?.cover,
-                        presentation: doc?.issue?.presentation,
-                        class: doc?.issue?.class,
-                        palette: doc?.issue?.palette,
-                        identifier: doc?.issue?.identifier
-                    },
-                    content: {
-                        frontmatter: {
-                            series_issue_number: doc?.content?.frontmatter?.series_issue_number,
-                            order: doc?.content?.frontmatter?.order,
-                            palette: doc?.content?.frontmatter?.palette,
-                            path: doc?.content?.frontmatter?.path,
-                            issuePalette: doc?.content?.frontmatter?.issuePalette,
-                            title: doc?.content?.frontmatter?.title,
-                            subtitle: doc?.content?.frontmatter?.subtitle,
-                            BAStype: doc?.content?.frontmatter?.BAStype,
-                            pub_type: doc?.content?.frontmatter?.pub_type,
-                            banner: doc?.content?.frontmatter?.banner,
-                            bannerCaption: doc?.content?.frontmatter?.bannerCaption,
-                            bannerCredit: doc?.content?.frontmatter?.bannerCredit,
-                            tile: doc?.content?.frontmatter?.tile,
-                            tileCaption: doc?.content?.frontmatter?.tileCaption,
-                            tileCredit: doc?.content?.frontmatter?.tileCredit,
-                            wordCount: doc?.content?.frontmatter?.wordCount,
-                            subjects: doc?.content?.frontmatter?.subjects
-                        },
-                        contributors: doc?.content?.contributors,
-                        text: {
-                            short_abstract: doc?.content?.text?.short_abstract,
-                            abstract: doc?.content?.text?.abstract,
-                            acknowledgements: doc?.content?.text?.acknowledgements,
-                            sections: doc?.content?.text?.sections,
-                            paragraphs: doc?.content?.text?.paragraphs,
-                        },
-                        illustrations: doc?.content?.illustrations,
-                        slides: doc?.content?.slides,
-                        footnotes: doc?.content?.footnotes,
-                        bibliography: doc?.content?.bibliography,
-                        endsmatter: {
-                            pub_date: doc?.content?.endsmatter?.pub_date,
-                            review_status: doc?.content?.endsmatter?.review_status,
-                            licence: doc?.content?.endsmatter?.licence,
-                            identifier: doc?.content?.endsmatter?.identifier,
-                        }
-                    },
-                    search: {
-                        pub_date: doc?.search?.pub_date,
-                        BAStype: doc?.search?.BAStype,
-                        title: doc?.search?.title,
-                        subtitle: doc?.search?.subtitle,
-                        contributors: doc?.search?.contributors,
+
+    // Get arrays of each doc type
+    const pageDocs = esDocs.filter((doc) => {
+        if (doc?.type == "page") { return doc }
+    }) || []
+
+    if (pageDocs) {
+        var operations = pageDocs.flatMap(doc => [
+            { index: { _index: indexName, _id: doc?._id } },
+            {
+                type: doc?.type,
+                order: doc?.order,
+                title: doc?.title,
+                layout: doc?.layout,
+                pageContent: doc?.content,
+            }])
+        var bulkResponse = await client.bulk({ refresh: true, operations })
+        console.log("    - Indexed documents with 'page' type.")
+    }
+
+
+    const issueDocs = esDocs.filter((doc) => {
+        if (doc?.type == "issue") { return doc }
+    }) || []
+
+    if (issueDocs) {
+        var operations = issueDocs.flatMap(doc => [
+            { index: { _index: indexName, _id: doc?._id } },
+            {
+                type: doc?.type,
+                series_issue_number: doc?.series_issue_number,
+                order: doc?.order,
+                title: doc?.title,
+                subtitle: doc?.subtitle,
+                acknowledgements: doc?.acknowledgements,
+                layout: doc?.layout,
+                cover: doc?.cover,
+                presentation: doc?.presentation,
+                pageContent: doc?.content,
+                class: doc?.class,
+                palette: doc?.palette,
+                identifier: doc?.identifier
+            }
+        ])
+        var bulkResponse = await client.bulk({ refresh: true, operations })
+        console.log("    - Indexed documents with 'issue' type.")
+    }
+
+    const articleDocs = esDocs.filter((doc) => {
+        if (doc?.type == 'slide' || doc?.type == 'article') { return doc }
+    }) || []
+
+    if (articleDocs) {
+        var operations = articleDocs.flatMap(doc => [
+            { index: { _index: indexName, _id: doc?._id } },
+            {
+                type: doc?.type,
+                issue: {
+                    series_issue_number: doc?.issue?.series_issue_number,
+                    order: doc?.issue?.order,
+                    title: doc?.issue?.title,
+                    subtitle: doc?.issue?.subtitle,
+                    acknowledgements: doc?.issue?.acknowledgements,
+                    season: doc?.issue?.season,
+                    layout: doc?.issue?.layout,
+                    cover: doc?.issue?.cover,
+                    presentation: doc?.issue?.presentation,
+                    class: doc?.issue?.class,
+                    palette: doc?.issue?.palette,
+                    identifier: doc?.issue?.identifier
+                },
+                content: {
+                    frontmatter: {
+                        series_issue_number: doc?.content?.frontmatter?.series_issue_number,
+                        order: doc?.content?.frontmatter?.order,
+                        palette: doc?.content?.frontmatter?.palette,
+                        path: doc?.content?.frontmatter?.path,
+                        issuePalette: doc?.content?.frontmatter?.issuePalette,
+                        title: doc?.content?.frontmatter?.title,
+                        subtitle: doc?.content?.frontmatter?.subtitle,
+                        BAStype: doc?.content?.frontmatter?.BAStype,
+                        pub_type: doc?.content?.frontmatter?.pub_type,
+                        banner: doc?.content?.frontmatter?.banner,
+                        bannerCaption: doc?.content?.frontmatter?.bannerCaption,
+                        bannerCredit: doc?.content?.frontmatter?.bannerCredit,
                         tile: doc?.content?.frontmatter?.tile,
                         tileCaption: doc?.content?.frontmatter?.tileCaption,
                         tileCredit: doc?.content?.frontmatter?.tileCredit,
-                        subjects: doc?.search?.subjects,
-                        palette: doc?.search?.palette
+                        wordCount: doc?.content?.frontmatter?.wordCount,
+                        subjects: doc?.content?.frontmatter?.subjects
                     },
-                    source: {
-                        date: doc?._source?.date,
-                        inputPath: doc?._source?.inputPath,
-                        fileSlug: doc?._source?.fileSlug,
-                        filePathStem: doc?._source?.filePathStem,
-                        outputFileExtension: doc?._source?.outputFileExtension,
-                        templateSyntax: doc?._source?.templateSyntax,
-                        url: doc?._source?.url,
-                        outputPath: doc?._source?.outputPath,
-                        lang: doc?._source?.lang
+                    contributors: doc?.content?.contributors,
+                    text: {
+                        short_abstract: doc?.content?.text?.short_abstract,
+                        abstract: doc?.content?.text?.abstract,
+                        acknowledgements: doc?.content?.text?.acknowledgements,
+                        sections: doc?.content?.text?.sections,
+                        paragraphs: doc?.content?.text?.paragraphs,
+                    },
+                    illustrations: doc?.content?.illustrations,
+                    slides: doc?.content?.slides,
+                    footnotes: doc?.content?.footnotes,
+                    bibliography: doc?.content?.bibliography,
+                    endsmatter: {
+                        pub_date: doc?.content?.endsmatter?.pub_date,
+                        review_status: doc?.content?.endsmatter?.review_status,
+                        licence: doc?.content?.endsmatter?.licence,
+                        identifier: doc?.content?.endsmatter?.identifier,
                     }
+                },
+                search: {
+                    pub_date: doc?.search?.pub_date,
+                    BAStype: doc?.search?.BAStype,
+                    title: doc?.search?.title,
+                    subtitle: doc?.search?.subtitle,
+                    contributors: doc?.search?.contributors,
+                    tile: doc?.content?.frontmatter?.tile,
+                    tileCaption: doc?.content?.frontmatter?.tileCaption,
+                    tileCredit: doc?.content?.frontmatter?.tileCredit,
+                    subjects: doc?.search?.subjects,
+                    palette: doc?.search?.palette
+                },
+                source: {
+                    date: doc?._source?.date,
+                    inputPath: doc?._source?.inputPath,
+                    fileSlug: doc?._source?.fileSlug,
+                    filePathStem: doc?._source?.filePathStem,
+                    outputFileExtension: doc?._source?.outputFileExtension,
+                    templateSyntax: doc?._source?.templateSyntax,
+                    url: doc?._source?.url,
+                    outputPath: doc?._source?.outputPath,
+                    lang: doc?._source?.lang
+
                 }
-            }, function (err, resp) {
-                if (err) {
-                    console.log(err)
-                }
-            })
-        }
-    })
+            }
+        ])
+        var bulkResponse = await client.bulk({ refresh: true, operations })
+        console.log("    - Indexed documents with `article` and `slide` type.")
+    }
 }
 
 
