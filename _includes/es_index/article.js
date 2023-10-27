@@ -2,6 +2,18 @@ const { getItemIdentifier, normalizePalette, parseSections, mapToKeys, mediaUrl 
 const type = 'article'
 const articleRegex = /^(issue-)([\d]+)/i
 
+createMediaPath = (innerObjProperty, mediaUrl) => {
+	if (mediaUrl == undefined || innerObjProperty.src == undefined) {
+		var path = undefined
+	} else {
+		var path = mediaUrl + "/content/_assets/images/" + innerObjProperty.src
+		if (innerObjProperty?.src?.includes("table")) {
+			var path = mediaUrl + "/content/_assets/" + innerObjProperty.src
+		}
+	}
+	return path
+}
+
 const getIllustrations = ( figureList, content, frontMatterContent ) => 
 	figureList
 		.filter(({ id }) => id && content.includes(id))
@@ -11,14 +23,7 @@ const getIllustrations = ( figureList, content, frontMatterContent ) =>
 				frontMatterContent.some(element =>
 					element.includes("figuregroup") && (element.includes(x.id)))
 				
-			if (mediaUrl == undefined) {
-				var path = undefined
-			} else {
-				var path = mediaUrl + "/content/_assets/images/" + x.src
-				if (x?.src?.includes("table")) {
-					var path = mediaUrl + "/content/_assets/" + x.src
-				}
-			}
+			var path = createMediaPath(x, mediaUrl) 
 
 			return {
 				layout: (matchFigGroup ? matchFigGroup : x.figuregroup),
@@ -40,17 +45,12 @@ const getSlideData = ( slideData, objectList ) => slideData?.map(slide => {
 			// some have mediaId and mediaType rather than 
 			// media_id and media_type
 
-			if (mediaUrl == undefined) {
-				var path = undefined
-			} else {
-				var path = mediaUrl + "/content/_assets/images/" + obj.src
-				if (obj?.src?.includes("table")) {
-					var path = mediaUrl + "/content/_assets/" + obj.src
-				}
-			}
-
 			const modifiedFigures = obj.figures
-				.map(innerfig => ({
+				.map((innerfig) => {
+
+					var path = createMediaPath(innerfig, mediaUrl) 
+
+					return {
 					id: innerfig.id,
 					src: innerfig.src,
 					path: path,
@@ -60,7 +60,7 @@ const getSlideData = ( slideData, objectList ) => slideData?.map(slide => {
 					caption: innerfig.caption,
 					credit: innerfig.credit,
 					alt: innerfig.alt,
-				}))
+				}})
 				
 //			delete obj.figures
 			obj["figures"] = modifiedFigures

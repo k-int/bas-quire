@@ -198,6 +198,7 @@ async function createIndexFn(baseIndexName, client) {
                                     layout: { "type": "text" },
                                     id: { "type": "keyword" },
                                     src: { "type": "keyword" },
+                                    path: { "type": "keyword" },
                                     label: { "type": "text" },
                                     media_type: { "type": "keyword" },
                                     media_id: { "type": "text" },
