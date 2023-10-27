@@ -10,3 +10,5 @@ ES_CLOUD_ID= # Elastic Cloud ID
 # localhost setup
 ES_PORT= # ES port is typically 9200
 ES_HOST= # e.g. localhost
+
+MEDIA_URL = # e.g. https://media.githubusercontent.com/media/k-int/bas-quire/feature/elastic_search/content

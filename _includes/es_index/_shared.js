@@ -65,7 +65,10 @@ const parseSections = (baseContent, spliton, psId, psContent) => {
 	})
 }
 
+const envConfig = require('dotenv').config({ path: './_plugins/elasticSearch/.env' });
+const mediaUrl = process.env.MEDIA_URL
+
 // Define the public API here..
 module.exports = {
-	cleanId, getItemIdentifier, mapToKeys, limitKeys, parseSections, normalizePalette
+	cleanId, getItemIdentifier, mapToKeys, limitKeys, parseSections, normalizePalette, mediaUrl
 }

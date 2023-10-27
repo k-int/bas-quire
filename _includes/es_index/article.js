@@ -1,4 +1,4 @@
-const { getItemIdentifier, normalizePalette, parseSections, mapToKeys } = require('./_shared')
+const { getItemIdentifier, normalizePalette, parseSections, mapToKeys, mediaUrl } = require('./_shared')
 const type = 'article'
 const articleRegex = /^(issue-)([\d]+)/i
 
@@ -10,11 +10,21 @@ const getIllustrations = ( figureList, content, frontMatterContent ) =>
 			const matchFigGroup = x.id &&
 				frontMatterContent.some(element =>
 					element.includes("figuregroup") && (element.includes(x.id)))
-	
+				
+			if (mediaUrl == undefined) {
+				var path = undefined
+			} else {
+				var path = mediaUrl + "/content/_assets/images/" + x.src
+				if (x?.src?.includes("table")) {
+					var path = mediaUrl + "/content/_assets/" + x.src
+				}
+			}
+
 			return {
 				layout: (matchFigGroup ? matchFigGroup : x.figuregroup),
 				id: x.id,
 				src: x.src,
+				path: path,
 				label: x.label,
 				media_type: x.media_type,
 				media_id: x.media_id,
@@ -29,10 +39,21 @@ const getSlideData = ( slideData, objectList ) => slideData?.map(slide => {
 		if (obj?.id == slide?.data?.object?.[0]?.id) {
 			// some have mediaId and mediaType rather than 
 			// media_id and media_type
+
+			if (mediaUrl == undefined) {
+				var path = undefined
+			} else {
+				var path = mediaUrl + "/content/_assets/images/" + obj.src
+				if (obj?.src?.includes("table")) {
+					var path = mediaUrl + "/content/_assets/" + obj.src
+				}
+			}
+
 			const modifiedFigures = obj.figures
 				.map(innerfig => ({
 					id: innerfig.id,
 					src: innerfig.src,
+					path: path,
 					label: innerfig.label,
 					media_type: innerfig.media_type,
 					media_id: innerfig.media_id,
