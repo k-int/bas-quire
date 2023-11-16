@@ -149,6 +149,7 @@ async function createIndexFn(baseIndexName, client) {
                                     tileCaption: { "type": "text" },
                                     tileCredit: { "type": "text" },
                                     subjects: {
+                                        "type": "nested",
                                         properties: {
                                             type: { "type": "keyword" },
                                             name: { "type": "text" },
@@ -301,6 +302,7 @@ async function createIndexFn(baseIndexName, client) {
                             tileCaption: { "type": "text" },
                             tileCredit: { "type": "text" },
                             subjects: {
+                                "type": "nested",
                                 properties: {
                                     type: { "type": "keyword" },
                                     name: { "type": "text" }

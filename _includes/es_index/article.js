@@ -138,6 +138,7 @@ module.exports = (eleventyConfig) => {
 					BAStype,
 					pub_date,
 					pub_type,
+					parentPage,
 					review_status,
 					palette,
 					licence,
@@ -152,7 +153,7 @@ module.exports = (eleventyConfig) => {
 					content,
 					footnotes
 			}} = item;
-			
+		
 			const { fileSlug: path } = page
 			
 			const fmContentArray = frontMatterContent.split("\n").filter(String); // remove all empty strings
@@ -165,7 +166,7 @@ module.exports = (eleventyConfig) => {
 			
 			return {
 				_id: itemId,
-				type: itemId.includes("slide") ? "slide" : type,
+				type: parentPage?.data?.presentation === 'grid' ? "slide" : type,
 				issue: issueObject,
 				content: {
 					frontmatter: {
