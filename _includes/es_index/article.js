@@ -2,7 +2,7 @@ const { getItemIdentifier, normalizePalette, parseSections, mapToKeys, mediaUrl 
 const type = 'article'
 const articleRegex = /^(issue-)([\d]+)/i
 
-createMediaPath = (innerObjProperty, mediaUrl) => {
+const createMediaPath = (innerObjProperty, mediaUrl) => {
 	if (mediaUrl == undefined || innerObjProperty.src == undefined) {
 		var path = undefined
 	} else {
@@ -163,6 +163,15 @@ module.exports = (eleventyConfig) => {
 			const normalizedPalette = normalizePalette( palette )
 			
 			const itemId = getItemIdentifier(item)
+
+			//split subjects into array
+			if (typeof subjects !== 'undefined') {
+				subjects.forEach(innerSubj => {
+					const subjNameArray = innerSubj?.name.split(',')
+					const trimmedSubNameArray = subjNameArray.map(s => s.trim());
+					innerSubj.name = trimmedSubNameArray
+				})
+			}
 			
 			return {
 				_id: itemId,

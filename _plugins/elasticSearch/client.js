@@ -152,7 +152,7 @@ async function createIndexFn(baseIndexName, client) {
                                         "type": "nested",
                                         properties: {
                                             type: { "type": "keyword" },
-                                            name: { "type": "text" },
+                                            name: { "type": "keyword" },
                                         }
                                     },
                                 }
@@ -305,7 +305,7 @@ async function createIndexFn(baseIndexName, client) {
                                 "type": "nested",
                                 properties: {
                                     type: { "type": "keyword" },
-                                    name: { "type": "text" }
+                                    name: { "type": "keyword" }
                                 }
                             },
                             palette: {
