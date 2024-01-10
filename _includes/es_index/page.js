@@ -1,7 +1,9 @@
 const { getItemIdentifier } = require('./_shared')
 const type = 'page'
 
-module.exports = (_eleventyConfig) => {
+module.exports = (eleventyConfig) => {
+	
+	const markdownify = eleventyConfig.getFilter('markdownify')
 	
 	return {
 		type,
@@ -25,7 +27,7 @@ module.exports = (_eleventyConfig) => {
 				order,
 				title,
 				layout,
-				content
+				content: markdownify( content )
 			}
 		}
 	}
