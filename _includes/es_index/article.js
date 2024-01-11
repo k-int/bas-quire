@@ -39,7 +39,7 @@ const getIllustrations = ( figureList, content, frontMatterContent ) =>
 			};
 		}) || [];
 		
-const getSlideData = ( slideData, objectList ) => slideData?.map(slide => {
+const getSlideData = ( slideData, objectList, formatter ) => slideData?.map(slide => {
 	const objData = objectList.filter(obj => {
 		if (obj?.id == slide?.data?.object?.[0]?.id) {
 			// some have mediaId and mediaType rather than 
@@ -70,8 +70,8 @@ const getSlideData = ( slideData, objectList ) => slideData?.map(slide => {
 
 	// Split content and use to get paragraphs and section data
 	const splitSlideContent = slide?.template.frontMatter.content.split("\n").filter(String); // remove all empty strings
-	const paragraphData = parseSections(splitSlideContent, "{% assign paragraph_DOI", "paragraph_id", "paragraph")
-	const sectionData = parseSections(splitSlideContent, "{% assign chapter_DOI", "section_id", "section_heading")
+	const paragraphData = parseSections(splitSlideContent, "{% assign paragraph_DOI", "paragraph_id", "paragraph", formatter)
+	const sectionData = parseSections(splitSlideContent, "{% assign chapter_DOI", "section_id", "section_heading", formatter)
 	const splitId = slide?.data?.key.replaceAll("/", "_")
 
 	return {
@@ -108,6 +108,8 @@ module.exports = (eleventyConfig) => {
 	const issueConfig = require('./issue')(eleventyConfig)
 	const getContributor = eleventyConfig.getFilter('getContributor')
 	
+	const markdownify = eleventyConfig.getFilter('markdownify')
+
 	return {
 		type,
 		predicate: ( item ) => getItemIdentifier( item ).match(articleRegex),
@@ -203,11 +205,11 @@ module.exports = (eleventyConfig) => {
 						short_abstract,
 						abstract,
 						acknowledgements,
-						sections: parseSections(fmContentArray, "{% assign chapter_DOI", "section_id", "section_heading"),
-						paragraphs: parseSections(fmContentArray, "{% assign paragraph_DOI", "paragraph_id", "paragraph"),
+						sections: parseSections(fmContentArray, "{% assign chapter_DOI", "section_id", "section_heading", markdownify),
+						paragraphs: parseSections(fmContentArray, "{% assign paragraph_DOI", "paragraph_id", "paragraph", markdownify),
 					},
 					illustrations: getIllustrations( figures.figure_list, content, fmContentArray ),
-					slides: getSlideData(slideData, objects?.object_list),
+					slides: getSlideData(slideData, objects?.object_list, markdownify),
 					footnotes: getFootnotes(fmContentArray, footnotes?.list),
 					bibliography: getReferences(references.entries, frontMatterData.references),
 					endsmatter: {

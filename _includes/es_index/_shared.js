@@ -25,7 +25,8 @@ const limitKeys = (keys, obj) => {
 	return Object.fromEntries(Object.entries(obj).filter(([key]) => keys.includes(key)))
 }
 
-const parseSections = (baseContent, spliton, psId, psContent) => {
+const parseSections = (baseContent, spliton, psId, psContent, formatter) => {
+
 	const indices = []
 
 	baseContent.forEach((e, i) => {
@@ -53,7 +54,20 @@ const parseSections = (baseContent, spliton, psId, psContent) => {
 					// if there is a tag after id
 					plusIndex += 1
 				} else {
-					collected.push(baseContent[psIndex + plusIndex])
+					// get content and trim leading and trailing whitespace 
+					// note: despite trimming, the text that has leading whitespace still produces errors and is treated as if whitespace still there
+					const contentNoWhitespace = (baseContent[psIndex + plusIndex]).trim()
+
+					// try catch to attempt formatting of md -> HTML, if errors occur then append md
+					try {
+						const formattedText = formatter(contentNoWhitespace)	
+						collected.push(formattedText)
+					}
+					catch {
+						console.log(`${contentNoWhitespace} failed to be converted to HTML, original markdown will be used instead.`)
+						collected.push(contentNoWhitespace)
+					}
+
 					plusIndex += 1
 				}
 			} else {
